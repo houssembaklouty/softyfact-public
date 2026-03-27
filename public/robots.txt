@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /order-confirmation/
+
+Sitemap: https://softyfact.tn/sitemap.xml
