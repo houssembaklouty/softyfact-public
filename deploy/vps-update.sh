@@ -40,6 +40,7 @@ update_public() {
     npm run build
     rm -rf node_modules
 
+    php artisan migrate --force
     php artisan config:cache
     php artisan route:cache
     php artisan view:cache

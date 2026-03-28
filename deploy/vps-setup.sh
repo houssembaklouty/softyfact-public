@@ -295,12 +295,8 @@ APP_URL=https://${DOMAIN_PUBLIC}
 
 CORE_APP_URL=https://${DOMAIN_CORE}
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=${DB_NAME}
-DB_USERNAME=${DB_USER_PUBLIC}
-DB_PASSWORD=${DB_PASS_PUBLIC}
+DB_CONNECTION=sqlite
+DB_DATABASE=${DEPLOY_DIR_PUBLIC}/storage/app/database.sqlite
 
 SESSION_DRIVER=file
 SESSION_LIFETIME=120
@@ -312,15 +308,20 @@ LOG_CHANNEL=stack
 APP_SUPPORT_PHONE="71 000 000"
 APP_ORDER_AMOUNT=149
 APP_ORDER_AMOUNT_ONLINE=99
+
+PUBLIC_SITE_API_KEY=CHANGE_THIS_TO_MATCH_FETORA_PRO
 ENVEOF
 
-mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache
+mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache storage/app
+touch storage/app/database.sqlite
 composer install --no-dev --optimize-autoloader --no-interaction
 npm ci
 npm run build
 rm -rf node_modules
 
 php artisan key:generate --force
+php artisan migrate --force
+php artisan db:seed --force
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
@@ -349,11 +350,12 @@ if [ ! -f .env ]; then
     sed -i "s|DB_PASSWORD=.*|DB_PASSWORD=${DB_PASS_CORE}|" .env
     sed -i "s|REDIS_HOST=redis|REDIS_HOST=127.0.0.1|" .env
     sed -i "s|CACHE_DRIVER=redis|CACHE_DRIVER=redis|" .env
-    # Add public site URL
+    # Add public site URL and API key
     echo "" >> .env
     echo "PUBLIC_SITE_URL=https://${DOMAIN_PUBLIC}" >> .env
+    echo "PUBLIC_SITE_API_KEY=CHANGE_THIS_TO_MATCH_PUBLIC_SITE" >> .env
 
-    warn "Review ${DEPLOY_DIR_CORE}/.env — adjust mail, elfatoora, etc."
+    warn "Review ${DEPLOY_DIR_CORE}/.env — adjust mail, elfatoora, API key, etc."
 fi
 
 mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache
@@ -366,15 +368,8 @@ php artisan key:generate --force --no-interaction 2>/dev/null || true
 php artisan migrate --force
 php artisan storage:link 2>/dev/null || true
 
-# Now that tables exist, grant restricted access to public user
-info "Applying restricted MySQL grants for ${DB_USER_PUBLIC}..."
-mysql -u root -p"${DB_ROOT_PASS}" <<EOSQL2
-GRANT SELECT, INSERT, UPDATE ON \`${DB_NAME}\`.\`orders\` TO '${DB_USER_PUBLIC}'@'localhost';
-GRANT SELECT, INSERT ON \`${DB_NAME}\`.\`contact_leads\` TO '${DB_USER_PUBLIC}'@'localhost';
-GRANT SELECT ON \`${DB_NAME}\`.\`migrations\` TO '${DB_USER_PUBLIC}'@'localhost';
-FLUSH PRIVILEGES;
-EOSQL2
-ok "Public user grants applied"
+# Public site no longer needs MySQL access (uses SQLite + API)
+# MySQL grants for softyfact_public user removed
 
 mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache
 php artisan config:cache

@@ -46,37 +46,49 @@ rm -rf node_modules
 
 # ── 5. Environment file ──
 if [ ! -f "${DEPLOY_DIR}/.env" ]; then
-    echo "[5/9] Creating .env from .env.example..."
+    echo "[5/10] Creating .env from .env.example..."
     cp "${DEPLOY_DIR}/.env.example" "${DEPLOY_DIR}/.env"
     php artisan key:generate --force
     echo "⚠️  IMPORTANT: Edit ${DEPLOY_DIR}/.env with your production values!"
+    echo "    - Set PUBLIC_SITE_API_KEY (must match fetora-pro's value)"
 else
-    echo "[5/9] .env already exists, skipping..."
+    echo "[5/10] .env already exists, skipping..."
 fi
 
-# ── 6. Laravel setup ──
-echo "[6/9] Running Laravel setup..."
+# ── 6. SQLite database ──
+echo "[6/10] Setting up SQLite database..."
+DB_PATH="${DEPLOY_DIR}/storage/app/database.sqlite"
+if [ ! -f "${DB_PATH}" ]; then
+    touch "${DB_PATH}"
+    chown www-data:www-data "${DB_PATH}"
+fi
+cd "${DEPLOY_DIR}"
+php artisan migrate --force
+php artisan db:seed --force
+
+# ── 7. Laravel setup ──
+echo "[7/10] Caching config/routes/views..."
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
-# ── 7. Directory structure & permissions ──
-echo "[7/9] Setting permissions..."
+# ── 8. Directory structure & permissions ──
+echo "[8/10] Setting permissions..."
 mkdir -p storage/logs storage/framework/{cache/data,sessions,views}
 mkdir -p bootstrap/cache
 chown -R www-data:www-data "${DEPLOY_DIR}"
 chmod -R 755 "${DEPLOY_DIR}"
 chmod -R 775 storage bootstrap/cache
 
-# ── 8. Install Nginx & PHP-FPM configs ──
-echo "[8/9] Installing server configs..."
+# ── 9. Install Nginx & PHP-FPM configs ──
+echo "[9/10] Installing server configs..."
 cp "${REPO_DIR}/deploy/nginx/softyfact.tn.conf" /etc/nginx/sites-available/softyfact.tn
 ln -sf /etc/nginx/sites-available/softyfact.tn /etc/nginx/sites-enabled/softyfact.tn
 
 cp "${REPO_DIR}/deploy/php-fpm/softyfact-public.conf" "/etc/php/${PHP_VER}/fpm/pool.d/softyfact-public.conf"
 
-# ── 9. Reload services ──
-echo "[9/9] Reloading services..."
+# ── 10. Reload services ──
+echo "[10/10] Reloading services..."
 nginx -t
 systemctl reload "php${PHP_VER}-fpm"
 systemctl reload nginx
@@ -87,7 +99,7 @@ echo "  ✅ ${APP_NAME} deployed successfully!"
 echo "=========================================="
 echo ""
 echo "Next steps:"
-echo "  1. Edit ${DEPLOY_DIR}/.env with production DB credentials"
+echo "  1. Edit ${DEPLOY_DIR}/.env with production values"
+echo "     - Set PUBLIC_SITE_API_KEY (must match fetora-pro)"
 echo "  2. Run: sudo bash deploy/ssl-setup.sh"
-echo "  3. Run: sudo mysql < deploy/mysql-setup.sql"
 echo ""
