@@ -60,6 +60,25 @@ echo "  ${DOMAIN_PUBLIC} + ${DOMAIN_CORE}"
 echo "============================================"
 echo ""
 
+# ── GitHub auth method ──
+echo "How do you want to clone from GitHub?"
+echo "  1) HTTPS + Personal Access Token (easiest)"
+echo "  2) SSH key (will generate one if needed)"
+read -rp "Choice [1/2]: " GIT_METHOD
+echo ""
+
+GITHUB_CLONE_PREFIX=""
+if [[ "$GIT_METHOD" == "1" ]]; then
+    read -rp "GitHub Personal Access Token: " GITHUB_TOKEN
+    GITHUB_CLONE_PREFIX="https://${GITHUB_TOKEN}@github.com/${GITHUB_USER}"
+    # Store token so git pull works later
+    git config --global credential.helper store
+    echo "https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com" > /root/.git-credentials
+    chmod 600 /root/.git-credentials
+else
+    GITHUB_CLONE_PREFIX="git@github.com:${GITHUB_USER}"
+fi
+
 read -rp "MySQL root password (new): " DB_ROOT_PASS
 read -rp "MySQL password for '${DB_USER_CORE}' (core app): " DB_PASS_CORE
 read -rp "MySQL password for '${DB_USER_PUBLIC}' (public app): " DB_PASS_PUBLIC
@@ -68,6 +87,7 @@ echo ""
 
 info "Domains: ${DOMAIN_PUBLIC} + ${DOMAIN_CORE}"
 info "GitHub: ${GITHUB_USER}/${REPO_PUBLIC} + ${GITHUB_USER}/${REPO_CORE}"
+info "Auth: $(if [[ "$GIT_METHOD" == "1" ]]; then echo "HTTPS + Token"; else echo "SSH"; fi)"
 read -rp "Continue? (y/n) " -n 1 CONFIRM
 echo ""
 if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
@@ -204,24 +224,26 @@ step "8/10 — Clone & Deploy Applications"
 
 mkdir -p /var/www /var/log/php-fpm
 
-# ── SSH key check ──
-if [ ! -f /root/.ssh/id_ed25519 ] && [ ! -f /root/.ssh/id_rsa ]; then
-    warn "No SSH key found. Generating one for GitHub..."
-    ssh-keygen -t ed25519 -C "vps-deploy@${DOMAIN_PUBLIC}" -f /root/.ssh/id_ed25519 -N ""
-    echo ""
-    warn "Add this deploy key to GitHub (Settings → Deploy Keys):"
-    echo "──────────────────────────────────────"
-    cat /root/.ssh/id_ed25519.pub
-    echo "──────────────────────────────────────"
-    echo ""
-    read -rp "Press ENTER after adding the key to GitHub..."
+# ── SSH key setup (only for SSH method) ──
+if [[ "$GIT_METHOD" != "1" ]]; then
+    if [ ! -f /root/.ssh/id_ed25519 ] && [ ! -f /root/.ssh/id_rsa ]; then
+        warn "No SSH key found. Generating one for GitHub..."
+        ssh-keygen -t ed25519 -C "vps-deploy@${DOMAIN_PUBLIC}" -f /root/.ssh/id_ed25519 -N ""
+        echo ""
+        warn "Add this deploy key to BOTH repos on GitHub (Settings → Deploy Keys):"
+        echo "──────────────────────────────────────"
+        cat /root/.ssh/id_ed25519.pub
+        echo "──────────────────────────────────────"
+        echo ""
+        read -rp "Press ENTER after adding the key to GitHub..."
+    fi
     ssh-keyscan github.com >> /root/.ssh/known_hosts 2>/dev/null
 fi
 
 # ── Clone repos ──
 if [ ! -d "${DEPLOY_DIR_PUBLIC}/.git" ]; then
     info "Cloning ${REPO_PUBLIC}..."
-    git clone "git@github.com:${GITHUB_USER}/${REPO_PUBLIC}.git" "${DEPLOY_DIR_PUBLIC}"
+    git clone "${GITHUB_CLONE_PREFIX}/${REPO_PUBLIC}.git" "${DEPLOY_DIR_PUBLIC}"
 else
     info "Updating ${REPO_PUBLIC}..."
     cd "${DEPLOY_DIR_PUBLIC}" && git pull origin main
@@ -229,7 +251,7 @@ fi
 
 if [ ! -d "${DEPLOY_DIR_CORE}/.git" ]; then
     info "Cloning ${REPO_CORE}..."
-    git clone "git@github.com:${GITHUB_USER}/${REPO_CORE}.git" "${DEPLOY_DIR_CORE}"
+    git clone "${GITHUB_CLONE_PREFIX}/${REPO_CORE}.git" "${DEPLOY_DIR_CORE}"
 else
     info "Updating ${REPO_CORE}..."
     cd "${DEPLOY_DIR_CORE}" && git pull origin main
