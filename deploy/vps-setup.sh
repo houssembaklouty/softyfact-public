@@ -185,8 +185,21 @@ systemctl start mysql
 systemctl enable mysql
 
 # Set root password & create databases/users
-mysql <<EOSQL
--- Root password
+# Try without password first (fresh install), then with password (re-run)
+MYSQL_CMD="mysql"
+if ! mysql -e "SELECT 1" &>/dev/null; then
+    MYSQL_CMD="mysql -u root -p${DB_ROOT_PASS}"
+    if ! $MYSQL_CMD -e "SELECT 1" &>/dev/null; then
+        err "Cannot connect to MySQL. If this is a re-run, enter root password manually:"
+        read -rsp "MySQL root password (existing): " EXISTING_PASS
+        echo ""
+        MYSQL_CMD="mysql -u root -p${EXISTING_PASS}"
+        DB_ROOT_PASS="${EXISTING_PASS}"
+    fi
+fi
+
+$MYSQL_CMD <<EOSQL
+-- Root password (safe to re-run)
 ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '${DB_ROOT_PASS}';
 
 -- Database
