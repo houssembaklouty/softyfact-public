@@ -22,6 +22,6 @@ class LeadController extends Controller
             'ip_address' => $request->ip(),
         ]);
 
-        return back()->with('success', 'Votre demande a été envoyée avec succès. Nous vous contacterons dans les plus brefs délais.');
+        return response()->json(['success' => true, 'message' => 'Votre demande a été envoyée avec succès.']);
     }
 }

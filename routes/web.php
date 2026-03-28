@@ -3,7 +3,6 @@
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,11 +10,18 @@ use Inertia\Inertia;
 |--------------------------------------------------------------------------
 */
 
+$shared = [
+    'productName' => config('app.name'),
+    'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
+    'supportPhone' => config('app.support_phone', '55 123 456'),
+    'offlinePrice' => config('app.order_amount', 149),
+    'onlinePrice' => config('app.order_amount_online', 99),
+    'monthlyPrice' => number_format(config('app.order_amount_online', 99) / 12, 2),
+];
+
 // Homepage
-Route::get('/', function () {
-    return Inertia::render('Homepage', [
-        'productName' => config('app.name'),
-    ]);
+Route::get('/', function () use ($shared) {
+    return view('pages.homepage', $shared);
 })->name('home');
 
 // Product pages
@@ -23,32 +29,41 @@ Route::get('/product', function () {
     return redirect('/product/offline');
 })->name('product');
 
-Route::get('/product/offline', function () {
-    return Inertia::render('ProductOffline', [
-        'productName' => config('app.name'),
-        'orderAmount' => config('app.order_amount', 149),
-    ]);
+Route::get('/product/offline', function () use ($shared) {
+    return view('pages.product-offline', array_merge($shared, [
+        'pagePrice' => config('app.order_amount', 149),
+    ]));
 })->name('product.offline');
 
-Route::get('/product/online', function () {
-    return Inertia::render('ProductOnline', [
-        'productName' => config('app.name'),
-        'orderAmount' => config('app.order_amount_online', 99),
-    ]);
+Route::get('/product/online', function () use ($shared) {
+    $onlinePrice = config('app.order_amount_online', 99);
+    return view('pages.product-online', array_merge($shared, [
+        'pagePrice' => $onlinePrice,
+        'monthlyPrice' => number_format($onlinePrice / 12, 2),
+    ]));
 })->name('product.online');
 
 // Static pages
-Route::get('/conditions', function () {
-    return Inertia::render('Conditions');
+Route::get('/conditions', function () use ($shared) {
+    return view('pages.conditions', $shared);
 })->name('conditions');
 
-Route::get('/confidentialite', function () {
-    return Inertia::render('Confidentialite');
+Route::get('/confidentialite', function () use ($shared) {
+    return view('pages.confidentialite', $shared);
 })->name('confidentialite');
 
-Route::get('/contact', function () {
-    return Inertia::render('Contact');
+Route::get('/contact', function () use ($shared) {
+    return view('pages.contact', $shared);
 })->name('contact');
+
+// Locale switch
+Route::get('/locale/{locale}', function (string $locale) {
+    if (in_array($locale, ['fr', 'ar'])) {
+        session(['locale' => $locale]);
+        app()->setLocale($locale);
+    }
+    return back();
+})->name('locale.switch');
 
 // Order submission (public, throttled)
 Route::post('/orders', [OrderController::class, 'store'])

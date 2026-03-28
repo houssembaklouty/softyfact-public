@@ -62,8 +62,11 @@ class OrderController extends Controller
 
     public function confirmation(Order $order)
     {
-        return \Inertia\Inertia::render('OrderConfirmation', [
-            'order' => $order->only(['name', 'phone', 'address', 'city', 'amount', 'status', 'created_at']),
+        return view('pages.order-confirmation', [
+            'order' => $order,
+            'orderAmount' => config('app.order_amount', 149),
+            'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
+            'supportPhone' => config('app.support_phone', '55 123 456'),
         ]);
     }
 }

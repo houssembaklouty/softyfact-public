@@ -509,12 +509,36 @@ NGXEOF
 ln -sf /etc/nginx/sites-available/softyfact.tn /etc/nginx/sites-enabled/
 ln -sf /etc/nginx/sites-available/app.softyfact.tn /etc/nginx/sites-enabled/
 
-# Test & reload
-nginx -t
+# Kill anything on port 80 (Apache, old Nginx, etc.)
+if command -v fuser &>/dev/null; then
+    fuser -k 80/tcp 2>/dev/null || true
+fi
+# Stop Apache if installed
+systemctl stop apache2 2>/dev/null || true
+systemctl disable apache2 2>/dev/null || true
+
+# Ensure PHP-FPM log dir exists and restart FPM first (so sockets are created)
+mkdir -p /var/log/php-fpm
 systemctl restart php${PHP_VER}-fpm
+sleep 2
+
+# Verify FPM sockets exist
+if [ ! -S /run/php/php8.3-fpm-softyfact-public.sock ] || [ ! -S /run/php/php8.3-fpm-fetora-pro.sock ]; then
+    warn "PHP-FPM sockets not found — checking status:"
+    systemctl status php${PHP_VER}-fpm --no-pager || true
+fi
+
+# Test & start Nginx
+nginx -t
 systemctl restart nginx
 
-ok "Nginx + PHP-FPM running (HTTP only — SSL next)"
+if systemctl is-active --quiet nginx; then
+    ok "Nginx + PHP-FPM running (HTTP only — SSL next)"
+else
+    warn "Nginx failed to start — debug:"
+    journalctl -xeu nginx.service --no-pager | tail -20
+    systemctl status nginx --no-pager || true
+fi
 
 # ================================================================
 # STEP 10 — SSL (Let's Encrypt)
