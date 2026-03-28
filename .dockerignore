@@ -1,0 +1,16 @@
+.git
+.gitignore
+.env
+node_modules
+vendor
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+docker-compose.yml
+Dockerfile
+.dockerignore
+*.md
+tests
+.editorconfig
+.styleci.yml

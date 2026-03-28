@@ -109,3 +109,28 @@ table {
     animation: btn-shine 3s ease-in-out infinite;
     pointer-events: none;
 }
+
+/* ─── Blog article typography ─── */
+[dir="rtl"] .prose {
+    text-align: right;
+}
+
+[dir="rtl"] .prose ul,
+[dir="rtl"] .prose ol {
+    padding-right: 1.625em;
+    padding-left: 0;
+}
+
+[dir="rtl"] .prose ul > li::marker {
+    unicode-bidi: normal;
+}
+
+.prose h2 {
+    scroll-margin-top: 5rem;
+}
+
+.prose > p:first-child {
+    font-size: 1.15em;
+    line-height: 1.8;
+    color: rgba(19, 27, 46, 0.9);
+}

@@ -1,0 +1,65 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: softyfact-public
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-8081}:80"
+    environment:
+      APP_NAME: ${APP_NAME:-SoftyFact}
+      APP_ENV: ${APP_ENV:-local}
+      APP_KEY: ${APP_KEY}
+      APP_DEBUG: ${APP_DEBUG:-true}
+      APP_URL: ${APP_URL:-http://localhost:8081}
+      CORE_APP_URL: ${CORE_APP_URL:-https://app.softyfact.tn}
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: ${DB_DATABASE:-facture_pro}
+      DB_USERNAME: ${DB_USERNAME:-softyfact_public}
+      DB_PASSWORD: ${DB_PASSWORD:-secret}
+      SESSION_DRIVER: file
+      SESSION_LIFETIME: 120
+      CACHE_STORE: file
+      LOG_CHANNEL: stack
+      APP_SUPPORT_PHONE: ${APP_SUPPORT_PHONE:-71 000 000}
+      APP_ORDER_AMOUNT: ${APP_ORDER_AMOUNT:-149}
+      APP_ORDER_AMOUNT_ONLINE: ${APP_ORDER_AMOUNT_ONLINE:-99}
+    volumes:
+      - app-storage:/var/www/html/storage
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - softyfact
+
+  mysql:
+    image: mysql:8.0
+    container_name: softyfact-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-facture_pro}
+      MYSQL_USER: ${DB_USERNAME:-softyfact_public}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-secret}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-rootsecret}
+    ports:
+      - "${DB_EXTERNAL_PORT:-3307}:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - softyfact
+
+volumes:
+  app-storage:
+  mysql-data:
+
+networks:
+  softyfact:
+    driver: bridge

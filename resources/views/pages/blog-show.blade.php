@@ -107,17 +107,22 @@
         @endif
 
         {{-- Article body --}}
-        <div class="prose prose-lg prose-slate max-w-none
+        <div class="
+            prose prose-lg max-w-none
             prose-headings:font-headline prose-headings:font-bold prose-headings:text-cm-on-background
-            prose-h2:text-xl prose-h2:md:text-2xl prose-h2:mt-10 prose-h2:mb-4
-            prose-h3:text-lg prose-h3:mt-8 prose-h3:mb-3
-            prose-p:text-cm-on-surface/80 prose-p:leading-relaxed
-            prose-a:text-cm-primary prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-cm-on-background
-            prose-li:text-cm-on-surface/80
-            prose-ul:space-y-1
-            prose-ol:space-y-1
-            prose-img:rounded-xl prose-img:shadow-md">
+            prose-h2:text-xl prose-h2:sm:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-cm-outline-variant/20
+            prose-h3:text-lg prose-h3:sm:text-xl prose-h3:mt-8 prose-h3:mb-3
+            prose-p:text-cm-on-surface/85 prose-p:leading-[1.85] prose-p:text-base prose-p:sm:text-lg prose-p:mb-5
+            prose-a:text-cm-primary prose-a:font-semibold prose-a:underline prose-a:underline-offset-2 prose-a:decoration-cm-primary/30 hover:prose-a:decoration-cm-primary
+            prose-strong:text-cm-on-background prose-strong:font-bold
+            prose-li:text-cm-on-surface/85 prose-li:leading-relaxed prose-li:my-1.5
+            prose-ul:my-5 prose-ul:space-y-1
+            prose-ol:my-5 prose-ol:space-y-1
+            prose-img:rounded-2xl prose-img:shadow-lg
+            prose-table:border-collapse prose-table:w-full
+            prose-th:bg-cm-surface-container prose-th:px-4 prose-th:py-3 prose-th:text-sm prose-th:font-bold prose-th:text-cm-on-background
+            prose-td:px-4 prose-td:py-3 prose-td:text-sm prose-td:border-b prose-td:border-cm-outline-variant/20
+        ">
             {!! $post->getBody() !!}
         </div>
 
