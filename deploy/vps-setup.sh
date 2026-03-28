@@ -117,10 +117,11 @@ step "2/10 — Firewall Setup"
 ufw default deny incoming
 ufw default allow outgoing
 ufw allow OpenSSH
-ufw allow 'Nginx Full'
+ufw allow 80/tcp
+ufw allow 443/tcp
 ufw --force enable
 
-ok "Firewall configured (SSH + Nginx)"
+ok "Firewall configured (SSH + HTTP + HTTPS)"
 
 # ================================================================
 # STEP 3 — PHP 8.3
