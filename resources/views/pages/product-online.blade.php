@@ -91,14 +91,14 @@ $faqs = [
         },
         validatePhone() {
             const digits = this.form.telephone.replace(/\s/g, '');
-            if (!digits) this.phoneError = '{{ __('phoneRequired_err') }}';
-            else if (!/^[0-9]{8}$/.test(digits)) this.phoneError = '{{ __('phoneDigits_err') }}';
+            if (!digits) this.phoneError = '{!! addslashes(__('phoneRequired_err')) !!}';
+            else if (!/^[0-9]{8}$/.test(digits)) this.phoneError = '{!! addslashes(__('phoneDigits_err')) !!}';
             else this.phoneError = '';
         },
         validateEmail() {
             const email = this.form.email.trim();
-            if (!email) this.emailError = '{{ __('emailRequired_err') }}';
-            else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) this.emailError = '{{ __('emailInvalid_err') }}';
+            if (!email) this.emailError = '{!! addslashes(__('emailRequired_err')) !!}';
+            else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) this.emailError = '{!! addslashes(__('emailInvalid_err')) !!}';
             else this.emailError = '';
         },
         scrollToForm() {
@@ -125,7 +125,7 @@ $faqs = [
                 this.submitting = false;
                 const errors = err.response?.data?.errors;
                 if (errors) { const first = Object.values(errors)[0]; this.errorMessage = Array.isArray(first) ? first[0] : first; }
-                else this.errorMessage = err.response?.data?.message || '{{ __('genericError') }}';
+                else this.errorMessage = err.response?.data?.message || '{!! addslashes(__('genericError')) !!}';
             }
         }
      }">
