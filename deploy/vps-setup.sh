@@ -17,6 +17,10 @@
 # ================================================================
 set -euo pipefail
 
+# ── Run everything as root without warnings ──
+export COMPOSER_ALLOW_SUPERUSER=1
+export DEBIAN_FRONTEND=noninteractive
+
 # ── Colors ──
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -185,17 +189,15 @@ systemctl start mysql
 systemctl enable mysql
 
 # Set root password & create databases/users
-# Try without password first (fresh install), then with password (re-run)
-MYSQL_CMD="mysql"
-if ! mysql -e "SELECT 1" &>/dev/null; then
+# Try: no password → provided password → auth_socket (sudo)
+MYSQL_CMD=""
+if mysql -u root -e "SELECT 1" &>/dev/null; then
+    MYSQL_CMD="mysql -u root"
+elif mysql -u root -p"${DB_ROOT_PASS}" -e "SELECT 1" &>/dev/null; then
     MYSQL_CMD="mysql -u root -p${DB_ROOT_PASS}"
-    if ! $MYSQL_CMD -e "SELECT 1" &>/dev/null; then
-        err "Cannot connect to MySQL. If this is a re-run, enter root password manually:"
-        read -rsp "MySQL root password (existing): " EXISTING_PASS
-        echo ""
-        MYSQL_CMD="mysql -u root -p${EXISTING_PASS}"
-        DB_ROOT_PASS="${EXISTING_PASS}"
-    fi
+else
+    # Ubuntu default: root uses auth_socket, sudo works
+    MYSQL_CMD="mysql"
 fi
 
 $MYSQL_CMD <<EOSQL
@@ -252,8 +254,12 @@ if [[ "$GIT_METHOD" != "1" ]]; then
     ssh-keyscan github.com >> /root/.ssh/known_hosts 2>/dev/null
 fi
 
-# ── Clone repos ──
-if [ ! -d "${DEPLOY_DIR_PUBLIC}/.git" ]; then
+# ── Clone repos (clean stale partial installs) ──
+if [ -d "${DEPLOY_DIR_PUBLIC}" ] && [ ! -d "${DEPLOY_DIR_PUBLIC}/.git" ]; then
+    warn "Removing incomplete ${DEPLOY_DIR_PUBLIC}..."
+    rm -rf "${DEPLOY_DIR_PUBLIC}"
+fi
+if [ ! -d "${DEPLOY_DIR_PUBLIC}" ]; then
     info "Cloning ${REPO_PUBLIC}..."
     git clone "${GITHUB_CLONE_PREFIX}/${REPO_PUBLIC}.git" "${DEPLOY_DIR_PUBLIC}"
 else
@@ -261,7 +267,11 @@ else
     cd "${DEPLOY_DIR_PUBLIC}" && git pull origin main
 fi
 
-if [ ! -d "${DEPLOY_DIR_CORE}/.git" ]; then
+if [ -d "${DEPLOY_DIR_CORE}" ] && [ ! -d "${DEPLOY_DIR_CORE}/.git" ]; then
+    warn "Removing incomplete ${DEPLOY_DIR_CORE}..."
+    rm -rf "${DEPLOY_DIR_CORE}"
+fi
+if [ ! -d "${DEPLOY_DIR_CORE}" ]; then
     info "Cloning ${REPO_CORE}..."
     git clone "${GITHUB_CLONE_PREFIX}/${REPO_CORE}.git" "${DEPLOY_DIR_CORE}"
 else
@@ -304,13 +314,13 @@ APP_ORDER_AMOUNT=149
 APP_ORDER_AMOUNT_ONLINE=99
 ENVEOF
 
+mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache
 composer install --no-dev --optimize-autoloader --no-interaction
 npm ci
 npm run build
 rm -rf node_modules
 
 php artisan key:generate --force
-mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
@@ -346,6 +356,7 @@ if [ ! -f .env ]; then
     warn "Review ${DEPLOY_DIR_CORE}/.env — adjust mail, elfatoora, etc."
 fi
 
+mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache
 composer install --no-dev --optimize-autoloader --no-interaction
 npm ci
 npm run build
