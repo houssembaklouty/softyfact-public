@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\OrderController;
+use App\Models\BlogPost;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -78,6 +80,10 @@ Route::post('/leads', [LeadController::class, 'store'])
     ->middleware('throttle:5,1')
     ->name('leads.store');
 
+// Blog
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
+Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
+
 // Sitemap
 Route::get('/sitemap.xml', function () {
     $urls = [
@@ -87,7 +93,18 @@ Route::get('/sitemap.xml', function () {
         ['loc' => 'https://softyfact.tn/contact', 'priority' => '0.7', 'changefreq' => 'monthly'],
         ['loc' => 'https://softyfact.tn/conditions', 'priority' => '0.3', 'changefreq' => 'yearly'],
         ['loc' => 'https://softyfact.tn/confidentialite', 'priority' => '0.3', 'changefreq' => 'yearly'],
+        ['loc' => 'https://softyfact.tn/blog', 'priority' => '0.8', 'changefreq' => 'weekly'],
     ];
+
+    // Add published blog posts to sitemap
+    $blogPosts = BlogPost::published()->orderByDesc('published_at')->get();
+    foreach ($blogPosts as $post) {
+        $urls[] = [
+            'loc' => 'https://softyfact.tn/blog/' . $post->slug,
+            'priority' => '0.7',
+            'changefreq' => 'monthly',
+        ];
+    }
 
     $xml = '<?xml version="1.0" encoding="UTF-8"?>';
     $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';

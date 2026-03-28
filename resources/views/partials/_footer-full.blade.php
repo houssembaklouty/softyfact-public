@@ -18,6 +18,7 @@
             <ul class="space-y-3 md:space-y-4">
                 <li><a href="/contact" class="text-sm text-slate-500 hover:text-cm-primary transition-all underline decoration-[#006B59]/30 underline-offset-4">{{ __('localSupportLink') }}</a></li>
                 <li><a href="#" class="text-sm text-slate-500 hover:text-cm-primary transition-all underline decoration-[#006B59]/30 underline-offset-4">{{ __('userGuide') }}</a></li>
+                <li><a href="/blog" class="text-sm text-slate-500 hover:text-cm-primary transition-all underline decoration-[#006B59]/30 underline-offset-4">{{ __('blog') }}</a></li>
             </ul>
         </div>
         <div>

@@ -250,5 +250,18 @@
     "faq_online_q5": "Est-ce que je peux migrer de la version Bureau vers Cloud ?",
     "faq_online_a5": "Oui, la migration est possible. Contactez notre support technique et nous transférerons vos données en toute sécurité.",
     "faq_online_q6": "Le logiciel est-il conforme à la fiscalité tunisienne ?",
-    "faq_online_a6": "Absolument. TVA, FODEC, timbre fiscal, retenue à la source (TEJ) — tout est intégré et conforme à la réglementation tunisienne en vigueur."
+    "faq_online_a6": "Absolument. TVA, FODEC, timbre fiscal, retenue à la source (TEJ) — tout est intégré et conforme à la réglementation tunisienne en vigueur.",
+    "blog": "Blog",
+    "blogTitle": "Blog SoftyFact",
+    "blogSubtitle": "Guides pratiques, actualités fiscales et conseils pour les entreprises tunisiennes",
+    "blogMetaTitle": "Blog — Guides et conseils facturation en Tunisie | SoftyFact",
+    "blogMetaDesc": "Découvrez nos articles sur la facturation, la TVA, le FODEC, le timbre fiscal et la gestion d'entreprise en Tunisie.",
+    "readMore": "Lire la suite",
+    "minRead": "min de lecture",
+    "noPosts": "Aucun article pour le moment.",
+    "relatedPosts": "Articles similaires",
+    "backToBlog": "Retour au blog",
+    "blogCta": "Prêt à simplifier votre facturation ?",
+    "blogCtaSub": "Découvrez SoftyFact et gérez vos factures en toute conformité.",
+    "publishedOn": "Publié le"
 }
