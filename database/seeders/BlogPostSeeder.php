@@ -1537,6 +1537,2030 @@ class BlogPostSeeder extends Seeder
                 'reading_time' => 7,
                 'published_at' => '2026-03-20 10:00:00',
             ],
+            // ═══════ POST 11: Top 5 comparatif ═══════
+            [
+                'slug' => 'top-5-logiciels-facturation-tunisie-2026',
+                'title_fr' => 'Top 5 logiciels de facturation en Tunisie en 2026 : comparatif complet',
+                'title_ar' => 'أفضل 5 برامج فوترة في تونس في 2026: مقارنة شاملة',
+                'excerpt_fr' => 'Comparatif détaillé des 5 solutions de facturation disponibles en Tunisie : SoftyFact, Odoo, Sage, QuickBooks et Excel. Scorecards, tableau comparatif et verdict.',
+                'excerpt_ar' => 'مقارنة مفصّلة لأفضل 5 حلول فوترة متاحة في تونس: SoftyFact وOdoo وSage وQuickBooks وExcel. بطاقات تقييم وجدول مقارنة وخلاصة.',
+                'body_fr' => '<h2 style="font-size:28px;color:#1e293b;margin-bottom:16px">Top 5 logiciels de facturation en Tunisie en 2026 : comparatif complet</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Le marché tunisien de la facturation connaît une transformation sans précédent en 2026. Entre l\'entrée en vigueur progressive de la facturation électronique El-Fatoora, le renforcement des contrôles fiscaux et la digitalisation accélérée des PME, choisir le bon logiciel de facturation n\'a jamais été aussi crucial. Pourtant, face à la multitude d\'options disponibles — des ERP internationaux aux solutions locales, en passant par les tableurs improvisés — de nombreux entrepreneurs tunisiens se retrouvent perdus et finissent par faire un choix qui leur coûte cher en temps, en argent et en conformité.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Selon les dernières estimations, plus de 85 % des petites et moyennes entreprises tunisiennes utilisent encore des méthodes manuelles ou des outils inadaptés pour gérer leur facturation. Le résultat ? Des erreurs de calcul de TVA, des oublis de FODEC ou de timbre fiscal, des numérotations de factures incohérentes et, au final, des redressements fiscaux lors des contrôles. La conformité fiscale tunisienne est particulièrement exigeante : TVA à taux multiples (19 %, 13 %, 7 %), FODEC à 1 %, timbre fiscal à 1 DT, retenue à la source, certificats TEJ… Autant de spécificités que la plupart des logiciels internationaux ignorent complètement.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Dans cet article, nous avons testé et comparé objectivement les 5 solutions de facturation les plus utilisées par les entreprises tunisiennes en 2026. Notre méthodologie repose sur 7 critères concrets, chacun noté sur 10. L\'objectif est simple : vous aider à identifier la solution qui correspond réellement à votre activité, votre budget et vos obligations légales, sans discours commercial ni parti pris. Commençons par présenter nos critères d\'évaluation.</p>
+
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Nos 7 critères d\'évaluation</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Pour garantir une comparaison juste et pertinente, nous avons défini 7 critères qui reflètent les besoins réels des entreprises tunisiennes. Chaque critère est noté sur 10 points, puis une moyenne pondérée détermine la note globale de chaque logiciel. Voici le détail de ces critères et pourquoi ils comptent :</p>
+
+<ol style="font-size:15px;line-height:2;color:#334155;padding-left:24px">
+<li><strong style="color:#1e293b">Conformité fiscale tunisienne</strong> — Le critère le plus important. Le logiciel doit gérer nativement la TVA multi-taux (19 %, 13 %, 7 %), la taxe FODEC à 1 %, le timbre fiscal de 1 DT sur les factures payées en espèces, la retenue à la source et l\'émission de certificats TEJ. Un logiciel non conforme, c\'est un risque de pénalités fiscales à chaque contrôle.</li>
+<li><strong style="color:#1e293b">Prix et modèle tarifaire</strong> — L\'abordabilité est essentielle pour les PME tunisiennes. Nous évaluons le coût total de possession sur 3 ans : licence, abonnement mensuel, frais d\'intégration, coût par utilisateur supplémentaire et éventuels frais cachés.</li>
+<li><strong style="color:#1e293b">Facilité d\'utilisation</strong> — Un bon logiciel doit être opérationnel en quelques minutes, pas en quelques mois. Nous mesurons le temps de prise en main, la clarté de l\'interface et la nécessité ou non de faire appel à un consultant externe pour le déploiement.</li>
+<li><strong style="color:#1e293b">Gestion de stock</strong> — Pour les entreprises qui vendent des produits physiques, la gestion de stock intégrée est indispensable : suivi multi-entrepôts, alertes de stock bas, mouvements d\'entrée/sortie, transferts inter-dépôts et inventaire.</li>
+<li><strong style="color:#1e293b">Support local</strong> — Avoir un support technique en français et en arabe, basé en Tunisie, qui comprend les spécificités fiscales locales, fait une énorme différence par rapport à un centre d\'appel international anglophone.</li>
+<li><strong style="color:#1e293b">Mode hors ligne</strong> — Dans de nombreuses zones en Tunisie, la connexion internet reste instable. Un logiciel qui fonctionne sans internet garantit la continuité de l\'activité commerciale, même en cas de coupure.</li>
+<li><strong style="color:#1e293b">Préparation El-Fatoora</strong> — La facturation électronique arrive en Tunisie via le système El-Fatoora de Tradenet. Un logiciel qui anticipe cette obligation permet d\'éviter une migration coûteuse et urgente le jour J.</li>
+</ol>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Maintenant que nos critères sont établis, passons à l\'analyse détaillée de chaque solution. Nous commençons par le logiciel qui a obtenu la meilleure note globale de notre comparatif.</p>
+
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Analyse détaillée des 5 solutions</h2>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:20px">1. SoftyFact</h3>
+<span style="background:#059669;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">9.2/10</span>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Conformité fiscale tunisienne</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Prix et modèle tarifaire</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Facilité d\'utilisation</span><span style="font-weight:600">9/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Gestion de stock</span><span style="font-weight:600">9/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Support local</span><span style="font-weight:600">9/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Mode hors ligne</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Préparation El-Fatoora</span><span style="font-weight:600">8/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:80%;border-radius:4px"></div></div>
+</div>
+<p style="margin-top:16px;font-size:15px;color:#475569">La solution la plus complète et la plus abordable pour les PME tunisiennes. SoftyFact est le seul logiciel conçu spécifiquement pour le marché tunisien avec toutes les taxes locales intégrées nativement. La TVA multi-taux, le FODEC, le timbre fiscal et la retenue à la source fonctionnent dès l\'installation, sans aucune configuration manuelle. Son modèle tarifaire est imbattable : 149 DT à vie pour la version Bureau ou 99 DT par an pour la version Cloud, soit 8,25 DT par mois. L\'interface est moderne et intuitive — la plupart des utilisateurs créent leur première facture conforme en moins de 15 minutes. La gestion de stock multi-entrepôts avec alertes automatiques, transferts et inventaire en fait un outil complet qui va bien au-delà de la simple facturation. Le support est assuré par une équipe tunisienne réactive, joignable en français et en arabe par WhatsApp, téléphone et email. La version Bureau fonctionne à 100 % hors ligne, un avantage décisif pour les zones à connexion instable. Côté El-Fatoora, l\'équipe de développement travaille activement sur l\'intégration et une mise à jour est prévue pour accompagner le déploiement officiel. Le seul point d\'amélioration identifié concerne l\'absence temporaire de la transmission El-Fatoora, qui sera comblée prochainement. <a href="/product/offline" style="color:#059669;font-weight:600;text-decoration:underline">Découvrir SoftyFact Bureau →</a></p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:20px">2. Odoo</h3>
+<span style="background:#d97706;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">6.5/10</span>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Conformité fiscale tunisienne</span><span style="font-weight:600">5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Prix et modèle tarifaire</span><span style="font-weight:600">5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Facilité d\'utilisation</span><span style="font-weight:600">5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Gestion de stock</span><span style="font-weight:600">9/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Support local</span><span style="font-weight:600">6/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:60%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Mode hors ligne</span><span style="font-weight:600">3/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:30%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Préparation El-Fatoora</span><span style="font-weight:600">7/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:70%;border-radius:4px"></div></div>
+</div>
+<p style="margin-top:16px;font-size:15px;color:#475569">Odoo est un ERP open source puissant et modulaire, reconnu internationalement. Son module de gestion de stock est l\'un des meilleurs du marché, avec des fonctionnalités avancées de traçabilité, de lots et de routes logistiques. Cependant, pour le marché tunisien, Odoo présente des lacunes significatives. La TVA basique est gérée, mais la FODEC n\'est pas intégrée nativement, le timbre fiscal n\'est pas automatisé et les certificats de retenue à la source sont absents. Il faut passer par un partenaire certifié Odoo en Tunisie pour adapter le système, ce qui représente un coût additionnel important : comptez entre 3 000 et 15 000 DT de frais d\'intégration initiale, en plus de l\'abonnement mensuel d\'environ 95 DT par utilisateur. La mise en place prend généralement entre 1 et 3 mois avec l\'accompagnement d\'un partenaire. Pour une PME qui souhaite simplement facturer conformément à la loi tunisienne, Odoo est clairement surdimensionné. En revanche, pour une entreprise de taille intermédiaire ayant besoin d\'un ERP complet (CRM, fabrication, RH, comptabilité avancée), Odoo reste une option à considérer, à condition d\'avoir le budget et la patience nécessaires. Le mode hors ligne est quasi inexistant puisque la solution est exclusivement web. Concernant El-Fatoora, la communauté Odoo pourrait développer des modules adaptés, mais rien n\'est garanti ni officiellement supporté par l\'éditeur.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:20px">3. Sage 100</h3>
+<span style="background:#d97706;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">5.0/10</span>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Conformité fiscale tunisienne</span><span style="font-weight:600">6/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:60%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Prix et modèle tarifaire</span><span style="font-weight:600">2/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:20%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Facilité d\'utilisation</span><span style="font-weight:600">4/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:40%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Gestion de stock</span><span style="font-weight:600">7/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:70%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Support local</span><span style="font-weight:600">5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Mode hors ligne</span><span style="font-weight:600">7/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:70%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Préparation El-Fatoora</span><span style="font-weight:600">4/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:40%;border-radius:4px"></div></div>
+</div>
+<p style="margin-top:16px;font-size:15px;color:#475569">Sage 100 est une solution historique bien connue dans le monde de la comptabilité et de la gestion commerciale. Utilisée par de nombreuses grandes entreprises et cabinets comptables, elle offre une profondeur fonctionnelle indéniable en matière de comptabilité générale et analytique. Cependant, plusieurs obstacles majeurs la rendent inadaptée pour la majorité des PME tunisiennes. Premièrement, le prix : la licence Sage 100 démarre aux alentours de 7 500 dollars américains, auxquels s\'ajoutent des frais de maintenance annuelle, le coût d\'un serveur dédié et souvent les honoraires d\'un intégrateur pour la configuration initiale. Pour une petite entreprise tunisienne, ce budget est tout simplement disproportionné. Deuxièmement, la prise en main est loin d\'être intuitive. L\'interface conserve un design daté et la courbe d\'apprentissage est longue. La plupart des utilisateurs ont besoin de plusieurs semaines de formation pour maîtriser les fonctions essentielles. Troisièmement, la conformité fiscale tunisienne n\'est pas native : la TVA est gérée, mais la FODEC, le timbre fiscal et la retenue à la source doivent être configurés manuellement, ce qui demande une expertise technique certaine. Le support en Tunisie passe par des revendeurs agréés dont la disponibilité et la qualité varient d\'une région à l\'autre. Sage 100 fonctionne en installation locale, ce qui offre un mode hors ligne correct. En revanche, aucune feuille de route publique ne mentionne l\'intégration d\'El-Fatoora pour le marché tunisien. Sage 100 reste pertinent uniquement pour les entreprises qui font déjà partie d\'un groupe utilisant l\'écosystème Sage et qui disposent du budget et des ressources nécessaires.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:20px">4. QuickBooks</h3>
+<span style="background:#dc2626;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">4.5/10</span>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Conformité fiscale tunisienne</span><span style="font-weight:600">2/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:20%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Prix et modèle tarifaire</span><span style="font-weight:600">5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Facilité d\'utilisation</span><span style="font-weight:600">8/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:80%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Gestion de stock</span><span style="font-weight:600">6/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:60%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Support local</span><span style="font-weight:600">2/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:20%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Mode hors ligne</span><span style="font-weight:600">2/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:20%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Préparation El-Fatoora</span><span style="font-weight:600">1/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:10%;border-radius:4px"></div></div>
+</div>
+<p style="margin-top:16px;font-size:15px;color:#475569">QuickBooks, développé par Intuit, est l\'un des logiciels de comptabilité les plus populaires au monde, notamment aux États-Unis, au Canada et au Royaume-Uni. Son interface est indéniablement réussie : moderne, épurée et intuitive, elle permet de créer une facture en quelques clics. Cependant, c\'est là que s\'arrêtent les avantages pour un utilisateur tunisien. QuickBooks ne connaît tout simplement pas la fiscalité tunisienne. La TVA multi-taux (19 %, 13 %, 7 %) n\'est pas prévue dans sa configuration standard. La FODEC, le timbre fiscal et la retenue à la source sont totalement absents. Il est techniquement impossible d\'émettre une facture conforme à la législation tunisienne avec QuickBooks sans recourir à des bricolages manuels qui annulent l\'intérêt même de l\'automatisation. Le support technique est exclusivement en anglais et ne couvre pas la Tunisie. En cas de question sur le calcul d\'une taxe tunisienne, aucun agent ne pourra vous aider. La solution étant 100 % cloud, toute coupure internet rend la facturation impossible. Le prix, autour de 90 DT par mois pour le plan Plus, est conséquent pour un outil qui ne répond pas aux exigences locales. Quant à El-Fatoora, Intuit n\'a aucune présence en Afrique du Nord et aucun projet d\'adaptation au marché tunisien n\'est prévu. QuickBooks est un excellent outil pour les marchés anglo-saxons, mais son utilisation en Tunisie constitue un véritable risque fiscal pour votre entreprise.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:20px">5. Excel / Google Sheets</h3>
+<span style="background:#dc2626;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">3.0/10</span>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Conformité fiscale tunisienne</span><span style="font-weight:600">1/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:10%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Prix et modèle tarifaire</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Facilité d\'utilisation</span><span style="font-weight:600">5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#d97706;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Gestion de stock</span><span style="font-weight:600">1/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:10%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Support local</span><span style="font-weight:600">1/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:10%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Mode hors ligne</span><span style="font-weight:600">8/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:80%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Préparation El-Fatoora</span><span style="font-weight:600">0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#dc2626;height:100%;width:0%;border-radius:4px"></div></div>
+</div>
+<p style="margin-top:16px;font-size:15px;color:#475569">L\'utilisation d\'Excel ou de Google Sheets pour la facturation est encore extrêmement répandue en Tunisie, en particulier chez les micro-entreprises, les freelances et les commerces de détail. L\'argument principal est évidemment la gratuité. Cependant, cette gratuité apparente cache des risques considérables qui peuvent coûter très cher à terme. Premièrement, aucune vérification automatique n\'est effectuée : les taux de TVA, la FODEC et le timbre fiscal doivent être calculés manuellement à chaque facture. Une simple erreur de formule ou un oubli de mise à jour du taux et votre facture devient non conforme. Deuxièmement, la numérotation séquentielle des factures — une obligation légale en Tunisie — n\'est pas garantie. Il suffit qu\'un employé supprime une ligne ou modifie le fichier pour que la séquence soit rompue, ce qui constitue une irrégularité grave aux yeux de l\'administration fiscale. Troisièmement, la traçabilité est inexistante : impossible de savoir qui a modifié quoi, quand et pourquoi. En cas de contrôle fiscal, l\'absence de piste d\'audit est un signal d\'alarme majeur pour les inspecteurs. Le suivi de stock est au mieux artisanal, souvent source d\'erreurs et de pertes. Enfin, Excel et Google Sheets sont totalement incompatibles avec la facturation électronique El-Fatoora. Aucune migration automatique ne sera possible — il faudra tout reprendre à zéro. Les entreprises qui continuent avec les tableurs s\'exposent à des pénalités fiscales, des redressements et une perte de temps considérable lorsque la réglementation El-Fatoora entrera en vigueur. Le passage à un vrai logiciel de facturation est un investissement, pas une dépense.</p>
+</div>
+
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Tableau comparatif complet</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Pour vous permettre de visualiser rapidement les différences essentielles entre les cinq solutions, voici un tableau récapitulatif qui passe en revue 12 fonctionnalités clés. Les badges verts indiquent une fonctionnalité pleinement supportée, les badges orange signalent un support partiel nécessitant une configuration supplémentaire, et les badges rouges marquent l\'absence totale de la fonctionnalité.</p>
+
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:24px 0">
+<thead>
+<tr>
+<th style="background:#1e293b;color:white;padding:10px 12px;text-align:left">Fonctionnalité</th>
+<th style="background:#1e293b;color:white;padding:10px 12px;text-align:left">SoftyFact</th>
+<th style="background:#1e293b;color:white;padding:10px 12px;text-align:left">Odoo</th>
+<th style="background:#1e293b;color:white;padding:10px 12px;text-align:left">Sage 100</th>
+<th style="background:#1e293b;color:white;padding:10px 12px;text-align:left">QuickBooks</th>
+<th style="background:#1e293b;color:white;padding:10px 12px;text-align:left">Excel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">TVA multi-taux (19%/13%/7%)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Partiel</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr style="background:#f8fafc">
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">FODEC automatique</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Timbre fiscal auto</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr style="background:#f8fafc">
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Retenue à la source / TEJ</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Partiel</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Gestion stock multi-entrepôts</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Partiel</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr style="background:#f8fafc">
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Devis → Commande → Facture</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Facturation électronique El-Fatoora</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ En prép.</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Extension</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr style="background:#f8fafc">
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Mode hors ligne</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Excel</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Interface bilingue FR/AR</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Partiel</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr style="background:#f8fafc">
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Support local tunisien</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Via partenaire</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Partiel</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Prix PME abordable</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ 149 DT</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ 95 DT/mois/user</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ 7 500 $+</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ 90 DT/mois</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Gratuit</span></td>
+</tr>
+<tr style="background:#f8fafc">
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0;font-weight:600">Numérotation séquentielle garantie</td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #e2e8f0"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Ce tableau met en évidence un constat sans appel : SoftyFact est la seule solution qui coche toutes les cases de la conformité fiscale tunisienne tout en restant accessible financièrement. Les autres solutions présentent toutes des lacunes majeures, que ce soit en matière de taxes locales, de prix ou de support. Voyons maintenant notre verdict détaillé et nos recommandations selon votre profil d\'entreprise.</p>
+
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Notre verdict et recommandation</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Après avoir analysé en profondeur ces cinq solutions, notre verdict est clair. Le choix du logiciel de facturation dépend de la taille de votre entreprise, de votre budget et de vos besoins spécifiques, mais pour la grande majorité des entreprises tunisiennes, une solution se démarque nettement des autres.</p>
+
+<h3 style="font-size:18px;color:#1e293b;margin:24px 0 12px">Pour les PME tunisiennes (95 % du marché) : SoftyFact</h3>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">SoftyFact s\'impose comme le choix évident pour les petites et moyennes entreprises tunisiennes. C\'est le seul logiciel de notre comparatif qui combine une conformité fiscale parfaite, un prix imbattable, une facilité d\'utilisation exemplaire et un support local de qualité. Que vous soyez commerçant, prestataire de services, artisan ou gérant d\'une PME industrielle, SoftyFact s\'adapte à votre activité sans compromis. La version Bureau à 149 DT — paiement unique à vie — est particulièrement attractive pour les entreprises soucieuses de maîtriser leur budget. Elle fonctionne à 100 % hors ligne, ce qui la rend idéale pour les zones où la connexion internet n\'est pas fiable. La version Cloud à 99 DT par an (soit 8,25 DT par mois) convient aux entreprises qui souhaitent accéder à leurs données depuis plusieurs appareils. Dans les deux cas, vous bénéficiez de toutes les fonctionnalités sans frais supplémentaires cachés : facturation, devis, bons de commande, gestion de stock, rapports, et toutes les taxes tunisiennes intégrées nativement.</p>
+
+<h3 style="font-size:18px;color:#1e293b;margin:24px 0 12px">Pour les ETI avec besoins ERP complets : Odoo</h3>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Si votre entreprise a des besoins qui dépassent largement la facturation — gestion de production (MRP), CRM avancé, gestion des ressources humaines, comptabilité analytique multi-axes — et que vous disposez d\'un budget conséquent pour l\'intégration, Odoo peut convenir. Prévoyez un budget global de 5 000 à 20 000 DT la première année (licence, intégration, formation) et assurez-vous de travailler avec un partenaire certifié qui maîtrise la fiscalité tunisienne. Ce n\'est clairement pas une solution de facturation simple, mais un véritable projet ERP.</p>
+
+<h3 style="font-size:18px;color:#1e293b;margin:24px 0 12px">Sage 100 : uniquement si déjà déployé</h3>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Si votre entreprise fait partie d\'un groupe qui utilise déjà l\'écosystème Sage et que la migration vers une autre solution serait trop coûteuse, il peut être raisonnable de conserver Sage 100. En revanche, pour un nouveau déploiement, les coûts et la complexité sont difficilement justifiables face aux alternatives disponibles.</p>
+
+<h3 style="font-size:18px;color:#1e293b;margin:24px 0 12px">QuickBooks et Excel : à éviter absolument</h3>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Soyons directs : utiliser QuickBooks ou Excel pour la facturation en Tunisie en 2026, c\'est s\'exposer volontairement à des risques fiscaux majeurs. QuickBooks ne connaît pas la fiscalité tunisienne et ne la connaîtra probablement jamais. Excel ne garantit ni la conformité, ni la traçabilité, ni la numérotation séquentielle obligatoire. Avec l\'arrivée imminente d\'El-Fatoora, ces outils deviendront tout simplement inutilisables pour la facturation professionnelle en Tunisie. Le passage à un vrai logiciel de facturation conforme n\'est plus une option — c\'est une nécessité.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">En résumé, la facturation n\'est pas un poste où il faut économiser au détriment de la conformité. Une facture non conforme peut coûter bien plus cher en pénalités et en redressements que l\'investissement dans un logiciel adapté. Avec SoftyFact, cet investissement est minimal — 149 DT pour la tranquillité fiscale à vie, c\'est le meilleur rapport qualité-prix du marché tunisien. Pour approfondir vos connaissances sur le sujet, consultez également nos guides : <a href="/blog/comment-choisir-logiciel-facturation-tunisie" style="color:#059669;text-decoration:underline">Comment choisir un logiciel de facturation en Tunisie</a>, <a href="/blog/guide-tva-tunisie" style="color:#059669;text-decoration:underline">Guide complet de la TVA en Tunisie</a> et <a href="/blog/comparatif-logiciel-facturation-gratuit-vs-payant" style="color:#059669;text-decoration:underline">Logiciel de facturation gratuit vs payant : le vrai comparatif</a>.</p>
+
+<div style="background:linear-gradient(135deg,#059669 0%,#047857 100%);border-radius:16px;padding:32px;margin:32px 0;text-align:center">
+<h3 style="color:white;margin:0 0 8px;font-size:22px">Prêt à passer au N°1 de la facturation en Tunisie ?</h3>
+<p style="color:#d1fae5;margin:0 0 20px;font-size:16px">Rejoignez les 100+ PME tunisiennes qui ont choisi SoftyFact.</p>
+<a href="/product/offline" style="background:white;color:#059669;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px">Version Bureau — 149 DT</a>
+<a href="/product/online" style="background:rgba(255,255,255,0.15);color:white;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px;border:2px solid rgba(255,255,255,0.3)">Version Cloud — 8.25 DT/mois</a>
+</div>',
+                'body_ar' => '<h2 style="font-size:28px;color:#1e293b;margin-bottom:16px;direction:rtl">أفضل 5 برامج فوترة في تونس في 2026: مقارنة شاملة</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">يشهد سوق الفوترة في تونس تحوّلاً غير مسبوق خلال عام 2026. فمع بدء التطبيق التدريجي لمنظومة الفوترة الإلكترونية "الفاتورة" (El-Fatoora)، وتشديد المراقبة الجبائية، وتسارع رقمنة المؤسسات الصغرى والمتوسطة، أصبح اختيار البرنامج المناسب لإدارة الفوترة أمراً حاسماً أكثر من أيّ وقت مضى. لكن في ظلّ تعدّد الخيارات المتاحة — من أنظمة ERP الدولية إلى الحلول المحلية مروراً بجداول Excel المرتجلة — يجد كثير من روّاد الأعمال التونسيين أنفسهم في حيرة أمام قرار قد يكلّفهم الكثير من الوقت والمال والمطابقة الجبائية.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">وفقاً لأحدث التقديرات، لا تزال أكثر من 85% من المؤسسات الصغرى والمتوسطة في تونس تعتمد على أساليب يدوية أو أدوات غير ملائمة لإدارة فواتيرها. والنتيجة؟ أخطاء في حساب الأداء على القيمة المضافة، نسيان معلوم FODEC أو الطابع الجبائي، ترقيم غير متسلسل للفواتير، وفي نهاية المطاف، مراجعات جبائية مؤلمة عند المراقبة. إنّ المنظومة الجبائية التونسية تتّسم بتعقيد خاصّ: أداء على القيمة المضافة بنسب متعدّدة (19% و13% و7%)، معلوم FODEC بنسبة 1%، طابع جبائي بقيمة دينار واحد، خصم من المورد، شهادات TEJ... كلّها خصوصيات تتجاهلها معظم البرامج الدولية تماماً.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">في هذا الدليل المفصّل، أجرينا تقييماً معمّقاً لأبرز 5 حلول فوترة متاحة في السوق التونسي. وقد اعتمدنا منهجية صارمة تستند إلى 6 معايير أساسية لنقدّم لكم مقارنة شفّافة وموضوعية تساعدكم في اتّخاذ القرار الصائب لمؤسستكم.</p>
+
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">منهجية التقييم</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">لضمان مقارنة عادلة، قمنا بتقييم كلّ حلّ وفق 6 معايير مرجّحة:</p>
+
+<div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:20px;margin:20px 0;direction:rtl">
+<ul style="list-style:none;padding:0;margin:0;font-size:15px;color:#334155">
+<li style="padding:8px 0;border-bottom:1px solid #dcfce7">📋 <strong>المطابقة الجبائية التونسية</strong> (وزن 25%) — دعم TVA بنسب متعدّدة، FODEC، الطابع الجبائي، الخصم من المورد، TEJ، الفاتورة الإلكترونية</li>
+<li style="padding:8px 0;border-bottom:1px solid #dcfce7">🖥️ <strong>سهولة الاستخدام</strong> (وزن 20%) — واجهة بديهية، منحنى التعلّم، دعم اللغة العربية والفرنسية</li>
+<li style="padding:8px 0;border-bottom:1px solid #dcfce7">💰 <strong>نسبة الجودة/السعر</strong> (وزن 20%) — التكلفة الإجمالية خلال 3 سنوات مقارنة بالقيمة المقدّمة</li>
+<li style="padding:8px 0;border-bottom:1px solid #dcfce7">⚙️ <strong>الوظائف</strong> (وزن 15%) — إدارة المخزون، سندات التسليم، عروض الأسعار، التقارير</li>
+<li style="padding:8px 0;border-bottom:1px solid #dcfce7">🛟 <strong>الدعم الفني</strong> (وزن 10%) — استجابة الدعم، توفّر التوثيق، مجتمع المستخدمين</li>
+<li style="padding:8px 0">📈 <strong>قابلية التوسّع</strong> (وزن 10%) — القدرة على مواكبة نموّ المؤسسة</li>
+</ul>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">كلّ معيار حصل على علامة من 10، ثمّ تمّ حساب المعدّل المرجّح للحصول على العلامة الإجمالية. لنبدأ بالتحليل المفصّل لكلّ حلّ.</p>
+
+<!-- ═══════ SCORECARD 1: SoftyFact ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#059669">🥇 SoftyFact</h3>
+<span style="background:#059669;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">9.2/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">الحلّ التونسي الأوّل المصمّم خصيصاً للمؤسسات الصغرى والمتوسطة</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>المطابقة الجبائية</span><span style="font-weight:600">9.8/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:98%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>سهولة الاستخدام</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>نسبة الجودة/السعر</span><span style="font-weight:600">9.7/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:97%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الوظائف</span><span style="font-weight:600">8.8/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:88%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الدعم الفني</span><span style="font-weight:600">8.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:85%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>قابلية التوسّع</span><span style="font-weight:600">8.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:85%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>SoftyFact</strong> هو الحلّ الوحيد في هذه المقارنة المصمّم من الصفر للسياق الجبائي التونسي. البرنامج يدعم أصلاً جميع خصوصيات المنظومة الجبائية: حساب الأداء على القيمة المضافة بالنسب الثلاث (19% و13% و7%)، معلوم FODEC بنسبة 1% مع إمكانية الإعفاء حسب الفصل، الطابع الجبائي الآلي، الخصم من المورد، وشهادات TEJ. كلّ هذه العمليات تتمّ آلياً دون تدخّل يدوي.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">من أبرز نقاط القوّة أنّ SoftyFact يتوفّر في نسختين: <strong>نسخة Bureau بسعر 149 دينار لمرّة واحدة</strong> (بدلاً من 500 دينار) تعمل بدون إنترنت، و<strong>نسخة Cloud بسعر 8.25 دينار شهرياً</strong> (99 دينار سنوياً بدلاً من 299 دينار). النسخة المكتبية تشتغل محلياً على حاسوبكم، ممّا يضمن حماية البيانات وعدم الاعتماد على الإنترنت — ميزة حاسمة في المناطق التي يكون فيها الاتصال غير مستقرّ.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">يشمل البرنامج إدارة كاملة للفواتير والمخزون وسندات التسليم وعروض الأسعار والتقارير المالية. الواجهة ثنائية اللغة (فرنسية/عربية) وتتّسم بالبساطة والسلاسة. كما أنّ البرنامج جاهز للفوترة الإلكترونية El-Fatoora، ممّا يعني أنّكم لن تحتاجوا إلى تغيير أداتكم عند بدء تطبيق المنظومة.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>النقاط الإيجابية:</strong> مطابقة جبائية تامّة، سعر تنافسي للغاية، نمط عمل بدون إنترنت، واجهة سهلة، جاهزية El-Fatoora.<br><strong>النقاط السلبية:</strong> لا يشمل (بعد) محاسبة عامّة كاملة، عدد المستخدمين في السوق أقلّ من Odoo عالمياً.</p>
+
+<!-- ═══════ SCORECARD 2: Odoo ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#7c3aed">🥈 Odoo</h3>
+<span style="background:#7c3aed;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">7.1/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">منظومة ERP عالمية مفتوحة المصدر</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>المطابقة الجبائية</span><span style="font-weight:600">5.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#7c3aed;height:100%;width:55%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>سهولة الاستخدام</span><span style="font-weight:600">7.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#7c3aed;height:100%;width:70%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>نسبة الجودة/السعر</span><span style="font-weight:600">6.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#7c3aed;height:100%;width:60%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الوظائف</span><span style="font-weight:600">9.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#7c3aed;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الدعم الفني</span><span style="font-weight:600">7.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#7c3aed;height:100%;width:75%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>قابلية التوسّع</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#7c3aed;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>Odoo</strong> هو نظام ERP عالمي مفتوح المصدر يحظى بشعبية واسعة في تونس بفضل شبكة من شركاء الدمج المحلّيين. يقدّم مجموعة ضخمة من الوحدات: فوترة، محاسبة، إدارة مخزون، موارد بشرية، تجارة إلكترونية، والمزيد. لكنّ هذا الثراء الوظيفي يأتي بثمن: تعقيد عالٍ في الإعداد والتخصيص.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">أكبر نقطة ضعف لـ Odoo في السياق التونسي هي <strong>غياب الدعم الأصلي للخصوصيات الجبائية المحلية</strong>. لا يدعم البرنامج أصلاً معلوم FODEC، ولا الطابع الجبائي الآلي، ولا شهادات TEJ. يجب الاستعانة بشريك محلّي لتطوير وحدات مخصّصة (modules) بتكلفة إضافية تتراوح عادة بين 2,000 و10,000 دينار حسب التعقيد. أمّا النسخة المجانية (Community) فهي محدودة جداً ولا تشمل المحاسبة.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">من حيث السعر، تبلغ تكلفة Odoo Online حوالي 31.10 دولار لكلّ مستخدم شهرياً (≈ 95 دينار)، ممّا يعني أنّ مؤسسة بـ 3 مستخدمين ستدفع حوالي 285 دينار شهرياً أو 3,420 دينار سنوياً — أي أكثر من 23 ضعف سعر SoftyFact Bureau. كما أنّ Odoo يحتاج إلى خادم واتصال دائم بالإنترنت، ولا يتوفّر على نمط عمل بدون اتصال.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>النقاط الإيجابية:</strong> ثراء وظيفي كبير، قابلية توسّع عالية، مجتمع عالمي نشط، مفتوح المصدر.<br><strong>النقاط السلبية:</strong> لا يدعم الجباية التونسية أصلاً، تكلفة مرتفعة للمؤسسات الصغيرة، يحتاج خبرة تقنية للإعداد، لا يعمل بدون إنترنت.</p>
+
+<!-- ═══════ SCORECARD 3: Sage 100 ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#2563eb">🥉 Sage 100</h3>
+<span style="background:#2563eb;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">6.8/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">حلّ المؤسسات الكبرى — قوي لكن مكلف</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>المطابقة الجبائية</span><span style="font-weight:600">7.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:70%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>سهولة الاستخدام</span><span style="font-weight:600">5.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>نسبة الجودة/السعر</span><span style="font-weight:600">4.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:40%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الوظائف</span><span style="font-weight:600">9.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الدعم الفني</span><span style="font-weight:600">7.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:70%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>قابلية التوسّع</span><span style="font-weight:600">8.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:80%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>Sage 100</strong> هو الاسم المرجعي في عالم البرمجيات المحاسبية في فرنسا وشمال إفريقيا. يتوفّر في تونس عبر موزّعين معتمدين ويقدّم حلاً متكاملاً للمحاسبة وإدارة التجارة. بعض الإصدارات المخصّصة لشمال إفريقيا تدعم خصوصيات جبائية مثل TVA بنسب متعدّدة وبعض أنواع الخصم من المورد.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">لكنّ المشكلة الجوهرية مع Sage 100 هي <strong>التكلفة الباهظة وتعقيد التنفيذ</strong>. يبدأ سعر الرخصة من 7,500 دولار (≈ 23,000 دينار) ويمكن أن يتجاوز 15,000 دولار مع الوحدات الإضافية. أضف إلى ذلك تكاليف التركيب والتخصيص والتكوين التي تستغرق عادة من 3 إلى 6 أشهر. هذا الحلّ مصمّم للمؤسسات المتوسطة والكبرى التي يزيد عدد موظّفيها عن 50 شخصاً، وهو مبالغ فيه تماماً لمؤسسة صغيرة بـ 5 إلى 15 موظّفاً.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">واجهة Sage 100 تعود إلى حقبة Windows التقليدية وتتطلّب تكويناً طويلاً قبل الاستخدام. كما أنّ دعم FODEC والطابع الجبائي ليس دائماً مدمجاً حسب الإصدار ويحتاج إلى تعديلات من الموزّع. البرنامج لا يتوفّر على نسخة سحابية حقيقية ويعمل فقط على Windows.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>النقاط الإيجابية:</strong> قوّة محاسبية عالية، موثوقية مثبتة، موزّعون محلّيون.<br><strong>النقاط السلبية:</strong> سعر مبالغ فيه للمؤسسات الصغيرة، تنفيذ بطيء ومعقّد، واجهة قديمة، لا يدعم جميع الخصوصيات التونسية أصلاً.</p>
+
+<!-- ═══════ SCORECARD 4: QuickBooks ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#ea580c">4. QuickBooks</h3>
+<span style="background:#ea580c;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">6.3/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">برنامج أمريكي شائع عالمياً — لكن ليس في تونس</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>المطابقة الجبائية</span><span style="font-weight:600">3.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#ea580c;height:100%;width:30%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>سهولة الاستخدام</span><span style="font-weight:600">8.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#ea580c;height:100%;width:85%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>نسبة الجودة/السعر</span><span style="font-weight:600">5.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#ea580c;height:100%;width:55%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الوظائف</span><span style="font-weight:600">8.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#ea580c;height:100%;width:80%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الدعم الفني</span><span style="font-weight:600">6.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#ea580c;height:100%;width:60%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>قابلية التوسّع</span><span style="font-weight:600">7.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#ea580c;height:100%;width:75%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>QuickBooks</strong> من Intuit هو أحد أشهر برامج المحاسبة في العالم، خاصّة في أمريكا الشمالية. يتميّز بواجهة سهلة وأنيقة وبتكامل ممتاز مع الخدمات البنكية الدولية. لكنّه <strong>غير موجّه رسمياً للسوق التونسي</strong>، وهذا هو عيبه الأساسي.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">QuickBooks لا يدعم أيّاً من الخصوصيات الجبائية التونسية: لا TVA بالنسب المحلية (يجب إعدادها يدوياً)، لا FODEC، لا طابع جبائي، لا خصم من المورد، ولا TEJ. استخدامه يعني إعادة حساب كلّ شيء يدوياً ممّا يزيد احتمال الأخطاء بشكل كبير. كما أنّ البرنامج لا يصدر فواتير متوافقة مع المعايير التونسية (الذكر الإجبارية مفقودة).</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">سعر QuickBooks Plus يبلغ حوالي 30 دولار شهرياً (≈ 90 دينار) ويُدفع بالعملة الصعبة فقط — وهو ما يمثّل عائقاً إضافياً للمؤسسات التونسية. الواجهة بالإنجليزية أساساً مع دعم محدود للفرنسية ولا دعم للعربية. لا يتوفّر على نمط عمل بدون إنترنت.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>النقاط الإيجابية:</strong> واجهة أنيقة وسهلة، تكامل بنكي دولي، تطبيق جوّال جيد.<br><strong>النقاط السلبية:</strong> لا يدعم الجباية التونسية مطلقاً، يُدفع بالعملة الصعبة، واجهة إنجليزية، لا يعمل بدون إنترنت، لا فواتير متوافقة.</p>
+
+<!-- ═══════ SCORECARD 5: Excel ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#64748b">5. Excel / جداول البيانات</h3>
+<span style="background:#64748b;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">4.0/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">الخيار "المجاني" الذي يكلّف أكثر ممّا تتصوّرون</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>المطابقة الجبائية</span><span style="font-weight:600">2.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#64748b;height:100%;width:20%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>سهولة الاستخدام</span><span style="font-weight:600">6.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#64748b;height:100%;width:65%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>نسبة الجودة/السعر</span><span style="font-weight:600">5.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#64748b;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الوظائف</span><span style="font-weight:600">3.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#64748b;height:100%;width:30%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الدعم الفني</span><span style="font-weight:600">2.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#64748b;height:100%;width:20%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>قابلية التوسّع</span><span style="font-weight:600">2.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#64748b;height:100%;width:20%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>Excel</strong> (أو Google Sheets أو LibreOffice Calc) هو الخيار الأكثر انتشاراً بين المؤسسات الصغيرة في تونس، لا لأنّه الأفضل بل لأنّه "مجاني" ومألوف. لكن وراء هذه المجانية الظاهرية تختبئ تكاليف حقيقية: ساعات من العمل اليدوي لكلّ فاتورة، أخطاء في الصيغ الحسابية، فقدان ملفات، وغياب تامّ للمطابقة.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">باستخدام Excel، كلّ عملية تتمّ يدوياً: إنشاء الفاتورة، حساب TVA، إضافة FODEC، الطابع الجبائي، الترقيم، الأرشفة. نسيان خانة واحدة أو خطأ في صيغة يمكن أن يولّد عشرات الفواتير الخاطئة. لا يوجد سجلّ تعديلات قابل للمراجعة، لا تتبّع للمدفوعات، لا إدارة مخزون، لا تقارير آلية. والأخطر أنّ <strong>Excel لا يمكنه أبداً التوافق مع منظومة الفاتورة الإلكترونية El-Fatoora</strong>.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">إذا كان حجم مبيعاتكم لا يتجاوز 5 فواتير شهرياً ولا تخضعون لضرائب معقّدة، يمكن أن يفي Excel بالغرض مؤقتاً. لكن بمجرّد نموّ نشاطكم — وهو ما نأمله لكلّ مؤسسة — ستصبحون محتاجين حتماً لحلّ احترافي.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>النقاط الإيجابية:</strong> مجاني (ظاهرياً)، مألوف، لا يحتاج تركيب.<br><strong>النقاط السلبية:</strong> لا مطابقة جبائية، كلّ شيء يدوي، أخطاء متكرّرة، لا El-Fatoora، لا مخزون، لا تقارير، خطر فقدان البيانات.</p>
+
+<!-- ═══════ GRAND COMPARISON TABLE ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:40px 0 16px;direction:rtl">الجدول المقارن الشامل</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">لتسهيل المقارنة، جمعنا أبرز المعايير في جدول واحد يلخّص قدرات كلّ حلّ:</p>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px;direction:rtl">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:right;border-bottom:2px solid #e2e8f0;font-weight:700;color:#1e293b">المعيار</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">SoftyFact</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#7c3aed">Odoo</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#2563eb">Sage 100</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#ea580c">QuickBooks</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#64748b">Excel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">TVA بنسب متعدّدة</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">معلوم FODEC</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">الطابع الجبائي الآلي</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">خصم من المورد / TEJ</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">الفاتورة الإلكترونية El-Fatoora</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">إدارة المخزون</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">واجهة عربية</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">العمل بدون إنترنت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">سندات التسليم</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">عروض الأسعار</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">تقارير مالية</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">طباعة فواتير PDF</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ جزئي</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">تتبّع المدفوعات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">فواتير الشراء</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">السعر / 3 سنوات</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#059669">149 د.ت (Bureau)</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#7c3aed">~10,260 د.ت</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#2563eb">~23,000+ د.ت</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#ea580c">~3,240 د.ت</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#64748b">"مجاني"</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ═══════ VERDICT ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">الخلاصة: أيّ حلّ يناسب مؤسستكم؟</h2>
+
+<div style="background:#f0fdf4;border-right:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">🏪 للمؤسسات الصغيرة (1-10 موظّفين)</h4>
+<p style="margin:0;font-size:15px;color:#334155">الخيار الأمثل: <strong>SoftyFact Bureau</strong> (149 د.ت لمرّة واحدة). مطابقة جبائية تامّة، سهولة فائقة، عمل بدون إنترنت. لا حاجة لبحث أبعد من ذلك.</p>
+</div>
+
+<div style="background:#f5f3ff;border-right:4px solid #7c3aed;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#7c3aed;font-size:17px">🏢 للمؤسسات المتوسطة (10-50 موظّفاً)</h4>
+<p style="margin:0;font-size:15px;color:#334155">الخيار الأفضل: <strong>SoftyFact Cloud</strong> (8.25 د.ت/شهر) للبداية السريعة. إذا كنتم تحتاجون ERP متكامل مع موارد بشرية وتجارة إلكترونية: <strong>Odoo</strong> مع شريك محلّي جيّد (لكن استعدّوا لميزانية أعلى بكثير).</p>
+</div>
+
+<div style="background:#eff6ff;border-right:4px solid #2563eb;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#2563eb;font-size:17px">🏭 للمؤسسات الكبرى (50+ موظّفاً)</h4>
+<p style="margin:0;font-size:15px;color:#334155">إذا كانت ميزانيتكم تسمح وتحتاجون محاسبة عامّة متقدّمة: <strong>Sage 100</strong>. لكن تأكّدوا من أنّ الموزّع المحلّي يدعم فعلاً جميع الخصوصيات الجبائية التونسية.</p>
+</div>
+
+<div style="background:#fef2f2;border-right:4px solid #ef4444;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#ef4444;font-size:17px">⚠️ ما لا ننصح به</h4>
+<p style="margin:0;font-size:15px;color:#334155"><strong>QuickBooks</strong> إذا كنتم في تونس — ببساطة لأنّه لا يدعم جبايتنا. و<strong>Excel</strong> إذا تجاوزتم 10 فواتير شهرياً أو إذا كنتم خاضعين لـ FODEC أو الخصم من المورد.</p>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">في النهاية، الفارق الجوهري بين هذه الحلول ليس في عدد الوظائف بقدر ما هو في <strong>الملاءمة للسياق التونسي</strong>. برنامج غني بالمزايا لكنّه لا يعرف ما هو FODEC أو TEJ لن يحميكم أمام المراقب الجبائي. اختاروا بذكاء — اختاروا ما صُنع لكم.</p>
+
+<!-- ═══════ CTA ═══════ -->
+<div style="background:linear-gradient(135deg,#059669 0%,#047857 100%);border-radius:16px;padding:32px;margin:32px 0;text-align:center">
+<h3 style="color:white;margin:0 0 8px;font-size:22px">جاهز للانتقال إلى الحلّ الأوّل في تونس؟</h3>
+<p style="color:#d1fae5;margin:0 0 20px;font-size:16px">انضمّ لأكثر من 500 مؤسسة تونسية تثق في SoftyFact</p>
+<a href="/product/offline" style="background:white;color:#059669;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px">نسخة Bureau — 149 د.ت</a>
+<a href="/product/online" style="background:rgba(255,255,255,0.15);color:white;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px;border:2px solid rgba(255,255,255,0.3)">نسخة Cloud — 8.25 د.ت/شهر</a>
+</div>
+',
+                'meta_description_fr' => 'Comparatif 2026 des meilleurs logiciels de facturation en Tunisie. Scorecards détaillés, tableau de fonctionnalités et verdict pour PME.',
+                'meta_description_ar' => 'مقارنة 2026 لأفضل برامج الفوترة في تونس. بطاقات تقييم مفصّلة وجدول وظائف وخلاصة للمؤسسات.',
+                'meta_keywords' => 'meilleur logiciel facturation tunisie, comparatif logiciel facturation tunisie 2026, logiciel comptabilité tunisie',
+                'cover_image' => '/screen/Tableau de bord.png',
+                'reading_time' => 12,
+                'published_at' => '2026-03-25 10:00:00',
+            ],
+
+            // ═══════ POST 12: Quitter Excel ═══════
+            [
+                'slug' => 'migration-excel-vers-logiciel-facturation-tunisie',
+                'title_fr' => 'Quitter Excel pour un logiciel de facturation : guide de migration complet',
+                'title_ar' => 'الانتقال من Excel إلى برنامج فوترة: دليل الهجرة الكامل',
+                'excerpt_fr' => 'Pourquoi 60% des PME tunisiennes doivent abandonner Excel. Les 8 risques cachés, le coût réel et un guide de migration en 5 étapes.',
+                'excerpt_ar' => 'لماذا يجب على 60% من المؤسسات التونسية التخلي عن Excel. المخاطر الخفية والتكلفة الحقيقية ودليل هجرة في 5 مراحل.',
+                'body_fr' => '<h2 style="font-size:28px;color:#1e293b;margin-bottom:16px">Quitter Excel pour un logiciel de facturation : guide de migration complet</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">En 2026, selon nos estimations, <strong>plus de 60 % des petites entreprises tunisiennes</strong> utilisent encore Excel ou Google Sheets pour gérer leur facturation. Si vous faites partie de ce groupe, vous connaissez probablement cette sensation : le fichier qui grossit de mois en mois, les formules qui se cassent mystérieusement, la peur de perdre le classeur contenant toute votre comptabilité. Et pourtant, vous repoussez la migration vers un logiciel dédié parce que « Excel marche bien pour l\'instant ».</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">La vérité ? <strong>Excel ne « marche » pas pour la facturation</strong> — il survit. Et chaque jour qui passe augmente les risques : erreurs de calcul de TVA, oubli de FODEC, numérotation incohérente, absence de conformité El-Fatoora... Autant de bombes à retardement qui n\'attendent qu\'un contrôle fiscal pour exploser. Dans ce guide, nous allons identifier les 8 risques cachés de la facturation sur Excel, calculer le coût réel de cette « gratuité », et vous proposer un plan de migration en 5 étapes vers un logiciel professionnel.</p>
+
+<!-- ═══════ SECTION 1: 8 RISQUES CACHÉS ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Les 8 risques cachés de la facturation sur Excel</h2>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°1 : Erreurs de calcul de TVA</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">La Tunisie applique <strong>trois taux de TVA</strong> (19 %, 13 %, 7 %) selon la nature du produit ou service. Sur Excel, vous devez sélectionner manuellement le bon taux pour chaque ligne. Une simple erreur de cellule — 19 % au lieu de 7 % sur un produit alimentaire — et votre client paie trop cher ou, pire, vous sous-déclarez la TVA. Lors d\'un contrôle fiscal, l\'administration ne distingue pas l\'erreur de la fraude : dans les deux cas, vous payez la différence plus les pénalités (jusqu\'à 50 % du montant dû).</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°2 : Oubli systématique du FODEC</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">Le <strong>Fonds de Développement de la Compétitivité Industrielle (FODEC)</strong> à 1 % s\'applique sur une liste spécifique de produits industriels. Sur Excel, aucune alerte ne vous rappelle d\'ajouter cette taxe. Résultat : vous la facturez parfois, vous l\'oubliez d\'autres fois, et vos déclarations fiscales deviennent incohérentes. Un logiciel comme SoftyFact calcule automatiquement le FODEC en fonction du code produit — zéro oubli possible.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°3 : Numérotation non séquentielle</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">La législation tunisienne exige une <strong>numérotation chronologique et séquentielle</strong> des factures, sans trous ni doublons. Sur Excel, c\'est vous qui tapez le numéro manuellement. Après 200 factures, un doublon est quasi inévitable. Et si vous supprimez une ligne par erreur ? Le trou dans la séquence est un signal d\'alarme lors d\'un contrôle. Un logiciel professionnel génère automatiquement des numéros séquentiels infalsifiables.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°4 : Timbre fiscal oublié ou mal calculé</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">Le <strong>timbre fiscal de 1 DT</strong> s\'applique sur les factures payées en espèces en Tunisie. Sur Excel, c\'est encore une case à remplir manuellement. Beaucoup d\'entrepreneurs l\'oublient purement et simplement, ou l\'ajoutent sur des factures payées par virement (ce qui est incorrect). Cette erreur récurrente peut s\'accumuler sur des centaines de factures et devenir significative lors d\'un redressement.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°5 : Incompatibilité El-Fatoora</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">La <strong>facturation électronique El-Fatoora</strong> entre progressivement en vigueur en Tunisie. Cette norme exige la génération de fichiers XML structurés, signés numériquement et transmis à la plateforme Tradenet. <strong>Excel est fondamentalement incapable de produire ces fichiers</strong>. Aucune macro, aucun plugin ne peut transformer un classeur Excel en document XML conforme à la norme El-Fatoora. Si vous attendez le dernier moment pour migrer, vous serez pris de court.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°6 : Perte de données irréversible</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">Votre fichier Excel est stocké sur un seul ordinateur. Un disque dur qui lâche, un virus, un café renversé — et <strong>des mois ou des années de facturation disparaissent</strong>. Même si vous faites des copies sur clé USB, les versions se multiplient et vous ne savez plus laquelle est la bonne. Un logiciel professionnel sauvegarde vos données automatiquement et les protège avec des mécanismes de backup.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°7 : Absence de piste d\'audit</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">Qui a modifié cette facture ? Quand ? Pourquoi le montant a changé ? Sur Excel, <strong>il n\'y a aucune traçabilité</strong>. N\'importe qui ayant accès au fichier peut modifier une facture émise sans laisser de trace. C\'est exactement ce que recherche un contrôleur fiscal pour justifier un redressement. Un logiciel de facturation enregistre chaque modification avec horodatage et identité de l\'utilisateur.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 Risque n°8 : Temps perdu = argent perdu</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">Créer une facture sur Excel prend en moyenne <strong>8 à 15 minutes</strong> (copier le modèle, remplir les données client, calculer les taxes, vérifier, exporter en PDF). Avec un logiciel, c\'est <strong>1 à 3 minutes</strong>. Pour une entreprise émettant 50 factures par mois, c\'est 6 à 10 heures économisées — l\'équivalent d\'une journée de travail complète chaque mois.</p>
+</div>
+
+<!-- ═══════ SECTION 2: COÛT RÉEL ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Le coût réel d\'Excel : calcul sur 3 ans</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Beaucoup d\'entrepreneurs considèrent Excel comme « gratuit ». Faisons le calcul réel pour une PME émettant 50 factures par mois :</p>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:left;border-bottom:2px solid #e2e8f0;font-weight:700;color:#1e293b">Poste de coût</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#64748b">Excel</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">SoftyFact Bureau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">Licence logiciel</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center">0 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669;font-weight:600">149 DT (une fois)</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">Temps de création (50 fact/mois × 36 mois)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center">~360 heures × 15 DT/h = <strong style="color:#991b1b">5 400 DT</strong></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669">~108 heures × 15 DT/h = <strong>1 620 DT</strong></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">Erreurs de calcul (estimation 2 %)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><strong style="color:#991b1b">~800 DT</strong></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669">~0 DT</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">Risque pénalités fiscales</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><strong style="color:#991b1b">Élevé</strong></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669"><strong>Minimal</strong></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">Préparation El-Fatoora</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Impossible</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Prêt</span></td>
+</tr>
+<tr style="background:#f0fdf4">
+<td style="padding:12px;border-bottom:2px solid #e2e8f0;font-weight:700;font-size:15px">COÛT TOTAL sur 3 ans</td>
+<td style="padding:12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;font-size:16px;color:#991b1b">~6 200 DT</td>
+<td style="padding:12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;font-size:16px;color:#059669">~1 769 DT</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Le résultat est sans appel : <strong>Excel coûte en réalité 3,5 fois plus cher que SoftyFact</strong> quand on prend en compte le temps perdu et les erreurs. Et ce calcul ne compte même pas le coût potentiel d\'un redressement fiscal, qui peut se chiffrer en milliers de dinars.</p>
+
+<!-- ═══════ SECTION 3: COMPARAISON DÉTAILLÉE ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Excel vs SoftyFact : comparaison fonctionnalité par fonctionnalité</h2>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:left;border-bottom:2px solid #e2e8f0;font-weight:700;color:#1e293b">Fonctionnalité</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#64748b">Excel</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">SoftyFact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Création de facture rapide</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ 8-15 min</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ 1-3 min</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Calcul TVA automatique (19/13/7 %)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Manuel</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Automatique</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">FODEC 1 % automatique</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Timbre fiscal intelligent</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Numérotation séquentielle garantie</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Retenue à la source</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Gestion des clients</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Basique</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Complète</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Gestion du stock</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Bons de livraison</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Devis professionnels</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Basique</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Tableau de bord / Rapports</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Suivi des paiements</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Export PDF professionnel</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Limité</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Piste d\'audit / Historique</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Non</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0">Facturation électronique El-Fatoora</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Impossible</span></td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Prêt</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ═══════ SECTION 4: SCREENSHOTS ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Un aperçu concret : SoftyFact en action</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Pour que vous puissiez voir la différence concrètement, voici quelques captures d\'écran de l\'interface SoftyFact :</p>
+
+<figure style="margin:24px 0;text-align:center">
+<img src="/screen/Gestion des factures.png" alt="Interface de gestion des factures SoftyFact" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<figcaption style="font-size:14px;color:#64748b;margin-top:8px">Interface de gestion des factures — création en quelques clics avec calcul automatique de toutes les taxes</figcaption>
+</figure>
+
+<figure style="margin:24px 0;text-align:center">
+<img src="/screen/Tableau de bord.png" alt="Tableau de bord SoftyFact avec graphiques" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<figcaption style="font-size:14px;color:#64748b;margin-top:8px">Tableau de bord avec vision complète : chiffre d\'affaires, factures impayées, top clients (impossible à reproduire sur Excel)</figcaption>
+</figure>
+
+<figure style="margin:24px 0;text-align:center">
+<img src="/screen/Gestion des stocks.png" alt="Gestion du stock SoftyFact" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<figcaption style="font-size:14px;color:#64748b;margin-top:8px">Gestion du stock intégrée — chaque facture met automatiquement à jour les quantités en stock</figcaption>
+</figure>
+
+<!-- ═══════ SECTION 5: GUIDE DE MIGRATION ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Guide de migration en 5 étapes</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Migrer d\'Excel vers SoftyFact est plus simple que vous ne le pensez. Voici votre plan d\'action :</p>
+
+<div style="background:#f0fdf4;border-left:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">Étape 1 : Faites l\'inventaire (30 minutes)</h4>
+<p style="margin:0;font-size:15px;color:#334155">Ouvrez votre fichier Excel actuel et notez : le nombre total de factures, vos clients principaux, vos produits/services les plus fréquents, et le dernier numéro de facture utilisé. Exportez ou imprimez la liste de vos clients et produits — vous en aurez besoin pour les saisir dans SoftyFact.</p>
+</div>
+
+<div style="background:#f0fdf4;border-left:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">Étape 2 : Installez SoftyFact (5 minutes)</h4>
+<p style="margin:0;font-size:15px;color:#334155">Rendez-vous sur <a href="/product/offline" style="color:#059669;text-decoration:underline">softyfact.tn/product/offline</a> pour la version Bureau ou <a href="/product/online" style="color:#059669;text-decoration:underline">softyfact.tn/product/online</a> pour la version Cloud. L\'installation est rapide : téléchargez, installez, et le logiciel est prêt à l\'emploi. Renseignez les informations de votre entreprise (raison sociale, matricule fiscal, adresse).</p>
+</div>
+
+<div style="background:#f0fdf4;border-left:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">Étape 3 : Saisissez vos données de base (1-2 heures)</h4>
+<p style="margin:0;font-size:15px;color:#334155">Créez vos fiches clients (nom, adresse, matricule fiscal) et vos fiches produits/services (désignation, prix, taux TVA, FODEC). C\'est un investissement ponctuel : une fois ces données saisies, elles seront disponibles en un clic pour toutes vos futures factures.</p>
+</div>
+
+<div style="background:#f0fdf4;border-left:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">Étape 4 : Définissez votre numérotation (2 minutes)</h4>
+<p style="margin:0;font-size:15px;color:#334155">Configurez le préfixe et le numéro de départ de vos factures pour assurer la continuité avec votre séquence existante. Par exemple, si votre dernière facture Excel était FA-2026-0234, configurez SoftyFact pour démarrer à FA-2026-0235.</p>
+</div>
+
+<div style="background:#f0fdf4;border-left:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">Étape 5 : Créez votre première facture (3 minutes)</h4>
+<p style="margin:0;font-size:15px;color:#334155">Sélectionnez le client, ajoutez les produits, vérifiez que les taxes se calculent automatiquement, et validez. Comparez le résultat avec votre dernière facture Excel : vous verrez immédiatement que tous les montants sont justes, le FODEC est là quand il faut, le timbre fiscal s\'ajoute au bon moment. <strong>Conservez votre fichier Excel comme archive</strong> mais ne l\'utilisez plus pour les nouvelles factures.</p>
+</div>
+
+<!-- ═══════ SECTION 6: FAQ ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Questions fréquentes</h2>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Puis-je importer mes données Excel dans SoftyFact ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">L\'import n\'est pas nécessaire dans la plupart des cas : vos anciennes factures restent archivées dans Excel, et vous commencez les nouvelles dans SoftyFact. Si vous avez une grande liste de clients ou de produits, il vous suffit de les saisir une fois — ce qui prend généralement 1 à 2 heures.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Et si je n\'ai pas internet ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">La version <strong>SoftyFact Bureau</strong> (149 DT) fonctionne 100 % hors ligne. Aucune connexion internet n\'est nécessaire pour créer, modifier ou imprimer vos factures. Vos données restent sur votre ordinateur.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Est-ce que SoftyFact gère le FODEC et le timbre fiscal ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">Oui, automatiquement. Le FODEC est calculé à 1 % sur les produits éligibles, et le timbre fiscal de 1 DT est ajouté automatiquement sur les factures en espèces. Vous n\'avez plus besoin d\'y penser.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Combien de temps faut-il pour être opérationnel ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">Comptez <strong>environ 2 heures</strong> pour l\'installation, la configuration et la saisie de vos données de base. Après cela, chaque facture se crée en 1 à 3 minutes au lieu de 8 à 15 minutes sur Excel.</p>
+</div>
+
+<!-- ═══════ CONCLUSION ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Conclusion : le meilleur moment pour migrer, c\'est maintenant</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Chaque mois passé sur Excel, c\'est du temps perdu, des erreurs accumulées et un risque fiscal croissant. Avec l\'arrivée imminente de la facturation électronique El-Fatoora en Tunisie, la question n\'est plus <em>si</em> vous devez migrer, mais <em>quand</em>. Et la réponse est claire : <strong>plus tôt vous migrez, moins la transition sera complexe</strong>.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">SoftyFact Bureau à 149 DT est un investissement qui se rentabilise dès le premier mois grâce au temps gagné et aux erreurs évitées. Ne laissez pas un tableur mettre votre entreprise en danger — faites le pas vers un outil conçu pour la facturation tunisienne.</p>
+
+<!-- ═══════ CTA ═══════ -->
+<div style="background:linear-gradient(135deg,#059669 0%,#047857 100%);border-radius:16px;padding:32px;margin:32px 0;text-align:center">
+<h3 style="color:white;margin:0 0 8px;font-size:22px">Prêt à quitter Excel définitivement ?</h3>
+<p style="color:#d1fae5;margin:0 0 20px;font-size:16px">Migration en 2 heures. Facturation conforme dès le premier jour.</p>
+<a href="/product/offline" style="background:white;color:#059669;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px">Version Bureau — 149 DT</a>
+<a href="/product/online" style="background:rgba(255,255,255,0.15);color:white;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px;border:2px solid rgba(255,255,255,0.3)">Version Cloud — 8.25 DT/mois</a>
+</div>
+',
+                'body_ar' => '<h2 style="font-size:28px;color:#1e293b;margin-bottom:16px;direction:rtl">الانتقال من Excel إلى برنامج فوترة: دليل الهجرة الكامل</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">في عام 2026، تُشير تقديراتنا إلى أنّ <strong>أكثر من 60% من المؤسسات الصغيرة في تونس</strong> لا تزال تعتمد على Excel أو Google Sheets لإدارة فوترتها. إذا كنتم من هذه الفئة، فأنتم تعرفون الإحساس جيّداً: الملفّ الذي يكبر شهراً بعد شهر، الصيغ الحسابية التي تتعطّل بشكل غامض، والخوف الدائم من فقدان المصنّف الذي يحتوي على كلّ محاسبتكم. ومع ذلك، تؤجّلون الانتقال إلى برنامج مخصّص لأنّ "Excel يعمل بشكل جيّد حالياً".</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">الحقيقة؟ <strong>Excel لا "يعمل" للفوترة</strong> — إنّه يحتضر ببطء. وكلّ يوم يمرّ يزيد من المخاطر: أخطاء في حساب TVA، نسيان FODEC، ترقيم غير متسلسل، غياب المطابقة لمنظومة الفاتورة الإلكترونية... كلّها قنابل موقوتة تنتظر فقط مراقبة جبائية لتنفجر. في هذا الدليل، سنحدّد المخاطر الثمانية الخفيّة للفوترة عبر Excel، ونحسب التكلفة الحقيقية لهذه "المجانية"، ونقترح عليكم خطّة هجرة في 5 مراحل نحو برنامج احترافي.</p>
+
+<!-- ═══════ القسم 1: 8 مخاطر خفية ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">المخاطر الثمانية الخفيّة للفوترة عبر Excel</h2>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر الأول: أخطاء حساب الأداء على القيمة المضافة</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">تطبّق تونس <strong>ثلاث نسب TVA</strong> (19% و13% و7%) حسب طبيعة المنتج أو الخدمة. على Excel، عليكم اختيار النسبة الصحيحة يدوياً لكلّ سطر. خطأ بسيط في خانة واحدة — 19% بدلاً من 7% على منتج غذائي — وحريفكم يدفع أكثر من اللازم أو، والأسوأ، أنتم تصرّحون بأداء أقلّ. أثناء المراقبة الجبائية، الإدارة لا تميّز بين الخطأ والتحايل: في الحالتين، تدفعون الفارق مع عقوبات تصل إلى 50% من المبلغ المستحقّ.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر الثاني: النسيان المتكرّر لمعلوم FODEC</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong>صندوق تنمية القدرة التنافسية الصناعية (FODEC)</strong> بنسبة 1% ينطبق على قائمة محدّدة من المنتجات الصناعية. على Excel، لا تنبيه يذكّركم بإضافة هذا المعلوم. النتيجة: أحياناً تفوترونه، وأحياناً أخرى تنسونه، وتصبح تصريحاتكم الجبائية متناقضة. برنامج مثل SoftyFact يحسب FODEC آلياً حسب رمز المنتج — صفر نسيان.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر الثالث: الترقيم غير المتسلسل</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">يفرض القانون التونسي <strong>ترقيماً زمنياً ومتسلسلاً</strong> للفواتير، دون ثغرات أو تكرار. على Excel، أنتم من يكتب الرقم يدوياً. بعد 200 فاتورة، التكرار شبه حتمي. وإذا حذفتم سطراً بالخطأ؟ الثغرة في التسلسل هي إنذار أحمر عند المراقبة. البرنامج الاحترافي يولّد أرقاماً تسلسلية غير قابلة للتزوير.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر الرابع: نسيان الطابع الجبائي أو حسابه خطأً</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong>الطابع الجبائي بقيمة دينار واحد</strong> ينطبق على الفواتير المدفوعة نقداً في تونس. على Excel، هي خانة أخرى تُملأ يدوياً. كثير من أصحاب المؤسسات ينسونها تماماً، أو يضيفونها على فواتير مدفوعة بحوالة (وهو خطأ). هذا الخطأ المتكرّر يتراكم على مئات الفواتير ويصبح مبلغاً كبيراً عند المراجعة.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر الخامس: عدم التوافق مع الفاتورة الإلكترونية</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong>الفاتورة الإلكترونية El-Fatoora</strong> تدخل حيّز التنفيذ تدريجياً في تونس. هذه المنظومة تتطلّب توليد ملفات XML مهيكلة وموقّعة رقمياً ومرسلة إلى منصّة Tradenet. <strong>Excel عاجز كلياً عن إنتاج هذه الملفات</strong>. لا ماكرو ولا إضافة يمكن أن تحوّل مصنّف Excel إلى وثيقة XML متوافقة مع معيار El-Fatoora. إذا انتظرتم اللحظة الأخيرة، ستُفاجَؤون.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر السادس: فقدان البيانات بشكل نهائي</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">ملفّكم على Excel مخزّن على حاسوب واحد. قرص صلب يتعطّل، فيروس، قهوة تنسكب — و<strong>أشهر أو سنوات من الفوترة تختفي</strong>. حتى لو نسختم على مفتاح USB، تتكاثر النسخ ولا تعودون تعرفون أيّها الصحيحة. البرنامج المهني يحفظ بياناتكم آلياً بآليات نسخ احتياطي.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر السابع: غياب مسار التدقيق</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">من عدّل هذه الفاتورة؟ متى؟ لماذا تغيّر المبلغ؟ على Excel، <strong>لا توجد أيّ قابلية تتبّع</strong>. أيّ شخص لديه صلاحية الوصول إلى الملفّ يمكنه تعديل فاتورة صادرة دون ترك أثر. هذا بالضبط ما يبحث عنه المراقب الجبائي لتبرير مراجعة. برنامج الفوترة يسجّل كلّ تعديل بتوقيت وهوية المستخدم.</p>
+</div>
+
+<div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 16px;color:#991b1b;font-size:18px">🔴 الخطر الثامن: الوقت الضائع = مال ضائع</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0">إنشاء فاتورة على Excel يستغرق في المتوسط <strong>من 8 إلى 15 دقيقة</strong> (نسخ النموذج، ملء بيانات الحريف، حساب الضرائب، التحقّق، التصدير إلى PDF). مع برنامج مخصّص النتيجة <strong>من 1 إلى 3 دقائق</strong>. لمؤسسة تصدر 50 فاتورة شهرياً، هذا يعني 6 إلى 10 ساعات مُوفَّرة — أي يوم عمل كامل كلّ شهر.</p>
+</div>
+
+<!-- ═══════ القسم 2: التكلفة الحقيقية ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">التكلفة الحقيقية لـ Excel: حساب على 3 سنوات</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">كثيرون يعتبرون Excel "مجانياً". لنحسب التكلفة الحقيقية لمؤسسة تصدر 50 فاتورة شهرياً:</p>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px;direction:rtl">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:right;border-bottom:2px solid #e2e8f0;font-weight:700;color:#1e293b">بند التكلفة</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#64748b">Excel</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">SoftyFact Bureau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">رخصة البرنامج</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center">0 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669;font-weight:600">149 د.ت (مرّة واحدة)</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">وقت الإنشاء (50 فاتورة/شهر × 36 شهر)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center">~360 ساعة × 15 د.ت/سا = <strong style="color:#991b1b">5,400 د.ت</strong></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669">~108 ساعات × 15 د.ت/سا = <strong>1,620 د.ت</strong></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">أخطاء الحساب (تقدير 2%)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><strong style="color:#991b1b">~800 د.ت</strong></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669">~0 د.ت</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">خطر العقوبات الجبائية</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><strong style="color:#991b1b">مرتفع</strong></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669"><strong>ضئيل</strong></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">جاهزية El-Fatoora</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ مستحيل</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ جاهز</span></td>
+</tr>
+<tr style="background:#f0fdf4">
+<td style="padding:12px;border-bottom:2px solid #e2e8f0;font-weight:700;font-size:15px">التكلفة الإجمالية على 3 سنوات</td>
+<td style="padding:12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;font-size:16px;color:#991b1b">~6,200 د.ت</td>
+<td style="padding:12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;font-size:16px;color:#059669">~1,769 د.ت</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">النتيجة حاسمة: <strong>Excel يكلّف في الواقع 3.5 أضعاف SoftyFact</strong> عندما نأخذ في الاعتبار الوقت المهدر والأخطاء. وهذا الحساب لا يشمل حتى تكلفة المراجعة الجبائية المحتملة التي يمكن أن تبلغ آلاف الدنانير.</p>
+
+<!-- ═══════ القسم 3: مقارنة مفصّلة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">Excel مقابل SoftyFact: مقارنة وظيفة بوظيفة</h2>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px;direction:rtl">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:right;border-bottom:2px solid #e2e8f0;font-weight:700;color:#1e293b">الوظيفة</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#64748b">Excel</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">SoftyFact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">إنشاء فاتورة سريع</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ 8-15 دقيقة</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ 1-3 دقائق</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">حساب TVA آلي (19/13/7%)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ يدوي</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ آلي</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">FODEC 1% آلي</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">طابع جبائي ذكي</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">ترقيم تسلسلي مضمون</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">خصم من المورد</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">إدارة الحرفاء</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ بدائية</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ كاملة</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">إدارة المخزون</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">سندات التسليم</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">لوحة القيادة / التقارير</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">تتبّع المدفوعات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">مسار تدقيق / سجلّ التعديلات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ لا</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0">الفاتورة الإلكترونية El-Fatoora</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ مستحيل</span></td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ جاهز</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ═══════ القسم 4: لقطات الشاشة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">نظرة ملموسة: SoftyFact قيد التشغيل</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">لتتمكّنوا من رؤية الفرق بشكل ملموس، إليكم بعض لقطات الشاشة من واجهة SoftyFact:</p>
+
+<figure style="margin:24px 0;text-align:center">
+<img src="/screen/Gestion des factures.png" alt="واجهة إدارة الفواتير SoftyFact" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<figcaption style="font-size:14px;color:#64748b;margin-top:8px;direction:rtl">واجهة إدارة الفواتير — إنشاء بنقرات معدودة مع حساب آلي لجميع الضرائب</figcaption>
+</figure>
+
+<figure style="margin:24px 0;text-align:center">
+<img src="/screen/Tableau de bord.png" alt="لوحة القيادة SoftyFact" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<figcaption style="font-size:14px;color:#64748b;margin-top:8px;direction:rtl">لوحة القيادة مع رؤية شاملة: رقم المعاملات، الفواتير غير المسدّدة، أهمّ الحرفاء (مستحيل إنتاجها على Excel)</figcaption>
+</figure>
+
+<figure style="margin:24px 0;text-align:center">
+<img src="/screen/Gestion des stocks.png" alt="إدارة المخزون SoftyFact" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<figcaption style="font-size:14px;color:#64748b;margin-top:8px;direction:rtl">إدارة المخزون المدمجة — كلّ فاتورة تحدّث الكميات تلقائياً</figcaption>
+</figure>
+
+<!-- ═══════ القسم 5: دليل الهجرة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">دليل الهجرة في 5 مراحل</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">الانتقال من Excel إلى SoftyFact أسهل ممّا تتصوّرون. إليكم خطّة العمل:</p>
+
+<div style="background:#f0fdf4;border-right:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">المرحلة 1: جرد الوضع الحالي (30 دقيقة)</h4>
+<p style="margin:0;font-size:15px;color:#334155">افتحوا ملفّ Excel الحالي ودوّنوا: العدد الإجمالي للفواتير، حرفاءكم الرئيسيون، منتجاتكم/خدماتكم الأكثر تكراراً، وآخر رقم فاتورة مستخدم. صدّروا أو اطبعوا قائمة حرفائكم ومنتجاتكم.</p>
+</div>
+
+<div style="background:#f0fdf4;border-right:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">المرحلة 2: تثبيت SoftyFact (5 دقائق)</h4>
+<p style="margin:0;font-size:15px;color:#334155">توجّهوا إلى <a href="/product/offline" style="color:#059669;text-decoration:underline">softyfact.tn/product/offline</a> لنسخة Bureau أو <a href="/product/online" style="color:#059669;text-decoration:underline">softyfact.tn/product/online</a> لنسخة Cloud. التثبيت سريع: حمّلوا، ثبّتوا، والبرنامج جاهز. أدخلوا معلومات مؤسستكم (الاسم التجاري، المعرّف الجبائي، العنوان).</p>
+</div>
+
+<div style="background:#f0fdf4;border-right:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">المرحلة 3: إدخال البيانات الأساسية (1-2 ساعة)</h4>
+<p style="margin:0;font-size:15px;color:#334155">أنشئوا بطاقات حرفائكم (الاسم، العنوان، المعرّف الجبائي) وبطاقات منتجاتكم/خدماتكم (التسمية، السعر، نسبة TVA، FODEC). هذا استثمار لمرّة واحدة: بمجرّد إدخال هذه البيانات ستكون متاحة بنقرة واحدة في كلّ فواتيركم.</p>
+</div>
+
+<div style="background:#f0fdf4;border-right:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">المرحلة 4: ضبط الترقيم (دقيقتان)</h4>
+<p style="margin:0;font-size:15px;color:#334155">اضبطوا البادئة ورقم البداية لفواتيركم لضمان الاستمرارية مع تسلسلكم الحالي. مثلاً، إذا كانت آخر فاتورة على Excel هي FA-2026-0234، اضبطوا SoftyFact ليبدأ من FA-2026-0235.</p>
+</div>
+
+<div style="background:#f0fdf4;border-right:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#059669;font-size:17px">المرحلة 5: أنشئوا أوّل فاتورة (3 دقائق)</h4>
+<p style="margin:0;font-size:15px;color:#334155">اختاروا الحريف، أضيفوا المنتجات، تأكّدوا أنّ الضرائب تُحسب آلياً، وصادقوا. قارنوا النتيجة بآخر فاتورة Excel: سترون فوراً أنّ كلّ المبالغ صحيحة، وFODEC موجود عند اللزوم، والطابع الجبائي يُضاف في الوقت المناسب. <strong>احتفظوا بملفّ Excel كأرشيف</strong> لكن لا تستخدموه بعد الآن للفواتير الجديدة.</p>
+</div>
+
+<!-- ═══════ القسم 6: أسئلة شائعة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">أسئلة شائعة</h2>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ هل يمكنني استيراد بياناتي من Excel إلى SoftyFact؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">الاستيراد غير ضروري في معظم الحالات: فواتيركم القديمة تبقى مؤرشفة في Excel، وتبدأون الجديدة في SoftyFact. إذا كانت لديكم قائمة كبيرة من الحرفاء أو المنتجات، يكفي إدخالها مرّة واحدة — عادة في 1 إلى 2 ساعة.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ ماذا لو لم يكن لديّ إنترنت؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">نسخة <strong>SoftyFact Bureau</strong> (149 د.ت) تعمل 100% بدون إنترنت. لا حاجة لأيّ اتصال لإنشاء الفواتير أو تعديلها أو طباعتها. بياناتكم تبقى على حاسوبكم.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ هل يدير SoftyFact معلوم FODEC والطابع الجبائي؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">نعم، آلياً. يُحسب FODEC بنسبة 1% على المنتجات المؤهّلة، ويُضاف الطابع الجبائي بقيمة دينار واحد آلياً على الفواتير النقدية. لم تعودوا بحاجة للتفكير في ذلك.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ كم من الوقت أحتاج لأصبح جاهزاً؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">احسبوا <strong>حوالي ساعتين</strong> للتثبيت والإعداد وإدخال البيانات الأساسية. بعدها، كلّ فاتورة تُنشأ في 1 إلى 3 دقائق بدلاً من 8 إلى 15 دقيقة على Excel.</p>
+</div>
+
+<!-- ═══════ الخاتمة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">الخلاصة: أفضل وقت للانتقال هو الآن</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">كلّ شهر يمرّ على Excel هو وقت ضائع وأخطاء متراكمة وخطر جبائي متزايد. مع اقتراب تطبيق الفاتورة الإلكترونية El-Fatoora في تونس، لم يعد السؤال <em>هل</em> عليكم الانتقال، بل <em>متى</em>. والجواب واضح: <strong>كلّما أسرعتم في الانتقال، كان التحوّل أسهل</strong>.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">SoftyFact Bureau بسعر 149 د.ت هو استثمار يُسترجع من الشهر الأوّل بفضل الوقت المُوفَّر والأخطاء المتجنَّبة. لا تدعوا جدول بيانات يعرّض مؤسستكم للخطر — اخطوا الخطوة نحو أداة صُنعت للفوترة التونسية.</p>
+
+<!-- ═══════ CTA ═══════ -->
+<div style="background:linear-gradient(135deg,#059669 0%,#047857 100%);border-radius:16px;padding:32px;margin:32px 0;text-align:center">
+<h3 style="color:white;margin:0 0 8px;font-size:22px">جاهز لمغادرة Excel نهائياً؟</h3>
+<p style="color:#d1fae5;margin:0 0 20px;font-size:16px">هجرة في ساعتين. فوترة مطابقة من اليوم الأوّل.</p>
+<a href="/product/offline" style="background:white;color:#059669;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px">نسخة Bureau — 149 د.ت</a>
+<a href="/product/online" style="background:rgba(255,255,255,0.15);color:white;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px;border:2px solid rgba(255,255,255,0.3)">نسخة Cloud — 8.25 د.ت/شهر</a>
+</div>
+',
+                'meta_description_fr' => 'Guide de migration d\'Excel vers un logiciel de facturation en Tunisie. Risques, coûts cachés et étapes pratiques.',
+                'meta_description_ar' => 'دليل الانتقال من Excel إلى برنامج فوترة في تونس. المخاطر والتكاليف الخفية والمراحل العملية.',
+                'meta_keywords' => 'facturation excel tunisie, remplacer excel facturation, migration logiciel facturation',
+                'cover_image' => '/screen/Gestion des factures.png',
+                'reading_time' => 11,
+                'published_at' => '2026-03-26 10:00:00',
+            ],
+
+            // ═══════ POST 13: Bureau vs Cloud ═══════
+            [
+                'slug' => 'softyfact-bureau-vs-cloud-comparatif',
+                'title_fr' => 'SoftyFact Bureau vs Cloud : lequel choisir pour votre entreprise ?',
+                'title_ar' => 'SoftyFact Bureau مقابل Cloud: أيهما تختار لمؤسستك؟',
+                'excerpt_fr' => 'Comparatif complet entre SoftyFact Bureau (149 DT à vie) et Cloud (8.25 DT/mois). Tableau détaillé, scénarios d\'usage et recommandations.',
+                'excerpt_ar' => 'مقارنة شاملة بين SoftyFact Bureau (149 دينار مدى الحياة) وCloud (8.25 دينار/شهر). جدول مفصّل وسيناريوهات استخدام وتوصيات.',
+                'body_fr' => '<h2 style="font-size:28px;color:#1e293b;margin-bottom:16px">SoftyFact Bureau vs Cloud : lequel choisir pour votre entreprise ?</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Vous avez décidé d\'adopter SoftyFact pour gérer la facturation de votre entreprise en Tunisie — excellent choix. Mais une question se pose immédiatement : <strong>faut-il opter pour la version Bureau à 149 DT (paiement unique à vie) ou la version Cloud à 8.25 DT par mois (99 DT/an) ?</strong> Les deux versions partagent le même moteur de facturation conforme à la législation tunisienne, mais elles diffèrent sur des points essentiels qui peuvent faire pencher la balance selon votre situation.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Dans ce comparatif détaillé, nous allons analyser chaque version sous tous les angles : prix, fonctionnalités, mode de fonctionnement, sécurité des données, et cas d\'usage. À la fin, vous saurez exactement laquelle correspond à votre entreprise.</p>
+
+<!-- ═══════ PRÉSENTATION DES DEUX VERSIONS ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Présentation des deux versions</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0">
+<div style="background:#f0fdf4;border:2px solid #059669;border-radius:12px;padding:24px">
+<h3 style="margin:0 0 12px;color:#059669;font-size:20px">💻 SoftyFact Bureau</h3>
+<p style="font-size:32px;font-weight:bold;color:#059669;margin:0">149 DT</p>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px"><s style="color:#94a3b8">500 DT</s> — paiement unique à vie (-70%)</p>
+<ul style="list-style:none;padding:0;margin:0;font-size:14px;color:#334155">
+<li style="padding:6px 0">✅ Installation locale sur votre PC</li>
+<li style="padding:6px 0">✅ Fonctionne 100% hors ligne</li>
+<li style="padding:6px 0">✅ Données stockées sur votre machine</li>
+<li style="padding:6px 0">✅ Aucun abonnement récurrent</li>
+<li style="padding:6px 0">✅ Mises à jour incluses (1 an)</li>
+<li style="padding:6px 0">✅ Windows, macOS, Linux</li>
+</ul>
+</div>
+<div style="background:#eff6ff;border:2px solid #2563eb;border-radius:12px;padding:24px">
+<h3 style="margin:0 0 12px;color:#2563eb;font-size:20px">☁️ SoftyFact Cloud</h3>
+<p style="font-size:32px;font-weight:bold;color:#2563eb;margin:0">8.25 DT/mois</p>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px"><s style="color:#94a3b8">299 DT/an</s> — 99 DT/an (-67%)</p>
+<ul style="list-style:none;padding:0;margin:0;font-size:14px;color:#334155">
+<li style="padding:6px 0">✅ Accessible depuis tout navigateur</li>
+<li style="padding:6px 0">✅ Multi-appareils (PC, tablette, mobile)</li>
+<li style="padding:6px 0">✅ Données hébergées et sauvegardées</li>
+<li style="padding:6px 0">✅ Mises à jour automatiques continues</li>
+<li style="padding:6px 0">✅ Accès multi-utilisateurs</li>
+<li style="padding:6px 0">✅ Aucune installation requise</li>
+</ul>
+</div>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155"><strong>Point commun essentiel :</strong> les deux versions intègrent le même moteur de conformité fiscale tunisienne — TVA à taux multiples (19%, 13%, 7%), FODEC à 1%, timbre fiscal automatique, retenue à la source, certificats TEJ, et compatibilité El-Fatoora. Quelle que soit la version choisie, vos factures seront 100% conformes.</p>
+
+<!-- ═══════ SCORECARD BUREAU ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#059669">💻 SoftyFact Bureau</h3>
+<span style="background:#059669;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">8.8/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">Idéal pour : entreprises individuelles, zones à connexion instable, budget maîtrisé</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Rapport qualité-prix</span><span style="font-weight:600">9.8/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:98%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Conformité fiscale</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Mode hors ligne</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Facilité d\'installation</span><span style="font-weight:600">8.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:80%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Accessibilité multi-appareils</span><span style="font-weight:600">5.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Collaboration multi-utilisateurs</span><span style="font-weight:600">6.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:60%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<!-- ═══════ SCORECARD CLOUD ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#2563eb">☁️ SoftyFact Cloud</h3>
+<span style="background:#2563eb;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">8.5/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">Idéal pour : équipes multi-postes, entreprises en croissance, travail à distance</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Rapport qualité-prix</span><span style="font-weight:600">8.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:85%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Conformité fiscale</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Mode hors ligne</span><span style="font-weight:600">3.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:30%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Facilité d\'installation</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Accessibilité multi-appareils</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>Collaboration multi-utilisateurs</span><span style="font-weight:600">9.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<!-- ═══════ TABLEAU COMPARATIF DÉTAILLÉ ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Tableau comparatif détaillé : 18 critères</h2>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:left;border-bottom:2px solid #e2e8f0;font-weight:700;color:#1e293b">Critère</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">💻 Bureau</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#2563eb">☁️ Cloud</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">Prix</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#059669">149 DT une fois</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#2563eb">99 DT/an</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">Coût sur 3 ans</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#059669">149 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#2563eb">297 DT</td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">TVA multi-taux (19/13/7%)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">FODEC automatique</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Timbre fiscal / Retenue à la source</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">El-Fatoora (facturation électronique)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Prêt</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Prêt</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Fonctionnement hors ligne</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ 100% offline</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ Internet requis</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Accès multi-appareils</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ 1 seul PC</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Tout appareil</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Multi-utilisateurs simultanés</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Réseau local</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Installation requise</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Oui (5 min)</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Non (navigateur)</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Sauvegarde des données</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ Locale (backup manuel)</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Auto (serveur)</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Confidentialité des données</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ 100% chez vous</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Serveur sécurisé</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Gestion du stock</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Devis et bons de livraison</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Rapports et tableau de bord</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Interface bilingue (FR/AR)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Oui</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">Mises à jour</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ 1 an inclus</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Continues</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0">Systèmes supportés</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Win/Mac/Linux</span></td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Tout navigateur</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ═══════ ANALYSE DU COÛT ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Analyse du coût sur la durée</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Le facteur prix est souvent déterminant. Voici comment les coûts évoluent sur 1, 3 et 5 ans :</p>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:left;border-bottom:2px solid #e2e8f0;font-weight:700">Durée</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">💻 Bureau</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#2563eb">☁️ Cloud</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#64748b">Économie Bureau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">1 an</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#059669">149 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#2563eb">99 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#991b1b">Cloud moins cher de 50 DT</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">2 ans</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#059669">149 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#2563eb">198 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669;font-weight:600">Bureau moins cher de 49 DT ✅</td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">3 ans</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#059669">149 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#2563eb">297 DT</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669;font-weight:600">Bureau moins cher de 148 DT ✅</td>
+</tr>
+<tr style="background:#f0fdf4">
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;font-weight:700">5 ans</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#059669">149 DT</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#2563eb">495 DT</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#059669">Bureau moins cher de 346 DT ✅</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155"><strong>Le point de bascule se situe entre la 1ère et la 2ème année.</strong> Si vous comptez utiliser le logiciel plus de 18 mois (ce qui est le cas de toute entreprise sérieuse), la version Bureau est plus économique. Cependant, si les fonctionnalités Cloud (multi-appareils, collaboration, sauvegarde automatique) sont essentielles pour votre activité, les 99 DT/an restent un investissement très raisonnable.</p>
+
+<!-- ═══════ SCÉNARIOS D\'USAGE ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">3 scénarios concrets : quelle version pour vous ?</h2>
+
+<div style="background:#f0fdf4;border:2px solid #059669;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 12px;color:#059669;font-size:18px">🏪 Scénario 1 : Mohamed, commerçant à Sfax</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 8px">Mohamed tient une boutique de matériaux de construction. Il est seul à gérer la facturation, depuis un seul PC au comptoir. La connexion internet à son local est instable. Il émet environ 40 factures par mois et a besoin du FODEC sur certains produits.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong style="color:#059669">→ Recommandation : SoftyFact Bureau (149 DT)</strong> — Fonctionne sans internet, un seul poste suffit, et le paiement unique convient parfaitement à son budget. Le FODEC se calcule automatiquement.</p>
+</div>
+
+<div style="background:#eff6ff;border:2px solid #2563eb;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 12px;color:#2563eb;font-size:18px">🏢 Scénario 2 : Amira, gérante d\'une société de services à Tunis</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 8px">Amira dirige une société de consulting avec 3 collaborateurs qui créent des factures. Elle se déplace souvent et veut pouvoir vérifier les factures depuis son téléphone. Elle a besoin que plusieurs personnes accèdent au système simultanément.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong style="color:#2563eb">→ Recommandation : SoftyFact Cloud (8.25 DT/mois)</strong> — Accès multi-utilisateurs, consultable depuis n\'importe quel appareil, sauvegarde automatique. Les 99 DT/an sont largement justifiés par le gain de productivité de l\'équipe.</p>
+</div>
+
+<div style="background:#faf5ff;border:2px solid #7c3aed;border-radius:12px;padding:24px;margin:24px 0">
+<h3 style="margin:0 0 12px;color:#7c3aed;font-size:18px">🏭 Scénario 3 : Karim, industriel à Sousse</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 8px">Karim possède une petite usine avec un bureau fixe. Il gère seul la facturation mais souhaite un maximum de contrôle sur ses données. La confidentialité est sa priorité — il ne veut pas que ses données soient hébergées ailleurs.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong style="color:#059669">→ Recommandation : SoftyFact Bureau (149 DT)</strong> — Données 100% en local, aucune dépendance à un serveur externe, contrôle total. Il peut faire des backups manuels sur disque externe pour plus de sécurité.</p>
+</div>
+
+<!-- ═══════ FAQ ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Questions fréquentes</h2>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Puis-je passer de Bureau à Cloud (ou l\'inverse) plus tard ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">Oui. Vous pouvez commencer avec la version Bureau et migrer vers le Cloud si vos besoins évoluent (ou l\'inverse). Vos données peuvent être exportées et transférées entre les deux versions.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ La version Bureau reçoit-elle des mises à jour ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">Oui, les mises à jour sont incluses pendant la première année. Au-delà, le logiciel continue de fonctionner normalement — vous gardez toutes les fonctionnalités existantes. Les mises à jour ultérieures peuvent être obtenues en renouvelant le support.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Mes données sont-elles en sécurité sur le Cloud ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">Oui. Les données de la version Cloud sont hébergées sur des serveurs sécurisés avec chiffrement, sauvegardes automatiques quotidiennes, et accès protégé par authentification. Seul vous et les utilisateurs que vous autorisez ont accès à vos données.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Combien d\'utilisateurs peuvent se connecter simultanément au Cloud ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">L\'abonnement Cloud inclut l\'accès multi-utilisateurs. Vous pouvez créer des comptes pour vos collaborateurs avec des niveaux de permission différents (administrateur, gestionnaire, consultation seule).</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ Que se passe-t-il si je ne renouvelle pas le Cloud ?</h4>
+<p style="margin:0;font-size:15px;color:#334155">Si vous ne renouvelez pas votre abonnement Cloud, vous conservez l\'accès en lecture seule à vos données pendant 90 jours pour exporter vos factures et documents. Aucune donnée n\'est supprimée sans préavis.</p>
+</div>
+
+<!-- ═══════ VERDICT ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px">Verdict final</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Il n\'y a pas de « mauvais choix » entre Bureau et Cloud — les deux sont d\'excellents outils de facturation conformes à la législation tunisienne. La décision dépend de <strong>trois facteurs clés</strong> :</p>
+
+<div style="background:#f0fdf4;border-left:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0">
+<p style="margin:0;font-size:15px;color:#334155"><strong>Choisissez Bureau si :</strong> vous êtes seul à facturer, vous n\'avez pas besoin d\'accès mobile, votre connexion internet est instable, et vous préférez un paiement unique. C\'est l\'option la plus économique sur le long terme.</p>
+</div>
+
+<div style="background:#eff6ff;border-left:4px solid #2563eb;border-radius:8px;padding:20px;margin:20px 0">
+<p style="margin:0;font-size:15px;color:#334155"><strong>Choisissez Cloud si :</strong> vous avez plusieurs collaborateurs, vous voulez accéder à vos factures depuis n\'importe où, vous privilégiez la sauvegarde automatique et les mises à jour continues.</p>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155">Dans les deux cas, vous bénéficiez d\'une conformité fiscale totale, d\'une facturation rapide et d\'un outil pensé pour le marché tunisien. <strong>L\'important, c\'est de faire le pas — quel que soit la version choisie.</strong></p>
+
+<!-- ═══════ CTA ═══════ -->
+<div style="background:linear-gradient(135deg,#059669 0%,#047857 100%);border-radius:16px;padding:32px;margin:32px 0;text-align:center">
+<h3 style="color:white;margin:0 0 8px;font-size:22px">Prêt à démarrer avec SoftyFact ?</h3>
+<p style="color:#d1fae5;margin:0 0 20px;font-size:16px">Choisissez la version qui correspond à votre entreprise</p>
+<a href="/product/offline" style="background:white;color:#059669;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px">💻 Version Bureau — 149 DT à vie</a>
+<a href="/product/online" style="background:rgba(255,255,255,0.15);color:white;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px;border:2px solid rgba(255,255,255,0.3)">☁️ Version Cloud — 8.25 DT/mois</a>
+</div>
+',
+                'body_ar' => '<h2 style="font-size:28px;color:#1e293b;margin-bottom:16px;direction:rtl">SoftyFact Bureau مقابل Cloud: أيهما تختار لمؤسستك؟</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">قرّرتم اعتماد SoftyFact لإدارة فوترة مؤسستكم في تونس — خيار ممتاز. لكن يبقى سؤال مهمّ: <strong>هل تختارون نسخة Bureau بسعر 149 دينار (دفع وحيد مدى الحياة) أم نسخة Cloud بسعر 8.25 دينار شهرياً (99 دينار سنوياً)؟</strong> تتشارك النسختان نفس محرّك الفوترة المطابق للتشريعات التونسية، لكنّهما تختلفان في نقاط جوهرية قد ترجّح كفّة إحداهما حسب وضعيتكم.</p>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">في هذا المقارن المفصّل، سنحلّل كلّ نسخة من جميع الزوايا: السعر، الوظائف، نمط الاشتغال، أمان البيانات، وحالات الاستخدام. في النهاية، ستعرفون بالضبط أيّهما يناسب مؤسستكم.</p>
+
+<!-- ═══════ تقديم النسختين ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">تقديم النسختين</h2>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0">
+<div style="background:#f0fdf4;border:2px solid #059669;border-radius:12px;padding:24px">
+<h3 style="margin:0 0 12px;color:#059669;font-size:20px;direction:rtl">💻 SoftyFact Bureau</h3>
+<p style="font-size:32px;font-weight:bold;color:#059669;margin:0;direction:rtl">149 د.ت</p>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px;direction:rtl"><s style="color:#94a3b8">500 د.ت</s> — دفع وحيد مدى الحياة (-70%)</p>
+<ul style="list-style:none;padding:0;margin:0;font-size:14px;color:#334155;direction:rtl">
+<li style="padding:6px 0">✅ تثبيت محلّي على حاسوبكم</li>
+<li style="padding:6px 0">✅ يعمل 100% بدون إنترنت</li>
+<li style="padding:6px 0">✅ البيانات مخزّنة على جهازكم</li>
+<li style="padding:6px 0">✅ لا اشتراك متكرّر</li>
+<li style="padding:6px 0">✅ تحديثات مجانية (سنة واحدة)</li>
+<li style="padding:6px 0">✅ Windows, macOS, Linux</li>
+</ul>
+</div>
+<div style="background:#eff6ff;border:2px solid #2563eb;border-radius:12px;padding:24px">
+<h3 style="margin:0 0 12px;color:#2563eb;font-size:20px;direction:rtl">☁️ SoftyFact Cloud</h3>
+<p style="font-size:32px;font-weight:bold;color:#2563eb;margin:0;direction:rtl">8.25 د.ت/شهر</p>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px;direction:rtl"><s style="color:#94a3b8">299 د.ت/سنة</s> — 99 د.ت/سنة (-67%)</p>
+<ul style="list-style:none;padding:0;margin:0;font-size:14px;color:#334155;direction:rtl">
+<li style="padding:6px 0">✅ الوصول من أيّ متصفّح</li>
+<li style="padding:6px 0">✅ متعدّد الأجهزة (حاسوب، لوحة، هاتف)</li>
+<li style="padding:6px 0">✅ بيانات مستضافة ومحفوظة</li>
+<li style="padding:6px 0">✅ تحديثات آلية مستمرّة</li>
+<li style="padding:6px 0">✅ وصول متعدّد المستخدمين</li>
+<li style="padding:6px 0">✅ لا حاجة لتثبيت</li>
+</ul>
+</div>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>القاسم المشترك الأساسي:</strong> تتضمّن النسختان نفس محرّك المطابقة الجبائية التونسية — TVA بنسب متعدّدة (19% و13% و7%)، FODEC بنسبة 1%، طابع جبائي آلي، خصم من المورد، شهادات TEJ، وتوافق مع El-Fatoora. مهما كانت النسخة المختارة، ستكون فواتيركم مطابقة 100%.</p>
+
+<!-- ═══════ بطاقة تقييم Bureau ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#059669">💻 SoftyFact Bureau</h3>
+<span style="background:#059669;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">8.8/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">مثالي لـ: المؤسسات الفردية، المناطق ذات الاتصال غير المستقرّ، الميزانية المحدودة</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>نسبة الجودة/السعر</span><span style="font-weight:600">9.8/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:98%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>المطابقة الجبائية</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>العمل بدون إنترنت</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>سهولة التثبيت</span><span style="font-weight:600">8.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:80%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الوصول من أجهزة متعدّدة</span><span style="font-weight:600">5.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:50%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>العمل التشاركي</span><span style="font-weight:600">6.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#059669;height:100%;width:60%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<!-- ═══════ بطاقة تقييم Cloud ═══════ -->
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+<h3 style="margin:0;font-size:22px;color:#2563eb">☁️ SoftyFact Cloud</h3>
+<span style="background:#2563eb;color:white;padding:6px 16px;border-radius:20px;font-weight:bold;font-size:18px">8.5/10</span>
+</div>
+<p style="font-size:14px;color:#64748b;margin:0 0 16px">مثالي لـ: الفرق متعدّدة المستخدمين، المؤسسات النامية، العمل عن بُعد</p>
+
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>نسبة الجودة/السعر</span><span style="font-weight:600">8.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:85%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>المطابقة الجبائية</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>العمل بدون إنترنت</span><span style="font-weight:600">3.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:30%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>سهولة البدء</span><span style="font-weight:600">10/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:100%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>الوصول من أجهزة متعدّدة</span><span style="font-weight:600">9.5/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:95%;border-radius:4px"></div></div>
+</div>
+<div style="margin-bottom:8px">
+<div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:2px"><span>العمل التشاركي</span><span style="font-weight:600">9.0/10</span></div>
+<div style="background:#e2e8f0;border-radius:4px;height:8px"><div style="background:#2563eb;height:100%;width:90%;border-radius:4px"></div></div>
+</div>
+</div>
+
+<!-- ═══════ جدول مقارن مفصّل ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">جدول مقارن مفصّل: 18 معياراً</h2>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px;direction:rtl">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:right;border-bottom:2px solid #e2e8f0;font-weight:700;color:#1e293b">المعيار</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">💻 Bureau</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#2563eb">☁️ Cloud</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">السعر</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#059669">149 د.ت مرّة واحدة</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#2563eb">99 د.ت/سنة</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">التكلفة على 3 سنوات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#059669">149 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:700;color:#2563eb">297 د.ت</td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">TVA بنسب متعدّدة (19/13/7%)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">FODEC آلي</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">طابع جبائي / خصم من المورد</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">الفاتورة الإلكترونية El-Fatoora</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ جاهز</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ جاهز</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">العمل بدون إنترنت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ 100% offline</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ يتطلّب إنترنت</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">الوصول من أجهزة متعدّدة</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fef2f2;color:#991b1b;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">❌ حاسوب واحد</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ أيّ جهاز</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">مستخدمون متعدّدون متزامنون</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ شبكة محلية</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">يحتاج تثبيت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ نعم (5 دقائق)</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ لا (متصفّح)</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">حفظ البيانات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ محلّي (يدوي)</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ آلي (خادم)</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">سرّية البيانات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ 100% عندكم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ خادم مؤمّن</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">إدارة المخزون</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">عروض أسعار وسندات تسليم</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">تقارير ولوحة قيادة</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">واجهة ثنائية اللغة (FR/AR)</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ نعم</span></td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9">التحديثات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#fefce8;color:#854d0e;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">⚠️ سنة مجانية</span></td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ مستمرّة</span></td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0">الأنظمة المدعومة</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ Win/Mac/Linux</span></td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center"><span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600">✅ أيّ متصفّح</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- ═══════ تحليل التكلفة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">تحليل التكلفة على المدى الطويل</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">عامل السعر غالباً ما يكون حاسماً. إليكم تطوّر التكاليف على 1 و3 و5 سنوات:</p>
+
+<div style="overflow-x:auto;margin:24px 0">
+<table style="width:100%;border-collapse:collapse;font-size:14px;direction:rtl">
+<thead>
+<tr style="background:#f1f5f9">
+<th style="padding:12px;text-align:right;border-bottom:2px solid #e2e8f0;font-weight:700">المدّة</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#059669">💻 Bureau</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#2563eb">☁️ Cloud</th>
+<th style="padding:12px;text-align:center;border-bottom:2px solid #e2e8f0;font-weight:700;color:#64748b">الوفر مع Bureau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">سنة واحدة</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#059669">149 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#2563eb">99 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#991b1b">Cloud أرخص بـ 50 د.ت</td>
+</tr>
+<tr style="background:#fafafa">
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">سنتان</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#059669">149 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#2563eb">198 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669;font-weight:600">Bureau أرخص بـ 49 د.ت ✅</td>
+</tr>
+<tr>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;font-weight:600">3 سنوات</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#059669">149 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;font-weight:600;color:#2563eb">297 د.ت</td>
+<td style="padding:10px 12px;border-bottom:1px solid #f1f5f9;text-align:center;color:#059669;font-weight:600">Bureau أرخص بـ 148 د.ت ✅</td>
+</tr>
+<tr style="background:#f0fdf4">
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;font-weight:700">5 سنوات</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#059669">149 د.ت</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#2563eb">495 د.ت</td>
+<td style="padding:10px 12px;border-bottom:2px solid #e2e8f0;text-align:center;font-weight:700;color:#059669">Bureau أرخص بـ 346 د.ت ✅</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl"><strong>نقطة التحوّل بين السنة الأولى والثانية.</strong> إذا كنتم تنوون استخدام البرنامج أكثر من 18 شهراً (وهو حال أيّ مؤسسة جادّة)، فنسخة Bureau أوفر. لكن إذا كانت وظائف Cloud (أجهزة متعدّدة، تعاون، حفظ آلي) ضرورية لنشاطكم، فـ 99 دينار سنوياً يبقى استثماراً معقولاً جداً.</p>
+
+<!-- ═══════ سيناريوهات استخدام ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">3 سيناريوهات: أيّ نسخة تناسبكم؟</h2>
+
+<div style="background:#f0fdf4;border:2px solid #059669;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 12px;color:#059669;font-size:18px">🏪 السيناريو 1: محمّد، تاجر في صفاقس</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 8px">محمّد يدير محلّ لبيع مواد البناء. يتولّى وحده إدارة الفوترة من حاسوب واحد في المحلّ. الإنترنت عنده غير مستقرّ. يصدر حوالي 40 فاتورة شهرياً ويحتاج FODEC على بعض المنتجات.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong style="color:#059669">→ التوصية: SoftyFact Bureau (149 د.ت)</strong> — يعمل بدون إنترنت، حاسوب واحد يكفي، والدفع لمرّة واحدة يناسب ميزانيته تماماً. FODEC يُحسب آلياً.</p>
+</div>
+
+<div style="background:#eff6ff;border:2px solid #2563eb;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 12px;color:#2563eb;font-size:18px">🏢 السيناريو 2: أميرة، مديرة شركة خدمات في تونس العاصمة</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 8px">أميرة تدير شركة استشارات مع 3 متعاونين ينشئون فواتير. تتنقّل كثيراً وتريد مراجعة الفواتير من هاتفها. تحتاج أن يصل عدّة أشخاص للنظام في نفس الوقت.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong style="color:#2563eb">→ التوصية: SoftyFact Cloud (8.25 د.ت/شهر)</strong> — وصول متعدّد المستخدمين، متاح من أيّ جهاز، حفظ آلي. الـ 99 دينار سنوياً مبرّرة تماماً بمكاسب إنتاجية الفريق.</p>
+</div>
+
+<div style="background:#faf5ff;border:2px solid #7c3aed;border-radius:12px;padding:24px;margin:24px 0;direction:rtl">
+<h3 style="margin:0 0 12px;color:#7c3aed;font-size:18px">🏭 السيناريو 3: كريم، صناعي في سوسة</h3>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0 0 8px">كريم يملك مصنعاً صغيراً مع مكتب ثابت. يدير الفوترة وحده لكنّه يريد أقصى تحكّم في بياناته. السرّية أولويته — لا يريد استضافة بياناته خارج مقرّه.</p>
+<p style="font-size:15px;line-height:1.7;color:#334155;margin:0"><strong style="color:#059669">→ التوصية: SoftyFact Bureau (149 د.ت)</strong> — بيانات 100% محلية، لا اعتماد على خادم خارجي، تحكّم كامل. يمكنه عمل نسخ احتياطية يدوية على قرص خارجي لمزيد من الأمان.</p>
+</div>
+
+<!-- ═══════ أسئلة شائعة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">أسئلة شائعة</h2>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ هل يمكنني التحوّل من Bureau إلى Cloud (أو العكس) لاحقاً؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">نعم. يمكنكم البدء بنسخة Bureau والانتقال إلى Cloud إذا تطوّرت احتياجاتكم (أو العكس). بياناتكم يمكن تصديرها ونقلها بين النسختين.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ هل تتلقّى نسخة Bureau تحديثات؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">نعم، التحديثات مجانية خلال السنة الأولى. بعدها، يستمرّ البرنامج في العمل طبيعياً — تحتفظون بكلّ الوظائف المتاحة. يمكن الحصول على التحديثات اللاحقة بتجديد الدعم.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ هل بياناتي آمنة على Cloud؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">نعم. بيانات نسخة Cloud مستضافة على خوادم مؤمّنة بتشفير، نسخ احتياطية يومية آلية، ووصول محمي بالمصادقة. أنتم فقط والمستخدمون المصرّح لهم يمكنهم الوصول لبياناتكم.</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ كم عدد المستخدمين المتزامنين على Cloud؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">اشتراك Cloud يتضمّن الوصول متعدّد المستخدمين. يمكنكم إنشاء حسابات لمتعاونيكم بمستويات صلاحيات مختلفة (مدير، مشرف، اطّلاع فقط).</p>
+</div>
+
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin:16px 0;direction:rtl">
+<h4 style="margin:0 0 8px;color:#1e293b;font-size:16px">❓ ماذا يحدث إذا لم أجدّد اشتراك Cloud؟</h4>
+<p style="margin:0;font-size:15px;color:#334155">إذا لم تجدّدوا الاشتراك، تحتفظون بصلاحية القراءة فقط لمدّة 90 يوماً لتصدير فواتيركم ووثائقكم. لا تُحذف أيّ بيانات دون إشعار مسبق.</p>
+</div>
+
+<!-- ═══════ الخلاصة ═══════ -->
+<h2 style="font-size:24px;color:#1e293b;margin:32px 0 16px;direction:rtl">الخلاصة النهائية</h2>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">لا يوجد "خيار خاطئ" بين Bureau وCloud — كلاهما أداة فوترة ممتازة مطابقة للتشريعات التونسية. القرار يعتمد على <strong>ثلاثة عوامل رئيسية</strong>:</p>
+
+<div style="background:#f0fdf4;border-right:4px solid #059669;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<p style="margin:0;font-size:15px;color:#334155"><strong>اختاروا Bureau إذا:</strong> تفوترون وحدكم، لا تحتاجون وصولاً من الهاتف، إنترنتكم غير مستقرّ، وتفضّلون الدفع لمرّة واحدة. هذا الخيار الأوفر على المدى الطويل.</p>
+</div>
+
+<div style="background:#eff6ff;border-right:4px solid #2563eb;border-radius:8px;padding:20px;margin:20px 0;direction:rtl">
+<p style="margin:0;font-size:15px;color:#334155"><strong>اختاروا Cloud إذا:</strong> لديكم عدّة متعاونين، تريدون الوصول لفواتيركم من أيّ مكان، وتفضّلون الحفظ الآلي والتحديثات المستمرّة.</p>
+</div>
+
+<p style="font-size:16px;line-height:1.8;color:#334155;direction:rtl">في الحالتين، تستفيدون من مطابقة جبائية تامّة، وفوترة سريعة، وأداة مصمّمة للسوق التونسي. <strong>المهمّ هو أن تخطوا الخطوة — أياً كانت النسخة المختارة.</strong></p>
+
+<!-- ═══════ CTA ═══════ -->
+<div style="background:linear-gradient(135deg,#059669 0%,#047857 100%);border-radius:16px;padding:32px;margin:32px 0;text-align:center">
+<h3 style="color:white;margin:0 0 8px;font-size:22px">جاهزون لبدء استخدام SoftyFact؟</h3>
+<p style="color:#d1fae5;margin:0 0 20px;font-size:16px">اختاروا النسخة التي تناسب مؤسستكم</p>
+<a href="/product/offline" style="background:white;color:#059669;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px">💻 نسخة Bureau — 149 د.ت مدى الحياة</a>
+<a href="/product/online" style="background:rgba(255,255,255,0.15);color:white;padding:12px 32px;border-radius:8px;font-weight:bold;text-decoration:none;font-size:16px;display:inline-block;margin:0 8px;border:2px solid rgba(255,255,255,0.3)">☁️ نسخة Cloud — 8.25 د.ت/شهر</a>
+</div>
+',
+                'meta_description_fr' => 'SoftyFact Bureau ou Cloud ? Comparatif détaillé : prix, fonctionnalités, mode offline et scénarios pour PME tunisiennes.',
+                'meta_description_ar' => 'SoftyFact Bureau أم Cloud؟ مقارنة مفصّلة: الأسعار والوظائف والوضع بدون إنترنت وسيناريوهات للمؤسسات التونسية.',
+                'meta_keywords' => 'logiciel facturation bureau vs cloud, logiciel facturation hors ligne tunisie, facturation cloud tunisie',
+                'cover_image' => '/screen/Paramètres de l\'application.png',
+                'reading_time' => 10,
+                'published_at' => '2026-03-27 10:00:00',
+            ],
+
 
         ];
 
