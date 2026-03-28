@@ -196,11 +196,9 @@ CREATE DATABASE IF NOT EXISTS \`${DB_NAME}\` CHARACTER SET utf8mb4 COLLATE utf8m
 CREATE USER IF NOT EXISTS '${DB_USER_CORE}'@'localhost' IDENTIFIED BY '${DB_PASS_CORE}';
 GRANT ALL PRIVILEGES ON \`${DB_NAME}\`.* TO '${DB_USER_CORE}'@'localhost';
 
--- Public app user (restricted)
+-- Public app user (created now, table grants applied after migrations)
 CREATE USER IF NOT EXISTS '${DB_USER_PUBLIC}'@'localhost' IDENTIFIED BY '${DB_PASS_PUBLIC}';
-GRANT SELECT, INSERT, UPDATE ON \`${DB_NAME}\`.\`orders\` TO '${DB_USER_PUBLIC}'@'localhost';
-GRANT SELECT, INSERT ON \`${DB_NAME}\`.\`contact_leads\` TO '${DB_USER_PUBLIC}'@'localhost';
-GRANT SELECT ON \`${DB_NAME}\`.\`migrations\` TO '${DB_USER_PUBLIC}'@'localhost';
+GRANT USAGE ON \`${DB_NAME}\`.* TO '${DB_USER_PUBLIC}'@'localhost';
 
 FLUSH PRIVILEGES;
 EOSQL
@@ -343,6 +341,17 @@ rm -rf node_modules
 php artisan key:generate --force --no-interaction 2>/dev/null || true
 php artisan migrate --force
 php artisan storage:link 2>/dev/null || true
+
+# Now that tables exist, grant restricted access to public user
+info "Applying restricted MySQL grants for ${DB_USER_PUBLIC}..."
+mysql -u root -p"${DB_ROOT_PASS}" <<EOSQL2
+GRANT SELECT, INSERT, UPDATE ON \`${DB_NAME}\`.\`orders\` TO '${DB_USER_PUBLIC}'@'localhost';
+GRANT SELECT, INSERT ON \`${DB_NAME}\`.\`contact_leads\` TO '${DB_USER_PUBLIC}'@'localhost';
+GRANT SELECT ON \`${DB_NAME}\`.\`migrations\` TO '${DB_USER_PUBLIC}'@'localhost';
+FLUSH PRIVILEGES;
+EOSQL2
+ok "Public user grants applied"
+
 mkdir -p storage/logs storage/framework/{cache/data,sessions,views} bootstrap/cache
 php artisan config:cache
 php artisan route:cache
