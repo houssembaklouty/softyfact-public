@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Http;
 use App\Models\BlogPost;
 
 class BlogPostSeeder extends Seeder
@@ -174,7 +175,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Guide 2026 pour choisir un logiciel de facturation en Tunisie. Critères clés : conformité TVA/FODEC, gestion stock, support local, prix.',
                 'meta_description_ar' => 'دليل 2026 لاختيار برنامج فوترة في تونس. المعايير: التوافق مع TVA/FODEC، إدارة المخزون، الدعم المحلي.',
                 'meta_keywords' => 'logiciel facturation tunisie, logiciel comptabilité tunisie, facturation PME tunisie, choisir logiciel facturation',
-                'cover_image' => '/screen/Tableau de bord.png',
+                'cover_image' => null,
                 'reading_time' => 8,
                 'published_at' => '2026-01-15 10:00:00',
             ],
@@ -385,7 +386,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Guide complet de la TVA en Tunisie 2026 : taux 19%, 13%, 7%, calcul, déclaration mensuelle. Tout ce que les PME doivent savoir.',
                 'meta_description_ar' => 'الدليل الشامل للأداء على القيمة المضافة في تونس 2026: النسب 19%، 13%، 7%، الحساب والتصريح الشهري.',
                 'meta_keywords' => 'TVA tunisie, taux TVA tunisie 2026, calcul TVA tunisie, déclaration TVA tunisie',
-                'cover_image' => '/screen/Gestion des factures.png',
+                'cover_image' => null,
                 'reading_time' => 7,
                 'published_at' => '2026-01-28 10:00:00',
             ],
@@ -540,7 +541,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'FODEC en Tunisie : taux de 1%, produits concernés, calcul et intégration dans vos factures. Guide pratique pour PME.',
                 'meta_description_ar' => 'FODEC في تونس: نسبة 1%، المنتجات المعنية، الحساب والإدراج في فواتيرك. دليل عملي للمؤسسات.',
                 'meta_keywords' => 'FODEC tunisie, taxe FODEC, FODEC calcul, fonds développement compétitivité tunisie',
-                'cover_image' => '/screen/ajout-produit.png',
+                'cover_image' => null,
                 'reading_time' => 6,
                 'published_at' => '2026-02-05 10:00:00',
             ],
@@ -679,7 +680,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Déclaration TEJ en Tunisie : guide étape par étape pour générer vos certificats de retenue à la source.',
                 'meta_description_ar' => 'تصريح TEJ في تونس: دليل خطوة بخطوة لإنشاء شهادات الخصم من المورد.',
                 'meta_keywords' => 'TEJ tunisie, déclaration TEJ, certificat retenue source',
-                'cover_image' => '/screen/Certificats TEJ.png',
+                'cover_image' => null,
                 'reading_time' => 7,
                 'published_at' => '2026-02-15 10:00:00',
             ],
@@ -800,7 +801,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Facturation électronique El-Fatoora en Tunisie : cadre légal, calendrier et préparation pour les entreprises.',
                 'meta_description_ar' => 'الفوترة الإلكترونية في تونس: الإطار القانوني والتحضير للمؤسسات.',
                 'meta_keywords' => 'facturation électronique tunisie, el fatoora, e-facture tunisie',
-                'cover_image' => '/screen/gestion-des-documents(exemple Devis).png',
+                'cover_image' => null,
                 'reading_time' => 6,
                 'published_at' => '2026-02-25 10:00:00',
             ],
@@ -999,7 +1000,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Retenue à la source en Tunisie 2026 : taux, obligations déclaratives et gestion des certificats.',
                 'meta_description_ar' => 'الخصم من المورد في تونس 2026: النسب والتزامات التصريح وإدارة الشهادات.',
                 'meta_keywords' => 'retenue source tunisie, retenue à la source, RS tunisie',
-                'cover_image' => '/screen/gestion des clients.png',
+                'cover_image' => null,
                 'reading_time' => 7,
                 'published_at' => '2026-03-01 10:00:00',
             ],
@@ -1132,7 +1133,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Bonnes pratiques de gestion de stock pour PME tunisiennes. Méthodes, alertes et automatisation.',
                 'meta_description_ar' => 'أفضل ممارسات إدارة المخزون للمؤسسات التونسية. الأساليب والتنبيهات والأتمتة.',
                 'meta_keywords' => 'gestion stock tunisie, gestion stock PME, logiciel gestion stock',
-                'cover_image' => '/screen/Gestion de stock.png',
+                'cover_image' => null,
                 'reading_time' => 6,
                 'published_at' => '2026-03-05 10:00:00',
             ],
@@ -1267,7 +1268,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Créer une facture conforme en Tunisie : mentions obligatoires, TVA, timbre fiscal et numérotation.',
                 'meta_description_ar' => 'إنشاء فاتورة مطابقة في تونس: البيانات الإلزامية والأداء ومعلوم الطابع الجبائي.',
                 'meta_keywords' => 'facture conforme tunisie, mentions obligatoires facture, créer facture tunisie',
-                'cover_image' => '/screen/gestion des Fournisseurs.png',
+                'cover_image' => null,
                 'reading_time' => 6,
                 'published_at' => '2026-03-10 10:00:00',
             ],
@@ -1376,7 +1377,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Timbre fiscal en Tunisie : montant 1 DT, quand l\'appliquer et les exemptions. Guide pratique.',
                 'meta_description_ar' => 'معلوم الطابع الجبائي في تونس: المبلغ 1 دينار ومتى يطبق والإعفاءات.',
                 'meta_keywords' => 'timbre fiscal tunisie, droit de timbre tunisie, timbre 1 DT',
-                'cover_image' => '/screen/gestion Paiements (encaissements et décaissements).png',
+                'cover_image' => null,
                 'reading_time' => 5,
                 'published_at' => '2026-03-15 10:00:00',
             ],
@@ -1533,7 +1534,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Comparatif logiciel facturation gratuit vs payant en Tunisie. Avantages, limites et recommandations.',
                 'meta_description_ar' => 'مقارنة برنامج فوترة مجاني مقابل مدفوع في تونس. المزايا والحدود والتوصيات.',
                 'meta_keywords' => 'logiciel facturation gratuit tunisie, comparatif facturation, logiciel facturation payant',
-                'cover_image' => '/screen/gestion des Entrepôts .png',
+                'cover_image' => null,
                 'reading_time' => 7,
                 'published_at' => '2026-03-20 10:00:00',
             ],
@@ -2310,7 +2311,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Comparatif 2026 des meilleurs logiciels de facturation en Tunisie. Scorecards détaillés, tableau de fonctionnalités et verdict pour PME.',
                 'meta_description_ar' => 'مقارنة 2026 لأفضل برامج الفوترة في تونس. بطاقات تقييم مفصّلة وجدول وظائف وخلاصة للمؤسسات.',
                 'meta_keywords' => 'meilleur logiciel facturation tunisie, comparatif logiciel facturation tunisie 2026, logiciel comptabilité tunisie',
-                'cover_image' => '/screen/Tableau de bord.png',
+                'cover_image' => null,
                 'reading_time' => 12,
                 'published_at' => '2026-03-25 10:00:00',
             ],
@@ -2875,7 +2876,7 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'Guide de migration d\'Excel vers un logiciel de facturation en Tunisie. Risques, coûts cachés et étapes pratiques.',
                 'meta_description_ar' => 'دليل الانتقال من Excel إلى برنامج فوترة في تونس. المخاطر والتكاليف الخفية والمراحل العملية.',
                 'meta_keywords' => 'facturation excel tunisie, remplacer excel facturation, migration logiciel facturation',
-                'cover_image' => '/screen/Gestion des factures.png',
+                'cover_image' => null,
                 'reading_time' => 11,
                 'published_at' => '2026-03-26 10:00:00',
             ],
@@ -3556,9 +3557,1512 @@ class BlogPostSeeder extends Seeder
                 'meta_description_fr' => 'SoftyFact Bureau ou Cloud ? Comparatif détaillé : prix, fonctionnalités, mode offline et scénarios pour PME tunisiennes.',
                 'meta_description_ar' => 'SoftyFact Bureau أم Cloud؟ مقارنة مفصّلة: الأسعار والوظائف والوضع بدون إنترنت وسيناريوهات للمؤسسات التونسية.',
                 'meta_keywords' => 'logiciel facturation bureau vs cloud, logiciel facturation hors ligne tunisie, facturation cloud tunisie',
-                'cover_image' => '/screen/Paramètres de l\'application.png',
+                'cover_image' => null,
                 'reading_time' => 10,
                 'published_at' => '2026-03-27 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 14 — Suivi des paiements et trésorerie
+            // ============================================================
+            [
+                'slug' => 'suivi-paiements-tresorerie-tunisie',
+                'title_fr' => 'Suivi des paiements et gestion de trésorerie pour les PME en Tunisie',
+                'title_ar' => 'متابعة الخلاصات وإدارة الخزينة للمؤسسات الصغرى والمتوسطة في تونس',
+                'excerpt_fr' => 'Créances oubliées, retards de paiement, trésorerie imprévisible ? Découvrez comment un suivi automatisé des paiements peut sauver votre entreprise tunisienne.',
+                'excerpt_ar' => 'ديون منسية، تأخّر في الخلاص، خزينة غير متوقّعة؟ اكتشفوا كيف يمكن لمتابعة آلية للخلاصات أن تنقذ مؤسستكم التونسية.',
+                'body_fr' => '<h2>Le problème silencieux qui coûte des milliers de dinars</h2>
+<p>Chaque mois, des commerçants et des PME en Tunisie perdent de l\'argent — non pas à cause de mauvaises ventes, mais parce qu\'ils <strong>ne savent pas exactement qui leur doit de l\'argent</strong>. Un client dit qu\'il a payé, mais vous ne retrouvez aucune trace. Un autre a un solde en retard depuis 3 mois, et personne ne l\'a relancé.</p>
+<p>Cette situation est loin d\'être rare. Selon notre expérience avec +100 PME tunisiennes, <strong>le montant moyen des créances non suivies dépasse 5 000 DT par entreprise</strong>. C\'est de l\'argent qui dort — ou qui disparaît.</p>
+<p>La bonne nouvelle ? Ce problème a une solution simple et claire : un <strong>suivi des paiements automatisé</strong> intégré à votre logiciel de facturation.</p>
+
+<h2>Pourquoi le suivi manuel des paiements échoue</h2>
+
+<h3>Le cahier et Excel ne suffisent plus</h3>
+<p>Beaucoup de commerçants tunisiens notent les paiements reçus dans un cahier ou un fichier Excel. Cette méthode présente des failles majeures :</p>
+<ul>
+<li><strong>Oublis fréquents</strong> : un paiement reçu en espèces mais non enregistré = conflit avec le client</li>
+<li><strong>Pas de vue d\'ensemble</strong> : impossible de savoir en un coup d\'œil le total des créances en cours</li>
+<li><strong>Doublons</strong> : un même paiement enregistré deux fois fausse toute la comptabilité</li>
+<li><strong>Aucune alerte</strong> : personne ne vous prévient quand un paiement est en retard de 30, 60 ou 90 jours</li>
+</ul>
+
+<h3>Les conséquences sur votre trésorerie</h3>
+<p>Sans un suivi rigoureux :</p>
+<ul>
+<li>Votre <strong>trésorerie devient imprévisible</strong> — vous ne savez pas combien d\'argent va réellement entrer ce mois-ci</li>
+<li>Vous ne pouvez pas <strong>planifier vos achats ou vos investissements</strong> avec confiance</li>
+<li>Les <strong>relations clients se détériorent</strong> quand vous réclamez un paiement déjà effectué</li>
+<li>Vous risquez des <strong>découverts bancaires</strong> évitables</li>
+</ul>
+
+<h2>Comment fonctionne le suivi des paiements dans SoftyFact</h2>
+
+<h3>Chaque facture a un statut clair</h3>
+<p>Dès qu\'une <a href="/blog/creer-facture-conforme-tunisie">facture conforme</a> est créée dans SoftyFact, elle reçoit automatiquement un statut :</p>
+<ul>
+<li>🟢 <strong>Payée</strong> — le client a réglé la totalité</li>
+<li>🟡 <strong>Partiellement payée</strong> — un acompte a été reçu, le solde reste dû</li>
+<li>🔴 <strong>Impayée</strong> — aucun paiement enregistré</li>
+<li>⚫ <strong>En retard</strong> — l\'échéance est dépassée</li>
+</ul>
+<p>Cette visibilité instantanée vous permet de savoir exactement où vous en êtes, sans fouiller dans des fichiers ou des cahiers.</p>
+
+<h3>Enregistrement des encaissements et décaissements</h3>
+<p>SoftyFact gère les deux flux :</p>
+<ul>
+<li><strong>Encaissements</strong> : paiements reçus de vos clients (espèces, chèque, virement, traite)</li>
+<li><strong>Décaissements</strong> : paiements effectués à vos fournisseurs</li>
+</ul>
+<p>Chaque paiement est lié à sa facture d\'origine, ce qui élimine les doublons et les confusions.</p>
+
+<h3>Tableau de bord trésorerie</h3>
+<p>Le <a href="/blog/tableau-de-bord-gestion-commerciale-tunisie">tableau de bord</a> vous montre en temps réel :</p>
+<ul>
+<li>Le <strong>total des créances clients</strong> (ce qu\'on vous doit)</li>
+<li>Le <strong>total des dettes fournisseurs</strong> (ce que vous devez)</li>
+<li>Le <strong>solde net</strong> de votre trésorerie</li>
+<li>L\'<strong>évolution des encaissements</strong> sur les derniers mois</li>
+</ul>
+
+<h2>5 bonnes pratiques pour une trésorerie saine</h2>
+
+<h3>1. Enregistrez chaque paiement immédiatement</h3>
+<p>Ne laissez pas les paiements s\'accumuler avant de les enregistrer. Un paiement reçu doit être saisi le jour même — en 10 secondes dans SoftyFact.</p>
+
+<h3>2. Fixez des conditions de paiement claires</h3>
+<p>Mentionnez systématiquement les délais de paiement sur vos factures : 30 jours fin de mois, paiement à réception, etc. SoftyFact les intègre automatiquement dans chaque document.</p>
+
+<h3>3. Relancez dès les premiers jours de retard</h3>
+<p>N\'attendez pas 3 mois pour découvrir qu\'un client n\'a pas payé. Avec le filtrage par statut dans SoftyFact, identifiez les retards dès la première semaine et agissez.</p>
+
+<h3>4. Privilégiez les paiements traçables</h3>
+<p>Les virements et les chèques laissent une trace. Les paiements en espèces sont plus difficiles à prouver. Le <a href="/blog/timbre-fiscal-tunisie">timbre fiscal</a> s\'applique d\'ailleurs aux paiements espèces — SoftyFact l\'ajoute automatiquement.</p>
+
+<h3>5. Analysez vos flux chaque fin de mois</h3>
+<p>Prenez 15 minutes chaque fin de mois pour examiner vos encaissements vs décaissements. SoftyFact génère un état récapitulatif instantané.</p>
+
+<h2>Exemple concret</h2>
+<p>Karim, grossiste en alimentation à Sousse, avait l\'habitude de noter les paiements dans un cahier. Lors d\'un inventaire, il a découvert que <strong>3 clients lui devaient au total 7 200 DT</strong> — des paiements non réclamés depuis 2 à 5 mois.</p>
+<p>Depuis qu\'il utilise SoftyFact, chaque facture est suivie automatiquement. En 3 mois, il a :</p>
+<ul>
+<li>Récupéré <strong>100% des créances en cours</strong></li>
+<li>Réduit son <strong>délai moyen d\'encaissement de 45 à 18 jours</strong></li>
+<li>Obtenu une <strong>visibilité complète</strong> sur sa trésorerie mensuelle</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Le suivi des paiements n\'est pas un luxe — c\'est la base d\'une gestion saine. Sans lui, vous naviguez à l\'aveugle. Avec un outil comme SoftyFact, chaque dinar entrant et sortant est tracé, chaque créance est visible, et votre trésorerie devient prévisible.</p>
+<p><strong>SoftyFact</strong> vous offre cette visibilité pour <a href="/product/offline">149 DT — licence à vie</a>, sans abonnement. Ou optez pour la <a href="/product/online">version Cloud</a> accessible partout.</p>
+<p>👉 <strong><a href="/product/offline">Commandez SoftyFact</a></strong> et reprenez le contrôle de votre trésorerie dès aujourd\'hui.</p>',
+
+                'body_ar' => '<h2>المشكلة الصامتة التي تكلّف آلاف الدينارات</h2>
+<p>كل شهر، يخسر التجار والمؤسسات الصغرى والمتوسطة في تونس أموالاً — ليس بسبب ضعف المبيعات، بل لأنهم <strong>لا يعرفون بالضبط من يدين لهم بالمال</strong>. حريف يقول إنه دفع لكن لا أثر للخلاص. حريف آخر عنده رصيد متأخر منذ 3 أشهر ولا أحد تابعه.</p>
+<p>هذا الوضع ليس نادراً. حسب تجربتنا مع أكثر من 100 مؤسسة تونسية، <strong>متوسط الديون غير المتابعة يتجاوز 5,000 دينار لكل مؤسسة</strong>. أموال نائمة — أو ضائعة.</p>
+<p>الخبر الجيد؟ هذه المشكلة لها حلّ بسيط وواضح: <strong>متابعة آلية للخلاصات</strong> مدمجة في برنامج الفوترة.</p>
+
+<h2>لماذا تفشل المتابعة اليدوية للخلاصات</h2>
+
+<h3>الدفتر و Excel لم يعودا كافيين</h3>
+<p>كثير من التجار التونسيين يسجّلون الخلاصات في دفتر أو ملف Excel. هذه الطريقة فيها ثغرات كبيرة:</p>
+<ul>
+<li><strong>نسيان متكرّر</strong>: خلاص نقدي لم يُسجّل = خلاف مع الحريف</li>
+<li><strong>لا رؤية شاملة</strong>: مستحيل تعرف في لمحة إجمالي الديون الجارية</li>
+<li><strong>تكرار</strong>: نفس الخلاص مسجّل مرتين يفسد كل المحاسبة</li>
+<li><strong>لا تنبيهات</strong>: لا أحد يخبرك عندما يتأخر دفع 30 أو 60 أو 90 يوماً</li>
+</ul>
+
+<h3>التأثير على خزينتكم</h3>
+<p>بدون متابعة دقيقة:</p>
+<ul>
+<li><strong>خزينتكم تصبح غير قابلة للتوقع</strong> — لا تعرفون كم سيدخل فعلاً هذا الشهر</li>
+<li>لا يمكنكم <strong>تخطيط المشتريات أو الاستثمارات</strong> بثقة</li>
+<li><strong>العلاقة مع الحرفاء تتدهور</strong> عندما تطالبون بخلاص تمّ فعلاً</li>
+<li>تواجهون <strong>سحب على المكشوف</strong> كان يمكن تفاديه</li>
+</ul>
+
+<h2>كيف تعمل متابعة الخلاصات في SoftyFact</h2>
+
+<h3>كل فاتورة لها حالة واضحة</h3>
+<p>فور إنشاء <a href="/blog/creer-facture-conforme-tunisie">فاتورة مطابقة</a>، تحصل تلقائياً على حالة:</p>
+<ul>
+<li>🟢 <strong>مدفوعة</strong> — الحريف سدّد المبلغ كاملاً</li>
+<li>🟡 <strong>مدفوعة جزئياً</strong> — تسبقة وصلت والباقي مستحق</li>
+<li>🔴 <strong>غير مدفوعة</strong> — لم يُسجّل أي خلاص</li>
+<li>⚫ <strong>متأخرة</strong> — تجاوز أجل الدفع</li>
+</ul>
+
+<h3>تسجيل المقبوضات والمدفوعات</h3>
+<p>SoftyFact يدير التدفقين:</p>
+<ul>
+<li><strong>المقبوضات</strong>: خلاصات من الحرفاء (نقد، شيك، تحويل، كمبيالة)</li>
+<li><strong>المدفوعات</strong>: خلاصات للموردين</li>
+</ul>
+<p>كل خلاص مرتبط بفاتورته الأصلية — لا تكرار ولا لبس.</p>
+
+<h3>لوحة قيادة الخزينة</h3>
+<p><a href="/blog/tableau-de-bord-gestion-commerciale-tunisie">لوحة القيادة</a> تعرض لحظياً:</p>
+<ul>
+<li><strong>إجمالي ديون الحرفاء</strong> (ما يُدينون لكم به)</li>
+<li><strong>إجمالي ديون الموردين</strong> (ما تدينون به)</li>
+<li><strong>الرصيد الصافي</strong> لخزينتكم</li>
+<li><strong>تطوّر المقبوضات</strong> على الأشهر الأخيرة</li>
+</ul>
+
+<h2>5 ممارسات جيدة لخزينة سليمة</h2>
+
+<h3>1. سجّلوا كل خلاص فوراً</h3>
+<p>لا تتركوا الخلاصات تتراكم. خلاص يُسجّل في نفس اليوم — في 10 ثوانٍ في SoftyFact.</p>
+
+<h3>2. حدّدوا شروط دفع واضحة</h3>
+<p>اذكروا آجال الدفع في فواتيركم: 30 يوماً، عند الاستلام، إلخ. SoftyFact يدمجها تلقائياً.</p>
+
+<h3>3. تابعوا من اليوم الأول للتأخير</h3>
+<p>لا تنتظروا 3 أشهر. مع فلترة الحالة في SoftyFact، اكتشفوا التأخيرات من الأسبوع الأول.</p>
+
+<h3>4. فضّلوا الدفع القابل للتتبع</h3>
+<p>التحويلات والشيكات تترك أثراً. الدفع النقدي أصعب في الإثبات. <a href="/blog/timbre-fiscal-tunisie">معلوم الطابع الجبائي</a> يُطبّق على الدفع النقدي — SoftyFact يضيفه تلقائياً.</p>
+
+<h3>5. حلّلوا تدفقاتكم نهاية كل شهر</h3>
+<p>خصّصوا 15 دقيقة نهاية كل شهر لفحص المقبوضات مقابل المدفوعات. SoftyFact يولّد كشفاً فورياً.</p>
+
+<h2>مثال واقعي</h2>
+<p>كريم، تاجر جملة في سوسة، كان يسجّل الخلاصات في دفتر. أثناء جرد اكتشف أن <strong>3 حرفاء يدينون له بإجمالي 7,200 دينار</strong> — خلاصات لم تُطالب منذ 2 إلى 5 أشهر.</p>
+<p>منذ بدأ يستخدم SoftyFact، كل فاتورة متابعة تلقائياً. في 3 أشهر:</p>
+<ul>
+<li>استرجع <strong>100% من الديون الجارية</strong></li>
+<li>خفّض <strong>متوسط أجل التحصيل من 45 إلى 18 يوماً</strong></li>
+<li>حصل على <strong>رؤية كاملة</strong> لخزينته الشهرية</li>
+</ul>
+
+<h2>خلاصة</h2>
+<p>متابعة الخلاصات ليست رفاهية — إنها أساس إدارة سليمة. بدونها تبحرون في الظلام. مع أداة مثل SoftyFact، كل دينار داخل وخارج مسجّل، كل دين مرئي، وخزينتكم قابلة للتوقع.</p>
+<p><strong>SoftyFact</strong> يوفر لكم هذه الرؤية بـ <a href="/product/offline">149 دينار — رخصة مدى الحياة</a>، بدون اشتراك. أو اختاروا <a href="/product/online">النسخة السحابية</a> المتاحة في كل مكان.</p>
+<p>👉 <strong><a href="/product/offline">اطلبوا SoftyFact</a></strong> واستعيدوا السيطرة على خزينتكم اليوم.</p>',
+                'meta_description_fr' => 'Découvrez comment automatiser le suivi des paiements et gérer la trésorerie de votre PME en Tunisie. Créances, encaissements, décaissements — tout en un clic.',
+                'meta_description_ar' => 'اكتشفوا كيف تؤتمتون متابعة الخلاصات وإدارة الخزينة لمؤسستكم في تونس. ديون ومقبوضات ومدفوعات — الكل بنقرة واحدة.',
+                'meta_keywords' => 'suivi paiements tunisie, gestion trésorerie PME tunisie, encaissements décaissements logiciel, créances clients tunisie',
+                'cover_image' => null,
+                'reading_time' => 6,
+                'published_at' => '2026-01-20 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 15 — Gestion des clients et fournisseurs
+            // ============================================================
+            [
+                'slug' => 'gestion-clients-fournisseurs-logiciel-tunisie',
+                'title_fr' => 'Gestion des clients et fournisseurs : tout centraliser dans un seul logiciel',
+                'title_ar' => 'إدارة الحرفاء والموردين: كل شيء في برنامج واحد',
+                'excerpt_fr' => 'Fiches clients éparpillées, historiques introuvables, soldes incertains ? Centralisez toute votre gestion des contacts professionnels avec un logiciel adapté aux PME tunisiennes.',
+                'excerpt_ar' => 'بطاقات حرفاء متفرقة، سجلات ضائعة، أرصدة غير مؤكدة؟ اجمعوا كل إدارة الاتصالات المهنية في برنامج واحد مناسب للمؤسسات التونسية.',
+                'body_fr' => '<h2>Le chaos des contacts non centralisés</h2>
+<p>Combien de fois avez-vous cherché le numéro de téléphone d\'un client dans votre téléphone, puis son adresse dans un fichier Excel, puis son historique de facturation dans un cahier ? Cette fragmentation des informations est l\'un des problèmes les plus courants chez les commerçants et PME en Tunisie.</p>
+<p>Quand les données clients et fournisseurs sont dispersées entre plusieurs supports, les conséquences sont concrètes :</p>
+<ul>
+<li>Vous <strong>perdez du temps</strong> à chercher des informations de base</li>
+<li>Vous ne connaissez pas le <strong>solde exact</strong> de chaque client ou fournisseur</li>
+<li>Vous ne savez pas <strong>qui sont vos meilleurs clients</strong> (ceux qui achètent le plus)</li>
+<li>Les <strong>relances de paiement</strong> partent en retard — ou pas du tout</li>
+</ul>
+<p>Un logiciel de <strong>gestion commerciale</strong> comme SoftyFact résout ce problème en centralisant toutes les informations dans une base unique, accessible en quelques clics.</p>
+
+<h2>Ce que vous devez savoir sur chaque client</h2>
+
+<h3>La fiche client complète</h3>
+<p>Dans SoftyFact, chaque client dispose d\'une fiche structurée :</p>
+<ul>
+<li><strong>Informations de base</strong> : nom/raison sociale, adresse, téléphone, email</li>
+<li><strong>Identifiants fiscaux</strong> : matricule fiscal, code TVA — essentiels pour la <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a> et la conformité</li>
+<li><strong>Conditions commerciales</strong> : délai de paiement par défaut, remise habituelle</li>
+<li><strong>Historique complet</strong> : toutes les factures, devis, bons de livraison et paiements associés</li>
+<li><strong>Solde en temps réel</strong> : montant total dû par ce client à cet instant</li>
+</ul>
+
+<h3>Pourquoi l\'historique change tout</h3>
+<p>Quand un client vous appelle pour une réclamation, vous devez pouvoir retrouver <strong>en 5 secondes</strong> : sa dernière facture, le montant payé, la date du paiement, et les produits achetés. Sans historique centralisé, vous passez 15 minutes à fouiller — et vous perdez en crédibilité.</p>
+<p>Avec SoftyFact, un clic sur le nom du client affiche tout son historique : documents émis, paiements reçus, solde restant.</p>
+
+<h2>La gestion fournisseurs : l\'autre face de la médaille</h2>
+<p>Les fournisseurs méritent la même rigueur que les clients. Dans SoftyFact, chaque fournisseur a sa fiche avec :</p>
+<ul>
+<li><strong>Coordonnées et matricule fiscal</strong></li>
+<li><strong>Historique des achats</strong> : factures reçues, bons de commande envoyés</li>
+<li><strong>Paiements effectués</strong> : sommes versées, mode de paiement, dates</li>
+<li><strong>Solde dû</strong> : ce que vous devez encore à ce fournisseur</li>
+</ul>
+<p>Cette visibilité vous permet de négocier en position de force, de respecter vos engagements de paiement, et d\'éviter les litiges.</p>
+
+<h2>Les avantages concrets pour votre business</h2>
+
+<h3>1. Visibilité financière par contact</h3>
+<p>En un clic, vous savez exactement combien chaque client vous doit et combien vous devez à chaque fournisseur. C\'est la base d\'une <a href="/blog/suivi-paiements-tresorerie-tunisie">gestion de trésorerie</a> efficace.</p>
+
+<h3>2. Facturation accélérée</h3>
+<p>Plus besoin de ressaisir les coordonnées à chaque facture. Sélectionnez le client dans la liste, et toutes ses informations se remplissent automatiquement. Une <a href="/blog/creer-facture-conforme-tunisie">facture conforme</a> en quelques secondes.</p>
+
+<h3>3. Identification des meilleurs clients</h3>
+<p>Qui génère le plus de chiffre d\'affaires ? Qui paie le plus rapidement ? Qui accumule les retards ? Ces informations vous aident à <strong>prioriser vos efforts commerciaux</strong>.</p>
+
+<h3>4. Conformité fiscale facilitée</h3>
+<p>Les matricules fiscaux de vos clients et fournisseurs sont stockés dans leurs fiches. Lors de l\'émission de <a href="/blog/retenue-source-tunisie-guide">certificats de retenue à la source</a> ou de la <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a>, toutes les données sont prêtes.</p>
+
+<h3>5. Gestion multi-devises (pour l\'export)</h3>
+<p>Si vous travaillez avec des fournisseurs à l\'étranger, SoftyFact gère les devises étrangères sur les fiches contacts concernés.</p>
+
+<h2>Comparaison : avant et après</h2>
+<table>
+<thead><tr><th>Critère</th><th>Avant (manuel)</th><th>Avec SoftyFact</th></tr></thead>
+<tbody>
+<tr><td>Trouver un numéro client</td><td>2-5 minutes (téléphone, carnet)</td><td>3 secondes (recherche)</td></tr>
+<tr><td>Connaître le solde d\'un client</td><td>Calcul manuel (10-30 min)</td><td>Instantané</td></tr>
+<tr><td>Historique des transactions</td><td>Éparpillé ou inexistant</td><td>Complet et chronologique</td></tr>
+<tr><td>Créer une facture</td><td>Ressaisie des coordonnées</td><td>Auto-rempli en 1 clic</td></tr>
+<tr><td>Identifier les retards</td><td>Impossible sans vérification manuelle</td><td>Filtrage automatique</td></tr>
+</tbody>
+</table>
+
+<h2>Conclusion</h2>
+<p>La gestion des clients et des fournisseurs est le socle de toute activité commerciale. En centralisant toutes les informations dans un seul logiciel, vous gagnez du temps, vous réduisez les erreurs, et vous disposez d\'une vision claire de vos relations commerciales.</p>
+<p>SoftyFact intègre cette gestion dans sa <a href="/product/offline">version Bureau (149 DT à vie)</a> et sa <a href="/product/online">version Cloud</a> — avec la conformité fiscale tunisienne en prime.</p>
+<p>👉 <strong><a href="/product/offline">Centralisez votre gestion dès maintenant avec SoftyFact.</a></strong></p>',
+
+                'body_ar' => '<h2>فوضى الاتصالات غير المركزية</h2>
+<p>كم مرة بحثتم عن رقم هاتف حريف في هاتفكم، ثم عنوانه في ملف Excel، ثم سجل فوتراته في دفتر؟ تشتت المعلومات هذا من أكثر المشاكل شيوعاً لدى التجار والمؤسسات الصغرى والمتوسطة في تونس.</p>
+<p>عندما تكون بيانات الحرفاء والموردين مبعثرة بين عدة وسائط، النتائج ملموسة:</p>
+<ul>
+<li><strong>تضيّعون وقتاً</strong> في البحث عن معلومات أساسية</li>
+<li>لا تعرفون <strong>الرصيد الدقيق</strong> لكل حريف أو مورد</li>
+<li>لا تعرفون <strong>من هم أفضل حرفائكم</strong> (الأكثر شراءً)</li>
+<li><strong>مطالبات الخلاص</strong> تتأخر — أو لا تُرسل أصلاً</li>
+</ul>
+<p>برنامج <strong>إدارة تجارية</strong> مثل SoftyFact يحلّ هذه المشكلة بجمع كل المعلومات في قاعدة واحدة متاحة ببضع نقرات.</p>
+
+<h2>ما يجب معرفته عن كل حريف</h2>
+
+<h3>بطاقة الحريف الكاملة</h3>
+<p>في SoftyFact، كل حريف عنده بطاقة منظّمة:</p>
+<ul>
+<li><strong>المعلومات الأساسية</strong>: الاسم/التسمية الاجتماعية، العنوان، الهاتف، البريد الإلكتروني</li>
+<li><strong>المعرّفات الجبائية</strong>: المعرّف الجبائي، رمز الأداء — ضروريان لـ <a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a> والمطابقة</li>
+<li><strong>الشروط التجارية</strong>: أجل الدفع الافتراضي، التخفيض المعتاد</li>
+<li><strong>السجل الكامل</strong>: كل الفواتير وعروض الأسعار ووصولات التسليم والخلاصات</li>
+<li><strong>الرصيد اللحظي</strong>: المبلغ الإجمالي المستحق من هذا الحريف الآن</li>
+</ul>
+
+<h3>لماذا يغيّر السجل كل شيء</h3>
+<p>حين يتصل حريف بشكوى، يجب أن تجدوا <strong>في 5 ثوانٍ</strong>: آخر فاتورة، المبلغ المدفوع، تاريخ الدفع، والمنتجات المشتراة. بدون سجل مركزي، تقضون 15 دقيقة في البحث — وتفقدون المصداقية.</p>
+<p>مع SoftyFact، نقرة واحدة على اسم الحريف تعرض كامل سجلّه: الوثائق، الخلاصات، الرصيد.</p>
+
+<h2>إدارة الموردين: الوجه الآخر</h2>
+<p>الموردون يستحقون نفس الصرامة. في SoftyFact، كل مورد له بطاقة تشمل:</p>
+<ul>
+<li><strong>البيانات والمعرّف الجبائي</strong></li>
+<li><strong>سجل المشتريات</strong>: فواتير مستلمة، أوامر شراء مرسلة</li>
+<li><strong>الدفعات المنجزة</strong>: مبالغ مدفوعة، طريقة الدفع، التواريخ</li>
+<li><strong>الرصيد المستحق</strong>: ما تدينون به لهذا المورد</li>
+</ul>
+
+<h2>المزايا الملموسة لنشاطكم التجاري</h2>
+
+<h3>1. رؤية مالية حسب جهة الاتصال</h3>
+<p>بنقرة واحدة تعرفون بالضبط كم يدين لكم كل حريف وكم تدينون لكل مورد. هذا أساس <a href="/blog/suivi-paiements-tresorerie-tunisie">إدارة خزينة</a> فعّالة.</p>
+
+<h3>2. فوترة أسرع</h3>
+<p>لا حاجة لإعادة إدخال البيانات في كل فاتورة. اختاروا الحريف من القائمة وكل معلوماته تُملأ تلقائياً. <a href="/blog/creer-facture-conforme-tunisie">فاتورة مطابقة</a> في ثوانٍ.</p>
+
+<h3>3. تحديد أفضل الحرفاء</h3>
+<p>من يحقق أكبر رقم معاملات؟ من يدفع أسرع؟ من يتراكم عنده التأخير؟ هذه المعلومات تساعدكم على <strong>ترتيب أولويات جهودكم التجارية</strong>.</p>
+
+<h3>4. تسهيل المطابقة الجبائية</h3>
+<p>المعرّفات الجبائية مخزّنة في بطاقات الحرفاء والموردين. عند إصدار <a href="/blog/retenue-source-tunisie-guide">شهادات الخصم من المورد</a> أو <a href="/blog/declaration-tej-guide-pratique">التصريح TEJ</a>، كل البيانات جاهزة.</p>
+
+<h2>مقارنة: قبل وبعد</h2>
+<table>
+<thead><tr><th>المعيار</th><th>قبل (يدوي)</th><th>مع SoftyFact</th></tr></thead>
+<tbody>
+<tr><td>إيجاد رقم حريف</td><td>2-5 دقائق</td><td>3 ثوانٍ</td></tr>
+<tr><td>معرفة رصيد حريف</td><td>حساب يدوي (10-30 دق)</td><td>فوري</td></tr>
+<tr><td>سجل المعاملات</td><td>مبعثر أو غير موجود</td><td>كامل وزمني</td></tr>
+<tr><td>إنشاء فاتورة</td><td>إعادة إدخال البيانات</td><td>ملء تلقائي بنقرة</td></tr>
+<tr><td>تحديد التأخيرات</td><td>مستحيل بدون فحص يدوي</td><td>فلترة آلية</td></tr>
+</tbody>
+</table>
+
+<h2>خلاصة</h2>
+<p>إدارة الحرفاء والموردين هي ركيزة كل نشاط تجاري. بجمع كل المعلومات في برنامج واحد، توفّرون الوقت وتقلّلون الأخطاء وتحصلون على رؤية واضحة لعلاقاتكم التجارية.</p>
+<p>SoftyFact يدمج هذه الإدارة في <a href="/product/offline">نسخته Bureau بـ 149 دينار مدى الحياة</a> و<a href="/product/online">نسخته السحابية</a> — مع مطابقة جبائية تونسية كاملة.</p>
+<p>👉 <strong><a href="/product/offline">اجمعوا إدارتكم الآن مع SoftyFact.</a></strong></p>',
+                'meta_description_fr' => 'Centralisez la gestion de vos clients et fournisseurs dans un seul logiciel. Fiches complètes, historiques, soldes en temps réel — adapté aux PME tunisiennes.',
+                'meta_description_ar' => 'اجمعوا إدارة حرفائكم ومورديكم في برنامج واحد. بطاقات كاملة وسجلات وأرصدة لحظية — مناسب للمؤسسات التونسية.',
+                'meta_keywords' => 'gestion clients fournisseurs tunisie, CRM PME tunisie, logiciel gestion contacts commercial tunisie, fiche client logiciel',
+                'cover_image' => null,
+                'reading_time' => 6,
+                'published_at' => '2026-02-10 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 16 — Tableau de bord et pilotage commercial
+            // ============================================================
+            [
+                'slug' => 'tableau-de-bord-gestion-commerciale-tunisie',
+                'title_fr' => 'Tableau de bord : pilotez votre activité commerciale en temps réel',
+                'title_ar' => 'لوحة القيادة: تابعوا نشاطكم التجاري لحظة بلحظة',
+                'excerpt_fr' => 'Chiffre d\'affaires, marges, top clients, créances — tout visible en un coup d\'œil. Découvrez comment un tableau de bord transforme la gestion de votre PME en Tunisie.',
+                'excerpt_ar' => 'رقم معاملات، هوامش، أفضل الحرفاء، ديون — الكل مرئي في لمحة. اكتشفوا كيف تحوّل لوحة القيادة إدارة مؤسستكم في تونس.',
+                'body_fr' => '<h2>Gérer à l\'aveugle vous coûte de l\'argent</h2>
+<p>Combien de commerçants et gérants de PME en Tunisie connaissent leur chiffre d\'affaires exact du mois en cours ? Leur marge réelle ? Les produits les plus rentables ? Les clients les plus fidèles ?</p>
+<p>La réponse est troublante : <strong>la majorité n\'en a qu\'une idée approximative</strong>. Et cette approximation coûte cher — mauvaises décisions d\'achat, stocks mal dimensionnés, clients non rentables maintenus, opportunités manquées.</p>
+<p>Un tableau de bord commercial change tout. Il transforme des données brutes (factures, paiements, stocks) en <strong>indicateurs visuels instantanés</strong> qui vous permettent de prendre des décisions éclairées — en quelques secondes, pas en quelques heures.</p>
+
+<h2>Les indicateurs essentiels pour une PME tunisienne</h2>
+
+<h3>Chiffre d\'affaires en temps réel</h3>
+<p>C\'est l\'indicateur le plus fondamental. SoftyFact calcule votre CA automatiquement à partir de toutes les factures émises :</p>
+<ul>
+<li><strong>CA du jour, de la semaine, du mois</strong> — voir l\'évolution instantanément</li>
+<li><strong>Comparaison avec les périodes précédentes</strong> — êtes-vous en croissance ou en recul ?</li>
+<li><strong>Répartition par produit ou par catégorie</strong> — quels articles génèrent le plus de revenus ?</li>
+</ul>
+
+<h3>Marges et rentabilité</h3>
+<p>Le chiffre d\'affaires seul ne suffit pas. Ce qui compte, c\'est ce qu\'il reste après les coûts :</p>
+<ul>
+<li><strong>Marge par produit</strong> : identifiez les produits rentables et ceux qui ne le sont pas</li>
+<li><strong>Marge par client</strong> : certains clients négocient trop — le tableau de bord le révèle</li>
+<li><strong>Évolution de la marge globale</strong> : une marge en baisse est un signal d\'alerte précoce</li>
+</ul>
+
+<h3>État des créances</h3>
+<p>Le dashboard affiche en permanence :</p>
+<ul>
+<li><strong>Total des créances en cours</strong> — ce que vos clients vous doivent</li>
+<li><strong>Répartition par échéance</strong> — à 30, 60, 90 jours</li>
+<li><strong>Top débiteurs</strong> — les clients avec les plus gros soldes impayés</li>
+</ul>
+<p>Cette visibilité est directement liée à la <a href="/blog/suivi-paiements-tresorerie-tunisie">gestion de votre trésorerie</a>.</p>
+
+<h3>Activité commerciale</h3>
+<ul>
+<li><strong>Nombre de factures émises</strong> ce mois vs le mois précédent</li>
+<li><strong>Nombre de devis convertis en factures</strong> — votre taux de conversion commercial</li>
+<li><strong>Nouveaux clients ajoutés</strong> — croissance de votre portefeuille</li>
+</ul>
+
+<h3>État du stock</h3>
+<p>Pour les entreprises qui gèrent des produits physiques :</p>
+<ul>
+<li><strong>Produits en alerte de stock minimum</strong></li>
+<li><strong>Valeur totale du stock</strong></li>
+<li><strong>Mouvements récents</strong> — entrées et sorties</li>
+</ul>
+<p>Consultez notre article dédié sur la <a href="/blog/gestion-stock-pme-tunisie">gestion de stock pour PME en Tunisie</a> pour approfondir.</p>
+
+<h2>Comment SoftyFact présente ces données</h2>
+<p>Le tableau de bord SoftyFact est conçu pour être <strong>lisible en 10 secondes</strong>. Pas de graphiques complexes ni de menus imbriqués — les chiffres essentiels sont affichés dès l\'ouverture du logiciel :</p>
+<ul>
+<li>Des <strong>cartes synthétiques</strong> avec les KPI principaux (CA, créances, dettes)</li>
+<li>Des <strong>graphiques d\'évolution</strong> pour visualiser les tendances</li>
+<li>Des <strong>listes dynamiques</strong> : top clients, top produits, factures en retard</li>
+<li>Un <strong>accès rapide</strong> aux actions fréquentes : créer une facture, enregistrer un paiement</li>
+</ul>
+
+<h2>5 décisions que le tableau de bord vous aide à prendre</h2>
+
+<h3>1. Faut-il réapprovisionner un produit ?</h3>
+<p>L\'alerte de stock minimum vous prévient avant la rupture. Plus besoin de vérifier physiquement chaque produit.</p>
+
+<h3>2. Quel client relancer en priorité ?</h3>
+<p>Le classement des créances par montant et par ancienneté vous dit exactement où concentrer vos efforts de recouvrement.</p>
+
+<h3>3. Est-ce que l\'activité est en croissance ?</h3>
+<p>La comparaison mensuelle du CA et du nombre de factures révèle la tendance en un coup d\'œil.</p>
+
+<h3>4. Quels produits abandonner ?</h3>
+<p>Les produits à faible marge ou faible rotation apparaissent clairement. Vous décidez en toute connaissance de cause.</p>
+
+<h3>5. Peut-on investir ce mois-ci ?</h3>
+<p>L\'état combiné de la trésorerie (encaissements - décaissements) et des créances à recevoir vous donne la réponse.</p>
+
+<h2>Exemple concret</h2>
+<p>Amira gère une boutique de prêt-à-porter à Tunis avec deux employés. Avant SoftyFact, elle utilisait un cahier pour noter les ventes et un fichier Excel pour le stock.</p>
+<p>Problème : elle ne découvrait les ruptures de stock que lorsque le client demandait un produit absent. Et elle n\'avait aucune idée de sa marge réelle par article.</p>
+<p>Après 2 mois avec SoftyFact :</p>
+<ul>
+<li>Elle identifie que <strong>3 articles sur 50 représentent 40% de sa marge</strong> — elle double leur stock</li>
+<li>Elle repère <strong>8 articles à marge négative</strong> (prix d\'achat trop élevé vs prix de vente) — elle ajuste ou arrête</li>
+<li>Elle suit <strong>ses créances en temps réel</strong> et relance dès le premier retard</li>
+<li>Résultat : <strong>+22% de marge nette en 3 mois</strong></li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Un tableau de bord n\'est pas un gadget — c\'est l\'outil qui transforme un commerçant qui subit en un entrepreneur qui pilote. En Tunisie, où les marges sont serrées et la concurrence forte, avoir une <strong>visibilité en temps réel</strong> sur votre activité est un avantage décisif.</p>
+<p>SoftyFact intègre ce tableau de bord dans ses deux versions : <a href="/product/offline">Bureau (149 DT à vie)</a> et <a href="/product/online">Cloud (accessible partout)</a>. Les données s\'actualisent automatiquement à chaque facture et paiement.</p>
+<p>👉 <strong><a href="/product/offline">Passez au pilotage intelligent avec SoftyFact.</a></strong></p>',
+
+                'body_ar' => '<h2>الإدارة العشوائية تكلّفكم أموالاً</h2>
+<p>كم من تاجر ومسيّر مؤسسة في تونس يعرف رقم معاملاته الدقيق للشهر الجاري؟ هامش ربحه الحقيقي؟ المنتجات الأكثر ربحية؟ الحرفاء الأكثر وفاءً؟</p>
+<p>الجواب مقلق: <strong>الأغلبية لديها فكرة تقريبية فقط</strong>. وهذا التقريب يكلّف غالياً — قرارات شراء خاطئة، مخزون غير متوازن، حرفاء غير مربحين يُحافَظ عليهم، فرص ضائعة.</p>
+<p>لوحة قيادة تجارية تغيّر كل شيء. تحوّل البيانات الخام (فواتير، خلاصات، مخزون) إلى <strong>مؤشرات بصرية فورية</strong> تسمح باتخاذ قرارات مستنيرة — في ثوانٍ لا في ساعات.</p>
+
+<h2>المؤشرات الأساسية لمؤسسة تونسية</h2>
+
+<h3>رقم المعاملات اللحظي</h3>
+<p>أهم مؤشر. SoftyFact يحسب رقم معاملاتكم تلقائياً من كل الفواتير:</p>
+<ul>
+<li><strong>رقم معاملات اليوم والأسبوع والشهر</strong> — تابعوا التطوّر فوراً</li>
+<li><strong>مقارنة مع الفترات السابقة</strong> — هل أنتم في نمو أم تراجع؟</li>
+<li><strong>توزيع حسب المنتج أو الفئة</strong> — أي مواد تحقق أكبر إيرادات؟</li>
+</ul>
+
+<h3>الهوامش والربحية</h3>
+<p>رقم المعاملات وحده لا يكفي. المهم ما يبقى بعد التكاليف:</p>
+<ul>
+<li><strong>هامش كل منتج</strong>: حدّدوا المنتجات المربحة وغير المربحة</li>
+<li><strong>هامش كل حريف</strong>: بعض الحرفاء يتفاوضون كثيراً — لوحة القيادة تكشف ذلك</li>
+<li><strong>تطوّر الهامش العام</strong>: هامش في تراجع هو إنذار مبكّر</li>
+</ul>
+
+<h3>حالة الديون</h3>
+<p>لوحة القيادة تعرض باستمرار:</p>
+<ul>
+<li><strong>إجمالي الديون الجارية</strong> — ما يدينه لكم الحرفاء</li>
+<li><strong>التوزيع حسب الأجل</strong> — 30، 60، 90 يوماً</li>
+<li><strong>أكبر المدينين</strong> — الحرفاء بأعلى أرصدة غير مدفوعة</li>
+</ul>
+<p>هذه الرؤية مرتبطة مباشرة بـ <a href="/blog/suivi-paiements-tresorerie-tunisie">إدارة خزينتكم</a>.</p>
+
+<h3>النشاط التجاري</h3>
+<ul>
+<li><strong>عدد الفواتير</strong> هذا الشهر مقابل الشهر الماضي</li>
+<li><strong>عدد عروض الأسعار المحوّلة إلى فواتير</strong> — نسبة التحويل التجاري</li>
+<li><strong>حرفاء جدد</strong> — نمو محفظتكم</li>
+</ul>
+
+<h3>حالة المخزون</h3>
+<p>للمؤسسات التي تدير منتجات مادية:</p>
+<ul>
+<li><strong>منتجات في حالة تنبيه المخزون الأدنى</strong></li>
+<li><strong>القيمة الإجمالية للمخزون</strong></li>
+<li><strong>الحركات الأخيرة</strong> — مداخيل ومخارج</li>
+</ul>
+<p>اطلعوا على مقالنا المفصّل حول <a href="/blog/gestion-stock-pme-tunisie">إدارة المخزون للمؤسسات الصغرى والمتوسطة في تونس</a>.</p>
+
+<h2>كيف يعرض SoftyFact هذه البيانات</h2>
+<p>لوحة قيادة SoftyFact مصمّمة لتكون <strong>قابلة للقراءة في 10 ثوانٍ</strong>. لا رسوم بيانية معقّدة ولا قوائم متداخلة — الأرقام الأساسية ظاهرة فور فتح البرنامج:</p>
+<ul>
+<li><strong>بطاقات تلخيصية</strong> بمؤشرات الأداء الرئيسية (رقم المعاملات، الديون، المصاريف)</li>
+<li><strong>رسوم بيانية للتطوّر</strong> لمتابعة الاتجاهات</li>
+<li><strong>قوائم ديناميكية</strong>: أفضل الحرفاء، أفضل المنتجات، فواتير متأخرة</li>
+<li><strong>وصول سريع</strong> للإجراءات المتكررة: إنشاء فاتورة، تسجيل خلاص</li>
+</ul>
+
+<h2>5 قرارات تساعدكم لوحة القيادة على اتخاذها</h2>
+
+<h3>1. هل يجب إعادة تموين منتج؟</h3>
+<p>تنبيه المخزون الأدنى يحذّركم قبل النفاد.</p>
+
+<h3>2. أي حريف يجب متابعته أولاً؟</h3>
+<p>ترتيب الديون حسب المبلغ والقدم يخبركم بالضبط أين تركّزون جهودكم.</p>
+
+<h3>3. هل النشاط في نمو؟</h3>
+<p>المقارنة الشهرية لرقم المعاملات وعدد الفواتير تكشف الاتجاه بلمحة.</p>
+
+<h3>4. أي منتجات يجب التخلي عنها؟</h3>
+<p>المنتجات ذات الهامش أو الدوران الضعيف تظهر بوضوح.</p>
+
+<h3>5. هل نستطيع الاستثمار هذا الشهر؟</h3>
+<p>حالة الخزينة (مقبوضات - مدفوعات) مع الديون المنتظرة تعطيكم الجواب.</p>
+
+<h2>مثال واقعي</h2>
+<p>أميرة تدير محل ملابس في تونس بموظفين اثنين. قبل SoftyFact كانت تستعمل دفتراً للمبيعات وExcel للمخزون.</p>
+<p>بعد شهرين مع SoftyFact:</p>
+<ul>
+<li>اكتشفت أن <strong>3 مواد من 50 تمثّل 40% من هامشها</strong> — ضاعفت مخزونها</li>
+<li>حدّدت <strong>8 مواد بهامش سلبي</strong> — عدّلت أو أوقفت</li>
+<li><strong>تتابع ديونها لحظياً</strong> وتتابع من أول تأخير</li>
+<li>النتيجة: <strong>+22% هامش صافي في 3 أشهر</strong></li>
+</ul>
+
+<h2>خلاصة</h2>
+<p>لوحة القيادة ليست أداة ثانوية — إنها ما يحوّل تاجراً يتلقّى الضربات إلى مقاول يقود نشاطه. في تونس حيث الهوامش ضيقة والمنافسة شديدة، <strong>الرؤية اللحظية</strong> ميزة حاسمة.</p>
+<p>SoftyFact يدمج لوحة القيادة في نسختيه: <a href="/product/offline">Bureau بـ 149 دينار مدى الحياة</a> و<a href="/product/online">Cloud المتاح في كل مكان</a>.</p>
+<p>👉 <strong><a href="/product/offline">انتقلوا للقيادة الذكية مع SoftyFact.</a></strong></p>',
+                'meta_description_fr' => 'Pilotez votre PME tunisienne avec un tableau de bord en temps réel : chiffre d\'affaires, marges, créances, stock. Tout visible en un coup d\'œil avec SoftyFact.',
+                'meta_description_ar' => 'قودوا مؤسستكم التونسية بلوحة قيادة لحظية: رقم معاملات، هوامش، ديون، مخزون. الكل مرئي في لمحة مع SoftyFact.',
+                'meta_keywords' => 'tableau de bord gestion commerciale tunisie, reporting PME tunisie, indicateurs performance entreprise, dashboard facturation',
+                'cover_image' => null,
+                'reading_time' => 6,
+                'published_at' => '2026-02-20 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 17 — Cycle documentaire (Devis → Facture)
+            // ============================================================
+            [
+                'slug' => 'devis-bon-livraison-facture-workflow-tunisie',
+                'title_fr' => 'Du devis à la facture : maîtrisez le cycle documentaire de votre entreprise',
+                'title_ar' => 'من عرض السعر إلى الفاتورة: أتقنوا الدورة الوثائقية لمؤسستكم',
+                'excerpt_fr' => 'Devis, bon de commande, bon de livraison, facture, avoir — chaque étape du cycle de vente compte. Apprenez à les gérer efficacement avec un logiciel adapté aux PME tunisiennes.',
+                'excerpt_ar' => 'عرض سعر، أمر شراء، وصل تسليم، فاتورة، إشعار دائن — كل مرحلة من دورة البيع مهمة. تعلّموا إدارتها بفعالية مع برنامج مناسب للمؤسسات التونسية.',
+                'body_fr' => '<h2>Pourquoi le cycle documentaire est crucial</h2>
+<p>Dans toute activité commerciale en Tunisie, une vente ne se résume pas à une seule facture. Il y a un <strong>cycle complet de documents</strong> qui accompagne chaque transaction, du premier contact avec le client jusqu\'au paiement final :</p>
+<ol>
+<li><strong>Le devis</strong> (عرض السعر) — la proposition commerciale</li>
+<li><strong>Le bon de commande</strong> — la confirmation par le client</li>
+<li><strong>Le bon de livraison</strong> (BL) — la preuve de livraison des marchandises</li>
+<li><strong>La facture</strong> — le document fiscal officiel</li>
+<li><strong>L\'avoir</strong> (facture de retour) — en cas de retour ou d\'erreur</li>
+</ol>
+<p>Beaucoup de commerçants tunisiens gèrent ces documents séparément — devis sur papier, BL dans un carnet, factures dans Excel. Cette fragmentation crée des incohérences, des oublis, et des pertes de temps considérables.</p>
+
+<h2>Chaque document a un rôle précis</h2>
+
+<h3>Le devis : votre vitrine commerciale</h3>
+<p>Le devis est souvent le premier document que votre client reçoit. Il doit être :</p>
+<ul>
+<li><strong>Professionnel</strong> : mise en page soignée, logo, coordonnées complètes</li>
+<li><strong>Précis</strong> : description détaillée, quantités, prix unitaires HT et TTC</li>
+<li><strong>Conforme</strong> : <a href="/blog/guide-tva-tunisie">TVA</a> correctement calculée, conditions de paiement mentionnées</li>
+<li><strong>Numéroté</strong> : pour votre suivi interne et votre crédibilité</li>
+</ul>
+<p>Dans SoftyFact, un devis se crée en quelques clics : sélectionnez le <a href="/blog/gestion-clients-fournisseurs-logiciel-tunisie">client</a>, ajoutez les produits, et le logiciel fait le reste — calcul de TVA, <a href="/blog/fodec-tunisie-guide">FODEC</a>, mise en page professionnelle.</p>
+
+<h3>Le bon de commande : l\'engagement</h3>
+<p>Quand le client accepte le devis, le bon de commande formalise l\'accord. Dans SoftyFact, vous pouvez <strong>convertir un devis en bon de commande en un clic</strong> — sans ressaisir aucune information.</p>
+
+<h3>Le bon de livraison : la traçabilité</h3>
+<p>Le BL prouve que les marchandises ont été livrées. C\'est un document essentiel en cas de litige. Il doit mentionner :</p>
+<ul>
+<li>La date de livraison</li>
+<li>Les articles livrés et leurs quantités</li>
+<li>La signature du réceptionnaire</li>
+</ul>
+<p>Quand vous créez un BL dans SoftyFact, le <a href="/blog/gestion-stock-pme-tunisie">stock est automatiquement mis à jour</a> — les quantités livrées sont déduites en temps réel.</p>
+
+<h3>La facture : le document roi</h3>
+<p>La facture est le document fiscal obligatoire. Elle doit respecter des règles strictes en Tunisie :</p>
+<ul>
+<li>Numérotation séquentielle obligatoire</li>
+<li>Mentions légales (matricule fiscal, registre de commerce)</li>
+<li>Détail de la TVA par taux</li>
+<li><a href="/blog/timbre-fiscal-tunisie">Timbre fiscal</a> si paiement en espèces</li>
+</ul>
+<p>Consultez notre guide complet : <a href="/blog/creer-facture-conforme-tunisie">Comment créer une facture conforme en Tunisie</a>.</p>
+<p>Dans SoftyFact, la conversion d\'un BL (ou d\'un devis) en facture se fait <strong>en un seul clic</strong>. Toutes les informations sont reprises automatiquement.</p>
+
+<h3>L\'avoir : corriger proprement</h3>
+<p>En cas de retour de marchandise ou d\'erreur sur une facture, l\'avoir (ou facture de retour) annule partiellement ou totalement la facture d\'origine. SoftyFact le génère en le liant à la facture concernée, pour une traçabilité complète.</p>
+
+<h2>Le pouvoir de la conversion automatique</h2>
+<p>La fonctionnalité la plus importante dans la gestion du cycle documentaire est la <strong>conversion en cascade</strong> :</p>
+
+<table>
+<thead><tr><th>Action</th><th>Résultat</th><th>Temps</th></tr></thead>
+<tbody>
+<tr><td>Devis → Bon de commande</td><td>1 clic, données reprises</td><td>2 secondes</td></tr>
+<tr><td>Bon de commande → BL</td><td>1 clic, stock mis à jour</td><td>2 secondes</td></tr>
+<tr><td>BL → Facture</td><td>1 clic, TVA calculée</td><td>2 secondes</td></tr>
+<tr><td>Facture → Avoir</td><td>1 clic, référence liée</td><td>2 secondes</td></tr>
+</tbody>
+</table>
+
+<p>Résultat : <strong>du devis à la facture en 3 clics et moins de 10 secondes</strong>, sans aucune ressaisie. Comparez cela aux 15-30 minutes nécessaires pour rédiger chaque document manuellement.</p>
+
+<h2>Avantages pour votre entreprise</h2>
+
+<h3>Gain de temps considérable</h3>
+<p>Une PME qui émet 50 factures par mois passe en moyenne 15 minutes par facture en gestion manuelle = <strong>12h30 par mois</strong>. Avec SoftyFact, c\'est réduit à <strong>moins de 2 heures</strong> — un gain de 10 heures mensuelles.</p>
+
+<h3>Zéro incohérence</h3>
+<p>Quand chaque document découle du précédent, les erreurs de recopie disparaissent. Le montant du devis est identique à celui de la facture. Les quantités du BL correspondent exactement à la commande.</p>
+
+<h3>Traçabilité complète</h3>
+<p>Pour chaque facture, vous pouvez remonter au devis d\'origine, au BL, et au paiement associé. En cas de contrôle fiscal ou de litige client, tout est accessible en quelques clics.</p>
+
+<h3>Documents professionnels</h3>
+<p>Tous les documents générés par SoftyFact sont au format PDF professionnel, avec votre logo, vos coordonnées, et une mise en page soignée. C\'est votre image de marque à chaque interaction.</p>
+
+<h2>Exemple concret</h2>
+<p>Walid dirige une entreprise de matériel informatique à Sfax. Chaque jour, il reçoit 5 à 10 demandes de devis par téléphone.</p>
+<p><strong>Avant SoftyFact :</strong> Il rédigeait les devis sur Word, notait les commandes dans un cahier, imprimait les BL à la main, et créait les factures sur Excel. Résultat : des incohérences entre documents, des BL sans factures associées, et des heures perdues chaque semaine.</p>
+<p><strong>Avec SoftyFact :</strong> Il crée le devis en 2 minutes. Quand le client accepte, il clique « Convertir en commande ». À la livraison, il clique « Créer BL ». Puis « Générer facture ». Total : <strong>3 clics et 30 secondes</strong> pour passer du devis à la facture.</p>
+
+<h2>Conclusion</h2>
+<p>Le cycle documentaire est le squelette de votre activité commerciale. En le gérant avec un logiciel qui permet la <strong>conversion automatique entre documents</strong>, vous gagnez un temps précieux, vous éliminez les erreurs, et vous offrez une image professionnelle à vos clients.</p>
+<p>SoftyFact gère l\'intégralité de ce cycle — devis, commandes, BL, factures et avoirs — dans sa <a href="/product/offline">version Bureau (149 DT à vie)</a> et sa <a href="/product/online">version Cloud</a>.</p>
+<p>👉 <strong><a href="/product/offline">Simplifiez votre cycle documentaire avec SoftyFact.</a></strong></p>',
+
+                'body_ar' => '<h2>لماذا الدورة الوثائقية حاسمة</h2>
+<p>في كل نشاط تجاري في تونس، البيع لا يُختصر في فاتورة واحدة. هناك <strong>دورة كاملة من الوثائق</strong> ترافق كل معاملة، من أول اتصال مع الحريف حتى الخلاص النهائي:</p>
+<ol>
+<li><strong>عرض السعر</strong> (Le devis) — العرض التجاري</li>
+<li><strong>أمر الشراء</strong> — تأكيد الحريف</li>
+<li><strong>وصل التسليم</strong> (BL) — إثبات تسليم البضاعة</li>
+<li><strong>الفاتورة</strong> — الوثيقة الجبائية الرسمية</li>
+<li><strong>الإشعار الدائن</strong> (فاتورة الإرجاع) — في حالة إرجاع أو خطأ</li>
+</ol>
+<p>كثير من التجار التونسيين يديرون هذه الوثائق بشكل منفصل — عروض أسعار على الورق، وصولات في دفتر، فواتير في Excel. هذا التشتت يخلق تناقضات ونسيان وضياع وقت كبير.</p>
+
+<h2>كل وثيقة لها دور دقيق</h2>
+
+<h3>عرض السعر: واجهتكم التجارية</h3>
+<p>عرض السعر غالباً أول وثيقة يتلقاها حريفكم. يجب أن يكون:</p>
+<ul>
+<li><strong>احترافي</strong>: تنسيق أنيق، شعار، بيانات كاملة</li>
+<li><strong>دقيق</strong>: وصف مفصّل، كميات، أسعار وحدوية دون وبداخل الأداء</li>
+<li><strong>مطابق</strong>: <a href="/blog/guide-tva-tunisie">الأداء</a> محسوب بشكل صحيح</li>
+<li><strong>مرقّم</strong>: للمتابعة الداخلية والمصداقية</li>
+</ul>
+<p>في SoftyFact، يُنشأ عرض السعر ببضع نقرات: اختاروا <a href="/blog/gestion-clients-fournisseurs-logiciel-tunisie">الحريف</a>، أضيفوا المنتجات، والبرنامج يتكفّل بالباقي — حساب الأداء و<a href="/blog/fodec-tunisie-guide">FODEC</a> والتنسيق الاحترافي.</p>
+
+<h3>أمر الشراء: الالتزام</h3>
+<p>عند قبول الحريف لعرض السعر، أمر الشراء يُرسّم الاتفاق. في SoftyFact، يمكنكم <strong>تحويل عرض السعر إلى أمر شراء بنقرة واحدة</strong> — بدون إعادة إدخال أي معلومة.</p>
+
+<h3>وصل التسليم: قابلية التتبّع</h3>
+<p>وصل التسليم يثبت أن البضاعة سُلّمت. وثيقة أساسية في حالة نزاع. يجب أن يذكر:</p>
+<ul>
+<li>تاريخ التسليم</li>
+<li>المواد المسلّمة وكمياتها</li>
+<li>إمضاء المستلم</li>
+</ul>
+<p>عند إنشاء وصل تسليم في SoftyFact، <a href="/blog/gestion-stock-pme-tunisie">المخزون يتحدّث تلقائياً</a> — الكميات المسلّمة تُخصم لحظياً.</p>
+
+<h3>الفاتورة: الوثيقة الملك</h3>
+<p>الفاتورة هي الوثيقة الجبائية الإلزامية. يجب أن تحترم قواعد صارمة في تونس:</p>
+<ul>
+<li>ترقيم تسلسلي إلزامي</li>
+<li>بيانات قانونية (معرّف جبائي، سجل تجاري)</li>
+<li>تفصيل الأداء حسب النسبة</li>
+<li><a href="/blog/timbre-fiscal-tunisie">معلوم الطابع الجبائي</a> عند الدفع النقدي</li>
+</ul>
+<p>اطلعوا على دليلنا: <a href="/blog/creer-facture-conforme-tunisie">كيف تنشئون فاتورة مطابقة في تونس</a>.</p>
+<p>في SoftyFact، تحويل وصل تسليم (أو عرض سعر) إلى فاتورة يتم <strong>بنقرة واحدة</strong>.</p>
+
+<h3>الإشعار الدائن: التصحيح النظيف</h3>
+<p>في حالة إرجاع بضاعة أو خطأ في فاتورة، الإشعار الدائن يُلغي جزئياً أو كلياً الفاتورة الأصلية. SoftyFact يولّده مرتبطاً بالفاتورة المعنية.</p>
+
+<h2>قوة التحويل الآلي</h2>
+<p>الوظيفة الأهم في إدارة الدورة الوثائقية هي <strong>التحويل المتتالي</strong>:</p>
+<table>
+<thead><tr><th>الإجراء</th><th>النتيجة</th><th>الوقت</th></tr></thead>
+<tbody>
+<tr><td>عرض سعر ← أمر شراء</td><td>نقرة واحدة، البيانات تُنسخ</td><td>ثانيتان</td></tr>
+<tr><td>أمر شراء ← وصل تسليم</td><td>نقرة واحدة، المخزون يتحدّث</td><td>ثانيتان</td></tr>
+<tr><td>وصل تسليم ← فاتورة</td><td>نقرة واحدة، الأداء يُحسب</td><td>ثانيتان</td></tr>
+<tr><td>فاتورة ← إشعار دائن</td><td>نقرة واحدة، المرجع مرتبط</td><td>ثانيتان</td></tr>
+</tbody>
+</table>
+<p>النتيجة: <strong>من عرض السعر إلى الفاتورة في 3 نقرات وأقل من 10 ثوانٍ</strong>، بدون أي إعادة إدخال.</p>
+
+<h2>المزايا لمؤسستكم</h2>
+
+<h3>توفير وقت كبير</h3>
+<p>مؤسسة تُصدر 50 فاتورة شهرياً تقضي 15 دقيقة لكل فاتورة يدوياً = <strong>12 ساعة ونصف شهرياً</strong>. مع SoftyFact تنخفض إلى <strong>أقل من ساعتين</strong>.</p>
+
+<h3>صفر تناقض</h3>
+<p>عندما كل وثيقة تنبثق من السابقة، أخطاء النسخ تختفي. مبلغ عرض السعر مطابق للفاتورة. كميات وصل التسليم تطابق الطلبية.</p>
+
+<h3>قابلية تتبّع كاملة</h3>
+<p>لكل فاتورة يمكنكم الرجوع لعرض السعر الأصلي ووصل التسليم والخلاص المرتبط. في حالة مراقبة جبائية أو نزاع، كل شيء متاح.</p>
+
+<h2>مثال واقعي</h2>
+<p>وليد يدير شركة لوازم إعلامية في صفاقس. يتلقى يومياً 5 إلى 10 طلبات عروض أسعار.</p>
+<p><strong>قبل SoftyFact:</strong> كان يكتب عروض الأسعار في Word، يسجّل الطلبيات في دفتر، يطبع وصولات التسليم يدوياً، وينشئ الفواتير في Excel. النتيجة: تناقضات، وصولات بدون فواتير، وساعات ضائعة.</p>
+<p><strong>مع SoftyFact:</strong> ينشئ عرض السعر في دقيقتين. عند القبول ينقر "تحويل لطلبية". عند التسليم "إنشاء وصل". ثم "توليد فاتورة". المجموع: <strong>3 نقرات و30 ثانية</strong>.</p>
+
+<h2>خلاصة</h2>
+<p>الدورة الوثائقية هي هيكل نشاطكم التجاري. بإدارتها ببرنامج يسمح بـ <strong>التحويل الآلي بين الوثائق</strong>، توفّرون وقتاً ثميناً وتقضون على الأخطاء وتقدّمون صورة احترافية.</p>
+<p>SoftyFact يدير كامل هذه الدورة في <a href="/product/offline">نسخته Bureau بـ 149 دينار مدى الحياة</a> و<a href="/product/online">نسخته السحابية</a>.</p>
+<p>👉 <strong><a href="/product/offline">بسّطوا دورتكم الوثائقية مع SoftyFact.</a></strong></p>',
+                'meta_description_fr' => 'Maîtrisez le cycle devis → bon de commande → bon de livraison → facture en Tunisie. Conversion automatique en un clic avec SoftyFact.',
+                'meta_description_ar' => 'أتقنوا دورة عرض السعر ← أمر الشراء ← وصل التسليم ← الفاتورة في تونس. تحويل آلي بنقرة واحدة مع SoftyFact.',
+                'meta_keywords' => 'devis facture bon livraison tunisie, cycle documentaire PME, logiciel devis facturation tunisie, workflow commercial',
+                'cover_image' => null,
+                'reading_time' => 7,
+                'published_at' => '2026-03-03 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 18 — Facturation pour freelances
+            // ============================================================
+            [
+                'slug' => 'facturation-freelance-auto-entrepreneur-tunisie',
+                'title_fr' => 'Facturation pour freelances et auto-entrepreneurs en Tunisie : le guide complet',
+                'title_ar' => 'الفوترة للعاملين المستقلين وأصحاب المشاريع الذاتية في تونس: الدليل الشامل',
+                'excerpt_fr' => 'Freelance ou auto-entrepreneur en Tunisie ? Découvrez vos obligations de facturation, le régime TVA applicable, et comment SoftyFact simplifie votre comptabilité.',
+                'excerpt_ar' => 'عامل مستقل أو صاحب مشروع ذاتي في تونس؟ اكتشفوا التزاماتكم في الفوترة ونظام الأداء المطبّق وكيف يبسّط SoftyFact محاسبتكم.',
+                'body_fr' => '<h2>Le boom du freelancing en Tunisie</h2>
+<p>Le travail indépendant connaît une croissance forte en Tunisie. Développeurs, designers, consultants, traducteurs, formateurs, community managers — de plus en plus de professionnels choisissent le statut de freelance ou d\'auto-entrepreneur.</p>
+<p>Mais cette liberté s\'accompagne d\'obligations administratives et fiscales que beaucoup sous-estiment. Et la première d\'entre elles : <strong>la facturation conforme</strong>.</p>
+<p>Que vous facturiez à des entreprises tunisiennes ou à des clients étrangers, vous devez respecter des règles précises. Ce guide vous explique tout ce qu\'il faut savoir — et comment un <strong>logiciel de facturation</strong> vous simplifie la vie.</p>
+
+<h2>Vos obligations de facturation en tant que freelance</h2>
+
+<h3>Émission de factures obligatoire</h3>
+<p>En Tunisie, toute prestation de service ou vente de produit doit faire l\'objet d\'une facture. Cela s\'applique aussi aux freelances, qu\'ils soient sous le régime forfaitaire ou le régime réel.</p>
+<p>Chaque facture doit contenir les <a href="/blog/creer-facture-conforme-tunisie">mentions obligatoires</a> :</p>
+<ul>
+<li>Vos coordonnées et matricule fiscal</li>
+<li>Les coordonnées du client</li>
+<li>La description détaillée de la prestation</li>
+<li>Le montant HT, la TVA, et le montant TTC</li>
+<li>Un numéro séquentiel unique</li>
+<li>La date d\'émission</li>
+</ul>
+
+<h3>Régime fiscal : forfaitaire ou réel ?</h3>
+<p>Les freelances en Tunisie relèvent généralement de deux régimes :</p>
+<ul>
+<li><strong>Régime forfaitaire</strong> : pour les revenus modestes, impôt calculé sur une base forfaitaire. Facturation simplifiée mais toujours obligatoire.</li>
+<li><strong>Régime réel</strong> : pour les revenus plus importants, comptabilité complète avec TVA, déclarations mensuelles, et retenue à la source.</li>
+</ul>
+
+<h3>TVA : êtes-vous assujetti ?</h3>
+<p>Si vous dépassez un certain seuil de chiffre d\'affaires, vous êtes assujetti à la <a href="/blog/guide-tva-tunisie">TVA en Tunisie</a>. Le taux standard est de 19% pour les prestations de services.</p>
+<p>Même si vous n\'êtes pas assujetti, vos factures doivent le mentionner : « Exonéré de TVA — Article XX du Code de la TVA ».</p>
+
+<h3>Retenue à la source</h3>
+<p>Quand vous facturez à une entreprise tunisienne, celle-ci retient généralement un pourcentage à la source :</p>
+<ul>
+<li><strong>3%</strong> sur les honoraires de personnes morales</li>
+<li><strong>15%</strong> sur les honoraires de personnes physiques</li>
+</ul>
+<p>Votre client doit vous fournir un <a href="/blog/retenue-source-tunisie-guide">certificat de retenue à la source</a> que vous déduirez de votre impôt annuel.</p>
+
+<h2>Les défis spécifiques des freelances</h2>
+
+<h3>Facturation irrégulière</h3>
+<p>Contrairement à un commerce qui facture quotidiennement, un freelance peut émettre 3 factures un mois et 15 le mois suivant. Un logiciel garantit que la <strong>numérotation reste séquentielle</strong> quoi qu\'il arrive.</p>
+
+<h3>Multi-devises (clients étrangers)</h3>
+<p>De nombreux freelances tunisiens travaillent avec des clients en France, au Canada ou dans le Golfe. Ils doivent gérer des factures en euros, dollars ou dirhams. SoftyFact gère les devises étrangères nativement.</p>
+
+<h3>Suivi des paiements internationaux</h3>
+<p>Les paiements internationaux prennent souvent 15 à 30 jours. Sans <a href="/blog/suivi-paiements-tresorerie-tunisie">suivi structuré</a>, il est facile de perdre de vue qui a payé ou non.</p>
+
+<h3>Pas de temps pour l\'administratif</h3>
+<p>Un freelance vend son temps. Chaque heure passée sur la facturation est une heure non facturée. L\'outil doit être <strong>rapide et simple</strong> — pas un logiciel complexe qui nécessite une formation.</p>
+
+<h2>Pourquoi SoftyFact est adapté aux freelances</h2>
+
+<h3>Création de facture en 30 secondes</h3>
+<p>Sélectionnez le client, ajoutez la prestation, validez. La TVA se calcule automatiquement, le numéro s\'incrémente, et le PDF est prêt à envoyer.</p>
+
+<h3>Gestion des devis et conversion</h3>
+<p>Envoyez un <a href="/blog/devis-bon-livraison-facture-workflow-tunisie">devis professionnel</a>, puis convertissez-le en facture d\'un clic quand le client accepte.</p>
+
+<h3>Suivi des paiements</h3>
+<p>Marquez chaque facture comme payée/impayée. Visualisez en un coup d\'œil vos revenus du mois et vos créances en attente.</p>
+
+<h3>Export PDF professionnel</h3>
+<p>Vos factures reflètent votre professionnalisme. Un PDF bien mis en page, avec votre logo, fait la différence comparé à un document Word bricolé.</p>
+
+<h3>Version Cloud : idéale pour les nomades</h3>
+<p>La <a href="/product/online">version Cloud de SoftyFact</a> est accessible depuis n\'importe quel appareil — ordinateur, tablette, smartphone. Parfait pour les freelances qui travaillent depuis un coworking, un café, ou l\'étranger.</p>
+
+<h2>Checklist du freelance bien organisé</h2>
+<ul>
+<li>☑️ Matricule fiscal obtenu auprès du bureau des impôts</li>
+<li>☑️ Régime fiscal choisi (forfaitaire ou réel)</li>
+<li>☑️ Logiciel de facturation installé (SoftyFact Bureau ou Cloud)</li>
+<li>☑️ Fiches clients créées avec coordonnées et matricule fiscal</li>
+<li>☑️ Modèle de facture configuré (logo, coordonnées, mentions légales)</li>
+<li>☑️ Numérotation séquentielle vérifiée</li>
+<li>☑️ Suivi des paiements activé</li>
+<li>☑️ Archivage des factures pendant 10 ans (obligation légale)</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Être freelance en Tunisie signifie être son propre patron — y compris pour la comptabilité. La <strong>facturation conforme</strong> n\'est pas optionnelle : c\'est une obligation légale et un signe de professionnalisme.</p>
+<p>Avec SoftyFact, vous créez des factures professionnelles en quelques secondes, vous suivez vos paiements, et vous restez en conformité fiscale — le tout sans perdre de temps sur l\'administratif.</p>
+<p>🖥️ <a href="/product/offline"><strong>Version Bureau — 149 DT à vie</strong></a> | ☁️ <a href="/product/online"><strong>Version Cloud — accessible partout</strong></a></p>
+<p>👉 <strong><a href="/product/offline">Commencez à facturer proprement dès aujourd\'hui.</a></strong></p>',
+
+                'body_ar' => '<h2>طفرة العمل المستقل في تونس</h2>
+<p>العمل الحر يشهد نمواً قوياً في تونس. مطوّرون، مصمّمون، مستشارون، مترجمون، مكوّنون، مسيّرو مواقع التواصل — المزيد من المهنيين يختارون صفة العامل المستقل أو صاحب المشروع الذاتي.</p>
+<p>لكن هذه الحرية ترافقها التزامات إدارية وجبائية يستهين بها الكثيرون. وأولها: <strong>الفوترة المطابقة</strong>.</p>
+<p>سواء فوترتم لمؤسسات تونسية أو لحرفاء أجانب، يجب احترام قواعد دقيقة. هذا الدليل يشرح كل ما تحتاجون معرفته — وكيف يبسّط <strong>برنامج الفوترة</strong> حياتكم.</p>
+
+<h2>التزاماتكم في الفوترة كعامل مستقل</h2>
+
+<h3>إصدار الفواتير إلزامي</h3>
+<p>في تونس، كل خدمة أو بيع منتج يستوجب فاتورة. هذا ينطبق أيضاً على العاملين المستقلين سواء كانوا تحت النظام التقديري أو الحقيقي.</p>
+<p>كل فاتورة يجب أن تتضمن <a href="/blog/creer-facture-conforme-tunisie">البيانات الإلزامية</a>:</p>
+<ul>
+<li>بياناتكم ومعرّفكم الجبائي</li>
+<li>بيانات الحريف</li>
+<li>وصف تفصيلي للخدمة</li>
+<li>المبلغ دون الأداء والأداء والمبلغ الإجمالي</li>
+<li>رقم تسلسلي فريد</li>
+<li>تاريخ الإصدار</li>
+</ul>
+
+<h3>النظام الجبائي: تقديري أو حقيقي؟</h3>
+<ul>
+<li><strong>النظام التقديري</strong>: لمداخيل متواضعة، ضريبة محسوبة على أساس تقديري. فوترة مبسّطة لكن إلزامية.</li>
+<li><strong>النظام الحقيقي</strong>: لمداخيل أهم، محاسبة كاملة مع أداء وتصريحات شهرية وخصم من المورد.</li>
+</ul>
+
+<h3>الأداء على القيمة المضافة: هل أنتم خاضعون؟</h3>
+<p>إذا تجاوزتم سقفاً معيناً من رقم المعاملات، تصبحون خاضعين لـ <a href="/blog/guide-tva-tunisie">الأداء على القيمة المضافة</a>. النسبة المعتادة 19% لخدمات المهن.</p>
+
+<h3>الخصم من المورد</h3>
+<p>عند فوترة مؤسسة تونسية، تخصم عادة نسبة من المورد:</p>
+<ul>
+<li><strong>3%</strong> على أتعاب الشخصيات المعنوية</li>
+<li><strong>15%</strong> على أتعاب الشخصيات الطبيعية</li>
+</ul>
+<p>يجب أن يزوّدكم حريفكم بـ <a href="/blog/retenue-source-tunisie-guide">شهادة خصم من المورد</a> تخصمونها من ضريبتكم السنوية.</p>
+
+<h2>التحديات الخاصة بالعاملين المستقلين</h2>
+
+<h3>فوترة غير منتظمة</h3>
+<p>على عكس تاجر يفوتر يومياً، قد يُصدر العامل المستقل 3 فواتير شهراً و15 الشهر الذي يليه. البرنامج يضمن <strong>بقاء الترقيم تسلسلياً</strong> مهما كان.</p>
+
+<h3>عملات متعددة (حرفاء أجانب)</h3>
+<p>كثير من المستقلين التونسيين يعملون مع حرفاء في فرنسا وكندا والخليج. يديرون فواتير بالأورو والدولار والدرهم. SoftyFact يدير العملات الأجنبية أصلياً.</p>
+
+<h3>متابعة الدفعات الدولية</h3>
+<p>الدفعات الدولية تأخذ 15 إلى 30 يوماً. بدون <a href="/blog/suivi-paiements-tresorerie-tunisie">متابعة منظّمة</a>، يسهل ضياع من دفع ومن لم يدفع.</p>
+
+<h3>لا وقت للإداريات</h3>
+<p>المستقل يبيع وقته. كل ساعة في الفوترة = ساعة غير مفوترة. الأداة يجب أن تكون <strong>سريعة وبسيطة</strong>.</p>
+
+<h2>لماذا SoftyFact مناسب للمستقلين</h2>
+
+<h3>إنشاء فاتورة في 30 ثانية</h3>
+<p>اختاروا الحريف، أضيفوا الخدمة، صادقوا. الأداء يُحسب تلقائياً والرقم يتزايد والـ PDF جاهز للإرسال.</p>
+
+<h3>إدارة عروض الأسعار والتحويل</h3>
+<p>أرسلوا <a href="/blog/devis-bon-livraison-facture-workflow-tunisie">عرض سعر احترافي</a>، ثم حوّلوه لفاتورة بنقرة عند القبول.</p>
+
+<h3>متابعة الخلاصات</h3>
+<p>علّموا كل فاتورة كمدفوعة أو غير مدفوعة. تابعوا مداخيلكم الشهرية وديونكم بلمحة.</p>
+
+<h3>نسخة Cloud: مثالية للبدو</h3>
+<p><a href="/product/online">النسخة السحابية من SoftyFact</a> متاحة من أي جهاز — حاسوب، لوحة، هاتف. مثالية للمستقلين الذين يعملون من coworking أو مقهى أو الخارج.</p>
+
+<h2>قائمة تحقق المستقل المنظّم</h2>
+<ul>
+<li>☑️ معرّف جبائي متحصّل عليه</li>
+<li>☑️ نظام جبائي مختار (تقديري أو حقيقي)</li>
+<li>☑️ برنامج فوترة مثبّت (SoftyFact Bureau أو Cloud)</li>
+<li>☑️ بطاقات الحرفاء منشأة</li>
+<li>☑️ نموذج الفاتورة مهيّأ (شعار، بيانات، ذكريات قانونية)</li>
+<li>☑️ ترقيم تسلسلي مُتحقّق منه</li>
+<li>☑️ متابعة الخلاصات مفعّلة</li>
+<li>☑️ أرشفة الفواتير 10 سنوات (التزام قانوني)</li>
+</ul>
+
+<h2>خلاصة</h2>
+<p>أن تكون عاملاً مستقلاً في تونس يعني أن تكون مديراً لنفسك — بما في ذلك المحاسبة. <strong>الفوترة المطابقة</strong> ليست اختيارية: إنها التزام قانوني وعلامة احترافية.</p>
+<p>مع SoftyFact، تنشئون فواتير احترافية في ثوانٍ وتتابعون خلاصاتكم وتبقون مطابقين جبائياً.</p>
+<p>🖥️ <a href="/product/offline"><strong>نسخة Bureau — 149 دينار مدى الحياة</strong></a> | ☁️ <a href="/product/online"><strong>نسخة Cloud — متاحة في كل مكان</strong></a></p>
+<p>👉 <strong><a href="/product/offline">ابدأوا الفوترة المنظّمة اليوم.</a></strong></p>',
+                'meta_description_fr' => 'Guide complet de la facturation pour freelances et auto-entrepreneurs en Tunisie : obligations fiscales, TVA, retenue à la source et logiciel adapté.',
+                'meta_description_ar' => 'دليل شامل للفوترة للعاملين المستقلين وأصحاب المشاريع الذاتية في تونس: التزامات جبائية وأداء وخصم من المورد وبرنامج مناسب.',
+                'meta_keywords' => 'facturation freelance tunisie, auto-entrepreneur tunisie facture, logiciel facturation indépendant, TVA freelance tunisie',
+                'cover_image' => null,
+                'reading_time' => 6,
+                'published_at' => '2026-03-08 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 19 — SoftyFact pour les experts-comptables
+            // ============================================================
+            [
+                'slug' => 'logiciel-facturation-expert-comptable-tunisie',
+                'title_fr' => 'Pourquoi les experts-comptables tunisiens recommandent SoftyFact à leurs clients',
+                'title_ar' => 'لماذا ينصح المحاسبون التونسيون حرفاءهم بـ SoftyFact',
+                'excerpt_fr' => 'Experts-comptables : vos clients utilisent encore Excel ? Découvrez pourquoi recommander SoftyFact vous fait gagner du temps et améliore la qualité des données comptables.',
+                'excerpt_ar' => 'محاسبون: حرفاؤكم لا يزالون يستخدمون Excel؟ اكتشفوا لماذا التوصية بـ SoftyFact توفّر وقتكم وتحسّن جودة البيانات المحاسبية.',
+                'body_fr' => '<h2>Le problème que connaissent tous les experts-comptables</h2>
+<p>Chaque trimestre, c\'est le même scénario : vos clients vous apportent un sac de factures en vrac, un cahier de recettes illisible, ou un fichier Excel avec des formules cassées. Vous passez des heures à trier, vérifier et ressaisir des données qui auraient dû être propres dès le départ.</p>
+<p>Ce temps perdu en ressaisie est du temps que vous ne consacrez pas au conseil, à l\'analyse, ou à l\'acquisition de nouveaux clients. C\'est un coût caché considérable pour votre cabinet.</p>
+<p>La solution ? Que vos clients utilisent un <strong>logiciel de facturation conforme</strong> dès la saisie initiale. Et en Tunisie, la solution la mieux adaptée est SoftyFact.</p>
+
+<h2>Ce que les cabinets comptables attendent d\'un logiciel client</h2>
+
+<h3>1. Des factures conformes dès l\'émission</h3>
+<p>Quand votre client utilise SoftyFact, chaque facture émise respecte automatiquement les normes tunisiennes :</p>
+<ul>
+<li>Numérotation séquentielle sans rupture</li>
+<li>Mentions légales obligatoires pré-remplies</li>
+<li>TVA calculée correctement par taux (19%, 13%, 7%)</li>
+<li><a href="/blog/fodec-tunisie-guide">FODEC</a> appliqué aux bons produits</li>
+<li><a href="/blog/timbre-fiscal-tunisie">Timbre fiscal</a> ajouté automatiquement pour les paiements espèces</li>
+</ul>
+<p>Résultat : <strong>zéro correction à faire côté cabinet</strong>.</p>
+
+<h3>2. Des données structurées et exportables</h3>
+<p>SoftyFact stocke chaque transaction de manière structurée : dates, montants HT, TVA, TTC, mode de paiement, statut. Ces données sont prêtes pour l\'exploitation comptable sans travail de reformatage.</p>
+
+<h3>3. Gestion correcte de la retenue à la source</h3>
+<p>Les <a href="/blog/retenue-source-tunisie-guide">certificats de retenue à la source</a> sont souvent un casse-tête. Quand le client gère ses retenues dans SoftyFact, les montants sont calculés automatiquement et les certificats sont générés proprement — prêts pour la <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a>.</p>
+
+<h3>4. Suivi des paiements fiable</h3>
+<p>Plus besoin de demander au client « est-ce que cette facture a été payée ? ». Le <a href="/blog/suivi-paiements-tresorerie-tunisie">suivi des paiements</a> dans SoftyFact donne une vue claire des encaissements et décaissements, indispensable pour la trésorerie et les rapprochements bancaires.</p>
+
+<h2>Les gains concrets pour votre cabinet</h2>
+
+<h3>Gain de temps : 60% de ressaisie en moins</h3>
+<p>Quand un client utilise un logiciel de facturation structuré, le temps de traitement de son dossier chute drastiquement :</p>
+<table>
+<thead><tr><th>Tâche</th><th>Client sans logiciel</th><th>Client avec SoftyFact</th></tr></thead>
+<tbody>
+<tr><td>Tri des factures</td><td>2-3 heures/trimestre</td><td>0 (déjà numérique)</td></tr>
+<tr><td>Vérification TVA</td><td>1-2 heures</td><td>0 (calcul auto)</td></tr>
+<tr><td>Saisie comptable</td><td>3-5 heures</td><td>30 min (données structurées)</td></tr>
+<tr><td>Rapprochement paiements</td><td>1-2 heures</td><td>15 min</td></tr>
+</tbody>
+</table>
+<p><strong>Résultat : un dossier qui prenait 8-12 heures se traite en 1-2 heures.</strong></p>
+
+<h3>Réduction des erreurs</h3>
+<p>Les erreurs les plus fréquentes chez les clients sans logiciel :</p>
+<ul>
+<li>Mauvais taux de TVA appliqué</li>
+<li>Numérotation des factures avec des trous</li>
+<li>FODEC oublié sur les produits industriels</li>
+<li>Timbre fiscal non ajouté sur les factures espèces</li>
+<li>Retenues à la source mal calculées</li>
+</ul>
+<p>Avec SoftyFact, <strong>toutes ces erreurs disparaissent à la source</strong>.</p>
+
+<h3>Satisfaction client accrue</h3>
+<p>En recommandant un outil qui simplifie la vie de vos clients, vous renforcez la relation de confiance. Vos clients sont mieux organisés, leur fiscalité est propre, et ils apprécient votre conseil — au-delà de la simple tenue comptable.</p>
+
+<h2>Comment recommander SoftyFact à vos clients</h2>
+
+<h3>Les arguments qui convainquent</h3>
+<ul>
+<li><strong>« Vous allez gagner du temps »</strong> : 30 secondes pour créer une facture vs 15 minutes sur Excel</li>
+<li><strong>« Zéro erreur de TVA »</strong> : les taux se configurent une fois, le logiciel calcule automatiquement</li>
+<li><strong>« Je traiterai votre dossier plus vite »</strong> : données propres = honoraires potentiellement réduits</li>
+<li><strong>« 149 DT une seule fois »</strong> : pas d\'abonnement, pas de coûts récurrents — un argument massue pour les PME tunisiennes sensibles au budget</li>
+<li><strong>« C\'est conçu pour la Tunisie »</strong> : contrairement aux solutions étrangères, tout est adapté à la fiscalité locale</li>
+</ul>
+
+<h3>Les deux versions selon le profil client</h3>
+<ul>
+<li><strong>Commerçant / PME locale</strong> → <a href="/product/offline">Version Bureau</a> (149 DT à vie, fonctionne hors-ligne)</li>
+<li><strong>Freelance / startup / multi-sites</strong> → <a href="/product/online">Version Cloud</a> (accessible partout, sauvegardes auto)</li>
+</ul>
+
+<h2>Cas pratique : cabinet Hakim & Associés</h2>
+<p>Le cabinet Hakim & Associés à Tunis gère 45 dossiers de PME. Parmi ceux-ci, 12 clients sont passés à SoftyFact en début d\'année.</p>
+<p>Résultats après un trimestre :</p>
+<ul>
+<li><strong>Le temps de traitement moyen par dossier est passé de 8h à 1h30</strong></li>
+<li><strong>Les erreurs de TVA ont chuté de 35 par trimestre à zéro</strong></li>
+<li><strong>Les déclarations TEJ de ces clients sont prêtes 3 jours plus tôt</strong></li>
+<li>Le cabinet envisage maintenant de <strong>recommander SoftyFact aux 33 clients restants</strong></li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>En tant qu\'expert-comptable, recommander un bon logiciel de facturation à vos clients n\'est pas une faveur — c\'est un investissement dans la qualité de votre propre travail. Des données propres à la source signifient moins de corrections, moins de stress, et plus de temps pour le conseil à forte valeur ajoutée.</p>
+<p>SoftyFact est conçu pour la réalité tunisienne : TVA multi-taux, FODEC, timbre fiscal, retenue à la source, déclaration TEJ — tout est intégré.</p>
+<p>👉 <strong>Recommandez <a href="/product/offline">SoftyFact</a> à vos clients et transformez la qualité de vos dossiers.</strong></p>',
+
+                'body_ar' => '<h2>المشكلة التي يعرفها كل المحاسبين</h2>
+<p>كل ثلاثة أشهر نفس السيناريو: حرفاؤكم يجلبون كيساً من الفواتير المبعثرة، دفتر مداخيل غير مقروء، أو ملف Excel بصيغ معطّلة. تقضون ساعات في الفرز والتحقق وإعادة إدخال بيانات كان يجب أن تكون نظيفة من البداية.</p>
+<p>هذا الوقت الضائع في إعادة الإدخال هو وقت لا تخصّصونه للاستشارة أو التحليل أو كسب حرفاء جدد. تكلفة خفية كبيرة لمكتبكم.</p>
+<p>الحل؟ أن يستعمل حرفاؤكم <strong>برنامج فوترة مطابق</strong> من الإدخال الأولي. وفي تونس، الحل الأنسب هو SoftyFact.</p>
+
+<h2>ما تنتظره المكاتب المحاسبية من برنامج حريفها</h2>
+
+<h3>1. فواتير مطابقة من لحظة الإصدار</h3>
+<p>عندما يستعمل حريفكم SoftyFact، كل فاتورة تحترم تلقائياً المعايير التونسية:</p>
+<ul>
+<li>ترقيم تسلسلي بدون انقطاع</li>
+<li>بيانات قانونية إلزامية مملوءة مسبقاً</li>
+<li>الأداء محسوب بشكل صحيح حسب النسبة (19%، 13%، 7%)</li>
+<li><a href="/blog/fodec-tunisie-guide">FODEC</a> مطبّق على المنتجات المعنية</li>
+<li><a href="/blog/timbre-fiscal-tunisie">معلوم الطابع</a> يُضاف تلقائياً للدفع النقدي</li>
+</ul>
+<p>النتيجة: <strong>صفر تصحيحات من جهة المكتب</strong>.</p>
+
+<h3>2. بيانات منظّمة وقابلة للتصدير</h3>
+<p>SoftyFact يخزّن كل معاملة بشكل منظّم: تواريخ، مبالغ دون أداء، أداء، إجمالي، طريقة دفع، حالة. بيانات جاهزة للاستغلال المحاسبي.</p>
+
+<h3>3. إدارة صحيحة للخصم من المورد</h3>
+<p><a href="/blog/retenue-source-tunisie-guide">شهادات الخصم من المورد</a> غالباً معقّدة. عندما يدير الحريف خصوماته في SoftyFact، المبالغ تُحسب تلقائياً والشهادات تُولّد بشكل نظيف — جاهزة لـ <a href="/blog/declaration-tej-guide-pratique">التصريح TEJ</a>.</p>
+
+<h3>4. متابعة خلاصات موثوقة</h3>
+<p>لا حاجة للسؤال "هل دُفعت هذه الفاتورة؟". <a href="/blog/suivi-paiements-tresorerie-tunisie">متابعة الخلاصات</a> في SoftyFact تعطي رؤية واضحة للمقبوضات والمدفوعات.</p>
+
+<h2>المكاسب الملموسة لمكتبكم</h2>
+
+<h3>توفير وقت: 60% أقل من إعادة الإدخال</h3>
+<table>
+<thead><tr><th>المهمة</th><th>حريف بدون برنامج</th><th>حريف مع SoftyFact</th></tr></thead>
+<tbody>
+<tr><td>فرز الفواتير</td><td>2-3 ساعات/ثلاثي</td><td>0 (رقمي أصلاً)</td></tr>
+<tr><td>التحقق من الأداء</td><td>1-2 ساعة</td><td>0 (حساب آلي)</td></tr>
+<tr><td>الإدخال المحاسبي</td><td>3-5 ساعات</td><td>30 دقيقة</td></tr>
+<tr><td>مطابقة الخلاصات</td><td>1-2 ساعة</td><td>15 دقيقة</td></tr>
+</tbody>
+</table>
+<p><strong>النتيجة: ملف كان يأخذ 8-12 ساعة يُعالج في ساعة ونصف.</strong></p>
+
+<h3>تقليل الأخطاء</h3>
+<p>الأخطاء الأكثر شيوعاً لدى الحرفاء بدون برنامج:</p>
+<ul>
+<li>نسبة أداء خاطئة</li>
+<li>ثغرات في ترقيم الفواتير</li>
+<li>FODEC منسي على المنتجات الصناعية</li>
+<li>معلوم الطابع غير مضاف</li>
+<li>خصم من المورد محسوب خطأ</li>
+</ul>
+<p>مع SoftyFact، <strong>كل هذه الأخطاء تختفي من المصدر</strong>.</p>
+
+<h2>كيف تنصحون حرفاءكم بـ SoftyFact</h2>
+
+<h3>الحجج المقنعة</h3>
+<ul>
+<li><strong>"ستوفّرون وقتاً"</strong>: 30 ثانية لفاتورة عوض 15 دقيقة في Excel</li>
+<li><strong>"صفر أخطاء أداء"</strong>: النسب تُضبط مرة والبرنامج يحسب تلقائياً</li>
+<li><strong>"سأعالج ملفكم أسرع"</strong>: بيانات نظيفة = أتعاب محتملة أقل</li>
+<li><strong>"149 ديناراً مرة واحدة"</strong>: لا اشتراك — حجة قوية للمؤسسات الحساسة للميزانية</li>
+<li><strong>"مصمّم لتونس"</strong>: على عكس الحلول الأجنبية، كل شيء مكيّف للجباية المحلية</li>
+</ul>
+
+<h3>النسختان حسب ملف الحريف</h3>
+<ul>
+<li><strong>تاجر / مؤسسة محلية</strong> → <a href="/product/offline">نسخة Bureau</a> (149 دينار مدى الحياة)</li>
+<li><strong>مستقل / startup / عدة مقرات</strong> → <a href="/product/online">نسخة Cloud</a> (متاحة في كل مكان)</li>
+</ul>
+
+<h2>حالة عملية: مكتب حكيم وشركاؤه</h2>
+<p>مكتب حكيم وشركاؤه بتونس يدير 45 ملف مؤسسة. 12 حريفاً انتقلوا لـ SoftyFact مطلع السنة.</p>
+<p>النتائج بعد ثلاثي:</p>
+<ul>
+<li><strong>متوسط وقت معالجة الملف انخفض من 8 ساعات إلى ساعة ونصف</strong></li>
+<li><strong>أخطاء الأداء تراجعت من 35 في الثلاثي إلى صفر</strong></li>
+<li><strong>تصريحات TEJ لهؤلاء الحرفاء جاهزة 3 أيام أبكر</strong></li>
+<li>المكتب يفكّر في <strong>التوصية بـ SoftyFact للـ 33 حريفاً المتبقين</strong></li>
+</ul>
+
+<h2>خلاصة</h2>
+<p>كمحاسب، التوصية ببرنامج فوترة جيد ليست خدمة — إنها استثمار في جودة عملكم. بيانات نظيفة من المصدر = تصحيحات أقل وضغط أقل ووقت أكثر للاستشارة ذات القيمة العالية.</p>
+<p>SoftyFact مصمّم للواقع التونسي: أداء متعدد النسب، FODEC، طابع جبائي، خصم من المورد، تصريح TEJ — الكل مدمج.</p>
+<p>👉 <strong>انصحوا بـ <a href="/product/offline">SoftyFact</a> وحسّنوا جودة ملفاتكم.</strong></p>',
+                'meta_description_fr' => 'Experts-comptables en Tunisie : découvrez pourquoi recommander SoftyFact réduit vos corrections, accélère vos dossiers et améliore la satisfaction client.',
+                'meta_description_ar' => 'محاسبون في تونس: اكتشفوا لماذا التوصية بـ SoftyFact تقلّل تصحيحاتكم وتسرّع ملفاتكم وتحسّن رضا الحرفاء.',
+                'meta_keywords' => 'logiciel expert comptable tunisie, cabinet comptable logiciel facturation, recommander logiciel clients comptable, SoftyFact comptable',
+                'cover_image' => null,
+                'reading_time' => 7,
+                'published_at' => '2026-03-12 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 20 — Gestion multi-entrepôts
+            // ============================================================
+            [
+                'slug' => 'gestion-multi-entrepots-stock-tunisie',
+                'title_fr' => 'Gestion multi-entrepôts : suivez votre stock sur plusieurs dépôts avec précision',
+                'title_ar' => 'إدارة المخازن المتعددة: تابعوا مخزونكم عبر عدة مستودعات بدقة',
+                'excerpt_fr' => 'Votre stock est réparti sur 2, 3 ou 10 dépôts ? Découvrez comment un logiciel de gestion multi-entrepôts simplifie le suivi et élimine les erreurs d\'inventaire.',
+                'excerpt_ar' => 'مخزونكم موزّع على 2 أو 3 أو 10 مستودعات؟ اكتشفوا كيف يبسّط برنامج إدارة مخازن متعددة المتابعة ويقضي على أخطاء الجرد.',
+                'body_fr' => '<h2>Le défi du stock multi-sites en Tunisie</h2>
+<p>De nombreuses entreprises tunisiennes gèrent du stock sur plusieurs emplacements : un magasin principal, un dépôt de stockage, un point de vente secondaire, ou même un véhicule de livraison. Si vous êtes dans ce cas, vous connaissez les problèmes classiques :</p>
+<ul>
+<li><strong>« Le produit est en stock... mais dans quel dépôt ? »</strong> — Vous vendez un article puis découvrez qu\'il est dans l\'autre entrepôt, à l\'autre bout de la ville</li>
+<li><strong>Transferts non enregistrés</strong> — Des marchandises bougent entre dépôts sans traçabilité, faussant les inventaires</li>
+<li><strong>Ruptures dans un dépôt, surplus dans l\'autre</strong> — Sans vision globale, le rééquilibrage est impossible</li>
+<li><strong>Inventaires incohérents</strong> — Les quantités physiques ne correspondent jamais aux quantités théoriques</li>
+</ul>
+<p>Tous ces problèmes ont une solution : un logiciel de <a href="/blog/gestion-stock-pme-tunisie">gestion de stock</a> qui gère nativement les multi-entrepôts.</p>
+
+<h2>Comment fonctionne la gestion multi-entrepôts dans SoftyFact</h2>
+
+<h3>Création de vos entrepôts</h3>
+<p>Dans SoftyFact, vous créez autant d\'entrepôts que nécessaire :</p>
+<ul>
+<li><strong>Magasin principal</strong> — votre point de vente central</li>
+<li><strong>Dépôt de stockage</strong> — stockage de gros volumes</li>
+<li><strong>Point de vente N°2</strong> — succursale ou boutique secondaire</li>
+<li><strong>Stock véhicule</strong> — pour les livraisons itinérantes</li>
+</ul>
+<p>Chaque entrepôt a sa propre fiche : nom, adresse, responsable.</p>
+
+<h3>Suivi du stock par entrepôt</h3>
+<p>Pour chaque produit, SoftyFact affiche :</p>
+<ul>
+<li>La <strong>quantité totale</strong> tous entrepôts confondus</li>
+<li>La <strong>quantité par entrepôt</strong> — vous savez exactement où sont vos produits</li>
+<li>Le <strong>seuil d\'alerte par entrepôt</strong> — notification quand le stock descend sous le minimum</li>
+</ul>
+
+<h3>Transferts inter-entrepôts</h3>
+<p>Quand vous déplacez du stock d\'un dépôt à un autre, SoftyFact enregistre le <strong>bon de transfert</strong> :</p>
+<ul>
+<li>Entrepôt source et entrepôt destination</li>
+<li>Produits transférés et quantités</li>
+<li>Date du transfert</li>
+<li>Mise à jour automatique des deux entrepôts</li>
+</ul>
+<p>Plus de transferts « fantômes » qui faussent l\'inventaire.</p>
+
+<h3>Mouvements de stock tracés</h3>
+<p>Chaque mouvement est enregistré avec sa source :</p>
+<ul>
+<li><strong>Entrée (achat)</strong> : réception de marchandise du fournisseur → stock augmente dans l\'entrepôt de réception</li>
+<li><strong>Sortie (vente)</strong> : <a href="/blog/devis-bon-livraison-facture-workflow-tunisie">bon de livraison</a> émis → stock diminue dans l\'entrepôt concerné</li>
+<li><strong>Transfert</strong> : stock déplacé entre dépôts → un entrepôt baisse, l\'autre augmente</li>
+<li><strong>Ajustement</strong> : correction manuelle après inventaire physique</li>
+</ul>
+
+<h2>Les bénéfices concrets</h2>
+
+<h3>1. Zéro surprise lors de l\'inventaire</h3>
+<p>Quand chaque mouvement est enregistré, l\'inventaire théorique correspond au physique. Les écarts deviennent l\'exception, pas la norme.</p>
+
+<h3>2. Vente plus rapide</h3>
+<p>Un client demande un produit ? En 3 secondes, vous savez s\'il est en stock et dans quel dépôt. Plus de « je vérifie et je vous rappelle ».</p>
+
+<h3>3. Rééquilibrage intelligent</h3>
+<p>Vous voyez qu\'un produit se vend vite dans le magasin mais stagne dans le dépôt ? Transférez-le en 2 clics.</p>
+
+<h3>4. Réduction du surstockage</h3>
+<p>La vision globale empêche de commander un produit qui est déjà en surplus dans un autre dépôt. Résultat : moins de capital immobilisé.</p>
+
+<h3>5. Valorisation précise du stock</h3>
+<p>SoftyFact calcule la valeur du stock par entrepôt et au global, selon la méthode de valorisation choisie (FIFO, CMP). Indispensable pour le bilan comptable.</p>
+
+<h2>À qui s\'adresse la gestion multi-entrepôts ?</h2>
+<table>
+<thead><tr><th>Type d\'entreprise</th><th>Nombre d\'entrepôts</th><th>Cas d\'usage</th></tr></thead>
+<tbody>
+<tr><td>Grossiste</td><td>2-5</td><td>Dépôt central + points de distribution</td></tr>
+<tr><td>Commerce de détail multi-sites</td><td>2-3</td><td>Magasin principal + succursales</td></tr>
+<tr><td>Entreprise de distribution</td><td>3-10+</td><td>Entrepôt + véhicules + points de vente</td></tr>
+<tr><td>Fabricant</td><td>2-4</td><td>Matières premières + produits finis + expédition</td></tr>
+<tr><td>E-commerce</td><td>1-2</td><td>Stock physique + stock en transit</td></tr>
+</tbody>
+</table>
+
+<h2>Exemple concret</h2>
+<p>Nabil gère une entreprise de vente en gros de produits alimentaires à Nabeul. Il a 3 dépôts : un entrepôt principal, un dépôt réfrigéré, et un point de vente.</p>
+<p><strong>Avant SoftyFact :</strong> Il notait les transferts sur un cahier. Résultat : lors du dernier inventaire, il a trouvé des écarts de stock de plus de 15 000 DT. Impossible de savoir si c\'est du vol, des erreurs ou des transferts non enregistrés.</p>
+<p><strong>Avec SoftyFact :</strong> Chaque transfert est enregistré numériquement. Les quantités par dépôt sont à jour en permanence. Lors de l\'inventaire suivant, l\'écart est tombé à <strong>moins de 200 DT</strong> — uniquement de la casse identifiée.</p>
+
+<h2>Conclusion</h2>
+<p>Si votre stock est réparti sur plusieurs emplacements, la gestion manuelle est une bombe à retardement. Un logiciel comme SoftyFact vous donne une <strong>vision unifiée de tout votre stock</strong>, trace chaque mouvement, et élimine les écarts d\'inventaire.</p>
+<p>La gestion multi-entrepôts est incluse dans la <a href="/product/offline">version Bureau (149 DT à vie)</a> et la <a href="/product/online">version Cloud</a> de SoftyFact.</p>
+<p>👉 <strong><a href="/product/offline">Reprenez le contrôle de votre stock avec SoftyFact.</a></strong></p>',
+
+                'body_ar' => '<h2>تحدي المخزون المتعدد المواقع في تونس</h2>
+<p>العديد من المؤسسات التونسية تدير مخزوناً في عدة أماكن: محل رئيسي، مستودع تخزين، نقطة بيع ثانوية، أو حتى سيارة توصيل. إن كنتم في هذه الحالة، فأنتم تعرفون المشاكل المعتادة:</p>
+<ul>
+<li><strong>"المنتج متوفر... لكن في أي مستودع؟"</strong> — تبيعون مادة ثم تكتشفون أنها في المستودع الآخر عبر المدينة</li>
+<li><strong>تحويلات غير مسجّلة</strong> — بضائع تتنقل بين المستودعات بدون أثر، تفسد الجرد</li>
+<li><strong>نفاد في مستودع وفائض في آخر</strong> — بدون رؤية شاملة، إعادة التوازن مستحيلة</li>
+<li><strong>جرد متناقض</strong> — الكميات الفعلية لا تطابق النظرية أبداً</li>
+</ul>
+<p>كل هذه المشاكل لها حل: برنامج <a href="/blog/gestion-stock-pme-tunisie">إدارة مخزون</a> يدير أصلياً المخازن المتعددة.</p>
+
+<h2>كيف تعمل إدارة المخازن المتعددة في SoftyFact</h2>
+
+<h3>إنشاء مستودعاتكم</h3>
+<p>في SoftyFact، تنشئون العدد الذي تحتاجون من المستودعات:</p>
+<ul>
+<li><strong>المحل الرئيسي</strong> — نقطة البيع المركزية</li>
+<li><strong>مستودع التخزين</strong> — تخزين الكميات الكبيرة</li>
+<li><strong>نقطة البيع رقم 2</strong> — فرع أو محل ثانوي</li>
+<li><strong>مخزون السيارة</strong> — للتوصيل المتنقل</li>
+</ul>
+
+<h3>متابعة المخزون حسب المستودع</h3>
+<p>لكل منتج، SoftyFact يعرض:</p>
+<ul>
+<li><strong>الكمية الإجمالية</strong> عبر كل المستودعات</li>
+<li><strong>الكمية حسب المستودع</strong> — تعرفون بالضبط أين منتجاتكم</li>
+<li><strong>عتبة التنبيه حسب المستودع</strong> — إشعار عند نزول المخزون تحت الحد الأدنى</li>
+</ul>
+
+<h3>التحويلات بين المستودعات</h3>
+<p>عند نقل مخزون من مستودع لآخر، SoftyFact يسجّل <strong>وصل التحويل</strong>:</p>
+<ul>
+<li>المستودع المصدر والمستودع الوجهة</li>
+<li>المنتجات المحوّلة والكميات</li>
+<li>تاريخ التحويل</li>
+<li>تحديث آلي للمستودعين</li>
+</ul>
+<p>لا تحويلات "شبحية" تفسد الجرد.</p>
+
+<h3>حركات المخزون المتتبّعة</h3>
+<p>كل حركة مسجّلة بمصدرها:</p>
+<ul>
+<li><strong>دخول (شراء)</strong>: استلام بضاعة → المخزون يرتفع في مستودع الاستلام</li>
+<li><strong>خروج (بيع)</strong>: <a href="/blog/devis-bon-livraison-facture-workflow-tunisie">وصل تسليم</a> → المخزون ينقص في المستودع المعني</li>
+<li><strong>تحويل</strong>: مخزون ينتقل → مستودع ينقص وآخر يرتفع</li>
+<li><strong>تعديل</strong>: تصحيح يدوي بعد الجرد الفعلي</li>
+</ul>
+
+<h2>المزايا الملموسة</h2>
+
+<h3>1. صفر مفاجآت عند الجرد</h3>
+<p>حين كل حركة مسجّلة، الجرد النظري يطابق الفعلي.</p>
+
+<h3>2. بيع أسرع</h3>
+<p>حريف يطلب منتجاً؟ في 3 ثوانٍ تعرفون إن كان متوفراً وأين.</p>
+
+<h3>3. إعادة توازن ذكية</h3>
+<p>ترون أن منتجاً يباع بسرعة في المحل لكن يركد في المستودع؟ حوّلوه بنقرتين.</p>
+
+<h3>4. تقليل فائض المخزون</h3>
+<p>الرؤية الشاملة تمنع طلب منتج فائض أصلاً في مستودع آخر. رأس مال أقل مجمّد.</p>
+
+<h3>5. تقييم دقيق للمخزون</h3>
+<p>SoftyFact يحسب قيمة المخزون حسب المستودع والإجمالي حسب طريقة التقييم المختارة (FIFO، المتوسط المرجح). ضروري للميزانية المحاسبية.</p>
+
+<h2>لمن تتوجّه إدارة المخازن المتعددة؟</h2>
+<table>
+<thead><tr><th>نوع المؤسسة</th><th>عدد المستودعات</th><th>حالة الاستخدام</th></tr></thead>
+<tbody>
+<tr><td>تاجر جملة</td><td>2-5</td><td>مستودع مركزي + نقاط توزيع</td></tr>
+<tr><td>تجارة تفصيل متعددة المحلات</td><td>2-3</td><td>محل رئيسي + فروع</td></tr>
+<tr><td>شركة توزيع</td><td>3-10+</td><td>مستودع + سيارات + نقاط بيع</td></tr>
+<tr><td>صانع</td><td>2-4</td><td>مواد أولية + منتجات تامة + شحن</td></tr>
+<tr><td>تجارة إلكترونية</td><td>1-2</td><td>مخزون فعلي + مخزون في الطريق</td></tr>
+</tbody>
+</table>
+
+<h2>مثال واقعي</h2>
+<p>نبيل يدير شركة بيع جملة لمواد غذائية في نابل. عنده 3 مستودعات: مستودع رئيسي، مستودع مبرّد، ونقطة بيع.</p>
+<p><strong>قبل SoftyFact:</strong> كان يسجّل التحويلات في دفتر. النتيجة: في آخر جرد وجد فوارق تفوق 15,000 دينار. مستحيل معرفة إن كانت سرقة أو أخطاء أو تحويلات غير مسجّلة.</p>
+<p><strong>مع SoftyFact:</strong> كل تحويل مسجّل رقمياً. الكميات حسب المستودع محدّثة باستمرار. في الجرد التالي، الفارق انخفض إلى <strong>أقل من 200 دينار</strong> — فقط إتلاف محدّد.</p>
+
+<h2>خلاصة</h2>
+<p>إذا كان مخزونكم موزّعاً على عدة أماكن، الإدارة اليدوية قنبلة موقوتة. برنامج مثل SoftyFact يعطيكم <strong>رؤية موحّدة لكل مخزونكم</strong>، يتتبّع كل حركة، ويقضي على فوارق الجرد.</p>
+<p>إدارة المخازن المتعددة مدرجة في <a href="/product/offline">نسخة Bureau بـ 149 دينار مدى الحياة</a> و<a href="/product/online">نسخة Cloud</a> من SoftyFact.</p>
+<p>👉 <strong><a href="/product/offline">استعيدوا السيطرة على مخزونكم مع SoftyFact.</a></strong></p>',
+                'meta_description_fr' => 'Gérez votre stock sur plusieurs dépôts avec précision. Transferts, suivi par entrepôt, alertes de stock — logiciel de gestion adapté aux PME tunisiennes.',
+                'meta_description_ar' => 'أديروا مخزونكم عبر عدة مستودعات بدقة. تحويلات ومتابعة حسب المخزن وتنبيهات — برنامج إدارة مناسب للمؤسسات التونسية.',
+                'meta_keywords' => 'gestion multi entrepôts tunisie, stock plusieurs dépôts logiciel, gestion stock multi-sites PME, transfert stock entrepôt',
+                'cover_image' => null,
+                'reading_time' => 5,
+                'published_at' => '2026-03-18 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 21 — Transformation digitale du commerce tunisien
+            // ============================================================
+            [
+                'slug' => 'transformation-digitale-commerce-tunisie-2026',
+                'title_fr' => 'Transformation digitale du commerce en Tunisie : par où commencer en 2026',
+                'title_ar' => 'التحول الرقمي للتجارة في تونس: من أين تبدأون في 2026',
+                'excerpt_fr' => 'La digitalisation n\'est plus un choix — c\'est une nécessité. Découvrez comment les commerçants tunisiens peuvent entamer leur transformation digitale avec un investissement minimal.',
+                'excerpt_ar' => 'الرقمنة لم تعد خياراً — إنها ضرورة. اكتشفوا كيف يستطيع التجار التونسيون بدء تحوّلهم الرقمي باستثمار أدنى.',
+                'body_fr' => '<h2>La Tunisie à l\'heure du digital</h2>
+<p>En 2026, la transformation digitale n\'est plus réservée aux grandes entreprises. En Tunisie, les commerçants, les PME et les freelances font face à une réalité incontournable : <strong>ceux qui ne se digitalisent pas seront dépassés par ceux qui le font</strong>.</p>
+<p>L\'administration fiscale tunisienne elle-même pousse vers le digital : la <a href="/blog/facturation-electronique-tunisie-elfatoora">facturation électronique El-Fatoora</a>, les déclarations en ligne via la <a href="/blog/declaration-tej-guide-pratique">plateforme TEJ</a>, et les incitations à la dématérialisation des documents commerciaux.</p>
+<p>Pourtant, beaucoup de PME tunisiennes hésitent encore. Les raisons sont toujours les mêmes : « C\'est trop cher », « C\'est trop compliqué », « On fonctionne bien comme ça ». Cet article démonte ces mythes et vous montre par où commencer — concrètement.</p>
+
+<h2>Pourquoi la digitalisation est devenue urgente</h2>
+
+<h3>1. Les obligations légales évoluent</h3>
+<p>El-Fatoora va rendre la facturation électronique obligatoire pour un nombre croissant d\'entreprises. Les déclarations fiscales se font déjà en ligne. Les entreprises qui n\'ont pas d\'outil numérique seront en retard — et exposées à des pénalités.</p>
+
+<h3>2. Vos concurrents se digitalisent</h3>
+<p>Le commerçant d\'en face qui utilise un logiciel de facturation crée ses factures en 30 secondes, suit ses paiements en temps réel, et connaît sa marge exacte par produit. Pendant ce temps, vous passez 2 heures par jour sur l\'administratif. L\'écart se creuse.</p>
+
+<h3>3. Vos clients l\'exigent</h3>
+<p>Les entreprises clientes veulent des factures numériques, des devis rapides, et des bons de livraison tracés. Les particuliers eux-mêmes s\'habituent au digital. Ne pas pouvoir fournir un PDF professionnel par email est un handicap commercial.</p>
+
+<h3>4. Le coût de NE PAS se digitaliser</h3>
+<p>Le coût réel de la gestion manuelle est rarement calculé :</p>
+<ul>
+<li><strong>Temps perdu</strong> : 10-15 heures/mois sur la facturation et l\'administratif</li>
+<li><strong>Erreurs de TVA</strong> : en moyenne 2-5 erreurs/mois, chacune pouvant coûter une correction chez le comptable</li>
+<li><strong>Créances oubliées</strong> : en moyenne 3 000 à 8 000 DT/an de créances non suivies (cf. <a href="/blog/suivi-paiements-tresorerie-tunisie">notre article sur le suivi des paiements</a>)</li>
+<li><strong>Ruptures de stock</strong> : ventes perdues par manque de visibilité</li>
+</ul>
+<p><strong>Total estimé : 5 000 à 15 000 DT/an de pertes évitables.</strong></p>
+
+<h2>Par où commencer : les 3 priorités</h2>
+
+<h3>Priorité 1 : Digitaliser la facturation</h3>
+<p>C\'est le point de départ le plus impactant. Remplacer les factures papier ou Excel par un <strong>logiciel de facturation conforme</strong> apporte des bénéfices immédiats :</p>
+<ul>
+<li>Factures créées en 30 secondes au lieu de 15 minutes</li>
+<li><a href="/blog/guide-tva-tunisie">TVA</a> et <a href="/blog/fodec-tunisie-guide">FODEC</a> calculés automatiquement</li>
+<li>Numérotation séquentielle garantie</li>
+<li>Export PDF professionnel</li>
+<li>Conformité avec les normes tunisiennes</li>
+</ul>
+<p>Consultez notre guide : <a href="/blog/migration-excel-vers-logiciel-facturation-tunisie">Comment migrer d\'Excel vers un logiciel de facturation</a>.</p>
+
+<h3>Priorité 2 : Structurer le suivi commercial</h3>
+<p>Une fois la facturation en place, structurez :</p>
+<ul>
+<li>La <a href="/blog/gestion-clients-fournisseurs-logiciel-tunisie">gestion de vos clients et fournisseurs</a> — fiches centralisées, historiques, soldes</li>
+<li>Le <a href="/blog/suivi-paiements-tresorerie-tunisie">suivi des paiements</a> — qui doit combien, depuis quand</li>
+<li>Le <a href="/blog/devis-bon-livraison-facture-workflow-tunisie">cycle documentaire complet</a> — du devis à la facture en quelques clics</li>
+</ul>
+
+<h3>Priorité 3 : Piloter par les données</h3>
+<p>Avec un <a href="/blog/tableau-de-bord-gestion-commerciale-tunisie">tableau de bord</a>, vous passez de l\'intuition aux décisions basées sur les données :</p>
+<ul>
+<li>Chiffre d\'affaires en temps réel</li>
+<li>Marges par produit et par client</li>
+<li>État du stock et alertes</li>
+<li>Évolution de l\'activité</li>
+</ul>
+
+<h2>Combien coûte la transformation digitale ?</h2>
+<p>C\'est le mythe le plus tenace : « ça coûte cher ». En réalité, voici ce qu\'il faut pour démarrer :</p>
+<table>
+<thead><tr><th>Outil</th><th>Investissement</th><th>Durée</th></tr></thead>
+<tbody>
+<tr><td>SoftyFact — Version Bureau</td><td><strong>149 DT</strong></td><td>Licence à vie</td></tr>
+<tr><td>SoftyFact — Version Cloud</td><td><strong>~8 DT/mois</strong></td><td>Abonnement annuel</td></tr>
+<tr><td>Ordinateur (si non existant)</td><td>800-1500 DT</td><td>3-5 ans</td></tr>
+<tr><td>Formation (SoftyFact)</td><td>Gratuite</td><td>Support inclus</td></tr>
+</tbody>
+</table>
+<p><strong>Pour 149 DT</strong>, vous obtenez un logiciel complet qui gère : facturation, clients, fournisseurs, stock, paiements, <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a>, <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a>, et tableau de bord.</p>
+<p>Comparez cela aux 5 000-15 000 DT de pertes annuelles évitables. Le retour sur investissement est <strong>immédiat</strong>.</p>
+
+<h2>Les freins psychologiques — et comment les dépasser</h2>
+
+<h3>« Je ne suis pas doué en informatique »</h3>
+<p>SoftyFact est conçu pour les utilisateurs non-techniques. L\'interface est en français et arabe, les fonctionnalités sont accessibles en quelques clics, et le support local vous accompagne.</p>
+
+<h3>« Mon système actuel fonctionne »</h3>
+<p>Il fonctionne... jusqu\'au jour du contrôle fiscal, de la créance oubliée de 5 000 DT, ou de la rupture de stock qui vous coûte un client. Le risque n\'est pas visible au quotidien — il se matérialise brutalement.</p>
+
+<h3>« Je n\'ai pas le temps pour la transition »</h3>
+<p>L\'installation de SoftyFact prend 30 minutes. La création de vos premiers clients et produits prend 1-2 heures. Dès le lendemain, vous facturez plus vite qu\'avant. Le temps investi est récupéré dès la première semaine.</p>
+
+<h3>« Les logiciels coûtent trop cher (abonnements) »</h3>
+<p>C\'est vrai pour les solutions SaaS étrangères (30-100 DT/mois). SoftyFact propose une <a href="/product/offline">licence à vie pour 149 DT</a> — zéro abonnement, mises à jour gratuites incluses. Consultez notre <a href="/blog/comparatif-logiciel-facturation-gratuit-vs-payant">comparatif gratuit vs payant</a>.</p>
+
+<h2>Success stories tunisiennes</h2>
+
+<h3>Cas 1 : Boutique de prêt-à-porter — Tunis</h3>
+<p>Avant : facturation papier, stock géré « de mémoire ». Après 3 mois avec SoftyFact : CA suivi en temps réel, stock précis, créances récupérées. <strong>Gain estimé : 8 000 DT/an.</strong></p>
+
+<h3>Cas 2 : Grossiste alimentaire — Sousse</h3>
+<p>Avant : Excel + cahier. 3 erreurs de TVA par mois en moyenne. Après SoftyFact : zéro erreur, facturation 5x plus rapide, <a href="/blog/gestion-multi-entrepots-stock-tunisie">gestion multi-dépôts</a> opérationnelle. <strong>Gain estimé : 12 000 DT/an.</strong></p>
+
+<h3>Cas 3 : Freelance développeur — Sfax</h3>
+<p>Avant : Word pour les factures, pas de suivi des paiements. Après SoftyFact Cloud : <a href="/blog/facturation-freelance-auto-entrepreneur-tunisie">facturation pro</a>, suivi paiements internationaux, image professionnelle. <strong>2 clients gagnés grâce aux factures professionnelles.</strong></p>
+
+<h2>Conclusion</h2>
+<p>La transformation digitale du commerce tunisien n\'est pas une tendance passagère — c\'est un <strong>impératif de survie et de croissance</strong>. Et la bonne nouvelle, c\'est qu\'elle commence par un geste simple : adopter un logiciel de facturation adapté.</p>
+<p>Avec SoftyFact, vous digitalisez votre facturation, votre gestion commerciale, votre stock et votre trésorerie — pour <strong>149 DT seulement, une seule fois</strong>.</p>
+<p>🖥️ <a href="/product/offline"><strong>Version Bureau — 149 DT à vie</strong></a> | ☁️ <a href="/product/online"><strong>Version Cloud — accessible partout</strong></a></p>
+<p>👉 <strong><a href="/product/offline">Faites le premier pas vers le digital. Commandez SoftyFact.</a></strong></p>',
+
+                'body_ar' => '<h2>تونس في عصر الرقمنة</h2>
+<p>في 2026، التحوّل الرقمي لم يعد حكراً على المؤسسات الكبرى. في تونس، التجار والمؤسسات الصغرى والمتوسطة والعاملون المستقلون يواجهون واقعاً لا مفرّ منه: <strong>من لا يتحوّل رقمياً سيتجاوزه من يفعل</strong>.</p>
+<p>الإدارة الجبائية التونسية نفسها تدفع نحو الرقمنة: <a href="/blog/facturation-electronique-tunisie-elfatoora">الفوترة الإلكترونية الفاتورة</a>، التصريحات عبر <a href="/blog/declaration-tej-guide-pratique">منصة TEJ</a>، والحوافز لنزع الطابع المادي عن الوثائق التجارية.</p>
+<p>لكن العديد من المؤسسات التونسية لا تزال مترددة. الأسباب دائماً نفسها: "غالي"، "معقّد"، "نخدمو مليح هكّا". هذا المقال يفنّد هذه الأساطير ويبيّن لكم من أين تبدأون — بشكل ملموس.</p>
+
+<h2>لماذا أصبحت الرقمنة عاجلة</h2>
+
+<h3>1. الالتزامات القانونية تتطوّر</h3>
+<p>الفاتورة ستجعل الفوترة الإلكترونية إلزامية لعدد متزايد من المؤسسات. التصريحات الجبائية تُنجز أصلاً عبر الإنترنت. المؤسسات بدون أداة رقمية ستتأخر — وتتعرض لعقوبات.</p>
+
+<h3>2. منافسوكم يتحوّلون رقمياً</h3>
+<p>التاجر المقابل الذي يستعمل برنامج فوترة ينشئ فواتيره في 30 ثانية، يتابع خلاصاته لحظياً، ويعرف هامشه الدقيق لكل منتج. بينما أنتم تقضون ساعتين يومياً في الإداريات. الفارق يتسع.</p>
+
+<h3>3. حرفاؤكم يطلبون ذلك</h3>
+<p>المؤسسات الحريفة تريد فواتير رقمية وعروض أسعار سريعة ووصولات تسليم متتبّعة. عدم القدرة على تقديم PDF احترافي بالبريد الإلكتروني عائق تجاري.</p>
+
+<h3>4. كلفة عدم التحوّل</h3>
+<p>الكلفة الحقيقية للإدارة اليدوية نادراً ما تُحسب:</p>
+<ul>
+<li><strong>وقت ضائع</strong>: 10-15 ساعة شهرياً في الفوترة والإداريات</li>
+<li><strong>أخطاء أداء</strong>: 2-5 أخطاء شهرياً، كل منها قد يكلّف تصحيحاً عند المحاسب</li>
+<li><strong>ديون منسية</strong>: 3,000 إلى 8,000 دينار سنوياً من ديون غير متابعة (راجعوا <a href="/blog/suivi-paiements-tresorerie-tunisie">مقالنا حول متابعة الخلاصات</a>)</li>
+<li><strong>نفاد المخزون</strong>: مبيعات ضائعة بسبب عدم الرؤية</li>
+</ul>
+<p><strong>المجموع المقدّر: 5,000 إلى 15,000 دينار سنوياً من خسائر يمكن تفاديها.</strong></p>
+
+<h2>من أين تبدأون: 3 أولويات</h2>
+
+<h3>الأولوية 1: رقمنة الفوترة</h3>
+<p>نقطة الانطلاق الأكثر تأثيراً. استبدال الفواتير الورقية أو Excel ببرنامج فوترة مطابق يجلب فوائد فورية:</p>
+<ul>
+<li>فواتير تُنشأ في 30 ثانية عوض 15 دقيقة</li>
+<li><a href="/blog/guide-tva-tunisie">الأداء</a> و<a href="/blog/fodec-tunisie-guide">FODEC</a> يُحسبان تلقائياً</li>
+<li>ترقيم تسلسلي مضمون</li>
+<li>تصدير PDF احترافي</li>
+<li>مطابقة للمعايير التونسية</li>
+</ul>
+<p>اطلعوا على دليلنا: <a href="/blog/migration-excel-vers-logiciel-facturation-tunisie">كيف تنتقلون من Excel لبرنامج فوترة</a>.</p>
+
+<h3>الأولوية 2: هيكلة المتابعة التجارية</h3>
+<p>فور وضع الفوترة، نظّموا:</p>
+<ul>
+<li><a href="/blog/gestion-clients-fournisseurs-logiciel-tunisie">إدارة حرفائكم ومورديكم</a> — بطاقات مركزية، سجلات، أرصدة</li>
+<li><a href="/blog/suivi-paiements-tresorerie-tunisie">متابعة الخلاصات</a> — من يدين بكم ومنذ متى</li>
+<li><a href="/blog/devis-bon-livraison-facture-workflow-tunisie">الدورة الوثائقية الكاملة</a> — من عرض السعر للفاتورة ببضع نقرات</li>
+</ul>
+
+<h3>الأولوية 3: القيادة بالبيانات</h3>
+<p>مع <a href="/blog/tableau-de-bord-gestion-commerciale-tunisie">لوحة القيادة</a>، تنتقلون من الحدس إلى القرارات المبنية على بيانات:</p>
+<ul>
+<li>رقم معاملات لحظي</li>
+<li>هوامش حسب المنتج والحريف</li>
+<li>حالة المخزون والتنبيهات</li>
+<li>تطوّر النشاط</li>
+</ul>
+
+<h2>كم يكلّف التحوّل الرقمي؟</h2>
+<p>أقوى أسطورة: "غالي". في الواقع:</p>
+<table>
+<thead><tr><th>الأداة</th><th>الاستثمار</th><th>المدة</th></tr></thead>
+<tbody>
+<tr><td>SoftyFact — نسخة Bureau</td><td><strong>149 دينار</strong></td><td>رخصة مدى الحياة</td></tr>
+<tr><td>SoftyFact — نسخة Cloud</td><td><strong>~8 دينار/شهر</strong></td><td>اشتراك سنوي</td></tr>
+<tr><td>حاسوب (إن لم يكن موجوداً)</td><td>800-1500 دينار</td><td>3-5 سنوات</td></tr>
+<tr><td>تكوين (SoftyFact)</td><td>مجاني</td><td>دعم مضمّن</td></tr>
+</tbody>
+</table>
+<p><strong>بـ 149 دينار</strong>، تحصلون على برنامج كامل يدير: الفوترة، الحرفاء، الموردين، المخزون، الخلاصات، <a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a>، <a href="/blog/declaration-tej-guide-pratique">تصريح TEJ</a>، ولوحة القيادة.</p>
+<p>قارنوا ذلك بـ 5,000-15,000 دينار من الخسائر السنوية. العائد على الاستثمار <strong>فوري</strong>.</p>
+
+<h2>العوائق النفسية — وكيف تتجاوزونها</h2>
+
+<h3>"لست بارعاً في المعلوماتية"</h3>
+<p>SoftyFact مصمّم للمستخدمين غير التقنيين. الواجهة بالفرنسية والعربية، والدعم المحلي يرافقكم.</p>
+
+<h3>"نظامي الحالي يشتغل"</h3>
+<p>يشتغل... حتى يوم المراقبة الجبائية، أو دين منسي بـ 5,000 دينار، أو نفاد مخزون يكلّفكم حريفاً. المخاطرة غير مرئية يومياً — تتجسّد فجأة.</p>
+
+<h3>"ما عنديش وقت للانتقال"</h3>
+<p>تثبيت SoftyFact يأخذ 30 دقيقة. إنشاء حرفائكم ومنتجاتكم الأوائل يأخذ 1-2 ساعة. من الغد، تفوترون أسرع من قبل. الوقت المستثمر يسترجع من الأسبوع الأول.</p>
+
+<h3>"البرامج غالية (اشتراكات)"</h3>
+<p>صحيح للحلول الأجنبية (30-100 دينار/شهر). SoftyFact يقدم <a href="/product/offline">رخصة مدى الحياة بـ 149 دينار</a> — لا اشتراك، تحديثات مجانية. اطلعوا على <a href="/blog/comparatif-logiciel-facturation-gratuit-vs-payant">مقارنتنا مجاني مقابل مدفوع</a>.</p>
+
+<h2>قصص نجاح تونسية</h2>
+
+<h3>الحالة 1: محل ملابس — تونس</h3>
+<p>قبل: فوترة ورقية، مخزون "من الذاكرة". بعد 3 أشهر مع SoftyFact: رقم معاملات متابع لحظياً، مخزون دقيق، ديون مسترجعة. <strong>ربح مقدّر: 8,000 دينار/سنة.</strong></p>
+
+<h3>الحالة 2: تاجر جملة مواد غذائية — سوسة</h3>
+<p>قبل: Excel + دفتر. 3 أخطاء أداء شهرياً. بعد SoftyFact: صفر أخطاء، فوترة أسرع 5 مرات، <a href="/blog/gestion-multi-entrepots-stock-tunisie">إدارة مخازن متعددة</a> فعّالة. <strong>ربح مقدّر: 12,000 دينار/سنة.</strong></p>
+
+<h3>الحالة 3: مستقل مطوّر — صفاقس</h3>
+<p>قبل: Word للفواتير، لا متابعة خلاصات. بعد SoftyFact Cloud: <a href="/blog/facturation-freelance-auto-entrepreneur-tunisie">فوترة احترافية</a>، متابعة خلاصات دولية. <strong>حريفان جديدان بفضل الفواتير الاحترافية.</strong></p>
+
+<h2>خلاصة</h2>
+<p>التحوّل الرقمي للتجارة التونسية ليس موضة عابرة — إنه <strong>ضرورة بقاء ونمو</strong>. والخبر الجيد أنه يبدأ بخطوة بسيطة: اعتماد برنامج فوترة مناسب.</p>
+<p>مع SoftyFact، ترقمنون فوترتكم وإدارتكم التجارية ومخزونكم وخزينتكم — بـ <strong>149 ديناراً فقط، مرة واحدة</strong>.</p>
+<p>🖥️ <a href="/product/offline"><strong>نسخة Bureau — 149 دينار مدى الحياة</strong></a> | ☁️ <a href="/product/online"><strong>نسخة Cloud — متاحة في كل مكان</strong></a></p>
+<p>👉 <strong><a href="/product/offline">اخطوا الخطوة الأولى نحو الرقمنة. اطلبوا SoftyFact.</a></strong></p>',
+                'meta_description_fr' => 'Comment entamer la transformation digitale de votre commerce en Tunisie en 2026. Coûts réels, priorités, freins à dépasser — guide pratique pour PME.',
+                'meta_description_ar' => 'كيف تبدأون التحول الرقمي لتجارتكم في تونس في 2026. تكاليف حقيقية وأولويات وعوائق للتجاوز — دليل عملي للمؤسسات.',
+                'meta_keywords' => 'transformation digitale commerce tunisie, digitalisation PME tunisie 2026, logiciel gestion commerciale digital, moderniser commerce tunisien',
+                'cover_image' => null,
+                'reading_time' => 8,
+                'published_at' => '2026-03-22 10:00:00',
             ],
 
 
@@ -3566,6 +5070,111 @@ class BlogPostSeeder extends Seeder
 
         foreach ($posts as $post) {
             BlogPost::updateOrCreate(['slug' => $post['slug']], $post);
+        }
+
+        $this->downloadPexelsCovers();
+    }
+
+    /**
+     * Download Pexels cover images for posts that have no cover_image.
+     */
+    private function downloadPexelsCovers(): void
+    {
+        $apiKey = env('PEXELS_API_KEY');
+
+        if (!$apiKey) {
+            echo "⚠️  PEXELS_API_KEY not set — skipping cover downloads.\n";
+            return;
+        }
+
+        $searchTerms = [
+            'comment-choisir-logiciel-facturation-tunisie'   => 'business software accounting',
+            'guide-tva-tunisie'                              => 'tax documents calculator',
+            'fodec-tunisie-guide'                            => 'industrial manufacturing factory',
+            'declaration-tej-guide-pratique'                 => 'digital stamp certificate',
+            'facturation-electronique-tunisie-elfatoora'     => 'electronic invoice digital',
+            'retenue-source-tunisie-guide'                   => 'finance money bank',
+            'gestion-stock-pme-tunisie'                      => 'warehouse inventory stock',
+            'creer-facture-conforme-tunisie'                 => 'invoice paper office desk',
+            'timbre-fiscal-tunisie'                          => 'government stamp legal document',
+            'comparatif-logiciel-facturation-gratuit-vs-payant' => 'comparison choice decision',
+            'top-5-logiciels-facturation-tunisie-2026'       => 'laptop business ranking',
+            'migration-excel-vers-logiciel-facturation-tunisie' => 'spreadsheet migration data',
+            'softyfact-bureau-vs-cloud-comparatif'           => 'cloud computing desktop laptop',
+            'suivi-paiements-tresorerie-tunisie'             => 'payment tracking cash register',
+            'gestion-clients-fournisseurs-logiciel-tunisie'  => 'business customer relationship',
+            'tableau-de-bord-gestion-commerciale-tunisie'    => 'business dashboard analytics',
+            'devis-bon-livraison-facture-workflow-tunisie'    => 'business document paperwork',
+            'facturation-freelance-auto-entrepreneur-tunisie' => 'freelancer working laptop',
+            'logiciel-facturation-expert-comptable-tunisie'  => 'accountant office professional',
+            'gestion-multi-entrepots-stock-tunisie'          => 'warehouse logistics storage',
+            'transformation-digitale-commerce-tunisie-2026'  => 'digital transformation technology',
+        ];
+
+        $posts = BlogPost::whereNull('cover_image')
+            ->orWhere('cover_image', '')
+            ->get();
+
+        if ($posts->isEmpty()) {
+            echo "✅ All posts already have cover images.\n";
+            return;
+        }
+
+        $outputDir = public_path('images/blog');
+        if (!is_dir($outputDir)) {
+            mkdir($outputDir, 0755, true);
+        }
+
+        foreach ($posts as $post) {
+            $filename = $post->slug . '.jpg';
+            $filepath = $outputDir . '/' . $filename;
+
+            if (file_exists($filepath)) {
+                $post->update(['cover_image' => '/images/blog/' . $filename]);
+                echo "🔗 {$post->slug} — linked existing file.\n";
+                continue;
+            }
+
+            $query = $searchTerms[$post->slug] ?? 'business accounting';
+            echo "🔍 Searching Pexels for: \"{$query}\" ...\n";
+
+            $response = Http::withHeaders([
+                'Authorization' => $apiKey,
+            ])->get('https://api.pexels.com/v1/search', [
+                'query'       => $query,
+                'per_page'    => 5,
+                'orientation' => 'landscape',
+                'size'        => 'large',
+            ]);
+
+            if ($response->failed()) {
+                echo "❌ Pexels API error for {$post->slug}: " . $response->status() . "\n";
+                continue;
+            }
+
+            $photos = $response->json('photos', []);
+            if (empty($photos)) {
+                echo "⚠️  No photos found for: {$query}\n";
+                continue;
+            }
+
+            $photo = $photos[$post->id % count($photos)];
+            $imageUrl = $photo['src']['landscape'] ?? $photo['src']['large'];
+            $photographer = $photo['photographer'] ?? 'Unknown';
+
+            echo "📷 Downloading from {$photographer}...\n";
+
+            $imageData = Http::timeout(30)->get($imageUrl);
+            if ($imageData->failed()) {
+                echo "❌ Failed to download image for {$post->slug}\n";
+                continue;
+            }
+
+            file_put_contents($filepath, $imageData->body());
+            $post->update(['cover_image' => '/images/blog/' . $filename]);
+            echo "✅ {$post->slug} — Photo by {$photographer} (Pexels)\n";
+
+            usleep(200000); // Respect API rate limits
         }
     }
 }

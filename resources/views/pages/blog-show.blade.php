@@ -96,22 +96,33 @@
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
                     <span>{{ $productName }}</span>
                 </div>
+                {{-- Language toggle --}}
+                @php $otherLocale = app()->getLocale() === 'fr' ? 'ar' : 'fr'; @endphp
+                <a href="{{ route('locale.switch', ['locale' => $otherLocale]) }}"
+                   class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cm-primary/10 text-cm-primary font-semibold text-xs hover:bg-cm-primary/20 transition-colors">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802"/></svg>
+                    {{ $otherLocale === 'ar' ? 'اقرأ بالعربية' : 'Lire en français' }}
+                </a>
             </div>
         </header>
 
         {{-- Cover --}}
         @php $meta = $post->getCoverMeta(); @endphp
         <div class="rounded-2xl overflow-hidden shadow-lg mb-8 md:mb-10">
+            @if($post->cover_image)
+            <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full aspect-[21/9] object-cover">
+            @else
             <div class="w-full aspect-[21/9] flex items-center justify-center text-white relative"
                  style="background: linear-gradient(135deg, {{ $meta['from'] }}, {{ $meta['to'] }});">
                 <span class="material-symbols-rounded text-[120px] md:text-[160px] opacity-10 absolute">{{ $meta['icon'] }}</span>
                 <span class="material-symbols-rounded text-5xl md:text-6xl drop-shadow-lg relative z-10">{{ $meta['icon'] }}</span>
                 <span class="absolute bottom-4 right-5 text-xs opacity-40 font-semibold tracking-wider uppercase">SoftyFact</span>
             </div>
+            @endif
         </div>
 
         {{-- Article body --}}
-        <div class="
+        <div dir="{{ app()->getLocale() === 'ar' ? 'rtl' : 'ltr' }}" class="
             prose prose-lg max-w-none
             prose-headings:font-headline prose-headings:font-bold prose-headings:text-cm-on-background
             prose-h2:text-xl prose-h2:sm:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-cm-outline-variant/20
@@ -162,12 +173,16 @@
                 <article class="group bg-white rounded-2xl shadow-sm border border-cm-outline-variant/10 overflow-hidden hover:shadow-lg transition-shadow">
                     @php $relMeta = $rel->getCoverMeta(); @endphp
                     <a href="/blog/{{ $rel->slug }}" class="block overflow-hidden aspect-[16/9]">
+                        @if($rel->cover_image)
+                        <img src="{{ $rel->cover_image }}" alt="{{ $rel->getTitle() }}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        @else
                         <div class="w-full h-full flex flex-col items-center justify-center p-5 text-white relative group-hover:scale-[1.02] transition-transform duration-300"
                              style="background: linear-gradient(135deg, {{ $relMeta['from'] }}, {{ $relMeta['to'] }});">
                             <span class="material-symbols-rounded text-6xl opacity-15 absolute top-2 right-2">{{ $relMeta['icon'] }}</span>
                             <span class="material-symbols-rounded text-3xl mb-2 drop-shadow-md">{{ $relMeta['icon'] }}</span>
                             <p class="font-headline font-bold text-center text-xs leading-snug line-clamp-2 px-2 drop-shadow-sm">{{ $rel->getTitle() }}</p>
                         </div>
+                        @endif
                     </a>
                     <div class="p-5">
                         <div class="flex items-center gap-3 text-xs text-cm-secondary mb-2">

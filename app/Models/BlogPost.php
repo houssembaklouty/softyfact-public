@@ -66,6 +66,14 @@ class BlogPost extends Model
             'top-5-logiciels-facturation-tunisie-2026' => ['icon' => 'emoji_events', 'from' => '#F57F17', 'to' => '#FFCA28'],
             'migration-excel-vers-logiciel-facturation-tunisie' => ['icon' => 'swap_horiz', 'from' => '#1B5E20', 'to' => '#4CAF50'],
             'softyfact-bureau-vs-cloud-comparatif' => ['icon' => 'cloud_sync', 'from' => '#0097A7', 'to' => '#4DD0E1'],
+            'suivi-paiements-tresorerie-tunisie' => ['icon' => 'payments', 'from' => '#00695C', 'to' => '#4DB6AC'],
+            'gestion-clients-fournisseurs-logiciel-tunisie' => ['icon' => 'group', 'from' => '#283593', 'to' => '#7986CB'],
+            'tableau-de-bord-gestion-commerciale-tunisie' => ['icon' => 'dashboard', 'from' => '#4A148C', 'to' => '#CE93D8'],
+            'devis-bon-livraison-facture-workflow-tunisie' => ['icon' => 'description', 'from' => '#1B5E20', 'to' => '#81C784'],
+            'facturation-freelance-auto-entrepreneur-tunisie' => ['icon' => 'person', 'from' => '#E65100', 'to' => '#FFB74D'],
+            'logiciel-facturation-expert-comptable-tunisie' => ['icon' => 'account_balance_wallet', 'from' => '#311B92', 'to' => '#9575CD'],
+            'gestion-multi-entrepots-stock-tunisie' => ['icon' => 'local_shipping', 'from' => '#3E2723', 'to' => '#A1887F'],
+            'transformation-digitale-commerce-tunisie-2026' => ['icon' => 'rocket_launch', 'from' => '#37474F', 'to' => '#90A4AE'],
         ];
 
         return $map[$this->slug] ?? ['icon' => 'article', 'from' => '#006B59', 'to' => '#00C1A3'];

@@ -27,9 +27,10 @@ RUN apk add --no-cache \
         zip \
         unzip \
         curl \
+        sqlite-dev \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
-        pdo_mysql \
+        pdo_sqlite \
         mbstring \
         gd \
         intl \

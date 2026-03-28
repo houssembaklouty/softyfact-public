@@ -1,23 +1,14 @@
 <?php
 
 return [
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlite'),
     'connections' => [
-        'mysql' => [
-            'driver' => 'mysql',
+        'sqlite' => [
+            'driver' => 'sqlite',
             'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'facture_pro'),
-            'username' => env('DB_USERNAME', 'softyfact_public'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
+            'database' => env('DB_DATABASE', storage_path('app/database.sqlite')),
             'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
+            'foreign_key_constraints' => true,
         ],
     ],
     'migrations' => [

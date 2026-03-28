@@ -27,25 +27,13 @@
 
             {{-- Order details --}}
             <div class="bg-gray-50 rounded-xl p-5 mb-6 space-y-3">
-                @if($order->name)
                 <div class="flex justify-between text-sm">
-                    <span class="text-gray-500">Nom</span>
-                    <span class="font-medium text-gray-900">{{ $order->name }}</span>
+                    <span class="text-gray-500">Référence</span>
+                    <span class="font-medium text-gray-900 text-xs break-all">{{ $token }}</span>
                 </div>
-                @endif
-                <div class="flex justify-between text-sm">
-                    <span class="text-gray-500">Téléphone</span>
-                    <span class="font-medium text-gray-900">{{ $order->phone }}</span>
-                </div>
-                @if($order->address)
-                <div class="flex justify-between text-sm">
-                    <span class="text-gray-500">Adresse</span>
-                    <span class="font-medium text-gray-900">{{ $order->address }}</span>
-                </div>
-                @endif
                 <div class="border-t border-gray-200 pt-3 flex justify-between">
                     <span class="text-sm font-semibold text-gray-700">Montant</span>
-                    <span class="text-lg font-bold text-cm-primary">{{ number_format($order->amount ?? $orderAmount, 3, '.', '') }} DT</span>
+                    <span class="text-lg font-bold text-cm-primary">{{ number_format($orderAmount, 3, '.', '') }} DT</span>
                 </div>
             </div>
 

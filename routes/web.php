@@ -72,7 +72,8 @@ Route::post('/orders', [OrderController::class, 'store'])
     ->middleware('throttle:10,1')
     ->name('orders.store');
 
-Route::get('/order-confirmation/{order:confirmation_token}', [OrderController::class, 'confirmation'])
+Route::get('/order-confirmation/{token}', [OrderController::class, 'confirmation'])
+    ->where('token', '[A-Za-z0-9]+')
     ->name('orders.confirmation');
 
 // Lead capture (public, throttled)
