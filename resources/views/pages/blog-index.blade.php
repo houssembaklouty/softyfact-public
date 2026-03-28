@@ -53,12 +53,17 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             @foreach($posts as $post)
             <article class="group bg-white rounded-2xl shadow-sm border border-cm-outline-variant/10 overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                {{-- Cover image --}}
-                @if($post->cover_image)
+                {{-- Cover --}}
+                @php $meta = $post->getCoverMeta(); @endphp
                 <a href="/blog/{{ $post->slug }}" class="block overflow-hidden aspect-[16/9]">
-                    <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                    <div class="w-full h-full flex flex-col items-center justify-center p-6 text-white relative group-hover:scale-[1.02] transition-transform duration-300"
+                         style="background: linear-gradient(135deg, {{ $meta['from'] }}, {{ $meta['to'] }});">
+                        <span class="material-symbols-rounded text-7xl opacity-15 absolute top-3 right-3">{{ $meta['icon'] }}</span>
+                        <span class="material-symbols-rounded text-4xl mb-3 drop-shadow-md">{{ $meta['icon'] }}</span>
+                        <p class="font-headline font-bold text-center text-sm md:text-base leading-snug line-clamp-3 px-3 drop-shadow-sm">{{ $post->getTitle() }}</p>
+                        <span class="absolute bottom-3 left-4 text-[10px] opacity-50 font-semibold tracking-wider uppercase">SoftyFact</span>
+                    </div>
                 </a>
-                @endif
 
                 <div class="p-5 md:p-6">
                     {{-- Meta --}}

@@ -10,7 +10,7 @@ class BlogController extends Controller
     {
         $posts = BlogPost::published()
             ->orderByDesc('published_at')
-            ->paginate(6);
+            ->paginate(30);
 
         $shared = [
             'productName' => config('app.name'),

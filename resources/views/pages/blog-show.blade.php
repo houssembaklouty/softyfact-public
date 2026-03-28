@@ -99,12 +99,16 @@
             </div>
         </header>
 
-        {{-- Cover image --}}
-        @if($post->cover_image)
+        {{-- Cover --}}
+        @php $meta = $post->getCoverMeta(); @endphp
         <div class="rounded-2xl overflow-hidden shadow-lg mb-8 md:mb-10">
-            <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full h-auto" />
+            <div class="w-full aspect-[21/9] flex items-center justify-center text-white relative"
+                 style="background: linear-gradient(135deg, {{ $meta['from'] }}, {{ $meta['to'] }});">
+                <span class="material-symbols-rounded text-[120px] md:text-[160px] opacity-10 absolute">{{ $meta['icon'] }}</span>
+                <span class="material-symbols-rounded text-5xl md:text-6xl drop-shadow-lg relative z-10">{{ $meta['icon'] }}</span>
+                <span class="absolute bottom-4 right-5 text-xs opacity-40 font-semibold tracking-wider uppercase">SoftyFact</span>
+            </div>
         </div>
-        @endif
 
         {{-- Article body --}}
         <div class="
@@ -156,11 +160,15 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 @foreach($related as $rel)
                 <article class="group bg-white rounded-2xl shadow-sm border border-cm-outline-variant/10 overflow-hidden hover:shadow-lg transition-shadow">
-                    @if($rel->cover_image)
+                    @php $relMeta = $rel->getCoverMeta(); @endphp
                     <a href="/blog/{{ $rel->slug }}" class="block overflow-hidden aspect-[16/9]">
-                        <img src="{{ $rel->cover_image }}" alt="{{ $rel->getTitle() }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                        <div class="w-full h-full flex flex-col items-center justify-center p-5 text-white relative group-hover:scale-[1.02] transition-transform duration-300"
+                             style="background: linear-gradient(135deg, {{ $relMeta['from'] }}, {{ $relMeta['to'] }});">
+                            <span class="material-symbols-rounded text-6xl opacity-15 absolute top-2 right-2">{{ $relMeta['icon'] }}</span>
+                            <span class="material-symbols-rounded text-3xl mb-2 drop-shadow-md">{{ $relMeta['icon'] }}</span>
+                            <p class="font-headline font-bold text-center text-xs leading-snug line-clamp-2 px-2 drop-shadow-sm">{{ $rel->getTitle() }}</p>
+                        </div>
                     </a>
-                    @endif
                     <div class="p-5">
                         <div class="flex items-center gap-3 text-xs text-cm-secondary mb-2">
                             <time datetime="{{ $rel->published_at->toDateString() }}">{{ $rel->published_at->translatedFormat('d M Y') }}</time>
