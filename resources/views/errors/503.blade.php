@@ -5,9 +5,10 @@
 @endsection
 
 @section('body')
+<div class="flex flex-col min-h-screen">
     @include('partials._navbar-simple')
 
-    <main class="flex items-center justify-center min-h-[calc(100vh-12rem)] px-4">
+    <main class="flex-1 flex items-center justify-center px-4">
         <div class="text-center max-w-lg">
             <p class="text-8xl font-extrabold text-amber-200">503</p>
             <h1 class="mt-4 text-2xl font-bold text-gray-900 sm:text-3xl">{{ __('errorMaintenanceTitle') }}</h1>
@@ -22,4 +23,5 @@
     </main>
 
     @include('partials._footer-simple')
+</div>
 @endsection
