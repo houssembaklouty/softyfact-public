@@ -616,7 +616,14 @@ class BlogPostSeeder extends Seeder
 <li><strong>Export compatible TEJ :</strong> Exportez vos données de retenue dans un format directement importable sur la plateforme TEJ, éliminant ainsi les ressaisies manuelles.</li>
 <li><strong>Tableau de bord fiscal :</strong> Suivez en temps réel l\'état de vos retenues, les montants à déclarer et les échéances à respecter.</li>
 </ul>
-<p>En automatisant ces tâches, <a href="/product/offline">SoftyFact Bureau</a> vous permet de gagner un temps précieux, de réduire les risques d\'erreur et de rester en conformité avec la législation fiscale tunisienne. Concentrez-vous sur votre activité principale et laissez SoftyFact s\'occuper de vos obligations déclaratives.</p>',
+<p>En automatisant ces tâches, <a href="/product/offline">SoftyFact Bureau</a> vous permet de gagner un temps précieux, de réduire les risques d\'erreur et de rester en conformité avec la législation fiscale tunisienne. Concentrez-vous sur votre activité principale et laissez SoftyFact s\'occuper de vos obligations déclaratives.</p>
+<h2>Pour aller plus loin</h2>
+<ul>
+<li><a href="/blog/erreurs-courantes-declaration-tej-tunisie">Les 10 erreurs les plus courantes dans la déclaration TEJ</a> — et comment les éviter</li>
+<li><a href="/blog/automatiser-declaration-tej-softyfact">Automatiser votre déclaration TEJ avec SoftyFact</a> — zéro saisie manuelle</li>
+<li><a href="/blog/tej-debutants-faq-tunisie">FAQ TEJ pour débutants</a> — réponses aux 15 questions les plus fréquentes</li>
+<li><a href="/blog/calendrier-echeances-tej-2026">Calendrier TEJ 2026</a> — toutes les échéances mois par mois</li>
+</ul>',
                 'body_ar' => '<h2>ما هو التصريح TEJ؟</h2>
 <p>التصريح <strong>TEJ</strong> (التصريح الإلكتروني عبر التبادل الإلكتروني للبيانات) هو النظام الإلكتروني الذي أنشأته <strong>الإدارة العامة للأداءات</strong> في تونس لتمكين المؤسسات والمهنيين من إيداع تصريحاتهم المتعلقة بـ<a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a> بطريقة إلكترونية. يندرج هذا النظام ضمن استراتيجية تحديث الإدارة الجبائية التونسية، بهدف تبسيط الالتزامات التصريحية وتقليل التنقلات إلى مكاتب مراقبة الأداءات.</p>
 <p>عمليًا، تتيح منصة TEJ إرسال البيانات المتعلقة بالمبالغ المخصومة من المدفوعات المقدمة للموردين ومقدمي الخدمات والأجراء وغيرهم من المستفيدين بطريقة إلكترونية. وهي تحل تدريجيًا محل الإيداع الورقي للتصريحات الشهرية وتتيح متابعة فورية لحالة التصريحات المقدمة.</p>
@@ -676,7 +683,14 @@ class BlogPostSeeder extends Seeder
 <li><strong>تصدير متوافق مع TEJ:</strong> صدّروا بيانات الخصم بصيغة قابلة للاستيراد مباشرة على منصة TEJ، مما يُلغي إعادة الإدخال اليدوي.</li>
 <li><strong>لوحة متابعة جبائية:</strong> تابعوا في الوقت الفعلي حالة خصوماتكم والمبالغ الواجب التصريح بها والآجال الواجب احترامها.</li>
 </ul>
-<p>من خلال أتمتة هذه المهام، يُمكّنكم <a href="/product/offline">SoftyFact Bureau</a> من توفير وقت ثمين وتقليل مخاطر الأخطاء والبقاء في امتثال تام مع التشريعات الجبائية التونسية. ركّزوا على نشاطكم الأساسي ودعوا SoftyFact يتولى التزاماتكم التصريحية.</p>',
+<p>من خلال أتمتة هذه المهام، يُمكّنكم <a href="/product/offline">SoftyFact Bureau</a> من توفير وقت ثمين وتقليل مخاطر الأخطاء والبقاء في امتثال تام مع التشريعات الجبائية التونسية. ركّزوا على نشاطكم الأساسي ودعوا SoftyFact يتولى التزاماتكم التصريحية.</p>
+<h2>لمزيد من المعلومات</h2>
+<ul>
+<li><a href="/blog/erreurs-courantes-declaration-tej-tunisie">أكثر 10 أخطاء شائعة في تصريح TEJ</a> — وكيفية تجنبها</li>
+<li><a href="/blog/automatiser-declaration-tej-softyfact">أتمتة تصريح TEJ مع SoftyFact</a> — بدون إدخال يدوي</li>
+<li><a href="/blog/tej-debutants-faq-tunisie">أسئلة شائعة عن TEJ للمبتدئين</a> — إجابات على أكثر 15 سؤالًا تكرارًا</li>
+<li><a href="/blog/calendrier-echeances-tej-2026">روزنامة TEJ 2026</a> — جميع المواعيد شهرًا بشهر</li>
+</ul>',
                 'meta_description_fr' => 'Déclaration TEJ en Tunisie : guide étape par étape pour générer vos certificats de retenue à la source.',
                 'meta_description_ar' => 'تصريح TEJ في تونس: دليل خطوة بخطوة لإنشاء شهادات الخصم من المورد.',
                 'meta_keywords' => 'TEJ tunisie, déclaration TEJ, certificat retenue source',
@@ -745,7 +759,13 @@ class BlogPostSeeder extends Seeder
 <h3>7. SoftyFact sera prêt pour El-Fatoora</h3>
 <p>Chez SoftyFact, nous suivons de près l\'évolution du projet El-Fatoora et travaillons activement à l\'intégration complète de la facturation électronique dans nos solutions. Que vous utilisiez <a href="/product/online">SoftyFact Cloud</a> ou <a href="/product/offline">SoftyFact Bureau</a>, vous bénéficierez d\'une mise à jour transparente le moment venu.</p>
 <p>Notre engagement : vous offrir une transition fluide vers la facturation électronique, sans complexité technique, avec un accompagnement personnalisé à chaque étape. Vos factures seront conformes, signées numériquement et transmises automatiquement à la plateforme El-Fatoora.</p>
-<p><strong>N\'attendez pas la dernière minute.</strong> Commencez dès aujourd\'hui à structurer votre facturation avec SoftyFact et soyez parmi les premiers à être conformes lorsque El-Fatoora entrera en vigueur.</p>',
+<p><strong>N\'attendez pas la dernière minute.</strong> Commencez dès aujourd\'hui à structurer votre facturation avec SoftyFact et soyez parmi les premiers à être conformes lorsque El-Fatoora entrera en vigueur.</p>
+<h2>Pour aller plus loin</h2>
+<ul>
+<li><a href="/blog/facturation-electronique-pme-tunisie-preparation">Checklist complète pour préparer votre PME</a> — plan d\'action étape par étape</li>
+<li><a href="/blog/cout-roi-facturation-electronique-tunisie">Coûts et ROI de la facturation électronique</a> — analyse financière détaillée</li>
+<li><a href="/blog/cadre-juridique-facturation-electronique-tunisie">Cadre juridique complet</a> — tous les textes de loi décryptés</li>
+</ul>',
                 'body_ar' => '<h2>الفوترة الإلكترونية في تونس: كل ما تحتاج معرفته عن الفاتورة</h2>
 <p>تستعد تونس لخطوة حاسمة في تحديث منظومتها الجبائية. من خلال مشروع <strong>الفاتورة (El-Fatoora)</strong>، تنضم البلاد إلى الحركة العالمية نحو الفوترة الإلكترونية الإلزامية. في هذا المقال، نشرح لكم كل ما يجب معرفته للاستعداد لهذا التحول وتهيئة مؤسستكم.</p>
 <h3>1. ما هي الفوترة الإلكترونية؟</h3>
@@ -797,7 +817,13 @@ class BlogPostSeeder extends Seeder
 <h3>7. سوفتي فاكت جاهز للفاتورة</h3>
 <p>في سوفتي فاكت، نتابع عن كثب تطور مشروع الفاتورة ونعمل بنشاط على دمج الفوترة الإلكترونية بالكامل في حلولنا. سواء كنتم تستخدمون <a href="/product/online">SoftyFact Cloud</a> أو <a href="/product/offline">SoftyFact Bureau</a>، ستستفيدون من تحديث سلس في الوقت المناسب.</p>
 <p>التزامنا: توفير انتقال سهل إلى الفوترة الإلكترونية، دون تعقيد تقني، مع مرافقة شخصية في كل مرحلة. ستكون فواتيركم مطابقة، موقعة رقميًا ومرسلة تلقائيًا إلى منصة الفاتورة.</p>
-<p><strong>لا تنتظروا اللحظة الأخيرة.</strong> ابدأوا اليوم في هيكلة فوترتكم مع سوفتي فاكت وكونوا من أوائل المؤسسات المطابقة عند دخول نظام الفاتورة حيز التنفيذ.</p>',
+<p><strong>لا تنتظروا اللحظة الأخيرة.</strong> ابدأوا اليوم في هيكلة فوترتكم مع سوفتي فاكت وكونوا من أوائل المؤسسات المطابقة عند دخول نظام الفاتورة حيز التنفيذ.</p>
+<h2>لمزيد من المعلومات</h2>
+<ul>
+<li><a href="/blog/facturation-electronique-pme-tunisie-preparation">قائمة مرجعية شاملة لتحضير مؤسستكم</a> — خطة عمل خطوة بخطوة</li>
+<li><a href="/blog/cout-roi-facturation-electronique-tunisie">تكاليف الفوترة الإلكترونية وعائدها على الاستثمار</a> — تحليل مالي مفصّل</li>
+<li><a href="/blog/cadre-juridique-facturation-electronique-tunisie">الإطار القانوني الشامل</a> — جميع النصوص القانونية المُفسّرة</li>
+</ul>',
                 'meta_description_fr' => 'Facturation électronique El-Fatoora en Tunisie : cadre légal, calendrier et préparation pour les entreprises.',
                 'meta_description_ar' => 'الفوترة الإلكترونية في تونس: الإطار القانوني والتحضير للمؤسسات.',
                 'meta_keywords' => 'facturation électronique tunisie, el fatoora, e-facture tunisie',
@@ -905,7 +931,13 @@ class BlogPostSeeder extends Seeder
 <li><strong>Préparation de la déclaration TEJ :</strong> toutes les retenues du mois sont récapitulées et prêtes à être déclarées.</li>
 <li><strong>Conformité fiscale :</strong> les taux sont mis à jour selon la législation en vigueur, éliminant tout risque d\'erreur.</li>
 </ul>
-<p>Ne laissez plus la complexité fiscale freiner votre activité. Avec SoftyFact, chaque facture est traitée dans le respect total de la réglementation tunisienne.</p>',
+<p>Ne laissez plus la complexité fiscale freiner votre activité. Avec SoftyFact, chaque facture est traitée dans le respect total de la réglementation tunisienne.</p>
+<h2>Pour aller plus loin</h2>
+<ul>
+<li><a href="/blog/automatiser-declaration-tej-softyfact">Automatiser la déclaration TEJ avec SoftyFact</a> — du calcul à l\'export en un clic</li>
+<li><a href="/blog/erreurs-courantes-declaration-tej-tunisie">Les 10 erreurs TEJ les plus courantes</a> — vérifiez que vous n\'en faites aucune</li>
+<li><a href="/blog/tej-debutants-faq-tunisie">FAQ TEJ pour débutants</a> — tout comprendre sur la retenue et TEJ</li>
+</ul>',
                 'body_ar' => '<h2>ما هي الخصم من المورد؟</h2>
 <p><strong>الخصم من المورد</strong> (Retenue à la source) هو آلية جبائية يقوم بموجبها الحريف أو المؤسسة الدافعة باقتطاع نسبة مئوية من المبالغ المستحقة للمزوّد أو مسدي الخدمات، قبل تحويلها مباشرة إلى خزينة الدولة التونسية. ينظّم هذا النظام <strong>مجلة الضريبة على دخل الأشخاص الطبيعيين والضريبة على الشركات</strong>، ويُمكّن الإدارة الجبائية من تحصيل الضريبة بشكل مسبق ومنتظم.</p>
 <p>عمليًا، عند دفع فاتورة، لا يتم تحويل كامل المبلغ إلى المزوّد: يتم اقتطاع جزء والتصريح به لدى مصالح الجباية عبر <a href="/blog/declaration-tej-guide-pratique">التصريح عن بعد TEJ</a>. يحصل المزوّد على <strong>شهادة خصم</strong> يمكنه احتسابها ضمن ضريبته السنوية.</p>
@@ -996,7 +1028,13 @@ class BlogPostSeeder extends Seeder
 <li><strong>إعداد تصريح TEJ:</strong> تُجمّع كل عمليات الخصم الشهرية وتكون جاهزة للتصريح.</li>
 <li><strong>الامتثال الجبائي:</strong> تُحدّث النسب وفقًا للتشريع الجاري به العمل، مما يُلغي أي خطر خطأ.</li>
 </ul>
-<p>لا تدعوا تعقيدات الجباية تُعرقل نشاطكم. مع SoftyFact، كل فاتورة تُعالج في احترام تام للتراتيب التونسية.</p>',
+<p>لا تدعوا تعقيدات الجباية تُعرقل نشاطكم. مع SoftyFact، كل فاتورة تُعالج في احترام تام للتراتيب التونسية.</p>
+<h2>لمزيد من المعلومات</h2>
+<ul>
+<li><a href="/blog/automatiser-declaration-tej-softyfact">أتمتة تصريح TEJ مع SoftyFact</a> — من الحساب إلى التصدير بنقرة واحدة</li>
+<li><a href="/blog/erreurs-courantes-declaration-tej-tunisie">أكثر 10 أخطاء شائعة في TEJ</a> — تأكدوا من تجنبها جميعًا</li>
+<li><a href="/blog/tej-debutants-faq-tunisie">أسئلة شائعة عن TEJ للمبتدئين</a> — كل ما تحتاجون معرفته عن الخصم وTEJ</li>
+</ul>',
                 'meta_description_fr' => 'Retenue à la source en Tunisie 2026 : taux, obligations déclaratives et gestion des certificats.',
                 'meta_description_ar' => 'الخصم من المورد في تونس 2026: النسب والتزامات التصريح وإدارة الشهادات.',
                 'meta_keywords' => 'retenue source tunisie, retenue à la source, RS tunisie',
