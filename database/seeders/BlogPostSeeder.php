@@ -7556,7 +7556,16 @@ class BlogPostSeeder extends Seeder
         ];
 
         foreach ($posts as $post) {
-            BlogPost::updateOrCreate(['slug' => $post['slug']], $post);
+            $existing = BlogPost::where('slug', $post['slug'])->first();
+            if ($existing) {
+                // Don't overwrite cover_image if already set
+                if ($existing->cover_image) {
+                    unset($post['cover_image']);
+                }
+                $existing->update($post);
+            } else {
+                BlogPost::create($post);
+            }
         }
 
         $this->downloadPexelsCovers();
