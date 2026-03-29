@@ -56,6 +56,7 @@ class OrderController extends Controller
                     'address' => $validated['address'] ?? null,
                     'city'    => $validated['city'] ?? null,
                     'type'    => $isOnline ? 'online' : 'offline',
+                    'ab_variant' => $request->cookie('ab_variant'),
                 ]);
 
             if ($response->successful() && $response->json('success')) {

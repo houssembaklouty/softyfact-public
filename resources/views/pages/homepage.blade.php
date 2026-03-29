@@ -64,16 +64,28 @@
             </div>
 
             <div class="flex-1 space-y-6 md:space-y-8 order-1 md:order-2 relative z-10">
+                @if(($abVariant ?? 'A') === 'B')
+                <div class="inline-flex items-center gap-2 bg-cm-primary/10 text-cm-primary px-4 py-2 rounded-full border border-cm-primary/20">
+                    <span class="text-xs font-black uppercase tracking-widest">{{ __('limitedOfferB') }}</span>
+                </div>
+                @else
                 <div class="inline-flex items-center gap-2 bg-cm-error-container text-cm-error px-4 py-2 rounded-full border border-cm-error/10">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 000-1.5h-3.75V6z" clip-rule="evenodd"/></svg>
                     <span class="text-xs font-black uppercase tracking-widest">{{ __('limitedOffer') }}</span>
                 </div>
+                @endif
 
                 <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-7xl leading-[1.1] tracking-tight text-cm-on-background">
-                    {{ __('heroTitle', ['highlight' => '']) }}<span class="bg-gradient-to-r from-cm-primary to-cm-primary-container bg-clip-text text-transparent">{{ __('heroHighlight') }}</span>
+                    @if(($abVariant ?? 'A') === 'B')
+                        {{ __('heroTitleB', ['highlight' => '']) }}<span class="bg-gradient-to-r from-cm-primary to-cm-primary-container bg-clip-text text-transparent">{{ __('heroHighlightB') }}</span>
+                    @else
+                        {{ __('heroTitle', ['highlight' => '']) }}<span class="bg-gradient-to-r from-cm-primary to-cm-primary-container bg-clip-text text-transparent">{{ __('heroHighlight') }}</span>
+                    @endif
                 </h1>
 
-                <p class="text-lg md:text-xl text-cm-secondary leading-relaxed font-medium">{{ __('heroSubtitle') }}</p>
+                <p class="text-lg md:text-xl text-cm-secondary leading-relaxed font-medium">
+                    {{ ($abVariant ?? 'A') === 'B' ? __('heroSubtitleB') : __('heroSubtitle') }}
+                </p>
 
                 {{-- Pricing card --}}
                 <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-cm-outline-variant/10 space-y-6">
@@ -97,7 +109,7 @@
                     </ul>
 
                     <button @click="showOrderModal = true" class="btn-cta-shine block w-full text-center bg-cm-primary text-cm-on-primary py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-[#006B59]/30 uppercase tracking-tight cursor-pointer">
-                        {{ __('orderNow') }}
+                        {{ ($abVariant ?? 'A') === 'B' ? __('orderNowB') : __('orderNow') }}
                     </button>
 
                     <p class="text-center text-xs font-bold text-cm-outline uppercase tracking-tighter italic">

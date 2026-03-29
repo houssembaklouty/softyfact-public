@@ -20,7 +20,15 @@
     "heroTitle": "Simplifiez votre :highlight dès aujourd'hui.",
     "heroHighlight": "Facturation",
     "heroSubtitle": "Gérez vos ventes, stocks et fiscalité tunisienne sans abonnement. Le choix de 100+ PME en Tunisie.",
+    "heroTitleB": "Arrêtez de perdre du temps sur vos :highlight",
+    "heroHighlightB": "Factures.",
+    "heroSubtitleB": "Automatisez votre facturation, gérez TVA, FODEC et TEJ en un clic. Rejoignez 100+ entreprises tunisiennes qui gagnent 10h par semaine.",
+    "orderNowB": "Essayer Maintenant — Sans Engagement",
     "limitedOffer": "OFFRE LIMITÉE : -50%",
+    "heroTitleB": "Rejoignez les +100 PME qui ont déjà choisi :highlight",
+    "heroHighlightB": "SoftyFact",
+    "heroSubtitleB": "Fini les erreurs de factures et les galères fiscales. Facturez, gérez vos stocks et déclarez vos taxes en quelques clics.",
+    "limitedOfferB": "🔥 ESSAYÉ PAR +100 ENTREPRISES",
     "startingFrom": "À partir de",
     "dtMonth": "DT/mois",
     "dtYear": "soit :price TND HT/an pour la version Cloud",
@@ -263,5 +271,6 @@
     "backToBlog": "Retour au blog",
     "blogCta": "Prêt à simplifier votre facturation ?",
     "blogCtaSub": "Découvrez SoftyFact et gérez vos factures en toute conformité.",
-    "publishedOn": "Publié le"
+    "publishedOn": "Publié le",
+    "whatsappChat": "Discuter sur WhatsApp"
 }

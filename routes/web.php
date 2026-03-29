@@ -21,7 +21,7 @@ $shared = [
     'monthlyPrice' => number_format(config('app.order_amount_online', 99) / 12, 2),
 ];
 
-// Homepage
+// Homepage (A/B tested)
 Route::get('/', function () use ($shared) {
     return view('pages.homepage', $shared);
 })->name('home');

@@ -25,6 +25,7 @@ class LeadController extends Controller
                 ...$validated,
                 'source_page' => 'homepage',
                 'ip_address' => $request->ip(),
+                'ab_variant' => $request->cookie('ab_variant'),
             ]);
 
             if ($response->successful()) {
