@@ -121,6 +121,9 @@ $faqs = [
                     type: 'online',
                 });
                 this.submitting = false;
+                // Track conversion
+                if (typeof gtag === 'function') gtag('event', 'purchase', { currency: 'TND', value: {{ $pagePrice }}, items: [{ item_name: 'SoftyFact Cloud', quantity: 1 }] });
+                if (typeof fbq === 'function') fbq('track', 'Purchase', { currency: 'TND', value: {{ $pagePrice }}, content_name: 'SoftyFact Cloud' });
                 if (resp.data.redirect) window.location.href = resp.data.redirect;
                 else this.submitted = true;
             } catch (err) {

@@ -331,7 +331,7 @@
                         submitting = true; errors = {};
                         fetch('/leads', { method: 'POST', headers: {'Content-Type':'application/json','X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]').content, 'Accept':'application/json'}, body: JSON.stringify({ name: $refs.lname.value, company: $refs.lcompany.value, phone: $refs.lphone.value, message: $refs.lmessage.value }) })
                         .then(r => { if(!r.ok) return r.json().then(d => { errors = d.errors || {}; throw new Error(); }); return r.json(); })
-                        .then(() => { submitted = true; })
+                        .then(() => { submitted = true; if (typeof gtag === 'function') gtag('event', 'generate_lead', { currency: 'TND', value: 0 }); if (typeof fbq === 'function') fbq('track', 'Lead'); })
                         .catch(() => {})
                         .finally(() => { submitting = false; })
                     " class="space-y-6" novalidate>
