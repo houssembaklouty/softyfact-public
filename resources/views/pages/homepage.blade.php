@@ -90,9 +90,9 @@
 
                 <h1 class="font-headline font-extrabold text-4xl md:text-5xl lg:text-7xl leading-[1.1] tracking-tight text-cm-on-background">
                     @if(($abVariant ?? 'A') === 'B')
-                        {{ __('heroTitleB', ['highlight' => '']) }}<span class="bg-gradient-to-r from-cm-primary to-cm-primary-container bg-clip-text text-transparent">{{ __('heroHighlightB') }}</span>
+                        {!! __('heroTitleB', ['highlight' => '<span class="bg-gradient-to-r from-cm-primary to-cm-primary-container bg-clip-text text-transparent">' . e(__('heroHighlightB')) . '</span>']) !!}
                     @else
-                        {{ __('heroTitle', ['highlight' => '']) }}<span class="bg-gradient-to-r from-cm-primary to-cm-primary-container bg-clip-text text-transparent">{{ __('heroHighlight') }}</span>
+                        {!! __('heroTitle', ['highlight' => '<span class="bg-gradient-to-r from-cm-primary to-cm-primary-container bg-clip-text text-transparent">' . e(__('heroHighlight')) . '</span>']) !!}
                     @endif
                 </h1>
 
