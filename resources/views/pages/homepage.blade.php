@@ -38,7 +38,20 @@
     "@type": "Organization",
     "name": "{{ $productName }}",
     "url": "https://softyfact.tn",
-    "contactPoint": { "@type": "ContactPoint", "telephone": "+216-71-000-000", "contactType": "sales", "availableLanguage": ["French","Arabic"], "areaServed": "TN" }
+    "logo": "https://softyfact.tn/favicon/apple-touch-icon.png",
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+216-{{ $supportPhone }}", "contactType": "sales", "availableLanguage": ["French","Arabic"], "areaServed": "TN" },
+    "sameAs": []
+},{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ $productName }}",
+    "url": "https://softyfact.tn",
+    "inLanguage": ["fr", "ar"],
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://softyfact.tn/blog?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
 }]
 </script>
 @endsection

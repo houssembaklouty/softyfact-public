@@ -49,6 +49,16 @@
     'operatingSystem' => 'Web',
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => __('home'), 'item' => 'https://softyfact.tn'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => $productName . ' Version Cloud'],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
 @endsection
 
 @php

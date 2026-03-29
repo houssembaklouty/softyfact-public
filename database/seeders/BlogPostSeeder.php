@@ -5065,6 +5065,2455 @@ class BlogPostSeeder extends Seeder
                 'published_at' => '2026-03-22 10:00:00',
             ],
 
+            // ============================================================
+            // POST 22 — Facturation électronique : checklist PME
+            // ============================================================
+            [
+                'slug' => 'facturation-electronique-pme-tunisie-preparation',
+                'title_fr' => 'PME tunisiennes : checklist complète pour se préparer à la facturation électronique',
+                'title_ar' => 'المؤسسات الصغرى والمتوسطة التونسية: قائمة مرجعية شاملة للاستعداد للفوترة الإلكترونية',
+                'excerpt_fr' => 'Guide pratique avec checklist détaillée pour préparer votre PME tunisienne à la facturation électronique El-Fatoora : étapes, budget, formation et outils.',
+                'excerpt_ar' => 'دليل عملي مع قائمة مرجعية مفصلة لتحضير مؤسستكم الصغرى أو المتوسطة في تونس للفوترة الإلكترونية: المراحل والميزانية والتكوين والأدوات.',
+                'body_fr' => '<h2>Pourquoi les PME doivent se préparer dès maintenant</h2>
+<p>La <a href="/blog/facturation-electronique-tunisie-elfatoora">facturation électronique (El-Fatoora)</a> n\'est plus une question de « si » mais de « quand ». Le projet du Ministère des Finances tunisien prévoit un déploiement progressif, les grandes entreprises étant les premières concernées, suivies des PME puis des TPE et indépendants.</p>
+<p>Pourtant, l\'expérience des pays qui ont déjà franchi le pas — l\'Arabie Saoudite avec ZATCA, la France avec la réforme de la facturation électronique, le Mexique avec le CFDI — montre une constante : <strong>les entreprises qui se préparent en avance s\'en sortent beaucoup mieux</strong> que celles qui attendent la dernière minute.</p>
+<p>Pour une PME tunisienne, la transition vers la facturation électronique implique des changements organisationnels, techniques et humains. Ce guide vous propose une checklist concrète pour aborder cette transformation sereinement, étape par étape.</p>
+
+<h2>Étape 1 : Évaluer votre situation actuelle</h2>
+<p>Avant de planifier quoi que ce soit, vous devez dresser un état des lieux honnête de votre processus de facturation actuel. Voici les questions à vous poser :</p>
+
+<h3>Audit de votre processus de facturation</h3>
+<ul>
+<li><strong>Comment créez-vous vos factures aujourd\'hui ?</strong> Sur papier, avec Excel, avec un logiciel de facturation, ou un mélange des trois ?</li>
+<li><strong>Combien de factures émettez-vous par mois ?</strong> Moins de 50, entre 50 et 200, ou plus de 200 ? Le volume détermine la complexité de la migration.</li>
+<li><strong>Vos factures sont-elles conformes aux exigences actuelles ?</strong> Numérotation séquentielle, mentions obligatoires, <a href="/blog/guide-tva-tunisie">TVA correctement calculée</a>, <a href="/blog/timbre-fiscal-tunisie">timbre fiscal</a> appliqué quand nécessaire.</li>
+<li><strong>Comment archivez-vous vos factures ?</strong> Classeur papier, dossier sur l\'ordinateur, cloud ? La facturation électronique impose un archivage numérique sécurisé pendant 10 ans minimum.</li>
+<li><strong>Qui gère la facturation ?</strong> Le gérant lui-même, un comptable interne, un cabinet externe ? Identifiez toutes les personnes impliquées.</li>
+</ul>
+
+<h3>Évaluation de votre infrastructure informatique</h3>
+<ul>
+<li><strong>Connexion Internet :</strong> La facturation électronique nécessite une connexion stable pour transmettre les factures à la plateforme El-Fatoora. Si votre connexion est instable, envisagez une solution qui permet de travailler hors-ligne et de synchroniser ensuite.</li>
+<li><strong>Équipement :</strong> Un ordinateur récent avec un navigateur à jour suffit pour la version cloud. Pour la version bureau, vérifiez les prérequis système du logiciel choisi.</li>
+<li><strong>Sécurité :</strong> Antivirus à jour, mots de passe robustes, sauvegardes régulières. La e-facturation manipule des données sensibles.</li>
+</ul>
+
+<h2>Étape 2 : Mettre à jour vos données fiscales et commerciales</h2>
+<p>La facturation électronique repose sur des données structurées et vérifiées automatiquement. Toute erreur dans vos informations de base entraînera des rejets de factures. Voici ce qu\'il faut vérifier :</p>
+
+<h3>Vos propres données</h3>
+<ul>
+<li><strong>Matricule fiscal :</strong> Vérifiez qu\'il est valide, à jour et correctement formaté. Rendez-vous au bureau de contrôle des impôts si nécessaire.</li>
+<li><strong>Raison sociale :</strong> Elle doit correspondre exactement à celle enregistrée au Registre National des Entreprises (RNE).</li>
+<li><strong>Adresse du siège social :</strong> Doit être complète et à jour (gouvernorat, délégation, code postal, rue et numéro).</li>
+<li><strong>Code d\'activité :</strong> Vérifiez votre code APE/NAF tunisien auprès de l\'INS.</li>
+<li><strong>Régime de TVA :</strong> Confirmez votre assujettissement et le(s) taux applicable(s) à vos activités.</li>
+</ul>
+
+<h3>Les données de vos clients et fournisseurs</h3>
+<ul>
+<li><strong>Matricules fiscaux de vos clients B2B :</strong> La plateforme vérifiera automatiquement la validité des identifiants de vos partenaires commerciaux. Collectez et mettez à jour les matricules de tous vos clients professionnels.</li>
+<li><strong>Coordonnées complètes :</strong> Raison sociale exacte, adresse, téléphone, email.</li>
+<li><strong>Fiches produits :</strong> Chaque produit ou service doit avoir une désignation claire, un prix unitaire, un taux de <a href="/blog/guide-tva-tunisie">TVA</a> associé, et le cas échéant l\'indication <a href="/blog/fodec-tunisie-guide">FODEC</a>.</li>
+</ul>
+
+<h2>Étape 3 : Choisir le bon logiciel de facturation</h2>
+<p>C\'est probablement la décision la plus importante. Le logiciel que vous choisissez sera votre outil quotidien pour émettre, transmettre et archiver vos factures électroniques. Voici les critères spécifiques à vérifier pour la compatibilité El-Fatoora :</p>
+
+<h3>Critères techniques El-Fatoora</h3>
+<ul>
+<li><strong>Format XML structuré :</strong> Le logiciel doit pouvoir générer des factures au format XML conforme au schéma défini par le Ministère des Finances.</li>
+<li><strong>Signature numérique :</strong> Intégration de la signature électronique via un certificat délivré par l\'ANCE (Agence Nationale de Certification Électronique).</li>
+<li><strong>Code QR :</strong> Génération automatique d\'un code QR sur chaque facture pour vérification rapide.</li>
+<li><strong>Connexion à la plateforme :</strong> API ou interface de transmission vers la plateforme centrale El-Fatoora.</li>
+<li><strong>Archivage conforme :</strong> Conservation des factures pendant 10 ans minimum dans un format inaltérable.</li>
+</ul>
+
+<h3>Critères métier tunisiens</h3>
+<ul>
+<li>Gestion de la <a href="/blog/guide-tva-tunisie">TVA à taux multiples</a> (19%, 13%, 7%)</li>
+<li>Calcul automatique du <a href="/blog/fodec-tunisie-guide">FODEC</a> et du <a href="/blog/timbre-fiscal-tunisie">timbre fiscal</a></li>
+<li>Gestion de la <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a> et export <a href="/blog/declaration-tej-guide-pratique">TEJ</a></li>
+<li>Numérotation séquentielle obligatoire</li>
+<li>Interface en français et en arabe</li>
+<li>Support local réactif</li>
+</ul>
+<p><a href="/product/offline">SoftyFact Bureau</a> et <a href="/product/online">SoftyFact Cloud</a> répondent à l\'ensemble de ces critères et seront mis à jour pour El-Fatoora dès l\'entrée en vigueur de la réglementation. Consultez notre <a href="/blog/comment-choisir-logiciel-facturation-tunisie">guide de choix d\'un logiciel de facturation</a> pour approfondir.</p>
+
+<h2>Étape 4 : Planifier la formation de vos équipes</h2>
+<p>La technologie seule ne suffit pas. Vos collaborateurs doivent comprendre les enjeux et maîtriser les nouveaux outils.</p>
+
+<h3>Qui former ?</h3>
+<ul>
+<li><strong>Le responsable facturation / comptable interne :</strong> Formation complète sur le logiciel, les nouvelles procédures de validation, l\'archivage numérique.</li>
+<li><strong>Le gérant / directeur :</strong> Sensibilisation aux obligations légales, aux sanctions en cas de non-conformité, et au suivi via le tableau de bord.</li>
+<li><strong>Le personnel commercial :</strong> Création des devis et bons de commande dans le logiciel (pour une chaîne documentaire cohérente de bout en bout).</li>
+<li><strong>Votre expert-comptable externe :</strong> Assurez-vous qu\'il est au courant de votre transition et qu\'il peut récupérer les données du logiciel pour ses déclarations.</li>
+</ul>
+
+<h3>Plan de formation recommandé</h3>
+<ol>
+<li><strong>Semaine 1 :</strong> Présentation générale de la facturation électronique et des obligations légales (1 à 2 heures).</li>
+<li><strong>Semaine 2 :</strong> Prise en main du logiciel — création de factures, gestion des clients, configuration des produits (2 à 3 heures).</li>
+<li><strong>Semaine 3 :</strong> Cas pratiques — traitement de scénarios réels de votre entreprise (factures avec TVA multi-taux, retenue à la source, avoirs).</li>
+<li><strong>Semaine 4 :</strong> Période d\'accompagnement — utilisation en conditions réelles avec support à la demande.</li>
+</ol>
+
+<h2>Étape 5 : Préparer le budget de transition</h2>
+<p>Contrairement à ce que l\'on pourrait craindre, la transition vers la facturation électronique n\'est pas nécessairement coûteuse pour une PME. Voici une estimation réaliste des coûts :</p>
+
+<h3>Coûts directs</h3>
+<ul>
+<li><strong>Logiciel de facturation :</strong> De 149 DT (paiement unique pour <a href="/product/offline">SoftyFact Bureau</a>) à 99 DT/mois (pour <a href="/product/online">SoftyFact Cloud</a>). Comparez avec le coût annuel de votre solution actuelle.</li>
+<li><strong>Certificat électronique ANCE :</strong> Nécessaire pour la signature numérique. Coût variable selon le type de certificat (consulter l\'ANCE pour les tarifs en vigueur).</li>
+<li><strong>Formation :</strong> Si vous choisissez un logiciel avec un bon support local (comme SoftyFact), la formation de base est souvent incluse ou proposée à un coût réduit.</li>
+</ul>
+
+<h3>Coûts indirects</h3>
+<ul>
+<li><strong>Temps de migration :</strong> Comptez 1 à 2 jours pour paramétrer le logiciel (données entreprise, catalogue produits, fichier clients). Ce temps est un investissement qui vous fera gagner des heures chaque mois ensuite.</li>
+<li><strong>Période d\'adaptation :</strong> Les premières semaines seront un peu plus lentes. C\'est normal et temporaire.</li>
+</ul>
+<p>Pour une analyse détaillée du retour sur investissement, consultez notre article sur le <a href="/blog/cout-roi-facturation-electronique-tunisie">coût et le ROI de la facturation électronique</a>.</p>
+
+<h2>Étape 6 : Établir un calendrier de migration</h2>
+<p>Ne cherchez pas à tout faire en une semaine. Voici un calendrier réaliste sur 8 semaines pour une PME de taille moyenne :</p>
+
+<h3>Semaines 1-2 : Préparation</h3>
+<ul>
+<li>✅ Réaliser l\'audit de votre processus actuel</li>
+<li>✅ Mettre à jour vos données fiscales et commerciales</li>
+<li>✅ Comparer et choisir votre logiciel de facturation</li>
+<li>✅ Définir le budget et obtenir la validation de la direction</li>
+</ul>
+
+<h3>Semaines 3-4 : Installation et configuration</h3>
+<ul>
+<li>✅ Installer ou souscrire au logiciel choisi</li>
+<li>✅ Paramétrer les données de l\'entreprise (coordonnées, logo, mentions légales)</li>
+<li>✅ Importer le catalogue produits/services avec les bons taux de TVA</li>
+<li>✅ Importer le fichier clients et fournisseurs avec les matricules fiscaux</li>
+</ul>
+
+<h3>Semaines 5-6 : Formation et tests</h3>
+<ul>
+<li>✅ Former les utilisateurs principaux</li>
+<li>✅ Émettre des factures de test et vérifier la conformité</li>
+<li>✅ Tester les exports (PDF, XML, CSV pour TEJ)</li>
+<li>✅ Vérifier la compatibilité avec votre expert-comptable</li>
+</ul>
+
+<h3>Semaines 7-8 : Mise en production</h3>
+<ul>
+<li>✅ Basculer la facturation réelle sur le nouveau système</li>
+<li>✅ Conserver temporairement l\'ancien système en parallèle (1 mois)</li>
+<li>✅ Résoudre les problèmes remontés par les utilisateurs</li>
+<li>✅ Valider le premier cycle complet de déclaration</li>
+</ul>
+
+<h2>La checklist complète à imprimer</h2>
+<p>Voici la synthèse de toutes les actions à entreprendre. Imprimez cette liste et cochez chaque élément au fur et à mesure :</p>
+
+<h3>Données et conformité</h3>
+<ul>
+<li>☐ Matricule fiscal vérifié et à jour</li>
+<li>☐ Raison sociale conforme au RNE</li>
+<li>☐ Adresse du siège social complète et à jour</li>
+<li>☐ Régime TVA confirmé</li>
+<li>☐ Matricules fiscaux des clients B2B collectés</li>
+<li>☐ Fiches clients/fournisseurs mises à jour</li>
+<li>☐ Catalogue produits avec taux TVA/FODEC définis</li>
+</ul>
+
+<h3>Logiciel et technique</h3>
+<ul>
+<li>☐ Logiciel de facturation choisi et installé/souscrit</li>
+<li>☐ Données entreprise paramétrées</li>
+<li>☐ Catalogue produits importé</li>
+<li>☐ Fichier clients importé</li>
+<li>☐ Certificat électronique ANCE obtenu (ou demande en cours)</li>
+<li>☐ Connexion Internet stable vérifiée</li>
+<li>☐ Sauvegarde automatique configurée</li>
+</ul>
+
+<h3>Formation et organisation</h3>
+<ul>
+<li>☐ Responsable du projet désigné</li>
+<li>☐ Planning de formation établi</li>
+<li>☐ Formation des utilisateurs réalisée</li>
+<li>☐ Expert-comptable informé de la transition</li>
+<li>☐ Procédures internes documentées</li>
+</ul>
+
+<h3>Validation</h3>
+<ul>
+<li>☐ Facture test émise et vérifiée</li>
+<li>☐ Export TEJ testé</li>
+<li>☐ Archivage numérique fonctionnel</li>
+<li>☐ Première facture réelle émise avec succès</li>
+<li>☐ Premier cycle de déclaration validé</li>
+</ul>
+
+<h2>Les erreurs à éviter lors de la préparation</h2>
+<ol>
+<li><strong>Attendre la date limite :</strong> La pire erreur. Lorsque le décret fixera la date butoir, toutes les PME se précipiteront en même temps, saturant les services de support et les prestataires. Préparez-vous en avance.</li>
+<li><strong>Sous-estimer la mise à jour des données :</strong> Des matricules fiscaux erronés ou des adresses obsolètes causeront des rejets systématiques de factures. Cette étape est la plus fastidieuse mais aussi la plus critique.</li>
+<li><strong>Choisir un logiciel non adapté au marché tunisien :</strong> Un logiciel étranger qui ne gère pas la TVA multi-taux, le FODEC ou le timbre fiscal vous posera des problèmes quotidiens. Privilégiez une solution conçue pour la Tunisie.</li>
+<li><strong>Négliger la formation :</strong> Un logiciel puissant mal utilisé est pire qu\'une solution simple bien maîtrisée. Investissez dans la formation.</li>
+<li><strong>Ne pas impliquer l\'expert-comptable :</strong> Votre comptable doit être partie prenante de la transition pour assurer la cohérence entre la facturation et les déclarations fiscales.</li>
+</ol>
+
+<h2>Conclusion : agissez maintenant, remerciez-vous plus tard</h2>
+<p>La facturation électronique arrive en Tunisie, c\'est une certitude. La question n\'est pas de savoir si votre PME devra s\'y conformer, mais quand. En vous préparant dès aujourd\'hui, vous transformez une contrainte réglementaire en opportunité : processus plus efficaces, moins d\'erreurs, meilleure trésorerie et conformité garantie.</p>
+<p><a href="/product/offline">SoftyFact Bureau</a> et <a href="/product/online">SoftyFact Cloud</a> sont conçus pour accompagner les PME tunisiennes dans cette transition. Avec une conformité fiscale complète, une interface simple en français et en arabe, et un support local réactif, vous avez tout ce qu\'il faut pour aborder la facturation électronique en toute sérénité.</p>
+<p><strong>Ne remettez pas à demain ce que vous pouvez préparer aujourd\'hui.</strong> Commencez par télécharger cette checklist, réalisez votre audit interne, et faites le premier pas vers la facturation électronique.</p>',
+
+                'body_ar' => '<h2>لماذا يجب على المؤسسات الصغرى والمتوسطة الاستعداد من الآن</h2>
+<p>لم تعد <a href="/blog/facturation-electronique-tunisie-elfatoora">الفوترة الإلكترونية (الفاتورة)</a> مسألة "هل" بل مسألة "متى". يتضمن مشروع وزارة المالية التونسية نشرًا تدريجيًا، حيث تكون المؤسسات الكبرى هي الأولى المعنية، تليها المؤسسات الصغرى والمتوسطة ثم المؤسسات الصغيرة جدًا والمستقلين.</p>
+<p>ومع ذلك، فإن تجربة الدول التي سبقتنا — المملكة العربية السعودية مع زاتكا، فرنسا مع إصلاح الفوترة الإلكترونية، المكسيك مع CFDI — تُظهر ثابتة واحدة: <strong>المؤسسات التي تستعد مسبقًا تتعامل مع التحول بشكل أفضل بكثير</strong> من تلك التي تنتظر اللحظة الأخيرة.</p>
+<p>بالنسبة لمؤسسة صغرى أو متوسطة تونسية، يتطلب الانتقال إلى الفوترة الإلكترونية تغييرات تنظيمية وتقنية وبشرية. يقدم لكم هذا الدليل قائمة مرجعية عملية لمواجهة هذا التحول بهدوء، خطوة بخطوة.</p>
+
+<h2>المرحلة الأولى: تقييم وضعكم الحالي</h2>
+<p>قبل التخطيط لأي شيء، يجب عليكم إجراء تقييم صادق لعملية الفوترة الحالية لديكم. إليكم الأسئلة التي يجب طرحها:</p>
+
+<h3>تدقيق عملية الفوترة</h3>
+<ul>
+<li><strong>كيف تُنشئون فواتيركم اليوم؟</strong> على الورق، بالإكسل، ببرنامج فوترة، أو مزيج من الثلاثة؟</li>
+<li><strong>كم فاتورة تُصدرون شهريًا؟</strong> أقل من 50، بين 50 و200، أو أكثر من 200؟ الحجم يحدد تعقيد الهجرة.</li>
+<li><strong>هل فواتيركم مطابقة للمتطلبات الحالية؟</strong> ترقيم تسلسلي، بيانات إلزامية، <a href="/blog/guide-tva-tunisie">حساب صحيح للأداء على القيمة المضافة</a>، تطبيق <a href="/blog/timbre-fiscal-tunisie">الطابع الجبائي</a> عند الضرورة.</li>
+<li><strong>كيف تؤرشفون فواتيركم؟</strong> ملف ورقي، مجلد على الحاسوب، سحابة؟ تفرض الفوترة الإلكترونية أرشفة رقمية آمنة لمدة 10 سنوات على الأقل.</li>
+<li><strong>من يدير الفوترة؟</strong> المدير نفسه، محاسب داخلي، مكتب خارجي؟ حددوا جميع الأشخاص المعنيين.</li>
+</ul>
+
+<h3>تقييم البنية التحتية المعلوماتية</h3>
+<ul>
+<li><strong>الاتصال بالإنترنت:</strong> تتطلب الفوترة الإلكترونية اتصالاً مستقرًا لإرسال الفواتير إلى منصة الفاتورة. إذا كان اتصالكم غير مستقر، فكروا في حل يتيح العمل بدون اتصال ثم المزامنة لاحقًا.</li>
+<li><strong>التجهيزات:</strong> حاسوب حديث بمتصفح محدّث يكفي للنسخة السحابية. للنسخة المكتبية، تحققوا من المتطلبات التقنية للبرنامج المختار.</li>
+<li><strong>الأمان:</strong> مضاد فيروسات محدّث، كلمات مرور قوية، نسخ احتياطية منتظمة. الفوترة الإلكترونية تتعامل مع بيانات حساسة.</li>
+</ul>
+
+<h2>المرحلة الثانية: تحديث بياناتكم الجبائية والتجارية</h2>
+<p>تعتمد الفوترة الإلكترونية على بيانات منظمة يتم التحقق منها تلقائيًا. أي خطأ في معلوماتكم الأساسية سيؤدي إلى رفض الفواتير. إليكم ما يجب التحقق منه:</p>
+
+<h3>بياناتكم الخاصة</h3>
+<ul>
+<li><strong>المعرّف الجبائي:</strong> تحققوا من صلاحيته وتحديثه وصيغته الصحيحة. توجهوا إلى مكتب مراقبة الأداءات إذا لزم الأمر.</li>
+<li><strong>العنوان التجاري:</strong> يجب أن يتطابق تمامًا مع المسجل لدى السجل الوطني للمؤسسات (RNE).</li>
+<li><strong>عنوان المقر الاجتماعي:</strong> يجب أن يكون كاملاً ومحدّثًا (الولاية، المعتمدية، الترقيم البريدي، الشارع والرقم).</li>
+<li><strong>رمز النشاط:</strong> تحققوا من رمز نشاطكم لدى المعهد الوطني للإحصاء.</li>
+<li><strong>نظام الأداء على القيمة المضافة:</strong> أكدوا خضوعكم والنسبة (النسب) المطبقة على أنشطتكم.</li>
+</ul>
+
+<h3>بيانات حرفائكم ومورديكم</h3>
+<ul>
+<li><strong>المعرّفات الجبائية لحرفائكم B2B:</strong> ستتحقق المنصة تلقائيًا من صلاحية معرّفات شركائكم التجاريين. اجمعوا وحدّثوا المعرّفات الجبائية لجميع حرفائكم المهنيين.</li>
+<li><strong>البيانات الكاملة:</strong> العنوان التجاري الدقيق، العنوان، الهاتف، البريد الإلكتروني.</li>
+<li><strong>بطاقات المنتجات:</strong> يجب أن يكون لكل منتج أو خدمة تسمية واضحة، سعر وحدوي، نسبة <a href="/blog/guide-tva-tunisie">أداء على القيمة المضافة</a> مرتبطة، وعند الاقتضاء بيان <a href="/blog/fodec-tunisie-guide">FODEC</a>.</li>
+</ul>
+
+<h2>المرحلة الثالثة: اختيار برنامج الفوترة المناسب</h2>
+<p>هذا على الأرجح أهم قرار. البرنامج الذي تختارونه سيكون أداتكم اليومية لإصدار الفواتير الإلكترونية وإرسالها وأرشفتها. إليكم المعايير المحددة للتحقق من التوافق مع الفاتورة:</p>
+
+<h3>المعايير التقنية للفاتورة</h3>
+<ul>
+<li><strong>صيغة XML منظمة:</strong> يجب أن يتمكن البرنامج من إنشاء فواتير بصيغة XML مطابقة للمخطط المحدد من وزارة المالية.</li>
+<li><strong>التوقيع الرقمي:</strong> دمج التوقيع الإلكتروني عبر شهادة صادرة عن الوكالة الوطنية للمصادقة الإلكترونية (ANCE).</li>
+<li><strong>رمز QR:</strong> إنشاء تلقائي لرمز QR على كل فاتورة للتحقق السريع.</li>
+<li><strong>الاتصال بالمنصة:</strong> واجهة برمجة تطبيقات (API) أو واجهة إرسال نحو المنصة المركزية للفاتورة.</li>
+<li><strong>أرشفة مطابقة:</strong> حفظ الفواتير لمدة 10 سنوات على الأقل بصيغة غير قابلة للتعديل.</li>
+</ul>
+
+<h3>المعايير المهنية التونسية</h3>
+<ul>
+<li>إدارة <a href="/blog/guide-tva-tunisie">الأداء على القيمة المضافة بنسب متعددة</a> (19%، 13%، 7%)</li>
+<li>حساب تلقائي لـ<a href="/blog/fodec-tunisie-guide">FODEC</a> و<a href="/blog/timbre-fiscal-tunisie">الطابع الجبائي</a></li>
+<li>إدارة <a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a> وتصدير <a href="/blog/declaration-tej-guide-pratique">TEJ</a></li>
+<li>ترقيم تسلسلي إلزامي</li>
+<li>واجهة بالفرنسية والعربية</li>
+<li>دعم محلي متجاوب</li>
+</ul>
+<p><a href="/product/offline">SoftyFact Bureau</a> و<a href="/product/online">SoftyFact Cloud</a> يستوفيان جميع هذه المعايير وسيتم تحديثهما لنظام الفاتورة فور دخول التنظيم حيز التنفيذ. اطلعوا على <a href="/blog/comment-choisir-logiciel-facturation-tunisie">دليل اختيار برنامج الفوترة</a> للتعمق أكثر.</p>
+
+<h2>المرحلة الرابعة: التخطيط لتكوين فرقكم</h2>
+<p>التكنولوجيا وحدها لا تكفي. يجب أن يفهم زملاؤكم الرهانات ويتقنوا الأدوات الجديدة.</p>
+
+<h3>من يجب تكوينه؟</h3>
+<ul>
+<li><strong>مسؤول الفوترة / المحاسب الداخلي:</strong> تكوين شامل على البرنامج والإجراءات الجديدة للمصادقة والأرشفة الرقمية.</li>
+<li><strong>المدير / المسؤول:</strong> توعية بالالتزامات القانونية والعقوبات في حالة عدم المطابقة والمتابعة عبر لوحة القيادة.</li>
+<li><strong>الموظفون التجاريون:</strong> إنشاء عروض الأسعار وأوامر الشراء في البرنامج (لسلسلة وثائقية متسقة من البداية إلى النهاية).</li>
+<li><strong>خبيركم المحاسب الخارجي:</strong> تأكدوا من أنه على علم بانتقالكم وأنه يمكنه استرجاع بيانات البرنامج لتصريحاته.</li>
+</ul>
+
+<h3>خطة التكوين المقترحة</h3>
+<ol>
+<li><strong>الأسبوع الأول:</strong> عرض عام للفوترة الإلكترونية والالتزامات القانونية (ساعة إلى ساعتين).</li>
+<li><strong>الأسبوع الثاني:</strong> التعرف على البرنامج — إنشاء الفواتير وإدارة الحرفاء وتهيئة المنتجات (ساعتان إلى 3 ساعات).</li>
+<li><strong>الأسبوع الثالث:</strong> حالات تطبيقية — معالجة سيناريوهات حقيقية من مؤسستكم (فواتير بنسب أداء متعددة، خصم من المورد، إشعارات إرجاع).</li>
+<li><strong>الأسبوع الرابع:</strong> فترة مرافقة — استخدام في ظروف حقيقية مع دعم عند الطلب.</li>
+</ol>
+
+<h2>المرحلة الخامسة: إعداد ميزانية الانتقال</h2>
+<p>خلافًا لما قد يُخشى، فإن الانتقال إلى الفوترة الإلكترونية ليس بالضرورة مكلفًا للمؤسسات الصغرى والمتوسطة. إليكم تقديرًا واقعيًا للتكاليف:</p>
+
+<h3>التكاليف المباشرة</h3>
+<ul>
+<li><strong>برنامج الفوترة:</strong> من 149 دينار (دفعة واحدة لـ<a href="/product/offline">SoftyFact Bureau</a>) إلى 99 دينار/شهر (لـ<a href="/product/online">SoftyFact Cloud</a>). قارنوا مع التكلفة السنوية لحلكم الحالي.</li>
+<li><strong>الشهادة الإلكترونية ANCE:</strong> ضرورية للتوقيع الرقمي. التكلفة متغيرة حسب نوع الشهادة (راجعوا ANCE للأسعار المعمول بها).</li>
+<li><strong>التكوين:</strong> إذا اخترتم برنامجًا بدعم محلي جيد (مثل SoftyFact)، فالتكوين الأساسي غالبًا ما يكون مشمولاً أو بتكلفة مخفضة.</li>
+</ul>
+
+<h3>التكاليف غير المباشرة</h3>
+<ul>
+<li><strong>وقت الهجرة:</strong> احسبوا يومًا إلى يومين لتهيئة البرنامج (بيانات المؤسسة، كتالوج المنتجات، ملف الحرفاء). هذا الوقت استثمار سيوفر لكم ساعات كل شهر بعد ذلك.</li>
+<li><strong>فترة التكيف:</strong> الأسابيع الأولى ستكون أبطأ قليلاً. هذا طبيعي ومؤقت.</li>
+</ul>
+<p>لتحليل مفصل للعائد على الاستثمار، اطلعوا على مقالنا حول <a href="/blog/cout-roi-facturation-electronique-tunisie">تكلفة الفوترة الإلكترونية وعائدها على الاستثمار</a>.</p>
+
+<h2>المرحلة السادسة: وضع جدول زمني للهجرة</h2>
+<p>لا تحاولوا فعل كل شيء في أسبوع واحد. إليكم جدولاً واقعيًا على 8 أسابيع لمؤسسة متوسطة الحجم:</p>
+
+<h3>الأسبوعان 1-2: التحضير</h3>
+<ul>
+<li>✅ إجراء تدقيق عمليتكم الحالية</li>
+<li>✅ تحديث بياناتكم الجبائية والتجارية</li>
+<li>✅ مقارنة واختيار برنامج الفوترة</li>
+<li>✅ تحديد الميزانية والحصول على موافقة الإدارة</li>
+</ul>
+
+<h3>الأسبوعان 3-4: التثبيت والتهيئة</h3>
+<ul>
+<li>✅ تثبيت البرنامج المختار أو الاشتراك فيه</li>
+<li>✅ تهيئة بيانات المؤسسة (البيانات، الشعار، البيانات القانونية)</li>
+<li>✅ استيراد كتالوج المنتجات/الخدمات بنسب الأداء الصحيحة</li>
+<li>✅ استيراد ملف الحرفاء والموردين بالمعرّفات الجبائية</li>
+</ul>
+
+<h3>الأسبوعان 5-6: التكوين والاختبارات</h3>
+<ul>
+<li>✅ تكوين المستخدمين الرئيسيين</li>
+<li>✅ إصدار فواتير تجريبية والتحقق من المطابقة</li>
+<li>✅ اختبار التصديرات (PDF، XML، CSV لـTEJ)</li>
+<li>✅ التحقق من التوافق مع خبيركم المحاسب</li>
+</ul>
+
+<h3>الأسبوعان 7-8: الإنتاج</h3>
+<ul>
+<li>✅ تحويل الفوترة الفعلية إلى النظام الجديد</li>
+<li>✅ الحفاظ مؤقتًا على النظام القديم بالتوازي (شهر واحد)</li>
+<li>✅ حل المشاكل المُبلّغ عنها من المستخدمين</li>
+<li>✅ التحقق من صحة أول دورة تصريح كاملة</li>
+</ul>
+
+<h2>القائمة المرجعية الشاملة للطباعة</h2>
+<p>إليكم ملخص جميع الإجراءات الواجب اتخاذها. اطبعوا هذه القائمة وأشروا على كل عنصر عند إنجازه:</p>
+
+<h3>البيانات والمطابقة</h3>
+<ul>
+<li>☐ التحقق من المعرّف الجبائي وتحديثه</li>
+<li>☐ مطابقة العنوان التجاري مع السجل الوطني للمؤسسات</li>
+<li>☐ عنوان المقر الاجتماعي كامل ومحدّث</li>
+<li>☐ تأكيد نظام الأداء على القيمة المضافة</li>
+<li>☐ جمع المعرّفات الجبائية لحرفاء B2B</li>
+<li>☐ تحديث بطاقات الحرفاء/الموردين</li>
+<li>☐ كتالوج المنتجات بنسب الأداء/FODEC المحددة</li>
+</ul>
+
+<h3>البرنامج والتقنية</h3>
+<ul>
+<li>☐ اختيار وتثبيت/اشتراك برنامج الفوترة</li>
+<li>☐ تهيئة بيانات المؤسسة</li>
+<li>☐ استيراد كتالوج المنتجات</li>
+<li>☐ استيراد ملف الحرفاء</li>
+<li>☐ الحصول على الشهادة الإلكترونية ANCE (أو تقديم الطلب)</li>
+<li>☐ التحقق من استقرار الاتصال بالإنترنت</li>
+<li>☐ تهيئة النسخ الاحتياطي التلقائي</li>
+</ul>
+
+<h3>التكوين والتنظيم</h3>
+<ul>
+<li>☐ تعيين مسؤول المشروع</li>
+<li>☐ وضع جدول التكوين</li>
+<li>☐ إنجاز تكوين المستخدمين</li>
+<li>☐ إعلام الخبير المحاسب بالانتقال</li>
+<li>☐ توثيق الإجراءات الداخلية</li>
+</ul>
+
+<h3>التحقق</h3>
+<ul>
+<li>☐ إصدار فاتورة تجريبية والتحقق منها</li>
+<li>☐ اختبار تصدير TEJ</li>
+<li>☐ تشغيل الأرشفة الرقمية</li>
+<li>☐ إصدار أول فاتورة حقيقية بنجاح</li>
+<li>☐ التحقق من أول دورة تصريح</li>
+</ul>
+
+<h2>الأخطاء الواجب تجنبها عند الاستعداد</h2>
+<ol>
+<li><strong>انتظار الموعد النهائي:</strong> أسوأ خطأ. عندما يحدد المرسوم الموعد النهائي، ستتهافت جميع المؤسسات في نفس الوقت، مما يُشبع خدمات الدعم ومقدمي الخدمات. استعدوا مسبقًا.</li>
+<li><strong>التقليل من أهمية تحديث البيانات:</strong> المعرّفات الجبائية الخاطئة أو العناوين القديمة ستتسبب في رفض منهجي للفواتير. هذه المرحلة هي الأكثر مللاً لكنها أيضًا الأكثر أهمية.</li>
+<li><strong>اختيار برنامج غير مناسب للسوق التونسي:</strong> برنامج أجنبي لا يدير الأداء بنسب متعددة أو FODEC أو الطابع الجبائي سيسبب لكم مشاكل يومية. فضّلوا حلاً مصممًا لتونس.</li>
+<li><strong>إهمال التكوين:</strong> برنامج قوي يُستخدم بشكل سيئ أسوأ من حل بسيط يُتقن استخدامه. استثمروا في التكوين.</li>
+<li><strong>عدم إشراك الخبير المحاسب:</strong> يجب أن يكون محاسبكم طرفًا في الانتقال لضمان التناسق بين الفوترة والتصريحات الجبائية.</li>
+</ol>
+
+<h2>الخلاصة: تحركوا الآن واشكروا أنفسكم لاحقًا</h2>
+<p>الفوترة الإلكترونية قادمة إلى تونس، هذا أمر مؤكد. السؤال ليس هل ستضطر مؤسستكم للامتثال، بل متى. بالاستعداد من اليوم، تحوّلون قيدًا تنظيميًا إلى فرصة: عمليات أكثر كفاءة، أخطاء أقل، سيولة مالية أفضل ومطابقة مضمونة.</p>
+<p><a href="/product/offline">SoftyFact Bureau</a> و<a href="/product/online">SoftyFact Cloud</a> مصممان لمرافقة المؤسسات الصغرى والمتوسطة التونسية في هذا الانتقال. مع مطابقة جبائية شاملة وواجهة بسيطة بالفرنسية والعربية ودعم محلي متجاوب، لديكم كل ما تحتاجونه لمواجهة الفوترة الإلكترونية بكل اطمئنان.</p>
+<p><strong>لا تؤجلوا إلى الغد ما يمكنكم تحضيره اليوم.</strong> ابدأوا بتحميل هذه القائمة المرجعية، أجروا تدقيقكم الداخلي، واخطوا الخطوة الأولى نحو الفوترة الإلكترونية.</p>',
+
+                'meta_description_fr' => 'Checklist complète pour préparer votre PME tunisienne à la facturation électronique El-Fatoora : audit, logiciel, formation, budget et calendrier.',
+                'meta_description_ar' => 'قائمة مرجعية شاملة لتحضير مؤسستكم التونسية للفوترة الإلكترونية: تدقيق وبرنامج وتكوين وميزانية وجدول زمني.',
+                'meta_keywords' => 'facturation électronique PME tunisie, préparation el fatoora, checklist e-facturation tunisie, migration facturation électronique',
+                'cover_image' => null,
+                'reading_time' => 9,
+                'published_at' => '2026-03-29 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 23 — Coût et ROI de la facturation électronique
+            // ============================================================
+            [
+                'slug' => 'cout-roi-facturation-electronique-tunisie',
+                'title_fr' => 'Facturation électronique en Tunisie : combien ça coûte et quel retour sur investissement ?',
+                'title_ar' => 'الفوترة الإلكترونية في تونس: كم تكلف وما هو العائد على الاستثمار؟',
+                'excerpt_fr' => 'Analyse détaillée des coûts de mise en place de la facturation électronique en Tunisie et du retour sur investissement pour les PME avec des exemples chiffrés en dinars.',
+                'excerpt_ar' => 'تحليل مفصل لتكاليف تطبيق الفوترة الإلكترونية في تونس والعائد على الاستثمار للمؤسسات الصغرى والمتوسطة مع أمثلة رقمية بالدينار.',
+                'body_fr' => '<h2>La facturation électronique : un coût ou un investissement ?</h2>
+<p>Quand on parle de <a href="/blog/facturation-electronique-tunisie-elfatoora">facturation électronique</a> aux dirigeants de PME tunisiennes, la première question est presque toujours la même : « Combien ça va me coûter ? ». C\'est une question légitime, surtout pour des entreprises qui gèrent des marges serrées dans un contexte économique exigeant.</p>
+<p>Mais la vraie question devrait être : « Combien me coûte mon système actuel, et combien la facturation électronique va-t-elle me faire économiser ? ». Car au-delà du coût d\'installation, la e-facturation génère des économies concrètes et mesurables dès les premiers mois.</p>
+<p>Dans cet article, nous allons analyser en détail les coûts réels de la transition vers la facturation électronique en Tunisie, calculer le retour sur investissement avec des exemples chiffrés en dinars tunisiens, et vous aider à prendre une décision éclairée.</p>
+
+<h2>Le coût caché de votre système actuel</h2>
+<p>Avant de parler du coût de la facturation électronique, faisons le bilan de ce que vous coûte votre système actuel. Beaucoup de ces coûts sont invisibles car ils font partie de la routine quotidienne.</p>
+
+<h3>Le coût du papier et de l\'impression</h3>
+<p>Une PME tunisienne qui émet 100 factures par mois consomme en moyenne :</p>
+<ul>
+<li><strong>Papier :</strong> 300 à 500 feuilles/mois (factures en 2-3 exemplaires + devis + bons de livraison) → environ 15 à 25 DT/mois</li>
+<li><strong>Encre/toner :</strong> 1 cartouche tous les 2 mois → environ 40 à 80 DT/mois (lissé)</li>
+<li><strong>Enveloppes et envois postaux :</strong> Pour les factures envoyées par courrier → environ 20 à 40 DT/mois</li>
+<li><strong>Classement et archivage :</strong> Classeurs, étiquettes, espace de stockage physique → environ 10 DT/mois</li>
+</ul>
+<p><strong>Total papier : 85 à 155 DT par mois</strong>, soit <strong>1 020 à 1 860 DT par an</strong>. Et ce chiffre augmente proportionnellement avec le volume de factures.</p>
+
+<h3>Le coût du temps</h3>
+<p>C\'est le poste le plus important et le plus sous-estimé :</p>
+<ul>
+<li><strong>Saisie manuelle :</strong> Créer une facture sur Excel ou sur papier prend en moyenne 10 à 15 minutes (contre 2 à 3 minutes avec un logiciel). Pour 100 factures/mois, c\'est 16 à 25 heures perdues.</li>
+<li><strong>Vérification et correction d\'erreurs :</strong> Les erreurs de calcul de <a href="/blog/guide-tva-tunisie">TVA</a>, les oublis de <a href="/blog/timbre-fiscal-tunisie">timbre fiscal</a> ou les fautes dans les coordonnées client nécessitent du temps pour être détectées et corrigées. Comptez 3 à 5 heures/mois.</li>
+<li><strong>Recherche de documents :</strong> Retrouver une facture de l\'année dernière dans un classeur ou un dossier mal organisé : 15 à 30 minutes par recherche, plusieurs fois par mois.</li>
+<li><strong>Préparation des déclarations fiscales :</strong> Compiler manuellement les données de TVA, de <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a> et préparer la <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a> : 4 à 8 heures par mois.</li>
+</ul>
+<p>Si on valorise le temps du responsable facturation à 10-15 DT de l\'heure (salaire chargé), on obtient un <strong>coût temps de 250 à 570 DT par mois</strong>, soit <strong>3 000 à 6 840 DT par an</strong>.</p>
+
+<h3>Le coût des erreurs et pénalités</h3>
+<ul>
+<li><strong>Pénalités de retard de déclaration :</strong> 0,75% par mois de retard. Sur une TVA mensuelle de 5 000 DT, un mois de retard coûte 37,5 DT. Sur un an avec 3 retards, c\'est plus de 100 DT.</li>
+<li><strong>Redressements fiscaux :</strong> Une erreur de taux de TVA ou un oubli de FODEC détecté lors d\'un contrôle peut entraîner un redressement avec pénalités majorées.</li>
+<li><strong>Factures perdues :</strong> Une facture égarée signifie un paiement en retard ou un litige client. Le coût indirect est difficile à chiffrer mais réel.</li>
+</ul>
+
+<h3>Bilan du coût actuel</h3>
+<p>Pour une PME émettant 100 factures par mois :</p>
+<ul>
+<li>Papier et impression : 1 020 à 1 860 DT/an</li>
+<li>Temps perdu : 3 000 à 6 840 DT/an</li>
+<li>Erreurs et pénalités : 500 à 2 000 DT/an (estimation conservatrice)</li>
+</ul>
+<p><strong>Coût total du système actuel : 4 520 à 10 700 DT par an</strong>. C\'est le montant que vous dépensez déjà, souvent sans vous en rendre compte.</p>
+
+<h2>Les coûts de la facturation électronique</h2>
+<p>Maintenant, voyons combien coûte réellement la mise en place d\'un système de facturation électronique. Nous distinguerons les coûts initiaux (une seule fois) et les coûts récurrents.</p>
+
+<h3>Coûts initiaux (investissement unique)</h3>
+
+<h3>1. Le logiciel de facturation</h3>
+<p>Deux options principales s\'offrent à vous :</p>
+<ul>
+<li><strong>Version bureau (achat unique) :</strong> <a href="/product/offline">SoftyFact Bureau</a> est proposé à 149 DT en paiement unique. C\'est un investissement ponctuel qui vous donne accès au logiciel de manière permanente, mises à jour incluses.</li>
+<li><strong>Version cloud (abonnement) :</strong> <a href="/product/online">SoftyFact Cloud</a> est à 99 DT par mois. Pas d\'investissement initial, vous payez au fur et à mesure. Cette option inclut l\'hébergement sécurisé, les sauvegardes automatiques et l\'accès multi-appareils.</li>
+</ul>
+<p>Pour une comparaison détaillée, consultez notre <a href="/blog/softyfact-bureau-vs-cloud-comparatif">comparatif Bureau vs Cloud</a>.</p>
+
+<h3>2. Le certificat électronique</h3>
+<p>Pour la signature numérique des factures (obligatoire avec El-Fatoora), vous aurez besoin d\'un certificat délivré par l\'ANCE. Le coût varie selon le type de certificat et sa durée de validité. Budget estimé : <strong>100 à 300 DT</strong> pour un certificat d\'un an, renouvelable.</p>
+
+<h3>3. Formation et paramétrage</h3>
+<ul>
+<li><strong>Auto-formation :</strong> Gratuite si le logiciel est intuitif et dispose d\'une bonne documentation. SoftyFact propose des tutoriels vidéo et un guide de démarrage.</li>
+<li><strong>Formation assistée :</strong> 0 à 200 DT selon le prestataire. Souvent incluse dans le support de premier niveau.</li>
+<li><strong>Migration des données :</strong> L\'import de votre catalogue produits et fichier clients peut être fait par vous-même (gratuit) ou avec assistance (50 à 150 DT).</li>
+</ul>
+
+<h3>Récapitulatif des coûts initiaux</h3>
+<ul>
+<li>Logiciel : 149 DT (bureau) ou 0 DT initial (cloud)</li>
+<li>Certificat électronique : 100 à 300 DT</li>
+<li>Formation et migration : 0 à 350 DT</li>
+</ul>
+<p><strong>Total initial : 249 à 799 DT</strong> (version bureau) ou <strong>100 à 650 DT</strong> (version cloud, premier mois d\'abonnement inclus).</p>
+
+<h3>Coûts récurrents (annuels)</h3>
+<ul>
+<li><strong>Version bureau :</strong> 0 DT/an (mises à jour incluses) + renouvellement certificat ANCE</li>
+<li><strong>Version cloud :</strong> 1 188 DT/an (99 DT × 12 mois) + renouvellement certificat ANCE</li>
+<li><strong>Maintenance :</strong> Incluse dans les deux versions pour SoftyFact</li>
+</ul>
+
+<h2>Calcul du retour sur investissement (ROI)</h2>
+<p>Comparons maintenant les coûts du système actuel avec ceux de la facturation électronique pour calculer les économies réelles et le délai de retour sur investissement.</p>
+
+<h3>Scénario 1 : PME avec SoftyFact Bureau (version hors-ligne)</h3>
+<p><strong>Profil :</strong> Commerce de détail, 80 factures/mois, 1 utilisateur</p>
+<ul>
+<li><strong>Coût actuel estimé :</strong> 4 500 DT/an (papier + temps + erreurs)</li>
+<li><strong>Coût première année :</strong> 149 DT (logiciel) + 200 DT (certificat) + 100 DT (formation) = <strong>449 DT</strong></li>
+<li><strong>Économie année 1 :</strong> 4 500 - 449 = <strong>4 051 DT</strong></li>
+<li><strong>Coût années suivantes :</strong> ~200 DT/an (renouvellement certificat uniquement)</li>
+<li><strong>Économie années suivantes :</strong> 4 500 - 200 = <strong>4 300 DT/an</strong></li>
+<li><strong>Délai de retour :</strong> Moins de <strong>2 mois</strong></li>
+</ul>
+
+<h3>Scénario 2 : PME avec SoftyFact Cloud (version en ligne)</h3>
+<p><strong>Profil :</strong> Entreprise de services, 150 factures/mois, 3 utilisateurs, 2 points de vente</p>
+<ul>
+<li><strong>Coût actuel estimé :</strong> 8 000 DT/an (papier + temps × 3 personnes + erreurs)</li>
+<li><strong>Coût première année :</strong> 1 188 DT (abonnement) + 200 DT (certificat) + 150 DT (formation) = <strong>1 538 DT</strong></li>
+<li><strong>Économie année 1 :</strong> 8 000 - 1 538 = <strong>6 462 DT</strong></li>
+<li><strong>Coût années suivantes :</strong> 1 188 + 200 = <strong>1 388 DT/an</strong></li>
+<li><strong>Économie années suivantes :</strong> 8 000 - 1 388 = <strong>6 612 DT/an</strong></li>
+<li><strong>Délai de retour :</strong> Moins de <strong>3 mois</strong></li>
+</ul>
+
+<h3>Scénario 3 : Ne rien faire (coût de l\'inaction)</h3>
+<p><strong>Profil :</strong> PME qui attend la dernière minute pour se conformer</p>
+<ul>
+<li><strong>Coût annuel actuel :</strong> 4 500 à 8 000 DT (pertes continues)</li>
+<li><strong>Risque de pénalités El-Fatoora :</strong> Les sanctions pour non-conformité à la facturation électronique obligatoire seront fixées par décret. L\'expérience des autres pays montre des amendes significatives (en Arabie Saoudite : jusqu\'à 50 000 SAR par infraction).</li>
+<li><strong>Coût de migration en urgence :</strong> Formation accélérée plus chère, paramétrage sous pression avec plus d\'erreurs, perturbation de l\'activité.</li>
+<li><strong>Perte de compétitivité :</strong> Vos clients qui sont déjà passés à la facturation électronique attendront des factures au format électronique. Ne pas être compatible peut vous faire perdre des marchés.</li>
+</ul>
+
+<h2>Les économies concrètes au quotidien</h2>
+<p>Au-delà des chiffres globaux, voici les économies que vous constaterez au quotidien après le passage à la facturation électronique :</p>
+
+<h3>Gain de temps sur la création de factures</h3>
+<ul>
+<li><strong>Avant :</strong> 10-15 minutes par facture (saisie manuelle des informations client, calcul de la TVA, vérification des montants)</li>
+<li><strong>Après :</strong> 2-3 minutes par facture (sélection du client, ajout des lignes, validation automatique)</li>
+<li><strong>Gain :</strong> 8-12 minutes par facture, soit <strong>13 à 20 heures par mois</strong> pour 100 factures</li>
+</ul>
+
+<h3>Suppression des erreurs de calcul</h3>
+<ul>
+<li><strong>Avant :</strong> Erreurs de TVA multi-taux, oublis de FODEC, timbre fiscal manquant → corrections, avoirs, temps perdu</li>
+<li><strong>Après :</strong> Calculs automatiques vérifiés → 0 erreur de calcul</li>
+<li><strong>Gain :</strong> 3-5 heures/mois de corrections évitées + risque zéro de redressement pour erreur de calcul</li>
+</ul>
+
+<h3>Déclarations fiscales simplifiées</h3>
+<ul>
+<li><strong>Avant :</strong> Compilation manuelle des données pour la <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a> → 4-8 heures/mois</li>
+<li><strong>Après :</strong> Export automatique en un clic → 15 minutes</li>
+<li><strong>Gain :</strong> 3,75 à 7,75 heures par mois</li>
+</ul>
+
+<h3>Archivage et recherche instantanés</h3>
+<ul>
+<li><strong>Avant :</strong> Fouiller dans les classeurs ou les dossiers → 15-30 minutes par recherche</li>
+<li><strong>Après :</strong> Recherche par numéro, date, client ou montant → 10 secondes</li>
+<li><strong>Gain :</strong> Inestimable en termes de productivité et de tranquillité d\'esprit</li>
+</ul>
+
+<h2>Comment maximiser votre ROI</h2>
+<p>Pour tirer le meilleur parti de votre investissement dans la facturation électronique, voici nos recommandations :</p>
+<ol>
+<li><strong>Commencez tôt :</strong> Plus vous adoptez la facturation électronique tôt, plus vous accumulez d\'économies avant que ce ne soit obligatoire. Chaque mois d\'avance, c\'est un mois d\'économies supplémentaire.</li>
+<li><strong>Utilisez toutes les fonctionnalités :</strong> Ne vous limitez pas à la facturation. Utilisez la gestion de stock, le suivi des paiements, les devis et bons de livraison pour maximiser le gain de productivité.</li>
+<li><strong>Formez bien vos équipes :</strong> Un logiciel mal utilisé ne donnera pas les résultats escomptés. Investissez le temps nécessaire dans la formation. Consultez notre <a href="/blog/facturation-electronique-pme-tunisie-preparation">checklist de préparation</a> pour un plan complet.</li>
+<li><strong>Impliquez votre expert-comptable :</strong> La récupération automatique des données par votre comptable réduit ses honoraires et ses délais de traitement.</li>
+</ol>
+
+<h2>Conclusion : un investissement qui se rembourse en quelques mois</h2>
+<p>Les chiffres sont clairs : la facturation électronique n\'est pas un coût, c\'est un investissement qui se rembourse en 2 à 3 mois. Les économies sur le papier, le temps, les erreurs et les pénalités dépassent largement le coût du logiciel et du certificat électronique.</p>
+<p>Avec <a href="/product/offline">SoftyFact Bureau</a> à 149 DT (paiement unique) ou <a href="/product/online">SoftyFact Cloud</a> à 99 DT/mois, vous disposez d\'une solution complète, conforme aux normes tunisiennes et prête pour El-Fatoora. Le retour sur investissement est rapide, mesurable et durable.</p>
+<p><strong>La question n\'est plus « Puis-je me permettre de passer à la facturation électronique ? » mais « Puis-je me permettre de ne pas le faire ? »</strong></p>',
+
+                'body_ar' => '<h2>الفوترة الإلكترونية: تكلفة أم استثمار؟</h2>
+<p>عندما نتحدث عن <a href="/blog/facturation-electronique-tunisie-elfatoora">الفوترة الإلكترونية</a> مع مديري المؤسسات الصغرى والمتوسطة التونسية، يكون السؤال الأول دائمًا تقريبًا: "كم ستكلفني؟". هذا سؤال مشروع، خاصة بالنسبة لمؤسسات تدير هوامش ربح ضيقة في سياق اقتصادي صعب.</p>
+<p>لكن السؤال الحقيقي يجب أن يكون: "كم يكلفني نظامي الحالي، وكم ستوفر لي الفوترة الإلكترونية؟". لأن ما وراء تكلفة التركيب، تولّد الفوترة الإلكترونية وفورات ملموسة وقابلة للقياس منذ الأشهر الأولى.</p>
+<p>في هذا المقال، سنحلل بالتفصيل التكاليف الحقيقية للانتقال إلى الفوترة الإلكترونية في تونس، ونحسب العائد على الاستثمار بأمثلة رقمية بالدينار التونسي، ونساعدكم على اتخاذ قرار مستنير.</p>
+
+<h2>التكلفة الخفية لنظامكم الحالي</h2>
+<p>قبل الحديث عن تكلفة الفوترة الإلكترونية، لنقم بجرد ما يكلفكم نظامكم الحالي. كثير من هذه التكاليف غير مرئية لأنها جزء من الروتين اليومي.</p>
+
+<h3>تكلفة الورق والطباعة</h3>
+<p>مؤسسة صغرى أو متوسطة تونسية تُصدر 100 فاتورة شهريًا تستهلك في المتوسط:</p>
+<ul>
+<li><strong>الورق:</strong> 300 إلى 500 ورقة/شهر (فواتير بنسختين أو 3 نسخ + عروض أسعار + وصولات تسليم) ← حوالي 15 إلى 25 دينار/شهر</li>
+<li><strong>الحبر/التونر:</strong> خرطوشة واحدة كل شهرين ← حوالي 40 إلى 80 دينار/شهر (معدل)</li>
+<li><strong>الأظرف والبريد:</strong> للفواتير المرسلة بالبريد ← حوالي 20 إلى 40 دينار/شهر</li>
+<li><strong>الأرشفة والترتيب:</strong> ملفات وملصقات ومساحة تخزين مادية ← حوالي 10 دينار/شهر</li>
+</ul>
+<p><strong>إجمالي الورق: 85 إلى 155 دينار شهريًا</strong>، أي <strong>1,020 إلى 1,860 دينار سنويًا</strong>. وهذا الرقم يزداد تناسبيًا مع حجم الفواتير.</p>
+
+<h3>تكلفة الوقت</h3>
+<p>هذا هو البند الأهم والأكثر استخفافًا:</p>
+<ul>
+<li><strong>الإدخال اليدوي:</strong> إنشاء فاتورة على إكسل أو على الورق يستغرق في المتوسط 10 إلى 15 دقيقة (مقابل 2 إلى 3 دقائق مع برنامج). لـ100 فاتورة/شهر، هذا يعني 16 إلى 25 ساعة ضائعة.</li>
+<li><strong>التحقق وتصحيح الأخطاء:</strong> أخطاء حساب <a href="/blog/guide-tva-tunisie">الأداء على القيمة المضافة</a>، نسيان <a href="/blog/timbre-fiscal-tunisie">الطابع الجبائي</a> أو أخطاء في بيانات الحريف تتطلب وقتًا لاكتشافها وتصحيحها. احسبوا 3 إلى 5 ساعات/شهر.</li>
+<li><strong>البحث عن الوثائق:</strong> العثور على فاتورة من السنة الماضية في ملف أو مجلد غير منظم: 15 إلى 30 دقيقة لكل بحث، عدة مرات في الشهر.</li>
+<li><strong>إعداد التصريحات الجبائية:</strong> تجميع بيانات الأداء على القيمة المضافة و<a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a> يدويًا وإعداد <a href="/blog/declaration-tej-guide-pratique">تصريح TEJ</a>: 4 إلى 8 ساعات شهريًا.</li>
+</ul>
+<p>إذا قيّمنا وقت مسؤول الفوترة بـ10-15 دينار في الساعة (أجر إجمالي)، نحصل على <strong>تكلفة وقت تتراوح بين 250 و570 دينار شهريًا</strong>، أي <strong>3,000 إلى 6,840 دينار سنويًا</strong>.</p>
+
+<h3>تكلفة الأخطاء والعقوبات</h3>
+<ul>
+<li><strong>غرامات التأخر في التصريح:</strong> 0.75% عن كل شهر تأخير. على أداء شهري بقيمة 5,000 دينار، شهر تأخير واحد يكلف 37.5 دينار. على مدار سنة مع 3 تأخيرات، هذا أكثر من 100 دينار.</li>
+<li><strong>التعديلات الجبائية:</strong> خطأ في نسبة الأداء أو نسيان FODEC يُكتشف أثناء مراقبة يمكن أن يؤدي إلى تعديل جبائي بغرامات مضاعفة.</li>
+<li><strong>الفواتير الضائعة:</strong> فاتورة مفقودة تعني دفعة متأخرة أو نزاع مع الحريف. التكلفة غير المباشرة يصعب حسابها لكنها حقيقية.</li>
+</ul>
+
+<h3>حصيلة التكلفة الحالية</h3>
+<p>لمؤسسة صغرى أو متوسطة تُصدر 100 فاتورة شهريًا:</p>
+<ul>
+<li>الورق والطباعة: 1,020 إلى 1,860 دينار/سنة</li>
+<li>الوقت الضائع: 3,000 إلى 6,840 دينار/سنة</li>
+<li>الأخطاء والعقوبات: 500 إلى 2,000 دينار/سنة (تقدير متحفظ)</li>
+</ul>
+<p><strong>التكلفة الإجمالية للنظام الحالي: 4,520 إلى 10,700 دينار سنويًا</strong>. هذا هو المبلغ الذي تنفقونه بالفعل، غالبًا دون الانتباه لذلك.</p>
+
+<h2>تكاليف الفوترة الإلكترونية</h2>
+<p>الآن لنرَ كم تكلف فعلاً إقامة نظام فوترة إلكترونية. سنميّز بين التكاليف الأولية (مرة واحدة) والتكاليف المتكررة.</p>
+
+<h3>التكاليف الأولية (استثمار وحيد)</h3>
+
+<h3>1. برنامج الفوترة</h3>
+<p>خياران رئيسيان أمامكم:</p>
+<ul>
+<li><strong>النسخة المكتبية (شراء وحيد):</strong> <a href="/product/offline">SoftyFact Bureau</a> معروض بسعر 149 دينار دفعة واحدة. هذا استثمار نقطي يمنحكم الوصول الدائم إلى البرنامج، بما في ذلك التحديثات.</li>
+<li><strong>النسخة السحابية (اشتراك):</strong> <a href="/product/online">SoftyFact Cloud</a> بسعر 99 دينار شهريًا. لا استثمار مبدئي، تدفعون بالتدريج. يشمل هذا الخيار الاستضافة الآمنة والنسخ الاحتياطية التلقائية والوصول من أجهزة متعددة.</li>
+</ul>
+<p>للمقارنة المفصلة، اطلعوا على <a href="/blog/softyfact-bureau-vs-cloud-comparatif">مقارنة المكتبي مقابل السحابي</a>.</p>
+
+<h3>2. الشهادة الإلكترونية</h3>
+<p>للتوقيع الرقمي على الفواتير (إلزامي مع نظام الفاتورة)، ستحتاجون إلى شهادة صادرة عن الوكالة الوطنية للمصادقة الإلكترونية. التكلفة متغيرة حسب نوع الشهادة ومدة صلاحيتها. ميزانية تقديرية: <strong>100 إلى 300 دينار</strong> لشهادة لمدة سنة، قابلة للتجديد.</p>
+
+<h3>3. التكوين والتهيئة</h3>
+<ul>
+<li><strong>التعلم الذاتي:</strong> مجاني إذا كان البرنامج بديهيًا ولديه توثيق جيد. SoftyFact يقدم فيديوهات تعليمية ودليل بدء سريع.</li>
+<li><strong>تكوين مساعد:</strong> 0 إلى 200 دينار حسب مقدم الخدمة. غالبًا مشمول في الدعم الأولي.</li>
+<li><strong>هجرة البيانات:</strong> استيراد كتالوج المنتجات وملف الحرفاء يمكنكم القيام به بأنفسكم (مجانًا) أو بمساعدة (50 إلى 150 دينار).</li>
+</ul>
+
+<h3>ملخص التكاليف الأولية</h3>
+<ul>
+<li>البرنامج: 149 دينار (مكتبي) أو 0 دينار مبدئيًا (سحابي)</li>
+<li>الشهادة الإلكترونية: 100 إلى 300 دينار</li>
+<li>التكوين والهجرة: 0 إلى 350 دينار</li>
+</ul>
+<p><strong>الإجمالي المبدئي: 249 إلى 799 دينار</strong> (نسخة مكتبية) أو <strong>100 إلى 650 دينار</strong> (نسخة سحابية، الشهر الأول من الاشتراك مشمول).</p>
+
+<h3>التكاليف المتكررة (سنوية)</h3>
+<ul>
+<li><strong>النسخة المكتبية:</strong> 0 دينار/سنة (التحديثات مشمولة) + تجديد شهادة ANCE</li>
+<li><strong>النسخة السحابية:</strong> 1,188 دينار/سنة (99 دينار × 12 شهر) + تجديد شهادة ANCE</li>
+<li><strong>الصيانة:</strong> مشمولة في النسختين لدى SoftyFact</li>
+</ul>
+
+<h2>حساب العائد على الاستثمار (ROI)</h2>
+<p>لنقارن الآن تكاليف النظام الحالي مع تكاليف الفوترة الإلكترونية لحساب الوفورات الحقيقية ومدة استرداد الاستثمار.</p>
+
+<h3>السيناريو الأول: مؤسسة مع SoftyFact Bureau (نسخة مكتبية)</h3>
+<p><strong>الملف:</strong> تجارة تجزئة، 80 فاتورة/شهر، مستخدم واحد</p>
+<ul>
+<li><strong>التكلفة الحالية المقدرة:</strong> 4,500 دينار/سنة (ورق + وقت + أخطاء)</li>
+<li><strong>تكلفة السنة الأولى:</strong> 149 دينار (برنامج) + 200 دينار (شهادة) + 100 دينار (تكوين) = <strong>449 دينار</strong></li>
+<li><strong>وفورات السنة الأولى:</strong> 4,500 - 449 = <strong>4,051 دينار</strong></li>
+<li><strong>تكلفة السنوات التالية:</strong> ~200 دينار/سنة (تجديد الشهادة فقط)</li>
+<li><strong>وفورات السنوات التالية:</strong> 4,500 - 200 = <strong>4,300 دينار/سنة</strong></li>
+<li><strong>مدة الاسترداد:</strong> أقل من <strong>شهرين</strong></li>
+</ul>
+
+<h3>السيناريو الثاني: مؤسسة مع SoftyFact Cloud (نسخة سحابية)</h3>
+<p><strong>الملف:</strong> مؤسسة خدمات، 150 فاتورة/شهر، 3 مستخدمين، نقطتا بيع</p>
+<ul>
+<li><strong>التكلفة الحالية المقدرة:</strong> 8,000 دينار/سنة (ورق + وقت × 3 أشخاص + أخطاء)</li>
+<li><strong>تكلفة السنة الأولى:</strong> 1,188 دينار (اشتراك) + 200 دينار (شهادة) + 150 دينار (تكوين) = <strong>1,538 دينار</strong></li>
+<li><strong>وفورات السنة الأولى:</strong> 8,000 - 1,538 = <strong>6,462 دينار</strong></li>
+<li><strong>تكلفة السنوات التالية:</strong> 1,188 + 200 = <strong>1,388 دينار/سنة</strong></li>
+<li><strong>وفورات السنوات التالية:</strong> 8,000 - 1,388 = <strong>6,612 دينار/سنة</strong></li>
+<li><strong>مدة الاسترداد:</strong> أقل من <strong>3 أشهر</strong></li>
+</ul>
+
+<h3>السيناريو الثالث: عدم فعل شيء (تكلفة عدم التحرك)</h3>
+<p><strong>الملف:</strong> مؤسسة تنتظر اللحظة الأخيرة للامتثال</p>
+<ul>
+<li><strong>التكلفة السنوية الحالية:</strong> 4,500 إلى 8,000 دينار (خسائر مستمرة)</li>
+<li><strong>خطر عقوبات نظام الفاتورة:</strong> ستُحدد العقوبات لعدم الامتثال للفوترة الإلكترونية الإلزامية بموجب مرسوم. تجربة الدول الأخرى تُظهر غرامات كبيرة (في السعودية: حتى 50,000 ريال لكل مخالفة).</li>
+<li><strong>تكلفة الهجرة الاستعجالية:</strong> تكوين مسرّع أغلى، تهيئة تحت ضغط مع أخطاء أكثر، اضطراب في النشاط.</li>
+<li><strong>فقدان التنافسية:</strong> حرفاؤكم الذين انتقلوا بالفعل إلى الفوترة الإلكترونية سينتظرون فواتير بالصيغة الإلكترونية. عدم التوافق قد يُفقدكم صفقات.</li>
+</ul>
+
+<h2>الوفورات الملموسة في اليومي</h2>
+<p>ما وراء الأرقام الإجمالية، إليكم الوفورات التي ستلاحظونها يوميًا بعد الانتقال إلى الفوترة الإلكترونية:</p>
+
+<h3>الربح في الوقت على إنشاء الفواتير</h3>
+<ul>
+<li><strong>قبل:</strong> 10-15 دقيقة لكل فاتورة (إدخال يدوي لبيانات الحريف، حساب الأداء، التحقق من المبالغ)</li>
+<li><strong>بعد:</strong> 2-3 دقائق لكل فاتورة (اختيار الحريف، إضافة البنود، مصادقة تلقائية)</li>
+<li><strong>الربح:</strong> 8-12 دقيقة لكل فاتورة، أي <strong>13 إلى 20 ساعة شهريًا</strong> لـ100 فاتورة</li>
+</ul>
+
+<h3>إلغاء أخطاء الحساب</h3>
+<ul>
+<li><strong>قبل:</strong> أخطاء في الأداء بنسب متعددة، نسيان FODEC، طابع جبائي مفقود ← تصحيحات وإشعارات إرجاع ووقت ضائع</li>
+<li><strong>بعد:</strong> حسابات تلقائية مُتحقق منها ← 0 خطأ في الحساب</li>
+<li><strong>الربح:</strong> 3-5 ساعات/شهر من التصحيحات المتجنبة + صفر خطر تعديل جبائي بسبب خطأ في الحساب</li>
+</ul>
+
+<h3>تبسيط التصريحات الجبائية</h3>
+<ul>
+<li><strong>قبل:</strong> تجميع يدوي للبيانات لـ<a href="/blog/declaration-tej-guide-pratique">تصريح TEJ</a> ← 4-8 ساعات/شهر</li>
+<li><strong>بعد:</strong> تصدير تلقائي بنقرة واحدة ← 15 دقيقة</li>
+<li><strong>الربح:</strong> 3.75 إلى 7.75 ساعة شهريًا</li>
+</ul>
+
+<h3>أرشفة وبحث فوريان</h3>
+<ul>
+<li><strong>قبل:</strong> البحث في الملفات والمجلدات ← 15-30 دقيقة لكل بحث</li>
+<li><strong>بعد:</strong> بحث برقم الفاتورة أو التاريخ أو الحريف أو المبلغ ← 10 ثوانٍ</li>
+<li><strong>الربح:</strong> لا يُقدر بثمن من حيث الإنتاجية وراحة البال</li>
+</ul>
+
+<h2>كيف تُعظّمون عائدكم على الاستثمار</h2>
+<p>للاستفادة القصوى من استثماركم في الفوترة الإلكترونية، إليكم توصياتنا:</p>
+<ol>
+<li><strong>ابدأوا باكرًا:</strong> كلما اعتمدتم الفوترة الإلكترونية مبكرًا، كلما راكمتم وفورات قبل أن تصبح إلزامية. كل شهر تقدّم هو شهر وفورات إضافي.</li>
+<li><strong>استخدموا كل الميزات:</strong> لا تقتصروا على الفوترة. استخدموا إدارة المخزون ومتابعة المدفوعات وعروض الأسعار ووصولات التسليم لتعظيم مكاسب الإنتاجية.</li>
+<li><strong>كوّنوا فرقكم جيدًا:</strong> برنامج يُستخدم بشكل سيئ لن يعطي النتائج المرجوة. استثمروا الوقت الكافي في التكوين. اطلعوا على <a href="/blog/facturation-electronique-pme-tunisie-preparation">قائمة التحضير المرجعية</a> لخطة شاملة.</li>
+<li><strong>أشركوا خبيركم المحاسب:</strong> الاسترجاع التلقائي للبيانات من طرف محاسبكم يقلل من أتعابه وآجال معالجته.</li>
+</ol>
+
+<h2>الخلاصة: استثمار يسترد نفسه في بضعة أشهر</h2>
+<p>الأرقام واضحة: الفوترة الإلكترونية ليست تكلفة، بل استثمار يسترد نفسه في شهرين إلى 3 أشهر. الوفورات على الورق والوقت والأخطاء والعقوبات تتجاوز بكثير تكلفة البرنامج والشهادة الإلكترونية.</p>
+<p>مع <a href="/product/offline">SoftyFact Bureau</a> بسعر 149 دينار (دفعة واحدة) أو <a href="/product/online">SoftyFact Cloud</a> بسعر 99 دينار/شهر، تمتلكون حلاً شاملاً ومطابقًا للمعايير التونسية وجاهزًا لنظام الفاتورة. العائد على الاستثمار سريع وقابل للقياس ومستدام.</p>
+<p><strong>السؤال لم يعد "هل أستطيع تحمّل تكلفة الانتقال إلى الفوترة الإلكترونية؟" بل "هل أستطيع تحمّل عدم الانتقال؟"</strong></p>',
+
+                'meta_description_fr' => 'Analyse des coûts et du ROI de la facturation électronique en Tunisie. Exemples chiffrés en dinars pour les PME : économies, délai de retour sur investissement.',
+                'meta_description_ar' => 'تحليل تكاليف الفوترة الإلكترونية في تونس والعائد على الاستثمار. أمثلة رقمية بالدينار للمؤسسات الصغرى والمتوسطة.',
+                'meta_keywords' => 'cout facturation électronique tunisie, ROI e-facturation, prix logiciel facturation tunisie, économies facturation électronique',
+                'cover_image' => null,
+                'reading_time' => 10,
+                'published_at' => '2026-04-02 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 24 — Cadre juridique de la facturation électronique
+            // ============================================================
+            [
+                'slug' => 'cadre-juridique-facturation-electronique-tunisie',
+                'title_fr' => 'Cadre juridique de la facturation électronique en Tunisie : lois, sanctions et obligations',
+                'title_ar' => 'الإطار القانوني للفوترة الإلكترونية في تونس: القوانين والعقوبات والالتزامات',
+                'excerpt_fr' => 'Décryptage complet du cadre légal de la facturation électronique en Tunisie : textes de loi, obligations par taille d\'entreprise, sanctions et archivage.',
+                'excerpt_ar' => 'تحليل شامل للإطار القانوني للفوترة الإلكترونية في تونس: النصوص القانونية والالتزامات حسب حجم المؤسسة والعقوبات والأرشفة.',
+                'body_fr' => '<h2>Introduction : un cadre juridique en construction</h2>
+<p>La <a href="/blog/facturation-electronique-tunisie-elfatoora">facturation électronique en Tunisie (El-Fatoora)</a> s\'inscrit dans un cadre juridique qui se construit progressivement. Contrairement à une idée reçue, la législation tunisienne dispose déjà de plusieurs textes qui encadrent la dématérialisation des documents commerciaux, la signature électronique et les échanges numériques. Le projet El-Fatoora vient compléter ce dispositif avec des dispositions spécifiques à la facturation.</p>
+<p>Comprendre ce cadre juridique est essentiel pour les entreprises tunisiennes : il détermine vos obligations, les délais de mise en conformité, les sanctions en cas de manquement et les règles d\'archivage. Cet article fait le point sur l\'ensemble des textes applicables et leurs implications pratiques.</p>
+
+<h2>Les textes fondateurs</h2>
+
+<h3>Le Code de la TVA (CTVA)</h3>
+<p>Le Code de la Taxe sur la Valeur Ajoutée constitue le socle juridique de la facturation en Tunisie. Il définit les <strong>mentions obligatoires</strong> que doit comporter toute facture :</p>
+<ul>
+<li>L\'identification complète du vendeur et de l\'acheteur (nom/raison sociale, adresse, matricule fiscal)</li>
+<li>La date de la facture et un numéro séquentiel unique</li>
+<li>La désignation des biens ou services, avec les quantités et prix unitaires</li>
+<li>Le montant hors taxe, le taux et le montant de la <a href="/blog/guide-tva-tunisie">TVA</a>, et le montant TTC</li>
+<li>Le mode de paiement (qui détermine l\'application du <a href="/blog/timbre-fiscal-tunisie">timbre fiscal</a>)</li>
+</ul>
+<p>Ces obligations s\'appliquent <strong>indifféremment aux factures papier et électroniques</strong>. La facturation électronique doit simplement garantir que toutes ces mentions sont présentes dans le format numérique structuré.</p>
+
+<h3>La loi n° 2000-83 sur les échanges et le commerce électroniques</h3>
+<p>Cette loi fondatrice, adoptée le 9 août 2000, établit le cadre juridique du commerce électronique en Tunisie. Elle reconnaît notamment :</p>
+<ul>
+<li><strong>La validité juridique du document électronique :</strong> Un document électronique a la même force probante qu\'un document papier, à condition qu\'il soit conservé dans des conditions garantissant son intégrité.</li>
+<li><strong>La signature électronique :</strong> La signature électronique sécurisée (basée sur un certificat qualifié) a la même valeur juridique qu\'une signature manuscrite.</li>
+<li><strong>Les échanges électroniques entre entreprises :</strong> Les transactions commerciales effectuées par voie électronique sont juridiquement valides.</li>
+</ul>
+<p>Cette loi est le fondement juridique qui permet à une facture électronique d\'avoir la même valeur qu\'une facture papier devant les tribunaux et l\'administration fiscale.</p>
+
+<h3>Le décret n° 2001-1667 sur la certification électronique</h3>
+<p>Ce décret définit les conditions de délivrance et d\'utilisation des <strong>certificats électroniques</strong> en Tunisie. Il confie à l\'<strong>Agence Nationale de Certification Électronique (ANCE)</strong> le rôle d\'autorité de certification nationale.</p>
+<p>Pour la facturation électronique, le certificat délivré par l\'ANCE sera obligatoire pour :</p>
+<ul>
+<li>Signer numériquement les factures émises</li>
+<li>Authentifier l\'émetteur auprès de la plateforme El-Fatoora</li>
+<li>Garantir l\'intégrité et la non-répudiation des documents transmis</li>
+</ul>
+
+<h3>Le Code des Droits et Procédures Fiscaux (CDPF)</h3>
+<p>Le CDPF encadre les obligations déclaratives des entreprises, les procédures de contrôle fiscal et les sanctions. Plusieurs de ses dispositions sont directement pertinentes pour la facturation électronique :</p>
+<ul>
+<li><strong>Article 9 :</strong> Obligation de tenir une comptabilité conforme et de conserver les pièces justificatives pendant 10 ans.</li>
+<li><strong>Article 18 :</strong> Obligations de <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a> et de délivrance des certificats correspondants.</li>
+<li><strong>Articles 84 à 100 :</strong> Sanctions applicables en matière fiscale (pénalités de retard, amendes, majorations).</li>
+</ul>
+
+<h3>La loi organique n° 2004-63 sur la protection des données personnelles</h3>
+<p>Les factures électroniques contiennent des données personnelles et commerciales sensibles. La loi de 2004 impose des obligations en matière de :</p>
+<ul>
+<li><strong>Collecte et traitement :</strong> Les données doivent être collectées pour des finalités déterminées et légitimes.</li>
+<li><strong>Conservation :</strong> Les données ne doivent pas être conservées au-delà de la durée nécessaire (ici, le minimum légal fiscal de 10 ans).</li>
+<li><strong>Sécurité :</strong> Des mesures techniques et organisationnelles doivent protéger les données contre l\'accès non autorisé, la perte ou la destruction.</li>
+<li><strong>Droits des personnes :</strong> Les personnes concernées disposent d\'un droit d\'accès, de rectification et d\'opposition.</li>
+</ul>
+
+<h2>Les obligations selon la taille de l\'entreprise</h2>
+<p>Le déploiement d\'El-Fatoora suit une logique progressive, adaptée à la taille et aux capacités des entreprises. Voici les obligations attendues par catégorie :</p>
+
+<h3>Grandes entreprises (Phase 1)</h3>
+<p>Les premières concernées seront les entreprises dont le chiffre d\'affaires dépasse le seuil défini par décret ministériel. Leurs obligations incluront :</p>
+<ul>
+<li>Émission de <strong>100% des factures au format électronique</strong> via la plateforme El-Fatoora</li>
+<li>Signature numérique de chaque facture avec un certificat ANCE</li>
+<li>Transmission en temps réel ou quasi-réel à la plateforme centrale</li>
+<li>Archivage électronique conforme pendant 10 ans minimum</li>
+<li>Capacité de recevoir et traiter les factures électroniques de leurs fournisseurs</li>
+</ul>
+
+<h3>PME (Phase 2)</h3>
+<p>Les PME bénéficieront d\'un <strong>délai d\'adaptation supplémentaire</strong> après la Phase 1. Leurs obligations seront identiques, mais avec des aménagements possibles :</p>
+<ul>
+<li>Période de transition plus longue pour atteindre le 100% électronique</li>
+<li>Possibilité d\'utiliser des solutions simplifiées agréées</li>
+<li>Accompagnement technique dédié</li>
+</ul>
+<p>Pour préparer votre PME dès maintenant, suivez notre <a href="/blog/facturation-electronique-pme-tunisie-preparation">checklist de préparation complète</a>.</p>
+
+<h3>TPE et indépendants (Phase 3)</h3>
+<p>La généralisation aux très petites entreprises et aux professionnels indépendants interviendra en dernier. Des solutions adaptées (applications mobiles, interfaces simplifiées) devraient être proposées pour faciliter l\'adoption par les structures les plus petites.</p>
+
+<h2>Les sanctions prévues</h2>
+<p>Le non-respect des obligations de facturation est déjà sanctionné par le droit fiscal tunisien. Avec l\'entrée en vigueur d\'El-Fatoora, ces sanctions seront renforcées et complétées.</p>
+
+<h3>Sanctions existantes (Code de la TVA et CDPF)</h3>
+<ul>
+<li><strong>Défaut de facturation :</strong> Amende égale au montant de la TVA éludée, avec un minimum de 50 DT par infraction.</li>
+<li><strong>Facturation irrégulière :</strong> Les factures ne comportant pas les mentions obligatoires sont considérées comme non conformes. L\'administration peut refuser la déduction de la TVA correspondante chez le client.</li>
+<li><strong>Pénalités de retard :</strong> 0,75% du montant de l\'impôt par mois de retard pour les déclarations fiscales (TVA, <a href="/blog/declaration-tej-guide-pratique">TEJ</a>, etc.).</li>
+<li><strong>Défaut de conservation :</strong> L\'impossibilité de présenter les pièces justificatives lors d\'un contrôle fiscal peut entraîner une taxation d\'office.</li>
+</ul>
+
+<h3>Sanctions spécifiques El-Fatoora (à venir)</h3>
+<p>Les textes réglementaires d\'application d\'El-Fatoora préciseront les sanctions spécifiques. En se basant sur les pratiques internationales, on peut anticiper :</p>
+<ul>
+<li><strong>Non-utilisation de la plateforme :</strong> Amende fixe par facture non transmise via El-Fatoora après la date d\'obligation.</li>
+<li><strong>Transmission tardive :</strong> Pénalité proportionnelle au montant de la facture pour chaque jour de retard.</li>
+<li><strong>Données incomplètes ou erronées :</strong> Rejet de la facture avec obligation de correction dans un délai imparti, sous peine de pénalité supplémentaire.</li>
+<li><strong>Contournement du système :</strong> Sanctions alourdies pour les entreprises qui continueraient délibérément à émettre des factures hors plateforme.</li>
+</ul>
+<p>À titre de comparaison, l\'Arabie Saoudite applique des amendes pouvant atteindre 50 000 SAR (environ 42 000 DT) par infraction dans le cadre de ZATCA. La Commission européenne recommande des sanctions « effectives, proportionnées et dissuasives ».</p>
+
+<h2>L\'archivage légal des factures électroniques</h2>
+<p>L\'archivage est l\'un des aspects les plus techniques et les plus importants du cadre juridique de la facturation électronique.</p>
+
+<h3>Durée de conservation obligatoire</h3>
+<p>Le droit fiscal tunisien (CDPF, article 9) impose la conservation des pièces justificatives pendant <strong>10 ans</strong> à compter de la date de clôture de l\'exercice concerné. Cette obligation s\'applique intégralement aux factures électroniques.</p>
+<p>Concrètement, une facture émise le 15 mars 2026 (exercice 2026 clôturé le 31 décembre 2026) devra être conservée jusqu\'au 31 décembre 2036 au minimum.</p>
+
+<h3>Conditions de conservation</h3>
+<p>Pour être juridiquement valable, l\'archivage électronique doit garantir :</p>
+<ul>
+<li><strong>L\'intégrité :</strong> Le document ne doit pas pouvoir être modifié après signature. Toute altération doit être détectable.</li>
+<li><strong>La lisibilité :</strong> Les factures doivent rester lisibles et accessibles pendant toute la durée de conservation, indépendamment des évolutions technologiques.</li>
+<li><strong>La traçabilité :</strong> Un journal d\'accès doit enregistrer qui a consulté ou tenté de modifier les documents archivés.</li>
+<li><strong>La disponibilité :</strong> Les documents doivent pouvoir être produits rapidement en cas de contrôle fiscal ou de litige.</li>
+</ul>
+
+<h3>Format d\'archivage</h3>
+<p>Les factures doivent être conservées dans leur format d\'origine (XML signé) accompagnées de leur attestation de validation par la plateforme El-Fatoora. Une version PDF lisible peut être conservée en complément, mais ne se substitue pas au format structuré original.</p>
+
+<h2>La valeur probante de la facture électronique</h2>
+<p>Une question fréquente des entreprises : « Est-ce qu\'une facture électronique sera acceptée comme preuve en cas de litige ou de contrôle fiscal ? »</p>
+
+<h3>Devant l\'administration fiscale</h3>
+<p>La facture électronique émise via El-Fatoora et signée numériquement aura une force probante <strong>supérieure</strong> à la facture papier. En effet :</p>
+<ul>
+<li>Son authenticité est garantie par la signature électronique</li>
+<li>Son intégrité est vérifiable techniquement</li>
+<li>Sa date est certifiée par l\'horodatage de la plateforme</li>
+<li>Son contenu est validé par les contrôles automatiques d\'El-Fatoora</li>
+</ul>
+
+<h3>Devant les tribunaux</h3>
+<p>En vertu de la loi n° 2000-83 sur le commerce électronique, le document électronique signé par une signature électronique sécurisée a la même valeur juridique qu\'un document papier signé manuscritement. La charge de la preuve est inversée : c\'est à celui qui conteste la validité du document électronique de prouver son altération.</p>
+
+<h3>En matière de droit de déduction de TVA</h3>
+<p>Le droit à déduction de la <a href="/blog/guide-tva-tunisie">TVA</a> est conditionné à la détention d\'une facture conforme. Une facture électronique validée par El-Fatoora constituera automatiquement une preuve de conformité pour la déduction, simplifiant considérablement les vérifications lors des contrôles fiscaux.</p>
+
+<h2>Obligations spécifiques par type de transaction</h2>
+
+<h3>Transactions B2B (Business-to-Business)</h3>
+<p>C\'est le périmètre principal d\'El-Fatoora. Toutes les factures entre entreprises assujetties à la TVA devront transiter par la plateforme. Cela inclut :</p>
+<ul>
+<li>Les factures de vente de biens et de prestations de services</li>
+<li>Les avoirs et factures rectificatives</li>
+<li>Les factures de <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a></li>
+</ul>
+
+<h3>Transactions B2G (Business-to-Government)</h3>
+<p>Les factures adressées aux administrations publiques et établissements publics seront parmi les premières à être soumises à l\'obligation de facturation électronique. Ce secteur est déjà familiarisé avec les procédures dématérialisées (marchés publics en ligne, <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a>).</p>
+
+<h3>Transactions B2C (Business-to-Consumer)</h3>
+<p>Les ventes aux particuliers pourraient bénéficier d\'un régime simplifié. Les détails seront précisés par les textes d\'application, mais on anticipe une obligation allégée pour les tickets de caisse et factures de détail.</p>
+
+<h2>Se préparer juridiquement : les étapes concrètes</h2>
+<ol>
+<li><strong>Inventorier vos obligations actuelles :</strong> Vérifiez que vos factures respectent déjà toutes les mentions obligatoires du Code de la TVA.</li>
+<li><strong>Obtenir un certificat ANCE :</strong> Entamez les démarches auprès de l\'Agence Nationale de Certification Électronique pour obtenir votre certificat de signature.</li>
+<li><strong>Choisir un logiciel conforme :</strong> Vérifiez que votre logiciel de facturation sera compatible avec El-Fatoora. <a href="/product/offline">SoftyFact Bureau</a> et <a href="/product/online">SoftyFact Cloud</a> s\'engagent à être conformes dès l\'entrée en vigueur.</li>
+<li><strong>Mettre en place l\'archivage :</strong> Configurez un système d\'archivage électronique conforme aux exigences de conservation (10 ans, intégrité, lisibilité).</li>
+<li><strong>Former vos équipes :</strong> Assurez-vous que les personnes impliquées dans la facturation comprennent les obligations légales et les nouvelles procédures.</li>
+<li><strong>Consulter votre avocat ou expert-comptable :</strong> Pour les questions spécifiques à votre situation, un avis professionnel est recommandé.</li>
+</ol>
+
+<h2>Conclusion</h2>
+<p>Le cadre juridique de la facturation électronique en Tunisie repose sur des fondations solides — la loi sur le commerce électronique de 2000, le Code de la TVA, le CDPF et la législation sur la certification électronique. Le projet El-Fatoora complète ce dispositif avec des dispositions spécifiques adaptées aux réalités du marché tunisien.</p>
+<p>Pour les entreprises, l\'essentiel est de ne pas attendre la publication du dernier décret d\'application pour se préparer. Les obligations fondamentales (mentions obligatoires, conservation, signature) sont déjà définies. Le choix d\'un logiciel conforme comme <a href="/product/offline">SoftyFact Bureau</a> ou <a href="/product/online">SoftyFact Cloud</a>, l\'obtention d\'un certificat ANCE et la mise en place d\'un archivage adéquat sont des étapes que vous pouvez entreprendre dès maintenant.</p>
+<p>Pour évaluer le budget nécessaire, consultez notre <a href="/blog/cout-roi-facturation-electronique-tunisie">analyse des coûts et du ROI de la facturation électronique</a>. Et pour un plan d\'action concret, suivez notre <a href="/blog/facturation-electronique-pme-tunisie-preparation">checklist de préparation pour les PME</a>.</p>',
+
+                'body_ar' => '<h2>مقدمة: إطار قانوني قيد البناء</h2>
+<p>تندرج <a href="/blog/facturation-electronique-tunisie-elfatoora">الفوترة الإلكترونية في تونس (الفاتورة)</a> ضمن إطار قانوني يُبنى تدريجيًا. خلافًا لاعتقاد شائع، يتوفر التشريع التونسي بالفعل على عدة نصوص تؤطر رقمنة الوثائق التجارية والتوقيع الإلكتروني والمبادلات الرقمية. يأتي مشروع الفاتورة لاستكمال هذا الجهاز بأحكام خاصة بالفوترة.</p>
+<p>فهم هذا الإطار القانوني ضروري للمؤسسات التونسية: فهو يحدد التزاماتكم وآجال المطابقة والعقوبات في حالة الإخلال وقواعد الأرشفة. يستعرض هذا المقال مجمل النصوص المنطبقة وتداعياتها العملية.</p>
+
+<h2>النصوص التأسيسية</h2>
+
+<h3>مجلة الأداء على القيمة المضافة</h3>
+<p>تشكّل مجلة الأداء على القيمة المضافة الركيزة القانونية للفوترة في تونس. وهي تحدد <strong>البيانات الإلزامية</strong> التي يجب أن تتضمنها كل فاتورة:</p>
+<ul>
+<li>التعريف الكامل بالبائع والمشتري (الاسم/العنوان التجاري، العنوان، المعرّف الجبائي)</li>
+<li>تاريخ الفاتورة ورقم تسلسلي فريد</li>
+<li>تسمية السلع أو الخدمات مع الكميات والأسعار الوحدوية</li>
+<li>المبلغ دون احتساب الأداء ونسبة ومبلغ <a href="/blog/guide-tva-tunisie">الأداء على القيمة المضافة</a> والمبلغ الإجمالي</li>
+<li>طريقة الدفع (التي تحدد تطبيق <a href="/blog/timbre-fiscal-tunisie">الطابع الجبائي</a>)</li>
+</ul>
+<p>تنطبق هذه الالتزامات <strong>بالتساوي على الفواتير الورقية والإلكترونية</strong>. يجب أن تضمن الفوترة الإلكترونية ببساطة وجود جميع هذه البيانات في الصيغة الرقمية المنظمة.</p>
+
+<h3>القانون عدد 83 لسنة 2000 المتعلق بالمبادلات والتجارة الإلكترونية</h3>
+<p>هذا القانون التأسيسي، الصادر في 9 أوت 2000، يؤسس الإطار القانوني للتجارة الإلكترونية في تونس. ويعترف بالخصوص بـ:</p>
+<ul>
+<li><strong>الحجية القانونية للوثيقة الإلكترونية:</strong> للوثيقة الإلكترونية نفس القوة الثبوتية للوثيقة الورقية، شرط أن تُحفظ في ظروف تضمن سلامتها.</li>
+<li><strong>التوقيع الإلكتروني:</strong> للتوقيع الإلكتروني المؤمّن (القائم على شهادة مؤهلة) نفس القيمة القانونية للتوقيع بخط اليد.</li>
+<li><strong>المبادلات الإلكترونية بين المؤسسات:</strong> المعاملات التجارية المنجزة إلكترونيًا صالحة قانونيًا.</li>
+</ul>
+<p>هذا القانون هو الأساس القانوني الذي يمنح الفاتورة الإلكترونية نفس قيمة الفاتورة الورقية أمام المحاكم والإدارة الجبائية.</p>
+
+<h3>الأمر عدد 1667 لسنة 2001 المتعلق بالمصادقة الإلكترونية</h3>
+<p>يحدد هذا الأمر شروط إصدار واستخدام <strong>الشهادات الإلكترونية</strong> في تونس. ويُسند إلى <strong>الوكالة الوطنية للمصادقة الإلكترونية (ANCE)</strong> دور سلطة المصادقة الوطنية.</p>
+<p>بالنسبة للفوترة الإلكترونية، ستكون الشهادة الصادرة عن ANCE إلزامية من أجل:</p>
+<ul>
+<li>التوقيع رقميًا على الفواتير الصادرة</li>
+<li>مصادقة المُصدر لدى منصة الفاتورة</li>
+<li>ضمان سلامة الوثائق المرسلة وعدم إنكارها</li>
+</ul>
+
+<h3>مجلة الحقوق والإجراءات الجبائية</h3>
+<p>تؤطر مجلة الحقوق والإجراءات الجبائية الالتزامات التصريحية للمؤسسات وإجراءات المراقبة الجبائية والعقوبات. عدة أحكام منها ذات صلة مباشرة بالفوترة الإلكترونية:</p>
+<ul>
+<li><strong>الفصل 9:</strong> الالتزام بمسك محاسبة مطابقة وحفظ الوثائق المبررة لمدة 10 سنوات.</li>
+<li><strong>الفصل 18:</strong> التزامات <a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a> وتسليم الشهادات المقابلة.</li>
+<li><strong>الفصول 84 إلى 100:</strong> العقوبات المطبقة في المادة الجبائية (غرامات تأخير، خطايا، زيادات).</li>
+</ul>
+
+<h3>القانون الأساسي عدد 63 لسنة 2004 المتعلق بحماية المعطيات الشخصية</h3>
+<p>تحتوي الفواتير الإلكترونية على معطيات شخصية وتجارية حساسة. يفرض قانون 2004 التزامات في مجال:</p>
+<ul>
+<li><strong>الجمع والمعالجة:</strong> يجب جمع المعطيات لأغراض محددة ومشروعة.</li>
+<li><strong>الحفظ:</strong> لا يجب حفظ المعطيات بعد المدة الضرورية (هنا، الحد الأدنى القانوني الجبائي وهو 10 سنوات).</li>
+<li><strong>الأمان:</strong> يجب اتخاذ تدابير تقنية وتنظيمية لحماية المعطيات من الوصول غير المرخص أو الفقدان أو التلف.</li>
+<li><strong>حقوق الأشخاص:</strong> يتمتع الأشخاص المعنيون بحق الاطلاع والتصحيح والاعتراض.</li>
+</ul>
+
+<h2>الالتزامات حسب حجم المؤسسة</h2>
+<p>يتبع نشر نظام الفاتورة منطقًا تدريجيًا، ملائمًا لحجم المؤسسات وقدراتها. إليكم الالتزامات المتوقعة حسب الفئة:</p>
+
+<h3>المؤسسات الكبرى (المرحلة الأولى)</h3>
+<p>أول المعنيين ستكون المؤسسات التي يتجاوز رقم معاملاتها الحد المحدد بأمر وزاري. تشمل التزاماتها:</p>
+<ul>
+<li>إصدار <strong>100% من الفواتير بالصيغة الإلكترونية</strong> عبر منصة الفاتورة</li>
+<li>التوقيع الرقمي على كل فاتورة بشهادة ANCE</li>
+<li>الإرسال الفوري أو شبه الفوري إلى المنصة المركزية</li>
+<li>الأرشفة الإلكترونية المطابقة لمدة 10 سنوات على الأقل</li>
+<li>القدرة على استقبال ومعالجة الفواتير الإلكترونية من مورديها</li>
+</ul>
+
+<h3>المؤسسات الصغرى والمتوسطة (المرحلة الثانية)</h3>
+<p>ستستفيد المؤسسات الصغرى والمتوسطة من <strong>أجل تكيّف إضافي</strong> بعد المرحلة الأولى. ستكون التزاماتها مطابقة، مع تسهيلات محتملة:</p>
+<ul>
+<li>فترة انتقال أطول للوصول إلى 100% إلكتروني</li>
+<li>إمكانية استخدام حلول مبسطة معتمدة</li>
+<li>مرافقة تقنية مخصصة</li>
+</ul>
+<p>لتحضير مؤسستكم من الآن، اتبعوا <a href="/blog/facturation-electronique-pme-tunisie-preparation">قائمتنا المرجعية الشاملة للتحضير</a>.</p>
+
+<h3>المؤسسات الصغيرة جدًا والمستقلون (المرحلة الثالثة)</h3>
+<p>سيأتي التعميم على المؤسسات الصغيرة جدًا والمهنيين المستقلين في المرتبة الأخيرة. من المتوقع اقتراح حلول ملائمة (تطبيقات هاتف، واجهات مبسطة) لتسهيل الاعتماد من قبل أصغر الهياكل.</p>
+
+<h2>العقوبات المنتظرة</h2>
+<p>يُعاقب عدم احترام التزامات الفوترة بالفعل بموجب القانون الجبائي التونسي. مع دخول نظام الفاتورة حيز التنفيذ، ستُعزّز هذه العقوبات وتُستكمل.</p>
+
+<h3>العقوبات القائمة (مجلة الأداء ومجلة الإجراءات الجبائية)</h3>
+<ul>
+<li><strong>عدم الفوترة:</strong> خطية تساوي مبلغ الأداء المتهرب منه، بحد أدنى 50 دينار لكل مخالفة.</li>
+<li><strong>الفوترة غير المطابقة:</strong> تُعتبر الفواتير التي لا تتضمن البيانات الإلزامية غير مطابقة. يمكن للإدارة رفض خصم الأداء المقابل لدى الحريف.</li>
+<li><strong>غرامات التأخير:</strong> 0.75% من مبلغ الأداء عن كل شهر تأخير في التصريحات الجبائية (الأداء على القيمة المضافة، <a href="/blog/declaration-tej-guide-pratique">TEJ</a>، إلخ).</li>
+<li><strong>عدم الحفظ:</strong> عدم القدرة على تقديم الوثائق المبررة أثناء مراقبة جبائية قد يؤدي إلى توظيف تلقائي للأداء.</li>
+</ul>
+
+<h3>العقوبات الخاصة بنظام الفاتورة (قادمة)</h3>
+<p>ستحدد النصوص التطبيقية لنظام الفاتورة العقوبات الخاصة. بالاعتماد على الممارسات الدولية، يمكن توقع:</p>
+<ul>
+<li><strong>عدم استخدام المنصة:</strong> خطية ثابتة عن كل فاتورة لم تُرسل عبر نظام الفاتورة بعد تاريخ الإلزام.</li>
+<li><strong>الإرسال المتأخر:</strong> عقوبة تناسبية مع مبلغ الفاتورة عن كل يوم تأخير.</li>
+<li><strong>بيانات ناقصة أو خاطئة:</strong> رفض الفاتورة مع إلزام بالتصحيح في أجل محدد، تحت طائلة عقوبة إضافية.</li>
+<li><strong>الالتفاف على النظام:</strong> عقوبات مشددة للمؤسسات التي تواصل عمدًا إصدار فواتير خارج المنصة.</li>
+</ul>
+<p>للمقارنة، تطبق المملكة العربية السعودية غرامات قد تصل إلى 50,000 ريال (حوالي 42,000 دينار) لكل مخالفة في إطار زاتكا. وتوصي المفوضية الأوروبية بعقوبات "فعالة ومتناسبة ورادعة".</p>
+
+<h2>الأرشفة القانونية للفواتير الإلكترونية</h2>
+<p>الأرشفة هي أحد أكثر الجوانب تقنية وأهمية في الإطار القانوني للفوترة الإلكترونية.</p>
+
+<h3>مدة الحفظ الإلزامية</h3>
+<p>يفرض القانون الجبائي التونسي (مجلة الإجراءات الجبائية، الفصل 9) حفظ الوثائق المبررة لمدة <strong>10 سنوات</strong> ابتداءً من تاريخ ختم السنة المالية المعنية. ينطبق هذا الالتزام بالكامل على الفواتير الإلكترونية.</p>
+<p>عمليًا، فاتورة صادرة في 15 مارس 2026 (سنة مالية 2026 مختتمة في 31 ديسمبر 2026) يجب حفظها حتى 31 ديسمبر 2036 على الأقل.</p>
+
+<h3>شروط الحفظ</h3>
+<p>لتكون صالحة قانونيًا، يجب أن تضمن الأرشفة الإلكترونية:</p>
+<ul>
+<li><strong>السلامة:</strong> يجب ألا تكون الوثيقة قابلة للتعديل بعد التوقيع. كل تغيير يجب أن يكون قابلاً للاكتشاف.</li>
+<li><strong>القراءة:</strong> يجب أن تبقى الفواتير قابلة للقراءة ومتاحة طوال مدة الحفظ، بغض النظر عن التطورات التقنية.</li>
+<li><strong>التتبع:</strong> يجب أن يسجل سجل وصول من اطلع على الوثائق المؤرشفة أو حاول تعديلها.</li>
+<li><strong>التوفر:</strong> يجب أن تكون الوثائق قابلة للتقديم بسرعة في حالة مراقبة جبائية أو نزاع.</li>
+</ul>
+
+<h3>صيغة الأرشفة</h3>
+<p>يجب حفظ الفواتير بصيغتها الأصلية (XML موقّع) مرفقة بشهادة المصادقة من منصة الفاتورة. يمكن حفظ نسخة PDF قابلة للقراءة كتكملة، لكنها لا تحل محل الصيغة المنظمة الأصلية.</p>
+
+<h2>الحجية الثبوتية للفاتورة الإلكترونية</h2>
+<p>سؤال شائع من المؤسسات: "هل ستُقبل الفاتورة الإلكترونية كدليل في حالة نزاع أو مراقبة جبائية؟"</p>
+
+<h3>أمام الإدارة الجبائية</h3>
+<p>ستتمتع الفاتورة الإلكترونية الصادرة عبر نظام الفاتورة والموقعة رقميًا بقوة ثبوتية <strong>أعلى</strong> من الفاتورة الورقية. فعلاً:</p>
+<ul>
+<li>أصالتها مضمونة بالتوقيع الإلكتروني</li>
+<li>سلامتها قابلة للتحقق تقنيًا</li>
+<li>تاريخها مصادق عليه بالختم الزمني للمنصة</li>
+<li>محتواها مُصادق عليه بالفحوصات التلقائية لنظام الفاتورة</li>
+</ul>
+
+<h3>أمام المحاكم</h3>
+<p>بموجب القانون عدد 83 لسنة 2000 المتعلق بالتجارة الإلكترونية، للوثيقة الإلكترونية الموقعة بتوقيع إلكتروني مؤمّن نفس القيمة القانونية للوثيقة الورقية الموقعة بخط اليد. يُعكس عبء الإثبات: على من يطعن في صحة الوثيقة الإلكترونية أن يُثبت تغييرها.</p>
+
+<h3>في مجال حق خصم الأداء على القيمة المضافة</h3>
+<p>يُشترط لحق خصم <a href="/blog/guide-tva-tunisie">الأداء على القيمة المضافة</a> حيازة فاتورة مطابقة. ستكون الفاتورة الإلكترونية المصادق عليها من نظام الفاتورة تلقائيًا دليلاً على المطابقة للخصم، مما يُبسّط عمليات التحقق أثناء المراقبات الجبائية بشكل كبير.</p>
+
+<h2>التزامات خاصة حسب نوع المعاملة</h2>
+
+<h3>المعاملات B2B (بين المؤسسات)</h3>
+<p>هذا هو النطاق الرئيسي لنظام الفاتورة. جميع الفواتير بين المؤسسات الخاضعة للأداء على القيمة المضافة يجب أن تمر عبر المنصة. يشمل ذلك:</p>
+<ul>
+<li>فواتير بيع السلع وتقديم الخدمات</li>
+<li>إشعارات الإرجاع والفواتير التصحيحية</li>
+<li>فواتير <a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a></li>
+</ul>
+
+<h3>المعاملات B2G (بين المؤسسات والدولة)</h3>
+<p>ستكون الفواتير الموجهة إلى الإدارات العمومية والمؤسسات العمومية من أوائل المعاملات الخاضعة لالتزام الفوترة الإلكترونية. هذا القطاع على دراية بالفعل بالإجراءات الرقمية (الصفقات العمومية الإلكترونية، <a href="/blog/declaration-tej-guide-pratique">تصريح TEJ</a>).</p>
+
+<h3>المعاملات B2C (بين المؤسسات والمستهلكين)</h3>
+<p>قد تستفيد المبيعات للأفراد من نظام مبسط. ستُحدد التفاصيل بموجب النصوص التطبيقية، لكن يُتوقع التزام مخفف لإيصالات الصندوق وفواتير التجزئة.</p>
+
+<h2>الاستعداد القانوني: الخطوات العملية</h2>
+<ol>
+<li><strong>جرد التزاماتكم الحالية:</strong> تحققوا من أن فواتيركم تحترم بالفعل جميع البيانات الإلزامية لمجلة الأداء على القيمة المضافة.</li>
+<li><strong>الحصول على شهادة ANCE:</strong> باشروا الإجراءات لدى الوكالة الوطنية للمصادقة الإلكترونية للحصول على شهادة التوقيع.</li>
+<li><strong>اختيار برنامج مطابق:</strong> تحققوا من أن برنامج الفوترة سيكون متوافقًا مع نظام الفاتورة. <a href="/product/offline">SoftyFact Bureau</a> و<a href="/product/online">SoftyFact Cloud</a> يلتزمان بالمطابقة فور دخول النظام حيز التنفيذ.</li>
+<li><strong>إقامة الأرشفة:</strong> هيئوا نظام أرشفة إلكترونية مطابقًا لمتطلبات الحفظ (10 سنوات، سلامة، قابلية القراءة).</li>
+<li><strong>تكوين فرقكم:</strong> تأكدوا من أن الأشخاص المشاركين في الفوترة يفهمون الالتزامات القانونية والإجراءات الجديدة.</li>
+<li><strong>استشارة محاميكم أو خبيركم المحاسب:</strong> للأسئلة الخاصة بوضعكم، يُنصح بالحصول على رأي مهني.</li>
+</ol>
+
+<h2>الخلاصة</h2>
+<p>يرتكز الإطار القانوني للفوترة الإلكترونية في تونس على أسس متينة — قانون التجارة الإلكترونية لسنة 2000 ومجلة الأداء على القيمة المضافة ومجلة الإجراءات الجبائية والتشريع المتعلق بالمصادقة الإلكترونية. يأتي مشروع الفاتورة لاستكمال هذا الجهاز بأحكام خاصة ملائمة لواقع السوق التونسي.</p>
+<p>بالنسبة للمؤسسات، الأهم هو عدم انتظار نشر آخر أمر تطبيقي للاستعداد. الالتزامات الأساسية (البيانات الإلزامية، الحفظ، التوقيع) محددة بالفعل. اختيار برنامج مطابق مثل <a href="/product/offline">SoftyFact Bureau</a> أو <a href="/product/online">SoftyFact Cloud</a> والحصول على شهادة ANCE وإقامة أرشفة ملائمة هي خطوات يمكنكم اتخاذها من الآن.</p>
+<p>لتقييم الميزانية اللازمة، اطلعوا على <a href="/blog/cout-roi-facturation-electronique-tunisie">تحليلنا لتكاليف الفوترة الإلكترونية وعائدها على الاستثمار</a>. وللحصول على خطة عمل عملية، اتبعوا <a href="/blog/facturation-electronique-pme-tunisie-preparation">قائمتنا المرجعية للتحضير للمؤسسات الصغرى والمتوسطة</a>.</p>',
+
+                'meta_description_fr' => 'Cadre juridique de la facturation électronique en Tunisie : lois applicables, obligations par taille d\'entreprise, sanctions et archivage légal.',
+                'meta_description_ar' => 'الإطار القانوني للفوترة الإلكترونية في تونس: القوانين المنطبقة والالتزامات حسب حجم المؤسسة والعقوبات والأرشفة القانونية.',
+                'meta_keywords' => 'cadre juridique facturation électronique tunisie, loi e-facturation tunisie, sanctions el fatoora, obligations facturation électronique',
+                'cover_image' => null,
+                'reading_time' => 10,
+                'published_at' => '2026-04-06 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 25 — Les 10 erreurs courantes sur TEJ
+            // ============================================================
+            [
+                'slug' => 'erreurs-courantes-declaration-tej-tunisie',
+                'title_fr' => 'Les 10 erreurs les plus courantes sur TEJ et comment les éviter',
+                'title_ar' => 'الأخطاء العشرة الأكثر شيوعًا في تصريح TEJ وكيفية تجنبها',
+                'excerpt_fr' => 'Découvrez les 10 erreurs les plus fréquentes lors du dépôt de la déclaration TEJ en Tunisie et les solutions concrètes pour les éviter.',
+                'excerpt_ar' => 'اكتشفوا الأخطاء العشرة الأكثر شيوعًا عند إيداع تصريح TEJ في تونس والحلول العملية لتجنبها.',
+                'body_fr' => '<h2>La déclaration TEJ : un exercice à haut risque d\'erreur</h2>
+<p>La <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a> est une obligation mensuelle pour toute entreprise qui effectue des <a href="/blog/retenue-source-tunisie-guide">retenues à la source</a> en Tunisie. Si le principe est simple — déclarer les montants retenus et les reverser à l\'État —, la pratique est parsemée de pièges qui peuvent coûter cher en pénalités et en redressements fiscaux.</p>
+<p>Après des années d\'accompagnement des entreprises tunisiennes, nous avons identifié les 10 erreurs les plus fréquentes commises lors du dépôt des déclarations TEJ. Pour chaque erreur, nous vous expliquons pourquoi elle se produit, quelles en sont les conséquences, et surtout comment l\'éviter.</p>
+
+<h2>Erreur n°1 : Déposer la déclaration en retard</h2>
+<h3>Le problème</h3>
+<p>La déclaration TEJ doit être déposée <strong>avant le 28 du mois suivant</strong> celui au cours duquel les retenues ont été effectuées. Exemple : les retenues de mars 2026 doivent être déclarées avant le 28 avril 2026. De nombreuses entreprises dépassent cette date, parfois de quelques jours seulement.</p>
+<h3>Les conséquences</h3>
+<p>Une pénalité de retard de <strong>0,75% par mois</strong> est appliquée sur le montant total des retenues déclarées. Cette pénalité court à compter du premier jour suivant l\'échéance. Même un retard d\'un seul jour déclenche la pénalité pour le mois entier.</p>
+<h3>La solution</h3>
+<ul>
+<li>Programmez un rappel récurrent au <strong>20 de chaque mois</strong> pour préparer la déclaration, vous laissant 8 jours de marge.</li>
+<li>Utilisez un logiciel de facturation comme <a href="/product/offline">SoftyFact Bureau</a> qui génère automatiquement le récapitulatif mensuel des retenues, éliminant le temps de compilation manuelle.</li>
+<li>Ne confondez pas la date de dépôt (28) avec la date limite de paiement qui peut différer selon le mode de règlement.</li>
+</ul>
+
+<h2>Erreur n°2 : Saisir un matricule fiscal erroné</h2>
+<h3>Le problème</h3>
+<p>Le matricule fiscal du bénéficiaire est le champ le plus sensible de la déclaration TEJ. Une erreur d\'un seul chiffre ou caractère entraîne le rejet de la ligne concernée par la plateforme. Les erreurs les plus courantes : inversion de chiffres, oubli de la lettre de catégorie (A, B, D, P, M, N...), ou utilisation d\'un matricule obsolète.</p>
+<h3>Les conséquences</h3>
+<p>La ligne rejetée n\'est pas prise en compte dans la déclaration. Le bénéficiaire ne pourra pas imputer la retenue sur son propre impôt et vous réclamera un certificat de retenue conforme. Si l\'erreur n\'est pas corrigée, vous risquez des pénalités pour déclaration incomplète.</p>
+<h3>La solution</h3>
+<ul>
+<li>Vérifiez systématiquement les matricules fiscaux de vos fournisseurs lors de la première transaction et enregistrez-les dans votre logiciel.</li>
+<li>Utilisez la fonctionnalité de vérification de matricule disponible sur le site de la DGI avant de soumettre.</li>
+<li>Avec <a href="/product/offline">SoftyFact</a>, les matricules fiscaux sont enregistrés dans la fiche fournisseur et utilisés automatiquement pour chaque transaction, éliminant les erreurs de ressaisie.</li>
+</ul>
+
+<h2>Erreur n°3 : Appliquer le mauvais taux de retenue</h2>
+<h3>Le problème</h3>
+<p>Les taux de <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a> en Tunisie varient de 1% à 25% selon la nature de la prestation et le statut du bénéficiaire. Confondre les taux est une erreur extrêmement courante :</p>
+<ul>
+<li><strong>1%</strong> pour les montants payés au titre des acquisitions de marchandises</li>
+<li><strong>1,5%</strong> pour les montants payés au titre des services, commissions et loyers</li>
+<li><strong>3%</strong> pour certains services spécifiques</li>
+<li><strong>5%</strong> pour les honoraires hors commissions et courtages</li>
+<li><strong>10%</strong> pour certaines catégories de revenus</li>
+<li><strong>15%</strong> pour les non-résidents (cas général)</li>
+<li><strong>20%</strong> pour certaines prestations de non-résidents</li>
+<li><strong>25%</strong> pour les paiements vers des paradis fiscaux</li>
+</ul>
+<h3>Les conséquences</h3>
+<p>Un taux trop bas : vous devrez payer la différence plus les pénalités lors d\'un contrôle fiscal. Un taux trop élevé : le fournisseur sera lésé et vous réclamera le trop-perçu ou un nouveau certificat.</p>
+<h3>La solution</h3>
+<ul>
+<li>Configurez les taux de retenue par catégorie de fournisseur dans votre logiciel de facturation.</li>
+<li>En cas de doute, consultez les barèmes officiels ou votre expert-comptable.</li>
+<li>SoftyFact permet d\'associer un taux de retenue par défaut à chaque fournisseur, appliqué automatiquement à chaque transaction.</li>
+</ul>
+
+<h2>Erreur n°4 : Oublier des bénéficiaires dans la déclaration</h2>
+<h3>Le problème</h3>
+<p>Tous les paiements soumis à retenue doivent figurer dans la déclaration, <strong>y compris les montants faibles</strong>. Certaines entreprises oublient de déclarer les petits paiements (inférieur à 500 DT) ou les paiements ponctuels à des prestataires occasionnels.</p>
+<h3>Les conséquences</h3>
+<p>L\'omission d\'un bénéficiaire constitue une déclaration incomplète. En cas de contrôle croisé (le bénéficiaire déclare avoir subi une retenue que vous n\'avez pas déclarée), c\'est un signal d\'alerte pour l\'administration fiscale.</p>
+<h3>La solution</h3>
+<ul>
+<li>Passez en revue <strong>tous</strong> les paiements du mois, pas seulement les fournisseurs réguliers.</li>
+<li>Incluez les paiements aux prestataires occasionnels, freelances, intervenants ponctuels.</li>
+<li>Un logiciel de facturation centralise tous les paiements avec retenue et garantit qu\'aucun n\'est oublié dans l\'export TEJ.</li>
+</ul>
+
+<h2>Erreur n°5 : Confondre montant brut et montant net</h2>
+<h3>Le problème</h3>
+<p>La déclaration TEJ demande le <strong>montant brut</strong> (avant retenue) et le <strong>montant retenu</strong>. Certains déclarants inversent ces montants ou saisissent le montant net (après retenue) au lieu du brut.</p>
+<h3>Les conséquences</h3>
+<p>Les montants incohérents sont signalés par la plateforme. Si l\'erreur passe les contrôles automatiques, elle sera détectée lors d\'un rapprochement avec les déclarations du bénéficiaire.</p>
+<h3>La solution</h3>
+<ul>
+<li>Rappelez-vous la formule : <strong>Montant brut × Taux = Montant retenu</strong>, et <strong>Montant net = Montant brut - Montant retenu</strong>.</li>
+<li>Vérifiez que le montant retenu est toujours inférieur au montant brut.</li>
+<li>Utilisez l\'export automatique de SoftyFact qui calcule et formate correctement tous les montants.</li>
+</ul>
+
+<h2>Erreur n°6 : Ne pas délivrer les certificats de retenue</h2>
+<h3>Le problème</h3>
+<p>Après avoir effectué une retenue, vous êtes <strong>légalement tenu</strong> de délivrer un certificat de retenue à la source au bénéficiaire. Ce certificat est indispensable pour que le fournisseur puisse imputer la retenue sur son propre impôt. Beaucoup d\'entreprises négligent cette obligation ou la traitent avec retard.</p>
+<h3>Les conséquences</h3>
+<p>Le défaut de délivrance est une infraction sanctionnée par la loi. De plus, votre fournisseur insistera — à juste titre — pour obtenir ce document, créant des tensions commerciales.</p>
+<h3>La solution</h3>
+<ul>
+<li>Éditez le certificat de retenue <strong>en même temps que le paiement</strong>, pas après coup.</li>
+<li>Conservez un double du certificat dans vos archives.</li>
+<li><a href="/product/offline">SoftyFact Bureau</a> génère automatiquement les certificats de retenue conformes aux exigences légales, prêts à être imprimés ou envoyés par email.</li>
+</ul>
+
+<h2>Erreur n°7 : Dupliquer des lignes dans la déclaration</h2>
+<h3>Le problème</h3>
+<p>Lors de la saisie manuelle ou de l\'import d\'un fichier, il arrive que des lignes soient dupliquées : le même paiement au même bénéficiaire apparaît deux fois. Cela peut se produire lors d\'une correction ou d\'un import successif sans vérification.</p>
+<h3>Les conséquences</h3>
+<p>Vous déclarez et payez le double du montant réellement retenu. La correction ultérieure est fastidieuse et peut nécessiter une déclaration rectificative.</p>
+<h3>La solution</h3>
+<ul>
+<li>Avant de soumettre, vérifiez le nombre total de lignes et le montant total. Comparez-les avec votre comptabilité.</li>
+<li>Si vous importez un fichier, ne relancez pas l\'import sans supprimer les données précédemment importées.</li>
+<li>L\'export TEJ de SoftyFact est généré à partir des données de facturation sans doublons possibles.</li>
+</ul>
+
+<h2>Erreur n°8 : Format de fichier incorrect lors de l\'import</h2>
+<h3>Le problème</h3>
+<p>La plateforme TEJ accepte l\'import de fichiers au format structuré (CSV ou XML). Les erreurs de format sont fréquentes : mauvais séparateur (virgule au lieu de point-virgule), encodage incorrect des caractères arabes, colonnes dans le mauvais ordre, ou format de date non conforme.</p>
+<h3>Les conséquences</h3>
+<p>Le fichier est rejeté en totalité ou partiellement. Vous devez corriger et réimporter, perdant un temps précieux, surtout si vous êtes proche de la date limite.</p>
+<h3>La solution</h3>
+<ul>
+<li>Utilisez toujours le modèle de fichier fourni par la DGI comme référence.</li>
+<li>Testez votre fichier avec un petit échantillon avant l\'import complet.</li>
+<li>SoftyFact génère des fichiers au format exact attendu par la plateforme TEJ, éliminant tout risque d\'erreur de format.</li>
+</ul>
+
+<h2>Erreur n°9 : Ne pas corriger une déclaration erronée</h2>
+<h3>Le problème</h3>
+<p>Certaines entreprises découvrent une erreur dans une déclaration déjà soumise (mauvais taux, bénéficiaire oublié, montant incorrect) mais ne la corrigent pas, espérant que cela passera inaperçu.</p>
+<h3>Les conséquences</h3>
+<p>L\'administration fiscale effectue des contrôles croisés entre les déclarations des différentes parties. Une incohérence non corrigée déclenchera un examen approfondi de votre dossier. Les pénalités sont plus lourdes sur les erreurs non corrigées spontanément que sur celles corrigées par le contribuable.</p>
+<h3>La solution</h3>
+<ul>
+<li>Déposez une <strong>déclaration rectificative</strong> dès que vous constatez l\'erreur. La correction spontanée est toujours mieux vue par l\'administration que la découverte lors d\'un contrôle.</li>
+<li>La plateforme TEJ permet de soumettre des déclarations rectificatives pour les périodes antérieures.</li>
+<li>Tenez un registre des corrections effectuées pour votre suivi interne.</li>
+</ul>
+
+<h2>Erreur n°10 : Ne pas archiver les justificatifs</h2>
+<h3>Le problème</h3>
+<p>La déclaration TEJ est la partie émergée de l\'iceberg. Derrière chaque ligne de la déclaration, il doit y avoir une facture, un contrat ou un bon de commande qui justifie le paiement et la retenue. Certaines entreprises déposent la déclaration mais ne conservent pas les pièces justificatives correspondantes.</p>
+<h3>Les conséquences</h3>
+<p>En cas de contrôle fiscal (et la conservation est de <strong>10 ans</strong>), l\'impossibilité de produire les justificatifs peut entraîner une remise en cause des retenues déclarées et une taxation d\'office.</p>
+<h3>La solution</h3>
+<ul>
+<li>Pour chaque ligne de votre déclaration TEJ, conservez : la facture du fournisseur, le justificatif de paiement, et le double du certificat de retenue.</li>
+<li>Organisez vos archives par mois et par fournisseur.</li>
+<li>SoftyFact conserve automatiquement toutes les factures, paiements et certificats liés, accessibles en quelques clics pour les contrôles futurs.</li>
+</ul>
+
+<h2>Tableau récapitulatif des erreurs et solutions</h2>
+<p>Voici un résumé rapide pour référence :</p>
+<ul>
+<li><strong>Retard de dépôt :</strong> Rappel au 20 du mois + export automatique</li>
+<li><strong>Matricule erroné :</strong> Vérification à la création du fournisseur + base centrale</li>
+<li><strong>Mauvais taux :</strong> Taux pré-configuré par fournisseur</li>
+<li><strong>Bénéficiaire oublié :</strong> Revue systématique + export exhaustif</li>
+<li><strong>Montant brut/net :</strong> Calcul automatique + validation</li>
+<li><strong>Certificat non délivré :</strong> Génération automatique à chaque retenue</li>
+<li><strong>Lignes dupliquées :</strong> Export unique à partir des données source</li>
+<li><strong>Format fichier :</strong> Export au format exact TEJ</li>
+<li><strong>Erreur non corrigée :</strong> Déclaration rectificative immédiate</li>
+<li><strong>Justificatifs manquants :</strong> Archivage automatique lié</li>
+</ul>
+
+<h2>Conclusion : automatisez pour ne plus vous tromper</h2>
+<p>La majorité de ces erreurs ont une cause commune : le traitement manuel. Quand vous compilez vos données TEJ à la main depuis des factures papier ou des fichiers Excel, chaque étape est une opportunité d\'erreur.</p>
+<p>La solution la plus efficace est d\'utiliser un logiciel de facturation qui intègre nativement la gestion des retenues à la source et l\'export TEJ. <a href="/product/offline">SoftyFact Bureau</a> et <a href="/product/online">SoftyFact Cloud</a> sont conçus pour éliminer ces 10 erreurs : calcul automatique des retenues, génération des certificats, export au format exact TEJ, et archivage complet des justificatifs.</p>
+<p>Pour en savoir plus sur l\'automatisation complète de votre déclaration TEJ, consultez notre article sur <a href="/blog/automatiser-declaration-tej-softyfact">l\'automatisation TEJ avec SoftyFact</a>.</p>',
+
+                'body_ar' => '<h2>تصريح TEJ: تمرين مليء بمخاطر الأخطاء</h2>
+<p><a href="/blog/declaration-tej-guide-pratique">تصريح TEJ</a> هو التزام شهري لكل مؤسسة تقوم بـ<a href="/blog/retenue-source-tunisie-guide">خصومات من المورد</a> في تونس. إذا كان المبدأ بسيطًا — التصريح بالمبالغ المخصومة وتحويلها للدولة —، فإن الممارسة مليئة بالمزالق التي قد تكلف غاليًا في شكل غرامات وتعديلات جبائية.</p>
+<p>بعد سنوات من مرافقة المؤسسات التونسية، حددنا الأخطاء العشرة الأكثر شيوعًا عند إيداع تصريحات TEJ. لكل خطأ، نشرح لماذا يحدث وما هي عواقبه والأهم كيفية تجنبه.</p>
+
+<h2>الخطأ رقم 1: إيداع التصريح متأخرًا</h2>
+<h3>المشكلة</h3>
+<p>يجب إيداع تصريح TEJ <strong>قبل 28 من الشهر التالي</strong> للشهر الذي تمت فيه الخصومات. مثال: خصومات مارس 2026 يجب التصريح بها قبل 28 أفريل 2026. العديد من المؤسسات تتجاوز هذا التاريخ، أحيانًا بأيام قليلة فقط.</p>
+<h3>العواقب</h3>
+<p>تُطبَّق غرامة تأخير بنسبة <strong>0.75% شهريًا</strong> على إجمالي المبالغ المصرّح بها. تبدأ هذه الغرامة من اليوم الأول بعد الأجل. حتى تأخر يوم واحد يُحرّك الغرامة عن الشهر بأكمله.</p>
+<h3>الحل</h3>
+<ul>
+<li>برمجوا تذكيرًا متكررًا في <strong>20 من كل شهر</strong> لإعداد التصريح، مما يمنحكم 8 أيام هامش.</li>
+<li>استخدموا برنامج فوترة مثل <a href="/product/offline">SoftyFact Bureau</a> الذي يُنشئ تلقائيًا الملخص الشهري للخصومات، مما يُلغي وقت التجميع اليدوي.</li>
+<li>لا تخلطوا بين تاريخ الإيداع (28) وتاريخ الدفع الأقصى الذي قد يختلف حسب طريقة التسوية.</li>
+</ul>
+
+<h2>الخطأ رقم 2: إدخال معرّف جبائي خاطئ</h2>
+<h3>المشكلة</h3>
+<p>المعرّف الجبائي للمستفيد هو الحقل الأكثر حساسية في تصريح TEJ. خطأ في رقم واحد أو حرف واحد يؤدي إلى رفض السطر من قبل المنصة. الأخطاء الأكثر شيوعًا: عكس الأرقام، نسيان حرف الفئة (A، B، D، P، M، N...)، أو استخدام معرّف قديم.</p>
+<h3>العواقب</h3>
+<p>لا يُحتسب السطر المرفوض في التصريح. لن يتمكن المستفيد من طرح الخصم من أدائه الخاص وسيطالبكم بشهادة خصم مطابقة. إذا لم يُصحح الخطأ، تخاطرون بغرامات لتصريح ناقص.</p>
+<h3>الحل</h3>
+<ul>
+<li>تحققوا بشكل منهجي من المعرّفات الجبائية لمورديكم عند أول معاملة وسجلوها في برنامجكم.</li>
+<li>استخدموا خاصية التحقق من المعرّف المتوفرة على موقع الإدارة العامة للأداءات قبل التقديم.</li>
+<li>مع <a href="/product/offline">SoftyFact</a>، تُسجّل المعرّفات الجبائية في بطاقة المورد وتُستخدم تلقائيًا لكل معاملة، مما يُلغي أخطاء إعادة الإدخال.</li>
+</ul>
+
+<h2>الخطأ رقم 3: تطبيق نسبة خصم خاطئة</h2>
+<h3>المشكلة</h3>
+<p>تتراوح نسب <a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a> في تونس من 1% إلى 25% حسب طبيعة الخدمة ووضع المستفيد. الخلط بين النسب خطأ شائع جدًا:</p>
+<ul>
+<li><strong>1%</strong> للمبالغ المدفوعة بعنوان اقتناء البضائع</li>
+<li><strong>1.5%</strong> للمبالغ المدفوعة بعنوان الخدمات والعمولات والكراء</li>
+<li><strong>3%</strong> لبعض الخدمات المحددة</li>
+<li><strong>5%</strong> للأتعاب خارج العمولات والسمسرة</li>
+<li><strong>10%</strong> لبعض فئات المداخيل</li>
+<li><strong>15%</strong> لغير المقيمين (الحالة العامة)</li>
+<li><strong>20%</strong> لبعض خدمات غير المقيمين</li>
+<li><strong>25%</strong> للمدفوعات نحو الجنات الجبائية</li>
+</ul>
+<h3>العواقب</h3>
+<p>نسبة منخفضة جدًا: ستدفعون الفارق مع الغرامات عند مراقبة جبائية. نسبة مرتفعة جدًا: سيتضرر المورد وسيطالبكم باسترجاع الزائد أو بشهادة جديدة.</p>
+<h3>الحل</h3>
+<ul>
+<li>هيئوا نسب الخصم حسب فئة المورد في برنامج الفوترة.</li>
+<li>في حالة الشك، راجعوا الجداول الرسمية أو خبيركم المحاسب.</li>
+<li>SoftyFact يتيح ربط نسبة خصم افتراضية بكل مورد، تُطبَّق تلقائيًا على كل معاملة.</li>
+</ul>
+
+<h2>الخطأ رقم 4: نسيان مستفيدين في التصريح</h2>
+<h3>المشكلة</h3>
+<p>يجب أن تظهر جميع المدفوعات الخاضعة للخصم في التصريح، <strong>بما في ذلك المبالغ الصغيرة</strong>. بعض المؤسسات تنسى التصريح بالمدفوعات الصغيرة (أقل من 500 دينار) أو المدفوعات العرضية لمقدمي خدمات مؤقتين.</p>
+<h3>العواقب</h3>
+<p>إغفال مستفيد يُشكّل تصريحًا ناقصًا. في حالة مراقبة تقاطعية (المستفيد يُصرّح بأنه خُصم منه مبلغ لم تصرحوا به)، فهذا إشارة تنبيه للإدارة الجبائية.</p>
+<h3>الحل</h3>
+<ul>
+<li>راجعوا <strong>جميع</strong> مدفوعات الشهر، وليس فقط الموردين المنتظمين.</li>
+<li>أدرجوا المدفوعات للمقدمين العرضيين والمستقلين والمتدخلين الظرفيين.</li>
+<li>برنامج فوترة يُركّز جميع المدفوعات مع الخصم ويضمن عدم نسيان أي منها في تصدير TEJ.</li>
+</ul>
+
+<h2>الخطأ رقم 5: الخلط بين المبلغ الإجمالي والمبلغ الصافي</h2>
+<h3>المشكلة</h3>
+<p>يطلب تصريح TEJ <strong>المبلغ الإجمالي</strong> (قبل الخصم) و<strong>المبلغ المخصوم</strong>. بعض المصرّحين يعكسون هذه المبالغ أو يُدخلون المبلغ الصافي (بعد الخصم) بدل الإجمالي.</p>
+<h3>العواقب</h3>
+<p>تُشير المنصة إلى المبالغ غير المتسقة. إذا مرّ الخطأ من الفحوصات التلقائية، سيُكتشف عند المقاربة مع تصريحات المستفيد.</p>
+<h3>الحل</h3>
+<ul>
+<li>تذكروا المعادلة: <strong>المبلغ الإجمالي × النسبة = المبلغ المخصوم</strong>، و<strong>المبلغ الصافي = المبلغ الإجمالي - المبلغ المخصوم</strong>.</li>
+<li>تحققوا من أن المبلغ المخصوم دائمًا أقل من المبلغ الإجمالي.</li>
+<li>استخدموا التصدير التلقائي من SoftyFact الذي يحسب ويُنسّق جميع المبالغ بشكل صحيح.</li>
+</ul>
+
+<h2>الخطأ رقم 6: عدم تسليم شهادات الخصم</h2>
+<h3>المشكلة</h3>
+<p>بعد إجراء خصم، أنتم <strong>ملزمون قانونيًا</strong> بتسليم شهادة خصم من المورد للمستفيد. هذه الشهادة ضرورية حتى يتمكن المورد من طرح الخصم من أدائه الخاص. العديد من المؤسسات تُهمل هذا الالتزام أو تتعامل معه بتأخير.</p>
+<h3>العواقب</h3>
+<p>عدم التسليم مخالفة يعاقب عليها القانون. علاوة على ذلك، سيصر مورّدكم — بحق — على الحصول على هذه الوثيقة، مما يخلق توترات تجارية.</p>
+<h3>الحل</h3>
+<ul>
+<li>حرّروا شهادة الخصم <strong>في نفس وقت الدفع</strong>، وليس بعد ذلك.</li>
+<li>احتفظوا بنسخة من الشهادة في أرشيفكم.</li>
+<li><a href="/product/offline">SoftyFact Bureau</a> يُنشئ تلقائيًا شهادات الخصم المطابقة للمتطلبات القانونية، جاهزة للطباعة أو الإرسال بالبريد الإلكتروني.</li>
+</ul>
+
+<h2>الخطأ رقم 7: تكرار الأسطر في التصريح</h2>
+<h3>المشكلة</h3>
+<p>عند الإدخال اليدوي أو استيراد ملف، قد تتكرر الأسطر: نفس الدفعة لنفس المستفيد تظهر مرتين. يمكن أن يحدث هذا أثناء تصحيح أو استيراد متتالي دون تحقق.</p>
+<h3>العواقب</h3>
+<p>تُصرّحون وتدفعون ضعف المبلغ المخصوم فعليًا. التصحيح اللاحق مُرهق وقد يستلزم تصريحًا تصحيحيًا.</p>
+<h3>الحل</h3>
+<ul>
+<li>قبل التقديم، تحققوا من العدد الإجمالي للأسطر والمبلغ الإجمالي. قارنوهما مع محاسبتكم.</li>
+<li>إذا استوردتم ملفًا، لا تعيدوا الاستيراد دون حذف البيانات المستوردة سابقًا.</li>
+<li>تصدير TEJ من SoftyFact يُنشأ من بيانات الفوترة بدون إمكانية تكرار.</li>
+</ul>
+
+<h2>الخطأ رقم 8: صيغة ملف خاطئة عند الاستيراد</h2>
+<h3>المشكلة</h3>
+<p>تقبل منصة TEJ استيراد ملفات بصيغة منظمة (CSV أو XML). أخطاء الصيغة شائعة: فاصل خاطئ (فاصلة بدل فاصلة منقوطة)، ترميز غير صحيح للأحرف العربية، أعمدة بترتيب خاطئ، أو صيغة تاريخ غير مطابقة.</p>
+<h3>العواقب</h3>
+<p>يُرفض الملف كليًا أو جزئيًا. يجب التصحيح وإعادة الاستيراد، مما يضيع وقتًا ثمينًا، خاصة إذا كنتم قريبين من الموعد النهائي.</p>
+<h3>الحل</h3>
+<ul>
+<li>استخدموا دائمًا نموذج الملف المقدم من الإدارة العامة للأداءات كمرجع.</li>
+<li>اختبروا ملفكم بعينة صغيرة قبل الاستيراد الكامل.</li>
+<li>SoftyFact يُنشئ ملفات بالصيغة الدقيقة المتوقعة من منصة TEJ، مما يُلغي كل خطر خطأ في الصيغة.</li>
+</ul>
+
+<h2>الخطأ رقم 9: عدم تصحيح تصريح خاطئ</h2>
+<h3>المشكلة</h3>
+<p>بعض المؤسسات تكتشف خطأ في تصريح سبق تقديمه (نسبة خاطئة، مستفيد منسي، مبلغ غير صحيح) لكنها لا تصححه، أملاً في أن يمر دون ملاحظة.</p>
+<h3>العواقب</h3>
+<p>تُجري الإدارة الجبائية مراقبات تقاطعية بين تصريحات مختلف الأطراف. عدم تناسق غير مصحح سيؤدي إلى فحص معمّق لملفكم. العقوبات أثقل على الأخطاء غير المصححة تلقائيًا مقارنة بتلك المصححة من قبل المكلف بالأداء.</p>
+<h3>الحل</h3>
+<ul>
+<li>قدّموا <strong>تصريحًا تصحيحيًا</strong> فور اكتشاف الخطأ. التصحيح التلقائي يُنظر إليه دائمًا بشكل أفضل من الاكتشاف أثناء مراقبة.</li>
+<li>تتيح منصة TEJ تقديم تصريحات تصحيحية للفترات السابقة.</li>
+<li>احتفظوا بسجل التصحيحات المنجزة لمتابعتكم الداخلية.</li>
+</ul>
+
+<h2>الخطأ رقم 10: عدم أرشفة المبررات</h2>
+<h3>المشكلة</h3>
+<p>تصريح TEJ هو الجزء الظاهر من جبل الجليد. وراء كل سطر في التصريح، يجب أن توجد فاتورة أو عقد أو أمر شراء يبرر الدفع والخصم. بعض المؤسسات تُودع التصريح لكنها لا تحتفظ بالوثائق المبررة المقابلة.</p>
+<h3>العواقب</h3>
+<p>في حالة مراقبة جبائية (والحفظ واجب لمدة <strong>10 سنوات</strong>)، عدم القدرة على تقديم المبررات قد يؤدي إلى التشكيك في الخصومات المصرّح بها وتوظيف تلقائي للأداء.</p>
+<h3>الحل</h3>
+<ul>
+<li>لكل سطر من تصريح TEJ، احتفظوا بـ: فاتورة المورد، مبرر الدفع، ونسخة من شهادة الخصم.</li>
+<li>نظّموا أرشيفكم حسب الشهر وحسب المورد.</li>
+<li>SoftyFact يحفظ تلقائيًا جميع الفواتير والمدفوعات والشهادات المرتبطة، متاحة ببضع نقرات للمراقبات المستقبلية.</li>
+</ul>
+
+<h2>جدول ملخص للأخطاء والحلول</h2>
+<p>إليكم ملخصًا سريعًا كمرجع:</p>
+<ul>
+<li><strong>تأخر الإيداع:</strong> تذكير في 20 من الشهر + تصدير تلقائي</li>
+<li><strong>معرّف خاطئ:</strong> تحقق عند إنشاء المورد + قاعدة مركزية</li>
+<li><strong>نسبة خاطئة:</strong> نسبة مُهيأة مسبقًا حسب المورد</li>
+<li><strong>مستفيد منسي:</strong> مراجعة منهجية + تصدير شامل</li>
+<li><strong>إجمالي/صافي:</strong> حساب تلقائي + مصادقة</li>
+<li><strong>شهادة غير مسلّمة:</strong> إنشاء تلقائي عند كل خصم</li>
+<li><strong>أسطر مكررة:</strong> تصدير وحيد من البيانات المصدر</li>
+<li><strong>صيغة ملف:</strong> تصدير بالصيغة الدقيقة لـTEJ</li>
+<li><strong>خطأ غير مصحح:</strong> تصريح تصحيحي فوري</li>
+<li><strong>مبررات مفقودة:</strong> أرشفة تلقائية مرتبطة</li>
+</ul>
+
+<h2>الخلاصة: أتمتوا حتى لا تُخطئوا</h2>
+<p>غالبية هذه الأخطاء لها سبب مشترك: المعالجة اليدوية. عندما تجمعون بيانات TEJ يدويًا من فواتير ورقية أو ملفات إكسل، فكل مرحلة هي فرصة للخطأ.</p>
+<p>الحل الأكثر فعالية هو استخدام برنامج فوترة يدمج بشكل أصلي إدارة الخصم من المورد وتصدير TEJ. <a href="/product/offline">SoftyFact Bureau</a> و<a href="/product/online">SoftyFact Cloud</a> مصممان لإلغاء هذه الأخطاء العشرة: حساب تلقائي للخصومات، إنشاء الشهادات، تصدير بالصيغة الدقيقة لـTEJ، وأرشفة شاملة للمبررات.</p>
+<p>لمعرفة المزيد عن الأتمتة الشاملة لتصريح TEJ، اطلعوا على مقالنا حول <a href="/blog/automatiser-declaration-tej-softyfact">أتمتة TEJ مع SoftyFact</a>.</p>',
+
+                'meta_description_fr' => 'Les 10 erreurs les plus fréquentes sur la déclaration TEJ en Tunisie : matricules erronés, retards, mauvais taux. Solutions concrètes pour chaque erreur.',
+                'meta_description_ar' => 'الأخطاء العشرة الأكثر شيوعًا في تصريح TEJ في تونس: معرّفات خاطئة وتأخيرات ونسب خاطئة. حلول عملية لكل خطأ.',
+                'meta_keywords' => 'erreurs TEJ tunisie, déclaration TEJ erreurs courantes, retenue source erreurs, pénalités TEJ tunisie',
+                'cover_image' => null,
+                'reading_time' => 9,
+                'published_at' => '2026-04-10 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 26 — Automatiser TEJ avec SoftyFact
+            // ============================================================
+            [
+                'slug' => 'automatiser-declaration-tej-softyfact',
+                'title_fr' => 'Automatiser votre déclaration TEJ avec SoftyFact : gagnez du temps et évitez les erreurs',
+                'title_ar' => 'أتمتة تصريح TEJ مع SoftyFact: وفّروا الوقت وتجنبوا الأخطاء',
+                'excerpt_fr' => 'Découvrez comment SoftyFact automatise entièrement votre déclaration TEJ : calcul des retenues, génération des certificats et export prêt à déposer.',
+                'excerpt_ar' => 'اكتشفوا كيف يُؤتمت SoftyFact بالكامل تصريحكم TEJ: حساب الخصومات وإنشاء الشهادات وتصدير جاهز للإيداع.',
+                'body_fr' => '<h2>Le cauchemar mensuel de la déclaration TEJ</h2>
+<p>Chaque mois, c\'est le même scénario dans des milliers d\'entreprises tunisiennes : il faut compiler les données de <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a>, vérifier les taux, formater le fichier et le déposer sur la <a href="/blog/declaration-tej-guide-pratique">plateforme TEJ</a> avant le 28 du mois. Un processus qui prend entre 4 et 8 heures quand il est fait manuellement, et qui est parsemé de risques d\'<a href="/blog/erreurs-courantes-declaration-tej-tunisie">erreurs coûteuses</a>.</p>
+<p>Et si tout ce processus pouvait être réduit à quelques clics ? C\'est exactement ce que propose SoftyFact. Dans cet article, nous vous montrons comment notre logiciel transforme la déclaration TEJ d\'une corvée mensuelle en une opération simple, rapide et sans erreur.</p>
+
+<h2>Avant SoftyFact : le processus manuel typique</h2>
+<p>Voici ce que vivent la plupart des entreprises qui gèrent la TEJ sans logiciel adapté :</p>
+
+<h3>Étape 1 : Collecte des données (2 à 3 heures)</h3>
+<ul>
+<li>Rassembler toutes les factures fournisseurs du mois</li>
+<li>Identifier celles qui sont soumises à la retenue à la source</li>
+<li>Retrouver le matricule fiscal de chaque fournisseur</li>
+<li>Vérifier le taux de retenue applicable à chaque prestation</li>
+</ul>
+
+<h3>Étape 2 : Calcul et saisie (1 à 2 heures)</h3>
+<ul>
+<li>Calculer le montant de la retenue pour chaque facture</li>
+<li>Saisir les données ligne par ligne dans un tableur ou directement sur la plateforme</li>
+<li>Vérifier les totaux et corriger les incohérences</li>
+</ul>
+
+<h3>Étape 3 : Dépôt et certificats (1 à 2 heures)</h3>
+<ul>
+<li>Formater le fichier au format CSV/XML attendu par la plateforme</li>
+<li>Résoudre les erreurs de format ou de données rejetées</li>
+<li>Soumettre la déclaration</li>
+<li>Générer et envoyer les certificats de retenue aux fournisseurs</li>
+</ul>
+
+<p><strong>Bilan : 4 à 8 heures de travail</strong>, avec des risques d\'erreur à chaque étape. Pour une entreprise qui paie son comptable ou responsable financier 15 DT de l\'heure en salaire chargé, cela représente <strong>60 à 120 DT par mois rien que pour la déclaration TEJ</strong>.</p>
+
+<h2>Avec SoftyFact : le processus automatisé</h2>
+<p>Voici comment le même processus se déroule avec <a href="/product/offline">SoftyFact Bureau</a> ou <a href="/product/online">SoftyFact Cloud</a> :</p>
+
+<h3>Pendant le mois : rien à faire de plus</h3>
+<p>Quand vous créez vos factures d\'achat dans SoftyFact au quotidien, le logiciel :</p>
+<ul>
+<li><strong>Enregistre automatiquement le matricule fiscal</strong> du fournisseur (saisi une seule fois dans sa fiche)</li>
+<li><strong>Applique automatiquement le bon taux de retenue</strong> configuré pour ce fournisseur ou cette catégorie de prestation</li>
+<li><strong>Calcule le montant de la retenue</strong> sans intervention manuelle</li>
+<li><strong>Enregistre le paiement</strong> avec le montant net versé et la retenue effectuée</li>
+</ul>
+<p>En d\'autres termes, la donnée TEJ est construite progressivement tout au long du mois, sans effort supplémentaire.</p>
+
+<h3>Le 20 du mois : génération en 3 clics</h3>
+<ol>
+<li><strong>Clic 1 :</strong> Accédez au module « Retenues à la source » et sélectionnez la période (mois concerné).</li>
+<li><strong>Clic 2 :</strong> Visualisez le récapitulatif : liste de tous les fournisseurs avec retenue, montants bruts, taux appliqués, montants retenus. Corrigez si nécessaire (rare car tout est déjà vérifié).</li>
+<li><strong>Clic 3 :</strong> Exportez le fichier au format compatible TEJ (CSV structuré). Le fichier est prêt à être importé directement sur la plateforme de la DGI.</li>
+</ol>
+<p><strong>Temps total : 15 à 30 minutes</strong>, au lieu de 4 à 8 heures.</p>
+
+<h3>Certificats de retenue : en un clic</h3>
+<p>Après l\'export, générez en un clic tous les certificats de retenue du mois :</p>
+<ul>
+<li>Format conforme aux exigences légales tunisiennes</li>
+<li>Toutes les mentions obligatoires pré-remplies</li>
+<li>Export PDF pour impression ou envoi par email</li>
+<li>Archivage automatique dans le dossier du fournisseur</li>
+</ul>
+
+<h2>Fonctionnalité par fonctionnalité</h2>
+
+<h3>Configuration des taux de retenue</h3>
+<p>Dans SoftyFact, vous configurez le taux de retenue applicable à chaque fournisseur ou catégorie de prestation :</p>
+<ul>
+<li>Taux par défaut configurable par fournisseur (1%, 1,5%, 3%, 5%, 10%, 15%, 20%, 25%)</li>
+<li>Possibilité de modifier le taux ponctuellement pour une facture spécifique</li>
+<li>Gestion des cas d\'exonération (fournisseurs dispensés de retenue)</li>
+<li>Historique des taux appliqués pour traçabilité</li>
+</ul>
+
+<h3>Calcul automatique sur chaque facture</h3>
+<p>Dès qu\'une facture d\'achat est saisie pour un fournisseur avec un taux de retenue configuré :</p>
+<ul>
+<li>Le montant de la retenue est calculé automatiquement</li>
+<li>Le montant net à payer est affiché clairement</li>
+<li>La ligne de retenue apparaît sur la facture imprimée</li>
+<li>Les données sont automatiquement incluses dans le récapitulatif TEJ du mois</li>
+</ul>
+
+<h3>Tableau de bord des retenues</h3>
+<p>Un tableau de bord dédié vous donne une vue d\'ensemble en temps réel :</p>
+<ul>
+<li><strong>Total des retenues du mois en cours</strong> : suivez le montant à déclarer au fil des jours</li>
+<li><strong>Ventilation par taux</strong> : visualisez la répartition des retenues par taux (1%, 1,5%, 5%, etc.)</li>
+<li><strong>Statut des certificats</strong> : identifiez les certificats déjà générés et ceux en attente</li>
+<li><strong>Historique par mois</strong> : accédez aux récapitulatifs des mois précédents pour comparaison</li>
+<li><strong>Alertes d\'échéance</strong> : recevez un rappel automatique à l\'approche de la date limite du 28</li>
+</ul>
+
+<h3>Export TEJ compatible</h3>
+<p>L\'export est le point critique du processus. SoftyFact génère un fichier qui respecte exactement les spécifications de la plateforme TEJ :</p>
+<ul>
+<li>Format CSV structuré avec le bon séparateur et encodage</li>
+<li>Colonnes dans l\'ordre exact attendu par la plateforme</li>
+<li>Matricules fiscaux validation format correct</li>
+<li>Dates au format requis</li>
+<li>Pas de doublons, pas de lignes vides</li>
+</ul>
+<p>Il vous suffit de télécharger ce fichier et de le charger sur la plateforme de la DGI. Zéro reformatage, zéro manipulation manuelle.</p>
+
+<h3>Génération des certificats de retenue</h3>
+<p>Les certificats de retenue sont générés automatiquement avec :</p>
+<ul>
+<li>Identification complète de votre entreprise (émetteur)</li>
+<li>Identification complète du fournisseur (bénéficiaire)</li>
+<li>Détail de chaque paiement : date, montant brut, taux, montant retenu</li>
+<li>Numéro de certificat séquentiel</li>
+<li>Espace pour signature et cachet</li>
+</ul>
+
+<h2>Comparatif : avant et après SoftyFact</h2>
+
+<h3>Temps consacré à la déclaration TEJ</h3>
+<ul>
+<li><strong>Sans SoftyFact :</strong> 4 à 8 heures par mois</li>
+<li><strong>Avec SoftyFact :</strong> 15 à 30 minutes par mois</li>
+<li><strong>Gain :</strong> 3,5 à 7,5 heures par mois = <strong>42 à 90 heures par an</strong></li>
+</ul>
+
+<h3>Taux d\'erreur</h3>
+<ul>
+<li><strong>Sans SoftyFact :</strong> 5 à 15% des lignes contiennent une erreur (matricule, taux, montant)</li>
+<li><strong>Avec SoftyFact :</strong> Proche de 0% (données vérifiées en amont)</li>
+</ul>
+
+<h3>Coût mensuel de la déclaration</h3>
+<ul>
+<li><strong>Sans SoftyFact :</strong> 60 à 120 DT/mois (temps du responsable financier)</li>
+<li><strong>Avec SoftyFact :</strong> 5 à 10 DT/mois (temps résiduel)</li>
+<li><strong>Économie :</strong> 55 à 110 DT par mois = <strong>660 à 1 320 DT par an</strong></li>
+</ul>
+
+<h3>Risque de pénalités</h3>
+<ul>
+<li><strong>Sans SoftyFact :</strong> Risque réel de pénalités pour retard, erreurs ou omissions</li>
+<li><strong>Avec SoftyFact :</strong> Risque quasi nul grâce aux alertes, vérifications automatiques et export conforme</li>
+</ul>
+
+<h2>Workflow complet : de la facture à la déclaration</h2>
+<p>Voici le processus automatisé de bout en bout :</p>
+<ol>
+<li><strong>Réception de la facture fournisseur :</strong> Vous saisissez la facture dans SoftyFact (ou elle est importée automatiquement si vous utilisez la version Cloud).</li>
+<li><strong>Application automatique de la retenue :</strong> Le logiciel détecte que le fournisseur est soumis à retenue, applique le taux configuré et calcule le montant.</li>
+<li><strong>Paiement :</strong> Vous enregistrez le paiement. SoftyFact affiche le montant net à verser et archive le détail de la retenue.</li>
+<li><strong>Récapitulatif mensuel :</strong> En fin de mois, toutes les retenues sont compilées automatiquement.</li>
+<li><strong>Export TEJ :</strong> Vous générez le fichier en un clic et le déposez sur la plateforme DGI.</li>
+<li><strong>Certificats :</strong> Vous générez et envoyez les certificats de retenue à chaque fournisseur.</li>
+<li><strong>Archivage :</strong> Tout est conservé dans SoftyFact : factures, paiements, retenues, certificats, fichier TEJ exporté.</li>
+</ol>
+
+<h2>Questions fréquentes</h2>
+
+<h3>Est-ce que SoftyFact gère tous les taux de retenue tunisiens ?</h3>
+<p>Oui. Tous les taux en vigueur (1%, 1,5%, 3%, 5%, 10%, 15%, 20%, 25%) sont disponibles et configurables par fournisseur.</p>
+
+<h3>Le fichier exporté est-il directement importable sur la plateforme TEJ ?</h3>
+<p>Oui. Le format est testé et validé pour être compatible avec la plateforme de la DGI, sans aucun reformatage nécessaire.</p>
+
+<h3>Puis-je générer les certificats de retenue pour le mois entier d\'un coup ?</h3>
+<p>Oui. Vous pouvez générer individuellement ou en lot tous les certificats d\'un mois donné.</p>
+
+<h3>Que se passe-t-il si je dois corriger une retenue après coup ?</h3>
+<p>Vous pouvez modifier la retenue sur une facture et régénérer le récapitulatif. Le système conserve l\'historique des modifications pour traçabilité.</p>
+
+<h2>Commencez dès aujourd\'hui</h2>
+<p>La prochaine échéance TEJ approche. Plutôt que de passer encore une demi-journée à compiler vos données manuellement, essayez SoftyFact :</p>
+<ul>
+<li><a href="/product/offline">SoftyFact Bureau</a> — 149 DT (paiement unique) : idéal pour un poste de travail, fonctionne hors-ligne</li>
+<li><a href="/product/online">SoftyFact Cloud</a> — 99 DT/mois : multi-utilisateurs, accessible partout, sauvegardes automatiques</li>
+</ul>
+<p>Les deux versions incluent la gestion complète des retenues à la source, l\'export TEJ automatique et la génération des certificats. Le support en français et en arabe est inclus.</p>
+<p><strong>Gagnez du temps. Éliminez les erreurs. Restez conforme.</strong> Passez à SoftyFact pour votre prochaine déclaration TEJ.</p>',
+
+                'body_ar' => '<h2>كابوس تصريح TEJ الشهري</h2>
+<p>كل شهر، نفس السيناريو في آلاف المؤسسات التونسية: يجب تجميع بيانات <a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a>، التحقق من النسب، تنسيق الملف وإيداعه على <a href="/blog/declaration-tej-guide-pratique">منصة TEJ</a> قبل 28 من الشهر. عملية تستغرق بين 4 و8 ساعات عند إنجازها يدويًا، ومحفوفة بمخاطر <a href="/blog/erreurs-courantes-declaration-tej-tunisie">أخطاء مكلفة</a>.</p>
+<p>ماذا لو أمكن اختصار كل هذه العملية إلى بضع نقرات؟ هذا بالضبط ما يقترحه SoftyFact. في هذا المقال، نُريكم كيف يحوّل برنامجنا تصريح TEJ من عبء شهري إلى عملية بسيطة وسريعة وخالية من الأخطاء.</p>
+
+<h2>قبل SoftyFact: العملية اليدوية النموذجية</h2>
+<p>إليكم ما تعيشه أغلب المؤسسات التي تدير TEJ بدون برنامج مناسب:</p>
+
+<h3>المرحلة الأولى: جمع البيانات (2 إلى 3 ساعات)</h3>
+<ul>
+<li>تجميع جميع فواتير الموردين للشهر</li>
+<li>تحديد تلك الخاضعة للخصم من المورد</li>
+<li>البحث عن المعرّف الجبائي لكل مورد</li>
+<li>التحقق من نسبة الخصم المطبقة على كل خدمة</li>
+</ul>
+
+<h3>المرحلة الثانية: الحساب والإدخال (1 إلى 2 ساعة)</h3>
+<ul>
+<li>حساب مبلغ الخصم لكل فاتورة</li>
+<li>إدخال البيانات سطرًا بسطر في جدول بيانات أو مباشرة على المنصة</li>
+<li>التحقق من المجاميع وتصحيح التناقضات</li>
+</ul>
+
+<h3>المرحلة الثالثة: الإيداع والشهادات (1 إلى 2 ساعة)</h3>
+<ul>
+<li>تنسيق الملف بالصيغة CSV/XML المطلوبة من المنصة</li>
+<li>حل أخطاء الصيغة أو البيانات المرفوضة</li>
+<li>تقديم التصريح</li>
+<li>إنشاء وإرسال شهادات الخصم للموردين</li>
+</ul>
+
+<p><strong>الحصيلة: 4 إلى 8 ساعات عمل</strong>، مع مخاطر خطأ في كل مرحلة. بالنسبة لمؤسسة تدفع لمحاسبها أو مسؤولها المالي 15 دينار في الساعة (أجر إجمالي)، هذا يمثل <strong>60 إلى 120 دينار شهريًا فقط لتصريح TEJ</strong>.</p>
+
+<h2>مع SoftyFact: العملية المؤتمتة</h2>
+<p>إليكم كيف تجري نفس العملية مع <a href="/product/offline">SoftyFact Bureau</a> أو <a href="/product/online">SoftyFact Cloud</a>:</p>
+
+<h3>خلال الشهر: لا شيء إضافي</h3>
+<p>عندما تُنشئون فواتير الشراء في SoftyFact يوميًا، يقوم البرنامج بـ:</p>
+<ul>
+<li><strong>تسجيل المعرّف الجبائي تلقائيًا</strong> للمورد (يُدخل مرة واحدة في بطاقته)</li>
+<li><strong>تطبيق نسبة الخصم الصحيحة تلقائيًا</strong> المُهيأة لهذا المورد أو فئة الخدمة</li>
+<li><strong>حساب مبلغ الخصم</strong> بدون تدخل يدوي</li>
+<li><strong>تسجيل الدفع</strong> بالمبلغ الصافي المحوّل والخصم المنجز</li>
+</ul>
+<p>بمعنى آخر، تُبنى بيانات TEJ تدريجيًا طوال الشهر، بدون جهد إضافي.</p>
+
+<h3>في 20 من الشهر: إنشاء بـ3 نقرات</h3>
+<ol>
+<li><strong>النقرة الأولى:</strong> ادخلوا إلى وحدة "الخصم من المورد" واختاروا الفترة (الشهر المعني).</li>
+<li><strong>النقرة الثانية:</strong> اطلعوا على الملخص: قائمة جميع الموردين مع الخصم، المبالغ الإجمالية، النسب المطبقة، المبالغ المخصومة. صححوا إذا لزم الأمر (نادر لأن كل شيء مُتحقق منه مسبقًا).</li>
+<li><strong>النقرة الثالثة:</strong> صدّروا الملف بالصيغة المتوافقة مع TEJ (CSV منظم). الملف جاهز للاستيراد مباشرة على منصة الإدارة العامة للأداءات.</li>
+</ol>
+<p><strong>الوقت الإجمالي: 15 إلى 30 دقيقة</strong>، بدلاً من 4 إلى 8 ساعات.</p>
+
+<h3>شهادات الخصم: بنقرة واحدة</h3>
+<p>بعد التصدير، أنشئوا بنقرة واحدة جميع شهادات الخصم للشهر:</p>
+<ul>
+<li>صيغة مطابقة للمتطلبات القانونية التونسية</li>
+<li>جميع البيانات الإلزامية مُعبأة مسبقًا</li>
+<li>تصدير PDF للطباعة أو الإرسال بالبريد الإلكتروني</li>
+<li>أرشفة تلقائية في ملف المورد</li>
+</ul>
+
+<h2>ميزة بميزة</h2>
+
+<h3>تهيئة نسب الخصم</h3>
+<p>في SoftyFact، تُهيئون نسبة الخصم المطبقة على كل مورد أو فئة خدمة:</p>
+<ul>
+<li>نسبة افتراضية قابلة للتهيئة حسب المورد (1%، 1.5%، 3%، 5%، 10%، 15%، 20%، 25%)</li>
+<li>إمكانية تعديل النسبة ظرفيًا لفاتورة معينة</li>
+<li>إدارة حالات الإعفاء (موردون معفون من الخصم)</li>
+<li>سجل النسب المطبقة للتتبع</li>
+</ul>
+
+<h3>الحساب التلقائي على كل فاتورة</h3>
+<p>بمجرد إدخال فاتورة شراء لمورد بنسبة خصم مُهيأة:</p>
+<ul>
+<li>يُحسب مبلغ الخصم تلقائيًا</li>
+<li>يُعرض المبلغ الصافي للدفع بوضوح</li>
+<li>يظهر سطر الخصم على الفاتورة المطبوعة</li>
+<li>تُدرج البيانات تلقائيًا في ملخص TEJ للشهر</li>
+</ul>
+
+<h3>لوحة متابعة الخصومات</h3>
+<p>لوحة متابعة مخصصة تمنحكم رؤية شاملة فورية:</p>
+<ul>
+<li><strong>إجمالي خصومات الشهر الجاري:</strong> تابعوا المبلغ الواجب التصريح به يومًا بيوم</li>
+<li><strong>التوزيع حسب النسبة:</strong> تصوروا توزيع الخصومات حسب النسبة (1%، 1.5%، 5%، إلخ)</li>
+<li><strong>حالة الشهادات:</strong> حددوا الشهادات المُنشأة وتلك في الانتظار</li>
+<li><strong>السجل الشهري:</strong> اطلعوا على ملخصات الأشهر السابقة للمقارنة</li>
+<li><strong>تنبيهات الآجال:</strong> تلقوا تذكيرًا تلقائيًا عند اقتراب الموعد النهائي في 28</li>
+</ul>
+
+<h3>تصدير TEJ متوافق</h3>
+<p>التصدير هو النقطة الحرجة في العملية. يُنشئ SoftyFact ملفًا يحترم بالضبط مواصفات منصة TEJ:</p>
+<ul>
+<li>صيغة CSV منظمة بالفاصل والترميز الصحيحين</li>
+<li>أعمدة بالترتيب الدقيق المتوقع من المنصة</li>
+<li>معرّفات جبائية بصيغة صحيحة ومُتحقق منها</li>
+<li>تواريخ بالصيغة المطلوبة</li>
+<li>بدون تكرارات وبدون أسطر فارغة</li>
+</ul>
+<p>يكفي تحميل هذا الملف وتحميله على منصة الإدارة العامة للأداءات. صفر إعادة تنسيق، صفر معالجة يدوية.</p>
+
+<h3>إنشاء شهادات الخصم</h3>
+<p>تُنشأ شهادات الخصم تلقائيًا مع:</p>
+<ul>
+<li>التعريف الكامل بمؤسستكم (المُصدر)</li>
+<li>التعريف الكامل بالمورد (المستفيد)</li>
+<li>تفصيل كل دفعة: التاريخ، المبلغ الإجمالي، النسبة، المبلغ المخصوم</li>
+<li>رقم شهادة تسلسلي</li>
+<li>مساحة للتوقيع والختم</li>
+</ul>
+
+<h2>مقارنة: قبل وبعد SoftyFact</h2>
+
+<h3>الوقت المخصص لتصريح TEJ</h3>
+<ul>
+<li><strong>بدون SoftyFact:</strong> 4 إلى 8 ساعات شهريًا</li>
+<li><strong>مع SoftyFact:</strong> 15 إلى 30 دقيقة شهريًا</li>
+<li><strong>الربح:</strong> 3.5 إلى 7.5 ساعة شهريًا = <strong>42 إلى 90 ساعة سنويًا</strong></li>
+</ul>
+
+<h3>نسبة الأخطاء</h3>
+<ul>
+<li><strong>بدون SoftyFact:</strong> 5 إلى 15% من الأسطر تحتوي على خطأ (معرّف، نسبة، مبلغ)</li>
+<li><strong>مع SoftyFact:</strong> قريبة من 0% (بيانات مُتحقق منها مسبقًا)</li>
+</ul>
+
+<h3>التكلفة الشهرية للتصريح</h3>
+<ul>
+<li><strong>بدون SoftyFact:</strong> 60 إلى 120 دينار/شهر (وقت المسؤول المالي)</li>
+<li><strong>مع SoftyFact:</strong> 5 إلى 10 دينار/شهر (وقت متبقي)</li>
+<li><strong>التوفير:</strong> 55 إلى 110 دينار شهريًا = <strong>660 إلى 1,320 دينار سنويًا</strong></li>
+</ul>
+
+<h3>خطر العقوبات</h3>
+<ul>
+<li><strong>بدون SoftyFact:</strong> خطر حقيقي لعقوبات بسبب تأخير أو أخطاء أو إغفالات</li>
+<li><strong>مع SoftyFact:</strong> خطر شبه معدوم بفضل التنبيهات والتحققات التلقائية والتصدير المطابق</li>
+</ul>
+
+<h2>سير العمل الكامل: من الفاتورة إلى التصريح</h2>
+<p>إليكم العملية المؤتمتة من البداية إلى النهاية:</p>
+<ol>
+<li><strong>استلام فاتورة المورد:</strong> تُدخلون الفاتورة في SoftyFact (أو تُستورد تلقائيًا إذا كنتم تستخدمون النسخة السحابية).</li>
+<li><strong>التطبيق التلقائي للخصم:</strong> يكشف البرنامج أن المورد خاضع للخصم ويُطبّق النسبة المُهيأة ويحسب المبلغ.</li>
+<li><strong>الدفع:</strong> تُسجّلون الدفع. يعرض SoftyFact المبلغ الصافي للتحويل ويحفظ تفاصيل الخصم.</li>
+<li><strong>الملخص الشهري:</strong> في نهاية الشهر، تُجمّع جميع الخصومات تلقائيًا.</li>
+<li><strong>تصدير TEJ:</strong> تُنشئون الملف بنقرة واحدة وتُودعونه على منصة الإدارة العامة للأداءات.</li>
+<li><strong>الشهادات:</strong> تُنشئون وترسلون شهادات الخصم لكل مورد.</li>
+<li><strong>الأرشفة:</strong> كل شيء محفوظ في SoftyFact: فواتير ومدفوعات وخصومات وشهادات وملف TEJ المُصدّر.</li>
+</ol>
+
+<h2>أسئلة شائعة</h2>
+
+<h3>هل يدير SoftyFact جميع نسب الخصم التونسية؟</h3>
+<p>نعم. جميع النسب المعمول بها (1%، 1.5%، 3%، 5%، 10%، 15%، 20%، 25%) متوفرة وقابلة للتهيئة حسب المورد.</p>
+
+<h3>هل الملف المُصدّر قابل للاستيراد مباشرة على منصة TEJ؟</h3>
+<p>نعم. الصيغة مُختبرة ومُصادق عليها لتكون متوافقة مع منصة الإدارة العامة للأداءات، بدون أي إعادة تنسيق.</p>
+
+<h3>هل يمكنني إنشاء شهادات الخصم للشهر بأكمله دفعة واحدة؟</h3>
+<p>نعم. يمكنكم الإنشاء فرديًا أو دفعة واحدة لجميع شهادات شهر معين.</p>
+
+<h3>ماذا يحدث إذا اضطررت لتصحيح خصم بعد ذلك؟</h3>
+<p>يمكنكم تعديل الخصم على فاتورة وإعادة إنشاء الملخص. يحتفظ النظام بسجل التعديلات للتتبع.</p>
+
+<h2>ابدأوا اليوم</h2>
+<p>الموعد النهائي القادم لـTEJ يقترب. بدلاً من قضاء نصف يوم آخر في تجميع بياناتكم يدويًا، جربوا SoftyFact:</p>
+<ul>
+<li><a href="/product/offline">SoftyFact Bureau</a> — 149 دينار (دفعة واحدة): مثالي لحاسوب واحد، يعمل بدون إنترنت</li>
+<li><a href="/product/online">SoftyFact Cloud</a> — 99 دينار/شهر: متعدد المستخدمين، متاح في كل مكان، نسخ احتياطية تلقائية</li>
+</ul>
+<p>النسختان تتضمنان الإدارة الشاملة للخصم من المورد والتصدير التلقائي لـTEJ وإنشاء الشهادات. الدعم بالفرنسية والعربية مشمول.</p>
+<p><strong>وفّروا الوقت. أزيلوا الأخطاء. ابقوا مطابقين.</strong> انتقلوا إلى SoftyFact لتصريحكم القادم TEJ.</p>',
+
+                'meta_description_fr' => 'Automatisez votre déclaration TEJ avec SoftyFact : calcul automatique des retenues, export conforme, certificats en 1 clic. Gagnez 7h par mois.',
+                'meta_description_ar' => 'أتمتوا تصريح TEJ مع SoftyFact: حساب تلقائي للخصومات، تصدير مطابق، شهادات بنقرة واحدة. وفّروا 7 ساعات شهريًا.',
+                'meta_keywords' => 'automatiser TEJ tunisie, logiciel déclaration TEJ, SoftyFact TEJ, retenue source automatique tunisie',
+                'cover_image' => null,
+                'reading_time' => 8,
+                'published_at' => '2026-04-14 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 27 — TEJ pour les débutants : FAQ
+            // ============================================================
+            [
+                'slug' => 'tej-debutants-faq-tunisie',
+                'title_fr' => 'TEJ pour les débutants : réponses aux 15 questions les plus fréquentes',
+                'title_ar' => 'TEJ للمبتدئين: إجابات على أكثر 15 سؤالًا شيوعًا',
+                'excerpt_fr' => 'Vous débutez avec la déclaration TEJ ? Ce guide FAQ répond simplement aux 15 questions que se posent tous les nouveaux déclarants en Tunisie.',
+                'excerpt_ar' => 'أنتم مبتدئون مع تصريح TEJ؟ هذا الدليل يجيب ببساطة على 15 سؤالًا يطرحها جميع المصرّحين الجدد في تونس.',
+                'body_fr' => '<h2>Introduction</h2>
+<p>Vous venez de créer votre entreprise en Tunisie, ou vous prenez en charge la comptabilité pour la première fois, et vous découvrez l\'obligation de la déclaration TEJ ? Pas de panique. Ce guide FAQ est conçu pour répondre simplement et clairement aux questions que se posent tous les débutants sur la <a href="/blog/declaration-tej-guide-pratique">plateforme TEJ</a> et les <a href="/blog/retenue-source-tunisie-guide">retenues à la source</a>.</p>
+
+<h2>1. Qu\'est-ce que TEJ exactement ?</h2>
+<p><strong>TEJ</strong> (Télé-déclaration par Échange de données informatisé) est la plateforme en ligne de la <strong>Direction Générale des Impôts (DGI)</strong> en Tunisie qui permet aux entreprises de déclarer électroniquement les retenues à la source qu\'elles ont effectuées sur les paiements versés à leurs fournisseurs et prestataires. C\'est le remplacement du dépôt papier des déclarations de retenue.</p>
+
+<h2>2. Qu\'est-ce que la retenue à la source ?</h2>
+<p>La <a href="/blog/retenue-source-tunisie-guide">retenue à la source</a> est un prélèvement obligatoire que vous effectuez lorsque vous payez certains fournisseurs ou prestataires. Au lieu de verser 100% du montant au fournisseur, vous retenez un pourcentage (le taux de retenue) et le reversez directement à l\'État via la déclaration TEJ. Le fournisseur reçoit un certificat prouvant cette retenue, qu\'il utilisera pour réduire son propre impôt.</p>
+<p><strong>Exemple simple :</strong> Vous devez 1 000 DT à un prestataire de services soumis au taux de 1,5%. Vous retenez 15 DT (1 000 × 1,5%), versez 985 DT au prestataire, et déclarez les 15 DT sur TEJ.</p>
+
+<h2>3. Qui doit déposer une déclaration TEJ ?</h2>
+<p>Toute entité qui effectue des retenues à la source est tenue de les déclarer sur TEJ :</p>
+<ul>
+<li><strong>Les sociétés</strong> (SARL, SA, SUARL, etc.) qui paient des fournisseurs, prestataires, sous-traitants</li>
+<li><strong>Les professionnels indépendants</strong> soumis au régime réel qui effectuent des retenues</li>
+<li><strong>Les administrations et établissements publics</strong></li>
+<li><strong>Les associations</strong> qui effectuent des paiements soumis à retenue</li>
+</ul>
+<p>Si vous êtes une nouvelle entreprise et que vous ne savez pas si vous êtes concerné, posez la question à votre expert-comptable ou au bureau de contrôle des impôts dont vous dépendez.</p>
+
+<h2>4. Quels sont les taux de retenue applicables ?</h2>
+<p>Les taux varient selon la nature du paiement et le statut du bénéficiaire. Voici les principaux :</p>
+<ul>
+<li><strong>1%</strong> — Achats de marchandises auprès de fournisseurs assujettis</li>
+<li><strong>1,5%</strong> — Services, loyers, commissions versés à des résidents</li>
+<li><strong>3%</strong> — Certains services spécifiques définis par la loi</li>
+<li><strong>5%</strong> — Honoraires (avocats, architectes, ingénieurs, etc.)</li>
+<li><strong>10%</strong> — Certaines catégories de revenus spécifiques</li>
+<li><strong>15%</strong> — Paiements à des non-résidents (cas général)</li>
+<li><strong>20%</strong> — Certaines prestations de non-résidents</li>
+<li><strong>25%</strong> — Paiements vers des pays à fiscalité privilégiée</li>
+</ul>
+<p>En cas de doute sur le taux applicable, consultez les barèmes officiels de la DGI ou demandez conseil à votre expert-comptable.</p>
+
+<h2>5. Quelle est la date limite de dépôt ?</h2>
+<p>La déclaration TEJ doit être déposée <strong>avant le 28 du mois suivant</strong> la période concernée. Concrètement :</p>
+<ul>
+<li>Retenues de janvier 2026 → déclaration avant le 28 février 2026</li>
+<li>Retenues de février 2026 → déclaration avant le 28 mars 2026</li>
+<li>Et ainsi de suite chaque mois</li>
+</ul>
+<p>Si le 28 tombe un week-end ou un jour férié, la date limite est reportée au premier jour ouvrable suivant. Nous vous recommandons de ne pas attendre le dernier jour — commencez à préparer votre déclaration dès le 20 du mois.</p>
+
+<h2>6. Que se passe-t-il si je dépose en retard ?</h2>
+<p>Un retard, même d\'un seul jour, entraîne une <strong>pénalité de 0,75% par mois</strong> calculée sur le montant total des retenues déclarées. Cette pénalité est due pour le mois entier, même si le retard n\'est que d\'un jour. De plus, des retards répétés attirent l\'attention de l\'administration fiscale et peuvent déclencher un contrôle.</p>
+
+<h2>7. Comment créer mon compte sur la plateforme TEJ ?</h2>
+<p>Pour accéder à la plateforme TEJ :</p>
+<ol>
+<li>Rendez-vous sur le portail de la DGI (www.impots.finances.gov.tn)</li>
+<li>Cliquez sur « Inscription » ou « Créer un compte »</li>
+<li>Renseignez votre <strong>matricule fiscal</strong>, votre raison sociale et les informations demandées</li>
+<li>Créez un mot de passe sécurisé</li>
+<li>Selon votre profil, vous pourriez avoir besoin d\'un <strong>certificat électronique</strong> délivré par l\'ANCE</li>
+<li>Validez votre inscription (un délai de validation peut s\'appliquer)</li>
+</ol>
+<p>En cas de difficulté, contactez le service d\'assistance de la DGI par téléphone ou rendez-vous à votre bureau de contrôle des impôts.</p>
+
+<h2>8. De quels documents ai-je besoin pour préparer ma déclaration ?</h2>
+<p>Pour chaque mois, vous aurez besoin de :</p>
+<ul>
+<li><strong>Toutes les factures fournisseurs</strong> du mois concerné (pour identifier les paiements soumis à retenue)</li>
+<li><strong>Les preuves de paiement</strong> (virements bancaires, chèques émis)</li>
+<li><strong>Les matricules fiscaux</strong> de chaque bénéficiaire (fournisseur, prestataire)</li>
+<li><strong>Le détail des montants</strong> : montant brut, taux de retenue appliqué, montant retenu, montant net versé</li>
+</ul>
+<p>Astuce : si vous utilisez un logiciel de facturation comme <a href="/product/offline">SoftyFact</a>, toutes ces informations sont déjà enregistrées et l\'export TEJ est automatique.</p>
+
+<h2>9. Puis-je saisir les données directement sur la plateforme ?</h2>
+<p>Oui, vous avez deux options :</p>
+<ul>
+<li><strong>Saisie en ligne :</strong> Vous entrez les données ligne par ligne directement sur la plateforme TEJ. Adapté si vous avez peu de lignes (moins de 10 fournisseurs/mois).</li>
+<li><strong>Import de fichier :</strong> Vous préparez un fichier CSV ou XML et vous l\'importez sur la plateforme. Recommandé si vous avez plus de 10 lignes ou si vous souhaitez automatiser le processus.</li>
+</ul>
+
+<h2>10. Qu\'est-ce qu\'un certificat de retenue et dois-je le fournir ?</h2>
+<p>Le certificat de retenue à la source est un document que vous <strong>devez obligatoirement</strong> remettre à chaque fournisseur ou prestataire auprès duquel vous avez effectué une retenue. Ce certificat lui sert de preuve pour déduire la retenue de son propre impôt.</p>
+<p>Il doit mentionner : votre identité et celle du bénéficiaire, le montant brut, le taux de retenue, le montant retenu, la date et la période concernée. La non-délivrance du certificat est une infraction. Consultez notre article sur les <a href="/blog/erreurs-courantes-declaration-tej-tunisie">erreurs TEJ courantes</a> pour en savoir plus.</p>
+
+<h2>11. Que faire si je découvre une erreur après le dépôt ?</h2>
+<p>Pas de panique. La plateforme TEJ permet de déposer une <strong>déclaration rectificative</strong>. Vous pouvez corriger les erreurs (montant, taux, matricule, bénéficiaire oublié) en soumettant une nouvelle version de la déclaration pour la même période. Il est toujours préférable de corriger spontanément plutôt que d\'attendre qu\'un contrôle révèle l\'erreur.</p>
+
+<h2>12. Dois-je déposer une déclaration même si je n\'ai fait aucune retenue ce mois-ci ?</h2>
+<p>En général, si vous n\'avez effectué aucun paiement soumis à retenue durant le mois, vous n\'avez <strong>pas l\'obligation de déposer une déclaration « néant »</strong> sur TEJ. Toutefois, vérifiez avec votre expert-comptable s\'il est dans votre intérêt de le faire, notamment pour maintenir un historique régulier auprès de l\'administration.</p>
+
+<h2>13. Ai-je besoin d\'un certificat électronique ANCE ?</h2>
+<p>Selon le type de votre compte et le volume de vos déclarations, un certificat électronique délivré par l\'<strong>ANCE (Agence Nationale de Certification Électronique)</strong> peut être requis pour sécuriser l\'accès à la plateforme et signer vos déclarations. Ce certificat garantit l\'authentification et la non-répudiation de vos envois.</p>
+<p>Le certificat ANCE est un dispositif physique (clé USB ou carte) avec un coût variable selon le type. Contactez l\'ANCE pour connaître les tarifs et les démarches d\'obtention.</p>
+
+<h2>14. Quels navigateurs fonctionnent avec la plateforme TEJ ?</h2>
+<p>La plateforme TEJ est accessible depuis un navigateur web standard. Pour une compatibilité optimale :</p>
+<ul>
+<li>Utilisez un navigateur récent (Chrome, Firefox, Edge)</li>
+<li>Activez JavaScript</li>
+<li>Désactivez les bloqueurs de pop-ups pour le site de la DGI</li>
+<li>Si vous utilisez un certificat ANCE, vérifiez que le driver est installé</li>
+</ul>
+<p>Évitez les navigateurs trop anciens qui pourraient poser des problèmes de compatibilité avec les certificats de sécurité du site.</p>
+
+<h2>15. Comment SoftyFact peut m\'aider avec TEJ ?</h2>
+<p><a href="/product/offline">SoftyFact Bureau</a> et <a href="/product/online">SoftyFact Cloud</a> intègrent nativement la gestion complète de la retenue à la source et de la déclaration TEJ :</p>
+<ul>
+<li><strong>Taux de retenue pré-configurés</strong> par fournisseur — pas de calcul manuel</li>
+<li><strong>Calcul automatique</strong> à chaque facture d\'achat — les données TEJ se construisent au fil du mois</li>
+<li><strong>Export au format TEJ</strong> en un clic — fichier prêt à importer sur la plateforme DGI</li>
+<li><strong>Génération des certificats</strong> de retenue conformes — impression ou envoi par email</li>
+<li><strong>Tableau de bord et rappels</strong> — ne ratez jamais une échéance</li>
+</ul>
+<p>Pour un aperçu détaillé de ces fonctionnalités, consultez notre article sur l\'<a href="/blog/automatiser-declaration-tej-softyfact">automatisation de TEJ avec SoftyFact</a>.</p>
+
+<h2>Glossaire rapide</h2>
+<p>Les termes clés que vous rencontrerez :</p>
+<ul>
+<li><strong>TEJ :</strong> Plateforme de télé-déclaration des retenues à la source</li>
+<li><strong>DGI :</strong> Direction Générale des Impôts</li>
+<li><strong>Retenue à la source :</strong> Prélèvement effectué par le payeur avant versement au bénéficiaire</li>
+<li><strong>Certificat de retenue :</strong> Document délivré au bénéficiaire prouvant la retenue effectuée</li>
+<li><strong>Matricule fiscal :</strong> Identifiant unique attribué à chaque contribuable tunisien</li>
+<li><strong>ANCE :</strong> Agence Nationale de Certification Électronique</li>
+<li><strong>Montant brut :</strong> Montant total avant déduction de la retenue</li>
+<li><strong>Montant net :</strong> Montant versé au fournisseur après retenue</li>
+<li><strong>Déclaration rectificative :</strong> Déclaration corrigeant une déclaration précédemment soumise</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>La déclaration TEJ peut sembler intimidante quand on débute, mais elle repose sur un principe simple : déclarer ce que vous avez retenu et le payer à l\'État. En comprenant les bases (qui est concerné, quels taux, quels délais) et en utilisant les bons outils, vous pouvez gérer cette obligation sereinement.</p>
+<p>Si vous cherchez un logiciel qui simplifie radicalement le processus TEJ, <a href="/product/offline">SoftyFact Bureau</a> (149 DT) et <a href="/product/online">SoftyFact Cloud</a> (99 DT/mois) sont conçus exactement pour cela — avec un support local en français et en arabe pour vous accompagner à chaque étape.</p>',
+
+                'body_ar' => '<h2>مقدمة</h2>
+<p>أنشأتم للتو مؤسستكم في تونس، أو تتولون المحاسبة لأول مرة، واكتشفتم التزام تصريح TEJ؟ لا داعي للقلق. هذا الدليل مُصمم للإجابة ببساطة ووضوح على الأسئلة التي يطرحها جميع المبتدئين حول <a href="/blog/declaration-tej-guide-pratique">منصة TEJ</a> و<a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a>.</p>
+
+<h2>1. ما هو TEJ بالضبط؟</h2>
+<p><strong>TEJ</strong> (التصريح الإلكتروني عبر التبادل الإلكتروني للبيانات) هو المنصة الإلكترونية <strong>للإدارة العامة للأداءات</strong> في تونس التي تتيح للمؤسسات التصريح إلكترونيًا بالخصومات من المورد التي أجرتها على المدفوعات لمورديها ومقدمي خدماتها. إنها بديل الإيداع الورقي لتصريحات الخصم.</p>
+
+<h2>2. ما هو الخصم من المورد؟</h2>
+<p><a href="/blog/retenue-source-tunisie-guide">الخصم من المورد</a> هو اقتطاع إلزامي تقومون به عند دفع مستحقات بعض الموردين أو مقدمي الخدمات. بدلاً من دفع 100% من المبلغ للمورد، تحتفظون بنسبة (نسبة الخصم) وتحوّلونها مباشرة للدولة عبر تصريح TEJ. يتلقى المورد شهادة تثبت هذا الخصم، يستخدمها لتخفيض أدائه الخاص.</p>
+<p><strong>مثال بسيط:</strong> تدينون بـ1,000 دينار لمقدم خدمات خاضع لنسبة 1.5%. تخصمون 15 دينار (1,000 × 1.5%)، تدفعون 985 دينار لمقدم الخدمات، وتُصرّحون بـ15 دينار على TEJ.</p>
+
+<h2>3. من يجب عليه إيداع تصريح TEJ؟</h2>
+<p>كل كيان يقوم بخصومات من المورد ملزم بالتصريح بها على TEJ:</p>
+<ul>
+<li><strong>الشركات</strong> (SARL، SA، SUARL، إلخ) التي تدفع لموردين ومقدمي خدمات ومتعهدين من الباطن</li>
+<li><strong>المهنيون المستقلون</strong> الخاضعون للنظام الحقيقي الذين يقومون بخصومات</li>
+<li><strong>الإدارات والمؤسسات العمومية</strong></li>
+<li><strong>الجمعيات</strong> التي تقوم بمدفوعات خاضعة للخصم</li>
+</ul>
+<p>إذا كنتم مؤسسة جديدة ولا تعرفون إن كنتم معنيين، اطرحوا السؤال على خبيركم المحاسب أو مكتب مراقبة الأداءات التابعين له.</p>
+
+<h2>4. ما هي نسب الخصم المطبقة؟</h2>
+<p>تختلف النسب حسب طبيعة الدفع ووضع المستفيد. إليكم الرئيسية:</p>
+<ul>
+<li><strong>1%</strong> — مشتريات بضائع من موردين خاضعين</li>
+<li><strong>1.5%</strong> — خدمات وكراء وعمولات مدفوعة لمقيمين</li>
+<li><strong>3%</strong> — بعض الخدمات المحددة قانونيًا</li>
+<li><strong>5%</strong> — أتعاب (محامين، مهندسين معماريين، مهندسين، إلخ)</li>
+<li><strong>10%</strong> — بعض فئات المداخيل المحددة</li>
+<li><strong>15%</strong> — مدفوعات لغير المقيمين (الحالة العامة)</li>
+<li><strong>20%</strong> — بعض خدمات غير المقيمين</li>
+<li><strong>25%</strong> — مدفوعات نحو بلدان ذات جبائية تفضيلية</li>
+</ul>
+<p>في حالة الشك حول النسبة المطبقة، راجعوا الجداول الرسمية للإدارة أو استشيروا خبيركم المحاسب.</p>
+
+<h2>5. ما هو الموعد النهائي للإيداع؟</h2>
+<p>يجب إيداع تصريح TEJ <strong>قبل 28 من الشهر التالي</strong> للفترة المعنية. عمليًا:</p>
+<ul>
+<li>خصومات جانفي 2026 ← تصريح قبل 28 فيفري 2026</li>
+<li>خصومات فيفري 2026 ← تصريح قبل 28 مارس 2026</li>
+<li>وهكذا كل شهر</li>
+</ul>
+<p>إذا صادف 28 عطلة نهاية أسبوع أو يوم عطلة، يُرحّل الموعد إلى أول يوم عمل تالٍ. ننصحكم بعدم الانتظار حتى اليوم الأخير — ابدأوا إعداد تصريحكم من 20 الشهر.</p>
+
+<h2>6. ماذا يحدث إذا أودعت متأخرًا؟</h2>
+<p>أي تأخير، حتى يوم واحد، يؤدي إلى <strong>غرامة 0.75% شهريًا</strong> محسوبة على إجمالي المبالغ المصرّح بها. هذه الغرامة مستحقة عن الشهر بأكمله، حتى لو كان التأخر يومًا واحدًا فقط. علاوة على ذلك، التأخرات المتكررة تلفت انتباه الإدارة الجبائية وقد تحرّك مراقبة.</p>
+
+<h2>7. كيف أنشئ حسابي على منصة TEJ؟</h2>
+<p>للدخول إلى منصة TEJ:</p>
+<ol>
+<li>توجهوا إلى بوابة الإدارة العامة للأداءات (www.impots.finances.gov.tn)</li>
+<li>انقروا على "تسجيل" أو "إنشاء حساب"</li>
+<li>أدخلوا <strong>معرّفكم الجبائي</strong> وعنوانكم التجاري والمعلومات المطلوبة</li>
+<li>أنشئوا كلمة مرور آمنة</li>
+<li>حسب ملفكم، قد تحتاجون إلى <strong>شهادة إلكترونية</strong> صادرة عن ANCE</li>
+<li>صادقوا على تسجيلكم (قد يُطبق أجل مصادقة)</li>
+</ol>
+<p>في حالة صعوبة، اتصلوا بخدمة مساندة الإدارة العامة للأداءات هاتفيًا أو توجهوا إلى مكتب مراقبة الأداءات.</p>
+
+<h2>8. ما هي الوثائق التي أحتاجها لإعداد تصريحي؟</h2>
+<p>لكل شهر، ستحتاجون إلى:</p>
+<ul>
+<li><strong>جميع فواتير الموردين</strong> للشهر المعني (لتحديد المدفوعات الخاضعة للخصم)</li>
+<li><strong>إثباتات الدفع</strong> (تحويلات بنكية، صكوك صادرة)</li>
+<li><strong>المعرّفات الجبائية</strong> لكل مستفيد (مورد، مقدم خدمات)</li>
+<li><strong>تفصيل المبالغ</strong>: المبلغ الإجمالي، نسبة الخصم المطبقة، المبلغ المخصوم، المبلغ الصافي المدفوع</li>
+</ul>
+<p>نصيحة: إذا كنتم تستخدمون برنامج فوترة مثل <a href="/product/offline">SoftyFact</a>، فكل هذه المعلومات مسجلة بالفعل وتصدير TEJ تلقائي.</p>
+
+<h2>9. هل يمكنني إدخال البيانات مباشرة على المنصة؟</h2>
+<p>نعم، لديكم خياران:</p>
+<ul>
+<li><strong>الإدخال عبر الإنترنت:</strong> تُدخلون البيانات سطرًا بسطر مباشرة على منصة TEJ. مناسب إذا كان لديكم عدد قليل من الأسطر (أقل من 10 موردين/شهر).</li>
+<li><strong>استيراد ملف:</strong> تُعدّون ملف CSV أو XML وتستوردونه على المنصة. موصى به إذا كان لديكم أكثر من 10 أسطر أو إذا أردتم أتمتة العملية.</li>
+</ul>
+
+<h2>10. ما هي شهادة الخصم وهل يجب أن أقدمها؟</h2>
+<p>شهادة الخصم من المورد هي وثيقة <strong>يجب عليكم إلزاميًا</strong> تسليمها لكل مورد أو مقدم خدمات أجريتم عليه خصمًا. تخدمه كدليل لطرح الخصم من أدائه الخاص.</p>
+<p>يجب أن تتضمن: هويتكم وهوية المستفيد، المبلغ الإجمالي، نسبة الخصم، المبلغ المخصوم، التاريخ والفترة المعنية. عدم التسليم مخالفة قانونية. اطلعوا على مقالنا حول <a href="/blog/erreurs-courantes-declaration-tej-tunisie">أخطاء TEJ الشائعة</a> لمعرفة المزيد.</p>
+
+<h2>11. ماذا أفعل إذا اكتشفت خطأ بعد الإيداع؟</h2>
+<p>لا داعي للقلق. تتيح منصة TEJ إيداع <strong>تصريح تصحيحي</strong>. يمكنكم تصحيح الأخطاء (مبلغ، نسبة، معرّف، مستفيد منسي) بتقديم نسخة جديدة من التصريح لنفس الفترة. من الأفضل دائمًا التصحيح التلقائي بدلاً من انتظار اكتشاف الخطأ أثناء مراقبة.</p>
+
+<h2>12. هل يجب إيداع تصريح حتى لو لم أقم بأي خصم هذا الشهر؟</h2>
+<p>عمومًا، إذا لم تقوموا بأي دفعة خاضعة للخصم خلال الشهر، <strong>ليس عليكم التزام بإيداع تصريح "عدم"</strong> على TEJ. ومع ذلك، تحققوا مع خبيركم المحاسب إن كان من مصلحتكم القيام بذلك، خاصة للحفاظ على سجل منتظم لدى الإدارة.</p>
+
+<h2>13. هل أحتاج إلى شهادة إلكترونية ANCE؟</h2>
+<p>حسب نوع حسابكم وحجم تصريحاتكم، قد تكون شهادة إلكترونية صادرة عن <strong>الوكالة الوطنية للمصادقة الإلكترونية (ANCE)</strong> مطلوبة لتأمين الدخول إلى المنصة وتوقيع تصريحاتكم. تضمن هذه الشهادة المصادقة وعدم الإنكار لإرسالاتكم.</p>
+<p>شهادة ANCE هي جهاز مادي (مفتاح USB أو بطاقة) بتكلفة متغيرة حسب النوع. اتصلوا بـANCE لمعرفة الأسعار وإجراءات الحصول.</p>
+
+<h2>14. أي المتصفحات تعمل مع منصة TEJ؟</h2>
+<p>منصة TEJ متاحة من متصفح ويب عادي. للتوافق الأمثل:</p>
+<ul>
+<li>استخدموا متصفحًا حديثًا (Chrome، Firefox، Edge)</li>
+<li>فعّلوا JavaScript</li>
+<li>عطّلوا حاجبات النوافذ المنبثقة لموقع الإدارة العامة للأداءات</li>
+<li>إذا كنتم تستخدمون شهادة ANCE، تأكدوا من تثبيت البرنامج المشغّل</li>
+</ul>
+<p>تجنبوا المتصفحات القديمة جدًا التي قد تسبب مشاكل توافق مع شهادات أمان الموقع.</p>
+
+<h2>15. كيف يمكن لـSoftyFact مساعدتي مع TEJ؟</h2>
+<p><a href="/product/offline">SoftyFact Bureau</a> و<a href="/product/online">SoftyFact Cloud</a> يدمجان بشكل أصلي الإدارة الشاملة للخصم من المورد وتصريح TEJ:</p>
+<ul>
+<li><strong>نسب خصم مُهيأة مسبقًا</strong> حسب المورد — بدون حساب يدوي</li>
+<li><strong>حساب تلقائي</strong> عند كل فاتورة شراء — تُبنى بيانات TEJ على مدار الشهر</li>
+<li><strong>تصدير بصيغة TEJ</strong> بنقرة واحدة — ملف جاهز للاستيراد على منصة الإدارة</li>
+<li><strong>إنشاء شهادات</strong> الخصم المطابقة — طباعة أو إرسال بالبريد الإلكتروني</li>
+<li><strong>لوحة متابعة وتذكيرات</strong> — لا تفوّتوا أي موعد نهائي أبدًا</li>
+</ul>
+<p>للاطلاع المفصل على هذه الميزات، اقرأوا مقالنا حول <a href="/blog/automatiser-declaration-tej-softyfact">أتمتة TEJ مع SoftyFact</a>.</p>
+
+<h2>معجم سريع</h2>
+<p>المصطلحات الأساسية التي ستصادفونها:</p>
+<ul>
+<li><strong>TEJ:</strong> منصة التصريح الإلكتروني بالخصومات من المورد</li>
+<li><strong>الإدارة العامة للأداءات:</strong> الهيكل المسؤول عن الجباية في تونس</li>
+<li><strong>الخصم من المورد:</strong> اقتطاع يجريه الدافع قبل التحويل للمستفيد</li>
+<li><strong>شهادة الخصم:</strong> وثيقة تُسلّم للمستفيد تثبت الخصم المنجز</li>
+<li><strong>المعرّف الجبائي:</strong> رقم تعريف فريد يُخصص لكل مكلّف بالأداء تونسي</li>
+<li><strong>ANCE:</strong> الوكالة الوطنية للمصادقة الإلكترونية</li>
+<li><strong>المبلغ الإجمالي:</strong> المبلغ الكلي قبل طرح الخصم</li>
+<li><strong>المبلغ الصافي:</strong> المبلغ المدفوع للمورد بعد الخصم</li>
+<li><strong>التصريح التصحيحي:</strong> تصريح يُصحح تصريحًا سبق تقديمه</li>
+</ul>
+
+<h2>الخلاصة</h2>
+<p>قد يبدو تصريح TEJ مخيفًا عند البداية، لكنه يقوم على مبدأ بسيط: التصريح بما خصمتموه ودفعه للدولة. بفهم الأساسيات (من المعني، أي نسب، أي آجال) واستخدام الأدوات المناسبة، يمكنكم إدارة هذا الالتزام بهدوء.</p>
+<p>إذا كنتم تبحثون عن برنامج يُبسّط جذريًا عملية TEJ، فإن <a href="/product/offline">SoftyFact Bureau</a> (149 دينار) و<a href="/product/online">SoftyFact Cloud</a> (99 دينار/شهر) مصممان تحديدًا لذلك — مع دعم محلي بالفرنسية والعربية لمرافقتكم في كل مرحلة.</p>',
+
+                'meta_description_fr' => 'FAQ TEJ pour débutants : 15 réponses simples sur la déclaration TEJ en Tunisie. Taux, délais, compte, certificats et outils.',
+                'meta_description_ar' => 'أسئلة شائعة عن TEJ للمبتدئين: 15 إجابة بسيطة عن تصريح TEJ في تونس. النسب والآجال والحساب والشهادات والأدوات.',
+                'meta_keywords' => 'TEJ débutants tunisie, FAQ TEJ, questions fréquentes TEJ, comment déclarer TEJ tunisie',
+                'cover_image' => null,
+                'reading_time' => 8,
+                'published_at' => '2026-04-18 10:00:00',
+            ],
+
+            // ============================================================
+            // POST 28 — Calendrier TEJ 2026
+            // ============================================================
+            [
+                'slug' => 'calendrier-echeances-tej-2026',
+                'title_fr' => 'Calendrier TEJ 2026 : toutes les échéances mensuelles à ne pas manquer',
+                'title_ar' => 'روزنامة TEJ 2026: جميع المواعيد الشهرية التي يجب عدم تفويتها',
+                'excerpt_fr' => 'Calendrier complet des échéances TEJ 2026 en Tunisie : dates limites de dépôt mois par mois, conseils pratiques et rappels à configurer.',
+                'excerpt_ar' => 'روزنامة شاملة لمواعيد TEJ 2026 في تونس: المواعيد النهائية للإيداع شهرًا بشهر ونصائح عملية وتذكيرات.',
+                'body_fr' => '<h2>Ne manquez plus jamais une échéance TEJ</h2>
+<p>La <a href="/blog/declaration-tej-guide-pratique">déclaration TEJ</a> est une obligation mensuelle avec une date limite stricte : <strong>le 28 de chaque mois</strong>. Un retard, même d\'un seul jour, entraîne des <a href="/blog/erreurs-courantes-declaration-tej-tunisie">pénalités automatiques</a> de 0,75% par mois. Pour vous aider à ne jamais manquer une échéance, voici le calendrier complet des dates limites TEJ pour l\'année 2026, accompagné de conseils pratiques pour chaque période.</p>
+
+<h2>Calendrier des échéances TEJ 2026</h2>
+
+<h3>Janvier 2026 — Retenues de décembre 2025</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Mercredi 28 janvier 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 20 janvier</li>
+<li><strong>Particularité :</strong> C\'est la déclaration du dernier mois de l\'exercice fiscal 2025. Vérifiez que toutes les retenues de décembre sont bien comptabilisées, y compris les paiements effectués les derniers jours de l\'année. C\'est aussi le moment de vérifier que tous les certificats de retenue de l\'année 2025 ont été délivrés à vos fournisseurs.</li>
+</ul>
+
+<h3>Février 2026 — Retenues de janvier 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Samedi 28 février 2026 → <strong>reporté au lundi 2 mars 2026</strong></li>
+<li><strong>Date recommandée de préparation :</strong> 20 février</li>
+<li><strong>Particularité :</strong> Première déclaration de l\'exercice 2026. Profitez-en pour mettre à jour les matricules fiscaux de vos fournisseurs et vérifier que les taux de retenue sont toujours corrects après d\'éventuels changements législatifs en début d\'année.</li>
+</ul>
+
+<h3>Mars 2026 — Retenues de février 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Samedi 28 mars 2026 → <strong>reporté au lundi 30 mars 2026</strong></li>
+<li><strong>Date recommandée de préparation :</strong> 20 mars</li>
+<li><strong>Particularité :</strong> Le mois de Ramadan peut tomber durant cette période (selon le calendrier lunaire). Anticipez la préparation car les horaires de travail sont souvent réduits. Si vous avez des fournisseurs qui facturent massivement en fin de mois, préparez votre export TEJ plus tôt.</li>
+</ul>
+
+<h3>Avril 2026 — Retenues de mars 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Mardi 28 avril 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 20 avril</li>
+<li><strong>Particularité :</strong> Si Ramadan se prolonge sur mars, la fête de l\'Aïd el-Fitr peut réduire les jours ouvrables début avril. Planifiez en conséquence. C\'est aussi la période où la déclaration annuelle d\'impôt approche — assurez-vous que vos données TEJ mensuelles sont cohérentes avec votre comptabilité générale.</li>
+</ul>
+
+<h3>Mai 2026 — Retenues d\'avril 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Jeudi 28 mai 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 20 mai</li>
+<li><strong>Particularité :</strong> Le 1er mai (Fête du Travail) est férié. Si vous avez l\'habitude de préparer la déclaration en début de mois, attention à ce jour perdu. Vérifiez que les paiements fournisseurs d\'avril incluent les régularisations de fin de trimestre.</li>
+</ul>
+
+<h3>Juin 2026 — Retenues de mai 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Dimanche 28 juin 2026 → <strong>reporté au lundi 29 juin 2026</strong></li>
+<li><strong>Date recommandée de préparation :</strong> 20 juin</li>
+<li><strong>Particularité :</strong> Fin du premier semestre. Bon moment pour faire un bilan semestriel de vos retenues : vérifiez les totaux par fournisseur et par taux, identifiez les éventuelles anomalies, et préparez si nécessaire des déclarations rectificatives pour les mois précédents.</li>
+</ul>
+
+<h3>Juillet 2026 — Retenues de juin 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Mardi 28 juillet 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 20 juillet</li>
+<li><strong>Particularité :</strong> La fête de l\'Aïd el-Adha peut tomber durant cette période (selon le calendrier lunaire, vérifiez les dates exactes pour 2026). Les jours fériés associés peuvent réduire la semaine de travail. La période estivale commence et les équipes peuvent être réduites — désignez un remplaçant si le responsable habituel est en congé.</li>
+</ul>
+
+<h3>Août 2026 — Retenues de juillet 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Vendredi 28 août 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 20 août</li>
+<li><strong>Particularité :</strong> Mois de vacances par excellence. Beaucoup d\'entreprises tournent en effectif réduit. Assurez-vous que quelqu\'un sera disponible pour préparer et déposer la déclaration. Si vous utilisez <a href="/product/offline">SoftyFact</a>, l\'export automatique simplifie cette tâche même avec un effectif minimal.</li>
+</ul>
+
+<h3>Septembre 2026 — Retenues d\'août 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Lundi 28 septembre 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 20 septembre</li>
+<li><strong>Particularité :</strong> Reprise d\'activité après l\'été. Excellente période pour rattraper les retards éventuels et vérifier que les déclarations de juin, juillet et août sont complètes et correctes. Si des déclarations rectificatives sont nécessaires, ne tardez plus.</li>
+</ul>
+
+<h3>Octobre 2026 — Retenues de septembre 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Mercredi 28 octobre 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 20 octobre</li>
+<li><strong>Particularité :</strong> Dernier trimestre de l\'année. C\'est le moment de s\'assurer que votre fichier fournisseurs est à jour et que les taux de retenue sont corrects pour la clôture de l\'exercice. Commencez à planifier le bilan annuel des retenues.</li>
+</ul>
+
+<h3>Novembre 2026 — Retenues d\'octobre 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Samedi 28 novembre 2026 → <strong>reporté au lundi 30 novembre 2026</strong></li>
+<li><strong>Date recommandée de préparation :</strong> 20 novembre</li>
+<li><strong>Particularité :</strong> Avant-dernier mois de l\'exercice. Vérifiez que tous les fournisseurs à qui vous devez des certificats de retenue les ont bien reçus. C\'est aussi le moment de préparer le <strong>récapitulatif annuel</strong> des retenues (obligatoire en début d\'année suivante).</li>
+</ul>
+
+<h3>Décembre 2026 — Retenues de novembre 2026</h3>
+<ul>
+<li><strong>Date limite de dépôt :</strong> Lundi 28 décembre 2026</li>
+<li><strong>Date recommandée de préparation :</strong> 18 décembre (plus tôt que d\'habitude)</li>
+<li><strong>Particularité :</strong> Dernier mois de l\'année, souvent chargé avec la clôture fiscale. De nombreux paiements sont accélérés avant le 31 décembre. Préparez la déclaration plus tôt que d\'habitude. N\'oubliez pas que la déclaration des retenues de décembre 2026 sera à déposer en janvier 2027.</li>
+</ul>
+
+<h2>Récapitulatif des dates limites 2026</h2>
+<p>Voici les dates effectives en tenant compte des week-ends et jours fériés :</p>
+<ul>
+<li><strong>Janvier :</strong> 28 janvier 2026 (mercredi)</li>
+<li><strong>Février :</strong> 2 mars 2026 (reporté du samedi 28)</li>
+<li><strong>Mars :</strong> 30 mars 2026 (reporté du samedi 28)</li>
+<li><strong>Avril :</strong> 28 avril 2026 (mardi)</li>
+<li><strong>Mai :</strong> 28 mai 2026 (jeudi)</li>
+<li><strong>Juin :</strong> 29 juin 2026 (reporté du dimanche 28)</li>
+<li><strong>Juillet :</strong> 28 juillet 2026 (mardi)</li>
+<li><strong>Août :</strong> 28 août 2026 (vendredi)</li>
+<li><strong>Septembre :</strong> 28 septembre 2026 (lundi)</li>
+<li><strong>Octobre :</strong> 28 octobre 2026 (mercredi)</li>
+<li><strong>Novembre :</strong> 30 novembre 2026 (reporté du samedi 28)</li>
+<li><strong>Décembre :</strong> 28 décembre 2026 (lundi)</li>
+</ul>
+<p><em>Note : Les reports pour jours fériés religieux (Aïd el-Fitr, Aïd el-Adha, Mouled) dépendent du calendrier lunaire et seront confirmés par la DGI. Vérifiez les dates officielles en début d\'année.</em></p>
+
+<h2>Comment configurer vos rappels</h2>
+<p>Pour ne jamais être pris au dépourvu, mettez en place un système de rappels :</p>
+
+<h3>Option 1 : Rappels manuels</h3>
+<ul>
+<li>Créez un événement récurrent dans votre calendrier (Google Calendar, Outlook) au <strong>20 de chaque mois</strong> intitulé « Préparer déclaration TEJ »</li>
+<li>Ajoutez un second rappel au <strong>25 de chaque mois</strong> intitulé « Déposer TEJ — 3 jours restants »</li>
+<li>Configurez des notifications par email et par popup</li>
+</ul>
+
+<h3>Option 2 : Rappels automatiques avec SoftyFact</h3>
+<p><a href="/product/offline">SoftyFact Bureau</a> et <a href="/product/online">SoftyFact Cloud</a> intègrent un système d\'alertes automatiques :</p>
+<ul>
+<li>Notification à l\'approche de chaque échéance TEJ</li>
+<li>Indicateur visuel dans le tableau de bord quand la déclaration n\'est pas encore exportée</li>
+<li>Récapitulatif mensuel des retenues prêt en un clic</li>
+</ul>
+
+<h3>Option 3 : Checklist mensuelle</h3>
+<p>Imprimez cette checklist et affichez-la près de votre poste de travail :</p>
+<ul>
+<li>☐ Le 15 : Vérifier que toutes les factures du mois sont saisies</li>
+<li>☐ Le 20 : Générer le récapitulatif TEJ et vérifier les données</li>
+<li>☐ Le 22 : Exporter le fichier TEJ et le déposer sur la plateforme</li>
+<li>☐ Le 23 : Vérifier l\'accusé de réception du dépôt</li>
+<li>☐ Le 25 : Générer et envoyer les certificats de retenue aux fournisseurs</li>
+<li>☐ Le 28 : Date limite — confirmer que tout est déposé et payé</li>
+</ul>
+
+<h2>Conseils pour chaque période de l\'année</h2>
+
+<h3>Début d\'année (janvier-février)</h3>
+<ul>
+<li>Vérifiez les éventuels changements de taux de retenue dans la loi de finances de l\'année</li>
+<li>Mettez à jour les matricules fiscaux de vos fournisseurs</li>
+<li>Préparez le récapitulatif annuel de l\'année précédente</li>
+<li>Envoyez les derniers certificats de retenue de l\'année écoulée</li>
+</ul>
+
+<h3>Ramadan (dates variables)</h3>
+<ul>
+<li>Anticipez la préparation car les horaires sont souvent réduits</li>
+<li>Les jours fériés de l\'Aïd el-Fitr peuvent tomber sur les derniers jours du mois</li>
+<li>Préparez votre déclaration une semaine plus tôt que d\'habitude</li>
+</ul>
+
+<h3>Été (juillet-août)</h3>
+<ul>
+<li>Désignez un remplaçant pour le dépôt TEJ en cas d\'absence</li>
+<li>Préparez à l\'avance si possible (l\'activité est souvent ralentie)</li>
+<li>Un logiciel avec export automatique comme SoftyFact est particulièrement utile pendant cette période</li>
+</ul>
+
+<h3>Fin d\'année (novembre-décembre)</h3>
+<ul>
+<li>Accélérez les paiements fournisseurs pour éviter les engorgements</li>
+<li>Vérifiez l\'exhaustivité de vos déclarations de l\'année</li>
+<li>Préparez le terrain pour le récapitulatif annuel</li>
+<li>Délivrez tous les certificats de retenue restants</li>
+</ul>
+
+<h2>L\'obligation du récapitulatif annuel</h2>
+<p>En plus des déclarations mensuelles, les entreprises sont tenues de déposer un <strong>récapitulatif annuel des retenues à la source</strong> dans les premiers mois de l\'année suivante. Ce document synthétise l\'ensemble des retenues effectuées durant l\'exercice fiscal, ventilées par bénéficiaire et par taux.</p>
+<p>Le récapitulatif doit être cohérent avec la somme des 12 déclarations mensuelles. Si des déclarations rectificatives ont été soumises en cours d\'année, elles doivent être reflétées dans le récapitulatif.</p>
+<p>Avec <a href="/product/offline">SoftyFact</a>, ce récapitulatif est généré automatiquement à partir de vos données de facturation, garantissant une cohérence parfaite avec vos déclarations mensuelles.</p>
+
+<h2>Que faire en cas de retard constaté</h2>
+<p>Si malgré toutes les précautions vous constatez un retard :</p>
+<ol>
+<li><strong>Déposez immédiatement :</strong> Ne perdez pas un jour de plus. Chaque jour supplémentaire n\'aggrave pas la pénalité du mois en cours, mais si vous dépassez un nouveau seuil mensuel, une pénalité supplémentaire s\'ajoute.</li>
+<li><strong>Payez les retenues en même temps :</strong> Le dépôt de la déclaration et le paiement doivent être effectués simultanément pour limiter les pénalités.</li>
+<li><strong>Documentez la raison :</strong> En cas de circonstance exceptionnelle (panne informatique, problème plateforme DGI), conservez les preuves.</li>
+<li><strong>Mettez en place des mesures correctives :</strong> Identifiez pourquoi le retard s\'est produit et ajustez votre processus pour que cela ne se reproduise pas.</li>
+</ol>
+
+<h2>Conclusion</h2>
+<p>Respecter les échéances TEJ n\'est pas compliqué si vous êtes organisé. Ce calendrier 2026 vous donne toutes les dates, mais le plus important est d\'installer une routine : préparation le 20, vérification le 22, dépôt le 25 au plus tard. Ajoutez les rappels dans votre calendrier ou laissez <a href="/product/offline">SoftyFact Bureau</a> / <a href="/product/online">SoftyFact Cloud</a> vous alerter automatiquement.</p>
+<p>Et si vous souhaitez <a href="/blog/automatiser-declaration-tej-softyfact">automatiser complètement le processus TEJ</a>, nos solutions de facturation font le travail pour vous : plus de compilation manuelle, plus de format de fichier à vérifier, plus de retard. Concentrez-vous sur votre activité, SoftyFact s\'occupe du reste.</p>',
+
+                'body_ar' => '<h2>لا تفوّتوا أبدًا موعد TEJ</h2>
+<p><a href="/blog/declaration-tej-guide-pratique">تصريح TEJ</a> هو التزام شهري بموعد نهائي صارم: <strong>28 من كل شهر</strong>. أي تأخير، حتى يوم واحد، يؤدي إلى <a href="/blog/erreurs-courantes-declaration-tej-tunisie">غرامات تلقائية</a> بنسبة 0.75% شهريًا. لمساعدتكم على عدم تفويت أي موعد، إليكم الروزنامة الشاملة لمواعيد TEJ لسنة 2026، مع نصائح عملية لكل فترة.</p>
+
+<h2>روزنامة مواعيد TEJ 2026</h2>
+
+<h3>جانفي 2026 — خصومات ديسمبر 2025</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الأربعاء 28 جانفي 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 جانفي</li>
+<li><strong>خصوصية:</strong> هذا تصريح آخر شهر من السنة المالية 2025. تحققوا من أن جميع خصومات ديسمبر محتسبة، بما في ذلك المدفوعات المنجزة في آخر أيام السنة. كذلك، تأكدوا من تسليم جميع شهادات الخصم لسنة 2025 لمورديكم.</li>
+</ul>
+
+<h3>فيفري 2026 — خصومات جانفي 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> السبت 28 فيفري 2026 ← <strong>مؤجل إلى الإثنين 2 مارس 2026</strong></li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 فيفري</li>
+<li><strong>خصوصية:</strong> أول تصريح للسنة المالية 2026. اغتنموا الفرصة لتحديث المعرّفات الجبائية لمورديكم والتحقق من أن نسب الخصم لا تزال صحيحة بعد أي تغييرات تشريعية في بداية السنة.</li>
+</ul>
+
+<h3>مارس 2026 — خصومات فيفري 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> السبت 28 مارس 2026 ← <strong>مؤجل إلى الإثنين 30 مارس 2026</strong></li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 مارس</li>
+<li><strong>خصوصية:</strong> قد يصادف شهر رمضان هذه الفترة (حسب التقويم القمري). سابقوا الإعداد لأن أوقات العمل غالبًا ما تكون مختصرة. إذا كان لديكم موردون يفوترون بكثافة في نهاية الشهر، جهّزوا تصدير TEJ مبكرًا.</li>
+</ul>
+
+<h3>أفريل 2026 — خصومات مارس 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الثلاثاء 28 أفريل 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 أفريل</li>
+<li><strong>خصوصية:</strong> إذا امتد رمضان إلى مارس، فعيد الفطر قد يُقلّص أيام العمل في بداية أفريل. خططوا وفقًا لذلك. هذه أيضًا الفترة التي يقترب فيها التصريح السنوي بالأداء — تأكدوا من تناسق بيانات TEJ الشهرية مع محاسبتكم العامة.</li>
+</ul>
+
+<h3>ماي 2026 — خصومات أفريل 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الخميس 28 ماي 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 ماي</li>
+<li><strong>خصوصية:</strong> 1 ماي (عيد الشغل) عطلة رسمية. إذا كنتم معتادين على إعداد التصريح في بداية الشهر، انتبهوا لهذا اليوم الضائع. تحققوا من أن مدفوعات الموردين لأفريل تتضمن تسويات نهاية الثلاثي.</li>
+</ul>
+
+<h3>جوان 2026 — خصومات ماي 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الأحد 28 جوان 2026 ← <strong>مؤجل إلى الإثنين 29 جوان 2026</strong></li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 جوان</li>
+<li><strong>خصوصية:</strong> نهاية النصف الأول من السنة. فرصة جيدة لإجراء حصيلة نصف سنوية لخصوماتكم: تحققوا من المجاميع حسب المورد وحسب النسبة، حددوا أي تناقضات، وجهّزوا عند الحاجة تصريحات تصحيحية للأشهر السابقة.</li>
+</ul>
+
+<h3>جويلية 2026 — خصومات جوان 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الثلاثاء 28 جويلية 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 جويلية</li>
+<li><strong>خصوصية:</strong> قد يصادف عيد الأضحى هذه الفترة (حسب التقويم القمري، تحققوا من التواريخ الدقيقة لـ2026). أيام العطل المرتبطة قد تُقلّص أسبوع العمل. بداية فترة الصيف والفرق قد تكون مختصرة — عيّنوا بديلاً إذا كان المسؤول المعتاد في إجازة.</li>
+</ul>
+
+<h3>أوت 2026 — خصومات جويلية 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الجمعة 28 أوت 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 أوت</li>
+<li><strong>خصوصية:</strong> شهر العطل بامتياز. العديد من المؤسسات تعمل بعدد مختصر. تأكدوا من وجود شخص متاح لإعداد وإيداع التصريح. إذا كنتم تستخدمون <a href="/product/offline">SoftyFact</a>، فالتصدير التلقائي يُبسّط هذه المهمة حتى مع عدد أدنى من الموظفين.</li>
+</ul>
+
+<h3>سبتمبر 2026 — خصومات أوت 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الإثنين 28 سبتمبر 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 سبتمبر</li>
+<li><strong>خصوصية:</strong> استئناف النشاط بعد الصيف. فترة ممتازة لتدارك أي تأخير محتمل والتحقق من أن تصريحات جوان وجويلية وأوت كاملة وصحيحة. إذا كانت تصريحات تصحيحية ضرورية، فلا تتأخروا أكثر.</li>
+</ul>
+
+<h3>أكتوبر 2026 — خصومات سبتمبر 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الأربعاء 28 أكتوبر 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 أكتوبر</li>
+<li><strong>خصوصية:</strong> الثلاثي الأخير من السنة. حان وقت التأكد من تحديث ملف الموردين وصحة نسب الخصم لاختتام السنة المالية. ابدأوا التخطيط للحصيلة السنوية للخصومات.</li>
+</ul>
+
+<h3>نوفمبر 2026 — خصومات أكتوبر 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> السبت 28 نوفمبر 2026 ← <strong>مؤجل إلى الإثنين 30 نوفمبر 2026</strong></li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 20 نوفمبر</li>
+<li><strong>خصوصية:</strong> الشهر قبل الأخير من السنة المالية. تحققوا من أن جميع الموردين الذين يستحقون شهادات خصم قد تلقوها فعلاً. كذلك، حان وقت تحضير <strong>الملخص السنوي</strong> للخصومات (إلزامي في بداية السنة التالية).</li>
+</ul>
+
+<h3>ديسمبر 2026 — خصومات نوفمبر 2026</h3>
+<ul>
+<li><strong>الموعد النهائي للإيداع:</strong> الإثنين 28 ديسمبر 2026</li>
+<li><strong>التاريخ الموصى به للإعداد:</strong> 18 ديسمبر (أبكر من المعتاد)</li>
+<li><strong>خصوصية:</strong> آخر شهر من السنة، غالبًا مثقل بالإقفال الجبائي. العديد من المدفوعات تُسرّع قبل 31 ديسمبر. جهّزوا التصريح أبكر من المعتاد. لا تنسوا أن تصريح خصومات ديسمبر 2026 سيكون واجب الإيداع في جانفي 2027.</li>
+</ul>
+
+<h2>ملخص المواعيد النهائية 2026</h2>
+<p>إليكم التواريخ الفعلية مع مراعاة عطل نهاية الأسبوع والأعياد:</p>
+<ul>
+<li><strong>جانفي:</strong> 28 جانفي 2026 (الأربعاء)</li>
+<li><strong>فيفري:</strong> 2 مارس 2026 (مؤجل من السبت 28)</li>
+<li><strong>مارس:</strong> 30 مارس 2026 (مؤجل من السبت 28)</li>
+<li><strong>أفريل:</strong> 28 أفريل 2026 (الثلاثاء)</li>
+<li><strong>ماي:</strong> 28 ماي 2026 (الخميس)</li>
+<li><strong>جوان:</strong> 29 جوان 2026 (مؤجل من الأحد 28)</li>
+<li><strong>جويلية:</strong> 28 جويلية 2026 (الثلاثاء)</li>
+<li><strong>أوت:</strong> 28 أوت 2026 (الجمعة)</li>
+<li><strong>سبتمبر:</strong> 28 سبتمبر 2026 (الإثنين)</li>
+<li><strong>أكتوبر:</strong> 28 أكتوبر 2026 (الأربعاء)</li>
+<li><strong>نوفمبر:</strong> 30 نوفمبر 2026 (مؤجل من السبت 28)</li>
+<li><strong>ديسمبر:</strong> 28 ديسمبر 2026 (الإثنين)</li>
+</ul>
+<p><em>ملاحظة: التأجيلات بسبب الأعياد الدينية (عيد الفطر وعيد الأضحى والمولد) تعتمد على التقويم القمري وستُؤكدها الإدارة العامة للأداءات. تحققوا من التواريخ الرسمية في بداية السنة.</em></p>
+
+<h2>كيف تُهيئون تذكيراتكم</h2>
+<p>حتى لا تُفاجأوا أبدًا، ضعوا نظام تذكيرات:</p>
+
+<h3>الخيار الأول: تذكيرات يدوية</h3>
+<ul>
+<li>أنشئوا حدثًا متكررًا في تقويمكم (Google Calendar، Outlook) في <strong>20 من كل شهر</strong> بعنوان "إعداد تصريح TEJ"</li>
+<li>أضيفوا تذكيرًا ثانيًا في <strong>25 من كل شهر</strong> بعنوان "إيداع TEJ — 3 أيام متبقية"</li>
+<li>هيئوا إشعارات بالبريد الإلكتروني وإشعارات منبثقة</li>
+</ul>
+
+<h3>الخيار الثاني: تذكيرات تلقائية مع SoftyFact</h3>
+<p><a href="/product/offline">SoftyFact Bureau</a> و<a href="/product/online">SoftyFact Cloud</a> يدمجان نظام تنبيهات تلقائية:</p>
+<ul>
+<li>إشعار عند اقتراب كل موعد TEJ</li>
+<li>مؤشر بصري في لوحة القيادة عندما لم يُصدّر التصريح بعد</li>
+<li>ملخص شهري للخصومات جاهز بنقرة واحدة</li>
+</ul>
+
+<h3>الخيار الثالث: قائمة مرجعية شهرية</h3>
+<p>اطبعوا هذه القائمة وعلّقوها قرب مكتبكم:</p>
+<ul>
+<li>☐ في 15: التحقق من إدخال جميع فواتير الشهر</li>
+<li>☐ في 20: إنشاء ملخص TEJ والتحقق من البيانات</li>
+<li>☐ في 22: تصدير ملف TEJ وإيداعه على المنصة</li>
+<li>☐ في 23: التحقق من إشعار استلام الإيداع</li>
+<li>☐ في 25: إنشاء وإرسال شهادات الخصم للموردين</li>
+<li>☐ في 28: الموعد النهائي — التأكد من إيداع ودفع كل شيء</li>
+</ul>
+
+<h2>نصائح لكل فترة من السنة</h2>
+
+<h3>بداية السنة (جانفي-فيفري)</h3>
+<ul>
+<li>تحققوا من أي تغييرات في نسب الخصم في قانون المالية للسنة</li>
+<li>حدّثوا المعرّفات الجبائية لمورديكم</li>
+<li>جهّزوا الملخص السنوي للسنة السابقة</li>
+<li>أرسلوا آخر شهادات الخصم للسنة المنقضية</li>
+</ul>
+
+<h3>رمضان (تواريخ متغيرة)</h3>
+<ul>
+<li>سابقوا الإعداد لأن الأوقات غالبًا مختصرة</li>
+<li>أيام عطلة عيد الفطر قد تصادف آخر أيام الشهر</li>
+<li>جهّزوا تصريحكم أسبوعًا أبكر من المعتاد</li>
+</ul>
+
+<h3>الصيف (جويلية-أوت)</h3>
+<ul>
+<li>عيّنوا بديلاً لإيداع TEJ في حالة غياب</li>
+<li>جهّزوا مسبقًا إن أمكن (النشاط غالبًا يكون أبطأ)</li>
+<li>برنامج بتصدير تلقائي مثل SoftyFact مفيد بشكل خاص في هذه الفترة</li>
+</ul>
+
+<h3>نهاية السنة (نوفمبر-ديسمبر)</h3>
+<ul>
+<li>سرّعوا مدفوعات الموردين لتجنب الاكتظاظ</li>
+<li>تحققوا من شمولية تصريحاتكم للسنة</li>
+<li>جهّزوا الأرضية للملخص السنوي</li>
+<li>سلّموا جميع شهادات الخصم المتبقية</li>
+</ul>
+
+<h2>التزام الملخص السنوي</h2>
+<p>بالإضافة إلى التصريحات الشهرية، تلتزم المؤسسات بإيداع <strong>ملخص سنوي للخصومات من المورد</strong> في الأشهر الأولى من السنة التالية. تُلخّص هذه الوثيقة مجمل الخصومات المنجزة خلال السنة المالية، موزعة حسب المستفيد وحسب النسبة.</p>
+<p>يجب أن يكون الملخص متسقًا مع مجموع التصريحات الشهرية الاثني عشر. إذا قُدّمت تصريحات تصحيحية خلال السنة، يجب أن تنعكس في الملخص.</p>
+<p>مع <a href="/product/offline">SoftyFact</a>، يُنشأ هذا الملخص تلقائيًا من بيانات الفوترة، مما يضمن تناسقًا تامًا مع تصريحاتكم الشهرية.</p>
+
+<h2>ماذا تفعلون في حالة تأخر مُعايَن</h2>
+<p>إذا لاحظتم تأخرًا رغم كل الاحتياطات:</p>
+<ol>
+<li><strong>أودعوا فورًا:</strong> لا تضيعوا يومًا إضافيًا. كل يوم إضافي لا يُفاقم غرامة الشهر الجاري، لكن إذا تجاوزتم عتبة شهرية جديدة، تُضاف غرامة إضافية.</li>
+<li><strong>ادفعوا الخصومات في نفس الوقت:</strong> يجب أن يتم إيداع التصريح والدفع في آن واحد للحد من الغرامات.</li>
+<li><strong>وثّقوا السبب:</strong> في حالة ظرف استثنائي (عطل معلوماتي، مشكلة في منصة الإدارة)، احتفظوا بالأدلة.</li>
+<li><strong>ضعوا إجراءات تصحيحية:</strong> حددوا سبب التأخير واضبطوا عمليتكم حتى لا يتكرر.</li>
+</ol>
+
+<h2>الخلاصة</h2>
+<p>احترام مواعيد TEJ ليس معقدًا إذا كنتم منظمين. هذه الروزنامة 2026 تمنحكم جميع التواريخ، لكن الأهم هو ترسيخ روتين: إعداد في 20، تحقق في 22، إيداع في 25 على أقصى تقدير. أضيفوا التذكيرات في تقويمكم أو دعوا <a href="/product/offline">SoftyFact Bureau</a> / <a href="/product/online">SoftyFact Cloud</a> يُنبّهكم تلقائيًا.</p>
+<p>وإذا أردتم <a href="/blog/automatiser-declaration-tej-softyfact">أتمتة عملية TEJ بالكامل</a>، حلولنا للفوترة تقوم بالعمل نيابة عنكم: لا تجميع يدوي ولا صيغة ملف للتحقق منها ولا تأخير. ركّزوا على نشاطكم، SoftyFact يتكفل بالباقي.</p>',
+
+                'meta_description_fr' => 'Calendrier complet des échéances TEJ 2026 en Tunisie. Dates limites mensuelles, conseils par période et rappels à configurer.',
+                'meta_description_ar' => 'روزنامة شاملة لمواعيد TEJ 2026 في تونس. مواعيد نهائية شهرية ونصائح لكل فترة وتذكيرات.',
+                'meta_keywords' => 'calendrier TEJ 2026, échéances TEJ tunisie, dates limites retenue source 2026, planning déclaration TEJ',
+                'cover_image' => null,
+                'reading_time' => 9,
+                'published_at' => '2026-04-22 10:00:00',
+            ],
+
 
         ];
 
@@ -5109,6 +7558,13 @@ class BlogPostSeeder extends Seeder
             'logiciel-facturation-expert-comptable-tunisie'  => 'accountant office professional',
             'gestion-multi-entrepots-stock-tunisie'          => 'warehouse logistics storage',
             'transformation-digitale-commerce-tunisie-2026'  => 'digital transformation technology',
+            'facturation-electronique-pme-tunisie-preparation'    => 'small business preparation planning',
+            'cout-roi-facturation-electronique-tunisie'           => 'money investment return savings',
+            'cadre-juridique-facturation-electronique-tunisie'    => 'legal law books gavel justice',
+            'erreurs-courantes-declaration-tej-tunisie'           => 'mistake error warning alert',
+            'automatiser-declaration-tej-softyfact'               => 'automation software workflow',
+            'tej-debutants-faq-tunisie'                           => 'questions answers FAQ help',
+            'calendrier-echeances-tej-2026'                       => 'calendar deadline schedule planner',
         ];
 
         $posts = BlogPost::whereNull('cover_image')

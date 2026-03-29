@@ -87,34 +87,45 @@ Route::get('/blog/{post:slug}', [BlogController::class, 'show'])->name('blog.sho
 
 // Sitemap
 Route::get('/sitemap.xml', function () {
+    $base = 'https://softyfact.tn';
+
     $urls = [
-        ['loc' => 'https://softyfact.tn/', 'priority' => '1.0', 'changefreq' => 'weekly'],
-        ['loc' => 'https://softyfact.tn/product/offline', 'priority' => '0.9', 'changefreq' => 'monthly'],
-        ['loc' => 'https://softyfact.tn/product/online', 'priority' => '0.9', 'changefreq' => 'monthly'],
-        ['loc' => 'https://softyfact.tn/contact', 'priority' => '0.7', 'changefreq' => 'monthly'],
-        ['loc' => 'https://softyfact.tn/conditions', 'priority' => '0.3', 'changefreq' => 'yearly'],
-        ['loc' => 'https://softyfact.tn/confidentialite', 'priority' => '0.3', 'changefreq' => 'yearly'],
-        ['loc' => 'https://softyfact.tn/blog', 'priority' => '0.8', 'changefreq' => 'weekly'],
+        ['loc' => $base . '/', 'lastmod' => '2026-03-01', 'priority' => '1.0', 'changefreq' => 'weekly'],
+        ['loc' => $base . '/product/offline', 'lastmod' => '2026-03-01', 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['loc' => $base . '/product/online', 'lastmod' => '2026-03-01', 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['loc' => $base . '/contact', 'lastmod' => '2026-03-01', 'priority' => '0.7', 'changefreq' => 'monthly'],
+        ['loc' => $base . '/conditions', 'lastmod' => '2026-02-28', 'priority' => '0.3', 'changefreq' => 'yearly'],
+        ['loc' => $base . '/confidentialite', 'lastmod' => '2026-02-28', 'priority' => '0.3', 'changefreq' => 'yearly'],
+        ['loc' => $base . '/blog', 'lastmod' => date('Y-m-d'), 'priority' => '0.8', 'changefreq' => 'weekly'],
     ];
 
-    // Add published blog posts to sitemap
     $blogPosts = BlogPost::published()->orderByDesc('published_at')->get();
     foreach ($blogPosts as $post) {
         $urls[] = [
-            'loc' => 'https://softyfact.tn/blog/' . $post->slug,
+            'loc' => $base . '/blog/' . $post->slug,
+            'lastmod' => $post->updated_at->toDateString(),
             'priority' => '0.7',
             'changefreq' => 'monthly',
+            'image' => $post->cover_image ? $base . $post->cover_image : null,
+            'image_title' => $post->title_fr,
         ];
     }
 
     $xml = '<?xml version="1.0" encoding="UTF-8"?>';
-    $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+    $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"';
+    $xml .= ' xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">';
     foreach ($urls as $url) {
         $xml .= '<url>';
         $xml .= '<loc>' . htmlspecialchars($url['loc'], ENT_XML1) . '</loc>';
-        $xml .= '<lastmod>' . date('Y-m-d') . '</lastmod>';
+        $xml .= '<lastmod>' . $url['lastmod'] . '</lastmod>';
         $xml .= '<changefreq>' . $url['changefreq'] . '</changefreq>';
         $xml .= '<priority>' . $url['priority'] . '</priority>';
+        if (!empty($url['image'])) {
+            $xml .= '<image:image>';
+            $xml .= '<image:loc>' . htmlspecialchars($url['image'], ENT_XML1) . '</image:loc>';
+            $xml .= '<image:title>' . htmlspecialchars($url['image_title'], ENT_XML1) . '</image:title>';
+            $xml .= '</image:image>';
+        }
         $xml .= '</url>';
     }
     $xml .= '</urlset>';

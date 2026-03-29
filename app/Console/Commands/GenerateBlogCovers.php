@@ -38,6 +38,13 @@ class GenerateBlogCovers extends Command
             'logiciel-facturation-expert-comptable-tunisie'  => 'accountant office professional',
             'gestion-multi-entrepots-stock-tunisie'         => 'warehouse logistics storage',
             'transformation-digitale-commerce-tunisie-2026'  => 'digital transformation technology',
+            'facturation-electronique-pme-tunisie-preparation'    => 'small business preparation planning',
+            'cout-roi-facturation-electronique-tunisie'           => 'money investment return savings',
+            'cadre-juridique-facturation-electronique-tunisie'    => 'legal law books gavel justice',
+            'erreurs-courantes-declaration-tej-tunisie'           => 'mistake error warning alert',
+            'automatiser-declaration-tej-softyfact'               => 'automation software workflow',
+            'tej-debutants-faq-tunisie'                           => 'questions answers FAQ help',
+            'calendrier-echeances-tej-2026'                       => 'calendar deadline schedule planner',
         ];
     }
 

@@ -27,6 +27,15 @@ services:
       APP_ORDER_AMOUNT_ONLINE: ${APP_ORDER_AMOUNT_ONLINE:-99}
       PUBLIC_SITE_API_KEY: ${PUBLIC_SITE_API_KEY:-}
       PEXELS_API_KEY: ${PEXELS_API_KEY:-}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-}
+      MAIL_MAILER: ${MAIL_MAILER:-log}
+      MAIL_HOST: ${MAIL_HOST:-}
+      MAIL_PORT: ${MAIL_PORT:-587}
+      MAIL_USERNAME: ${MAIL_USERNAME:-}
+      MAIL_PASSWORD: ${MAIL_PASSWORD:-}
+      MAIL_ENCRYPTION: ${MAIL_ENCRYPTION:-tls}
+      MAIL_FROM_ADDRESS: ${MAIL_FROM_ADDRESS:-noreply@softyfact.tn}
+      MAIL_FROM_NAME: ${MAIL_FROM_NAME:-SoftyFact}
     volumes:
       - app-storage:/var/www/html/storage
     networks:

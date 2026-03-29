@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\NewLeadMail;
 
 class LeadController extends Controller
 {
@@ -29,6 +31,22 @@ class LeadController extends Controller
             ]);
 
             if ($response->successful()) {
+                // Notify admin by email
+                $adminEmail = config('app.admin_email');
+                if ($adminEmail) {
+                    try {
+                        Mail::to($adminEmail)->send(new NewLeadMail([
+                            'name' => $validated['name'],
+                            'phone' => $validated['phone'],
+                            'company' => $validated['company'] ?? null,
+                            'message' => $validated['message'] ?? null,
+                            'source_page' => 'homepage',
+                        ]));
+                    } catch (\Throwable $e) {
+                        Log::warning('Failed to send lead notification email', ['error' => $e->getMessage()]);
+                    }
+                }
+
                 return response()->json(['success' => true, 'message' => 'Votre demande a été envoyée avec succès.']);
             }
 

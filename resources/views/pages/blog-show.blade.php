@@ -15,18 +15,19 @@
 <meta property="og:url" content="https://softyfact.tn/blog/{{ $post->slug }}" />
 <meta property="og:site_name" content="{{ $productName }}" />
 <meta property="og:locale" content="fr_TN" />
-@if($post->cover_image)
-<meta property="og:image" content="https://softyfact.tn{{ $post->cover_image }}" />
-@endif
+@php
+    $ogImage = file_exists(public_path('images/blog/og/' . $post->slug . '.jpg'))
+        ? 'https://softyfact.tn/images/blog/og/' . $post->slug . '.jpg'
+        : ($post->cover_image ? 'https://softyfact.tn' . $post->cover_image : 'https://softyfact.tn/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png');
+@endphp
+<meta property="og:image" content="{{ $ogImage }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="article:published_time" content="{{ $post->published_at->toIso8601String() }}" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ $post->getTitle() }}" />
 <meta name="twitter:description" content="{{ $post->getMetaDescription() }}" />
-@if($post->cover_image)
-<meta name="twitter:image" content="https://softyfact.tn{{ $post->cover_image }}" />
-@else
-<meta name="twitter:image" content="https://softyfact.tn/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" />
-@endif
+<meta name="twitter:image" content="{{ $ogImage }}" />
 @endsection
 
 @section('jsonld')
@@ -50,17 +51,30 @@
         'url' => 'https://softyfact.tn',
         'logo' => [
             '@type' => 'ImageObject',
-            'url' => 'https://softyfact.tn/logo.png',
+            'url' => 'https://softyfact.tn/favicon/apple-touch-icon.png',
         ],
     ],
     'mainEntityOfPage' => [
         '@type' => 'WebPage',
         '@id' => 'https://softyfact.tn/blog/' . $post->slug,
     ],
-    'image' => $post->cover_image ? 'https://softyfact.tn' . $post->cover_image : null,
+    'image' => $ogImage,
+    'thumbnailUrl' => $ogImage,
     'wordCount' => str_word_count(strip_tags($post->getBody())),
     'articleSection' => 'Facturation & Gestion',
     'inLanguage' => app()->getLocale() === 'ar' ? 'ar' : 'fr',
+    'isAccessibleForFree' => true,
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => __('home'), 'item' => 'https://softyfact.tn'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => __('blog'), 'item' => 'https://softyfact.tn/blog'],
+        ['@type' => 'ListItem', 'position' => 3, 'name' => $post->getTitle()],
+    ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>
 @endsection

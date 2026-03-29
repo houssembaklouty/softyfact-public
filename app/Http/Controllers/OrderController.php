@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\NewOrderMail;
 
 class OrderController extends Controller
 {
@@ -61,6 +63,24 @@ class OrderController extends Controller
 
             if ($response->successful() && $response->json('success')) {
                 $token = $response->json('confirmation_token');
+
+                // Notify admin by email
+                $adminEmail = config('app.admin_email');
+                if ($adminEmail) {
+                    try {
+                        Mail::to($adminEmail)->send(new NewOrderMail([
+                            'name' => $validated['name'] ?? '',
+                            'phone' => $validated['phone'],
+                            'email' => $validated['email'] ?? null,
+                            'address' => $validated['address'] ?? null,
+                            'city' => $validated['city'] ?? null,
+                            'type' => $isOnline ? 'online' : 'offline',
+                            'ab_variant' => $request->cookie('ab_variant'),
+                        ]));
+                    } catch (\Throwable $e) {
+                        Log::warning('Failed to send order notification email', ['error' => $e->getMessage()]);
+                    }
+                }
 
                 return response()->json([
                     'success'  => true,

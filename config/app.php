@@ -50,4 +50,7 @@ return [
     // Analytics & Tracking (leave empty to disable)
     'ga_measurement_id' => env('GA_MEASUREMENT_ID', ''),
     'fb_pixel_id' => env('FB_PIXEL_ID', ''),
+
+    // Admin notifications (leave empty to disable)
+    'admin_email' => env('ADMIN_EMAIL', ''),
 ];

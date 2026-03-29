@@ -27,13 +27,39 @@
     'name' => __('blog') . ' — ' . $productName,
     'description' => __('blogMetaDesc'),
     'url' => 'https://softyfact.tn/blog',
+    'inLanguage' => app()->getLocale() === 'ar' ? 'ar' : 'fr',
     'publisher' => [
         '@type' => 'Organization',
         'name' => $productName,
         'url' => 'https://softyfact.tn',
+        'logo' => ['@type' => 'ImageObject', 'url' => 'https://softyfact.tn/favicon/apple-touch-icon.png'],
     ],
 ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
 </script>
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'BreadcrumbList',
+    'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => __('home'), 'item' => 'https://softyfact.tn'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => __('blog')],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+@if(isset($posts) && $posts->count())
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'ItemList',
+    'itemListElement' => $posts->take(10)->values()->map(fn ($post, $i) => [
+        '@type' => 'ListItem',
+        'position' => $i + 1,
+        'url' => 'https://softyfact.tn/blog/' . $post->slug,
+        'name' => $post->getTitle(),
+    ])->all(),
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
+@endif
 @endsection
 
 @section('body')

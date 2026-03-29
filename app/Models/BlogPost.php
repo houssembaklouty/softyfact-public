@@ -74,6 +74,13 @@ class BlogPost extends Model
             'logiciel-facturation-expert-comptable-tunisie' => ['icon' => 'account_balance_wallet', 'from' => '#311B92', 'to' => '#9575CD'],
             'gestion-multi-entrepots-stock-tunisie' => ['icon' => 'local_shipping', 'from' => '#3E2723', 'to' => '#A1887F'],
             'transformation-digitale-commerce-tunisie-2026' => ['icon' => 'rocket_launch', 'from' => '#37474F', 'to' => '#90A4AE'],
+            'facturation-electronique-pme-tunisie-preparation' => ['icon' => 'checklist_rtl', 'from' => '#1565C0', 'to' => '#64B5F6'],
+            'cout-roi-facturation-electronique-tunisie' => ['icon' => 'savings', 'from' => '#2E7D32', 'to' => '#81C784'],
+            'cadre-juridique-facturation-electronique-tunisie' => ['icon' => 'gavel', 'from' => '#4A148C', 'to' => '#BA68C8'],
+            'erreurs-courantes-declaration-tej-tunisie' => ['icon' => 'error_outline', 'from' => '#C62828', 'to' => '#E57373'],
+            'automatiser-declaration-tej-softyfact' => ['icon' => 'auto_fix_high', 'from' => '#00695C', 'to' => '#4DB6AC'],
+            'tej-debutants-faq-tunisie' => ['icon' => 'help_outline', 'from' => '#E65100', 'to' => '#FFB74D'],
+            'calendrier-echeances-tej-2026' => ['icon' => 'calendar_month', 'from' => '#283593', 'to' => '#7986CB'],
         ];
 
         return $map[$this->slug] ?? ['icon' => 'article', 'from' => '#006B59', 'to' => '#00C1A3'];
