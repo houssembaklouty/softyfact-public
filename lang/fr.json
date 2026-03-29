@@ -298,5 +298,20 @@
     "contactFaq3Q": "Les mises à jour sont-elles incluses ?",
     "contactFaq3A": "Oui, toutes les mises à jour sont gratuites et incluses dans votre licence à vie.",
     "contactFaq4Q": "Le logiciel fonctionne-t-il sans internet ?",
-    "contactFaq4A": "L'application bureau fonctionne hors ligne. La version web nécessite une connexion."
+    "contactFaq4A": "L'application bureau fonctionne hors ligne. La version web nécessite une connexion.",
+
+    "errorPageNotFoundTitle": "Page introuvable",
+    "errorPageNotFoundMessage": "Désolé, la page que vous cherchez n'existe pas ou a été déplacée.",
+    "errorServerTitle": "Erreur interne du serveur",
+    "errorServerMessage": "Une erreur inattendue s'est produite. Notre équipe a été notifiée.",
+    "errorMaintenanceTitle": "Maintenance en cours",
+    "errorMaintenanceMessage": "Nous effectuons une maintenance. Le service sera rétabli très prochainement.",
+    "errorForbiddenTitle": "Accès interdit",
+    "errorForbiddenMessage": "Vous n'avez pas la permission d'accéder à cette page.",
+    "errorSessionTitle": "Session expirée",
+    "errorSessionMessage": "Votre session a expiré. Veuillez rafraîchir la page et réessayer.",
+    "errorBackHome": "Retour à l'accueil",
+    "errorContactUs": "Nous contacter",
+    "errorRetry": "Réessayer",
+    "errorRefreshPage": "Rafraîchir la page"
 }

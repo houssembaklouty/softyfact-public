@@ -298,5 +298,20 @@
     "contactFaq3Q": "هل التحديثات مشمولة؟",
     "contactFaq3A": "نعم، جميع التحديثات مجانية ومشمولة في رخصتك مدى الحياة.",
     "contactFaq4Q": "هل يعمل البرنامج بدون إنترنت؟",
-    "contactFaq4A": "تطبيق المكتب يعمل بدون اتصال. النسخة السحابية تتطلب اتصالاً بالإنترنت."
+    "contactFaq4A": "تطبيق المكتب يعمل بدون اتصال. النسخة السحابية تتطلب اتصالاً بالإنترنت.",
+
+    "errorPageNotFoundTitle": "الصفحة غير موجودة",
+    "errorPageNotFoundMessage": "عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "errorServerTitle": "خطأ في الخادم",
+    "errorServerMessage": "حدث خطأ غير متوقع. تم إبلاغ فريقنا.",
+    "errorMaintenanceTitle": "صيانة جارية",
+    "errorMaintenanceMessage": "نقوم حالياً بعملية صيانة. ستعود الخدمة قريباً جداً.",
+    "errorForbiddenTitle": "الوصول محظور",
+    "errorForbiddenMessage": "ليس لديك صلاحية للوصول إلى هذه الصفحة.",
+    "errorSessionTitle": "انتهت الجلسة",
+    "errorSessionMessage": "انتهت صلاحية جلستك. يرجى تحديث الصفحة والمحاولة مجدداً.",
+    "errorBackHome": "العودة للرئيسية",
+    "errorContactUs": "اتصل بنا",
+    "errorRetry": "إعادة المحاولة",
+    "errorRefreshPage": "تحديث الصفحة"
 }
