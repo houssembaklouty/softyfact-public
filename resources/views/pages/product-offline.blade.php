@@ -15,9 +15,11 @@
 <meta property="og:locale" content="fr_TN" />
 <meta property="product:price:amount" content="{{ $pagePrice }}" />
 <meta property="product:price:currency" content="TND" />
+<meta property="og:image" content="https://softyfact.tn/softyfact-features-details-offline.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ $productName }} Version Bureau | {{ $pagePrice }} DT" />
 <meta name="twitter:description" content="Logiciel de facturation hors ligne pour le marché tunisien. Installation locale, fonctionne sans internet." />
+<meta name="twitter:image" content="https://softyfact.tn/softyfact-features-details-offline.png" />
 @endsection
 
 @section('jsonld')

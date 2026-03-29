@@ -12,6 +12,11 @@
 <meta property="og:url" content="https://softyfact.tn/blog" />
 <meta property="og:site_name" content="{{ $productName }}" />
 <meta property="og:locale" content="fr_TN" />
+<meta property="og:image" content="https://softyfact.tn/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ __('blog') }} — {{ $productName }}" />
+<meta name="twitter:description" content="{{ __('blogMetaDesc') }}" />
+<meta name="twitter:image" content="https://softyfact.tn/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" />
 @endsection
 
 @section('jsonld')

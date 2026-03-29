@@ -1,10 +1,46 @@
 @extends('app')
 
 @section('meta')
-<title>Contact — SoftyFact</title>
-<meta name="description" content="Contactez l'équipe SoftyFact pour toute question sur le logiciel, une commande ou le support technique." />
+<title>Contact — {{ $productName }} | Contactez-nous</title>
+<meta name="description" content="Contactez l'équipe {{ $productName }} pour toute question sur le logiciel de facturation, une commande ou le support technique en Tunisie." />
+<meta name="keywords" content="contact softyfact, support facturation tunisie, aide logiciel facturation, service client" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://softyfact.tn/contact" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact — {{ $productName }}" />
+<meta property="og:description" content="Contactez l'équipe {{ $productName }} pour toute question sur le logiciel, une commande ou le support technique." />
+<meta property="og:url" content="https://softyfact.tn/contact" />
+<meta property="og:site_name" content="{{ $productName }}" />
+<meta property="og:locale" content="fr_TN" />
+<meta property="og:image" content="https://softyfact.tn/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Contact — {{ $productName }}" />
+<meta name="twitter:description" content="Contactez l'équipe {{ $productName }} pour toute question sur le logiciel, une commande ou le support technique." />
+<meta name="twitter:image" content="https://softyfact.tn/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" />
+@endsection
+
+@section('jsonld')
+<script type="application/ld+json">
+{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'ContactPage',
+    'name' => 'Contact — ' . $productName,
+    'url' => 'https://softyfact.tn/contact',
+    'description' => 'Contactez notre équipe pour toute question.',
+    'mainEntity' => [
+        '@type' => 'Organization',
+        'name' => $productName,
+        'url' => 'https://softyfact.tn',
+        'contactPoint' => [
+            '@type' => 'ContactPoint',
+            'telephone' => '+216-' . $supportPhone,
+            'contactType' => 'customer service',
+            'availableLanguage' => ['French', 'Arabic'],
+            'areaServed' => 'TN',
+        ],
+    ],
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+</script>
 @endsection
 
 @section('body')

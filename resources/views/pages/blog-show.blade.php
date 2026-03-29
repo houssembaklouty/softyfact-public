@@ -22,6 +22,11 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="{{ $post->getTitle() }}" />
 <meta name="twitter:description" content="{{ $post->getMetaDescription() }}" />
+@if($post->cover_image)
+<meta name="twitter:image" content="https://softyfact.tn{{ $post->cover_image }}" />
+@else
+<meta name="twitter:image" content="https://softyfact.tn/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" />
+@endif
 @endsection
 
 @section('jsonld')
