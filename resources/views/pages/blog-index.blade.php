@@ -88,7 +88,7 @@
                 @php $meta = $post->getCoverMeta(); @endphp
                 <a href="/blog/{{ $post->slug }}" class="block overflow-hidden aspect-[16/9]">
                     @if($post->cover_image)
-                    <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                    <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" width="400" height="225">
                     @else
                     <div class="w-full h-full flex flex-col items-center justify-center p-6 text-white relative group-hover:scale-[1.02] transition-transform duration-300"
                          style="background: linear-gradient(135deg, {{ $meta['from'] }}, {{ $meta['to'] }});">

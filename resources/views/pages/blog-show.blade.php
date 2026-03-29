@@ -129,7 +129,7 @@
         @php $meta = $post->getCoverMeta(); @endphp
         <div class="rounded-2xl overflow-hidden shadow-lg mb-8 md:mb-10">
             @if($post->cover_image)
-            <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full aspect-[21/9] object-cover" fetchpriority="high">
+            <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full aspect-[21/9] object-cover" fetchpriority="high" width="1200" height="514">
             @else
             <div class="w-full aspect-[21/9] flex items-center justify-center text-white relative"
                  style="background: linear-gradient(135deg, {{ $meta['from'] }}, {{ $meta['to'] }});">
@@ -193,7 +193,7 @@
                     @php $relMeta = $rel->getCoverMeta(); @endphp
                     <a href="/blog/{{ $rel->slug }}" class="block overflow-hidden aspect-[16/9]">
                         @if($rel->cover_image)
-                        <img src="{{ $rel->cover_image }}" alt="{{ $rel->getTitle() }}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" loading="lazy">
+                        <img src="{{ $rel->cover_image }}" alt="{{ $rel->getTitle() }}" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" loading="lazy" width="400" height="225">
                         @else
                         <div class="w-full h-full flex flex-col items-center justify-center p-5 text-white relative group-hover:scale-[1.02] transition-transform duration-300"
                              style="background: linear-gradient(135deg, {{ $relMeta['from'] }}, {{ $relMeta['to'] }});">
