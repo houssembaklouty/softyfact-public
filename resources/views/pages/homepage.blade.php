@@ -286,6 +286,42 @@
             </div>
         </section>
 
+        {{-- ═══════════════ WHY SOFTYFACT ═══════════════ --}}
+        <section class="py-16 md:py-24 bg-white px-6 md:px-8" aria-labelledby="why-heading">
+            <div class="max-w-7xl mx-auto space-y-12 md:space-y-16">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 id="why-heading" class="font-headline font-extrabold text-3xl md:text-4xl text-cm-on-background mb-4">{{ __('whyTitle') }}</h2>
+                    <p class="text-base md:text-lg text-cm-secondary leading-relaxed">{{ __('whySubtitle') }}</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    {{-- Feature 1: 100% Conforme --}}
+                    <div class="bg-cm-surface-container-low rounded-3xl p-6 md:p-8 border border-cm-outline-variant/10 space-y-4">
+                        <div class="w-12 h-12 bg-cm-primary/10 rounded-2xl flex items-center justify-center">
+                            <span class="material-symbols-outlined text-cm-primary text-2xl">verified</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-cm-on-background">{{ __('whyFeature1Title') }}</h3>
+                        <p class="text-sm text-cm-secondary leading-relaxed">{{ __('whyFeature1Desc') }}</p>
+                    </div>
+                    {{-- Feature 2: Simple & Rapide --}}
+                    <div class="bg-cm-surface-container-low rounded-3xl p-6 md:p-8 border border-cm-outline-variant/10 space-y-4">
+                        <div class="w-12 h-12 bg-cm-primary/10 rounded-2xl flex items-center justify-center">
+                            <span class="material-symbols-outlined text-cm-primary text-2xl">bolt</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-cm-on-background">{{ __('whyFeature2Title') }}</h3>
+                        <p class="text-sm text-cm-secondary leading-relaxed">{{ __('whyFeature2Desc') }}</p>
+                    </div>
+                    {{-- Feature 3: Support Local --}}
+                    <div class="bg-cm-surface-container-low rounded-3xl p-6 md:p-8 border border-cm-outline-variant/10 space-y-4">
+                        <div class="w-12 h-12 bg-cm-primary/10 rounded-2xl flex items-center justify-center">
+                            <span class="material-symbols-outlined text-cm-primary text-2xl">support_agent</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-cm-on-background">{{ __('whyFeature3Title') }}</h3>
+                        <p class="text-sm text-cm-secondary leading-relaxed">{{ __('whyFeature3Desc') }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         {{-- ═══════════════ TESTIMONIALS ═══════════════ --}}
         <section class="py-16 md:py-24 bg-cm-surface-container-low px-6 md:px-8" aria-labelledby="testimonials-heading">
             <div class="max-w-7xl mx-auto space-y-12 md:space-y-16">

@@ -1,8 +1,8 @@
 @extends('app')
 
 @section('meta')
-<title>Contact — {{ $productName }} | Contactez-nous</title>
-<meta name="description" content="Contactez l'équipe {{ $productName }} pour toute question sur le logiciel de facturation, une commande ou le support technique en Tunisie." />
+<title>{{ __('contactPageTitle', ['name' => $productName]) }}</title>
+<meta name="description" content="{{ __('contactPageMetaDesc', ['name' => $productName]) }}" />
 <meta name="keywords" content="contact softyfact, support facturation tunisie, aide logiciel facturation, service client" />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://softyfact.tn/contact" />
@@ -60,8 +60,8 @@
 
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div class="text-center mb-12">
-            <h1 class="text-3xl font-bold text-gray-900 mb-3">Contactez-nous</h1>
-            <p class="text-gray-600">Notre équipe est disponible pour répondre à toutes vos questions sur le logiciel, les commandes ou le support technique.</p>
+            <h1 class="text-3xl font-bold text-gray-900 mb-3">{{ __('contactPageHeading') }}</h1>
+            <p class="text-gray-600">{{ __('contactPageIntro') }}</p>
         </div>
 
         {{-- Contact cards --}}
@@ -75,9 +75,9 @@
                     </svg>
                 </div>
                 <div>
-                    <p class="text-sm font-semibold text-gray-500 mb-0.5">Téléphone</p>
+                    <p class="text-sm font-semibold text-gray-500 mb-0.5">{{ __('contactPhoneLabel') }}</p>
                     <p class="text-lg font-bold text-gray-900 group-hover:text-cm-primary transition">{{ $supportPhone }}</p>
-                    <p class="text-xs text-gray-400 mt-1">Disponible du lun. au sam., 9h – 18h</p>
+                    <p class="text-xs text-gray-400 mt-1">{{ __('contactPhoneHours') }}</p>
                 </div>
             </a>
 
@@ -93,30 +93,30 @@
                 <div>
                     <p class="text-sm font-semibold text-gray-500 mb-0.5">WhatsApp</p>
                     <p class="text-lg font-bold text-gray-900 group-hover:text-green-600 transition">{{ $supportPhone }}</p>
-                    <p class="text-xs text-gray-400 mt-1">Réponse rapide via WhatsApp</p>
+                    <p class="text-xs text-gray-400 mt-1">{{ __('contactWhatsappNote') }}</p>
                 </div>
             </a>
         </div>
 
         {{-- FAQ quick links --}}
         <div class="bg-white rounded-2xl border border-gray-100 p-6 shadow-sm">
-            <h2 class="text-base font-bold text-gray-900 mb-4">Questions fréquentes</h2>
+            <h2 class="text-base font-bold text-gray-900 mb-4">{{ __('contactFaqTitle') }}</h2>
             <ul class="space-y-3 text-sm">
                 <li class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-cm-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <span class="text-gray-600">Comment recevoir ma licence après commande ?<br><span class="text-gray-400 text-xs">Votre code d'activation vous sera remis lors de la livraison.</span></span>
+                    <span class="text-gray-600">{{ __('contactFaq1Q') }}<br><span class="text-gray-400 text-xs">{{ __('contactFaq1A') }}</span></span>
                 </li>
                 <li class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-cm-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <span class="text-gray-600">Sur combien d'appareils puis-je utiliser le logiciel ?<br><span class="text-gray-400 text-xs">La licence couvre jusqu'à 4 appareils pour une même entreprise.</span></span>
+                    <span class="text-gray-600">{{ __('contactFaq2Q') }}<br><span class="text-gray-400 text-xs">{{ __('contactFaq2A') }}</span></span>
                 </li>
                 <li class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-cm-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <span class="text-gray-600">Les mises à jour sont-elles incluses ?<br><span class="text-gray-400 text-xs">Oui, toutes les mises à jour sont gratuites et incluses dans votre licence à vie.</span></span>
+                    <span class="text-gray-600">{{ __('contactFaq3Q') }}<br><span class="text-gray-400 text-xs">{{ __('contactFaq3A') }}</span></span>
                 </li>
                 <li class="flex items-start gap-2">
                     <svg class="w-4 h-4 text-cm-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    <span class="text-gray-600">Le logiciel fonctionne-t-il sans internet ?<br><span class="text-gray-400 text-xs">L'application bureau fonctionne hors ligne. La version web nécessite une connexion.</span></span>
+                    <span class="text-gray-600">{{ __('contactFaq4Q') }}<br><span class="text-gray-400 text-xs">{{ __('contactFaq4A') }}</span></span>
                 </li>
             </ul>
         </div>

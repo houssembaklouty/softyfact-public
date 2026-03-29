@@ -272,5 +272,31 @@
     "blogCta": "Prêt à simplifier votre facturation ?",
     "blogCtaSub": "Découvrez SoftyFact et gérez vos factures en toute conformité.",
     "publishedOn": "Publié le",
-    "whatsappChat": "Discuter sur WhatsApp"
+    "whatsappChat": "Discuter sur WhatsApp",
+
+    "whyTitle": "Pourquoi choisir SoftyFact ?",
+    "whySubtitle": "Le logiciel de facturation conçu pour les entreprises tunisiennes, simple, conforme et fiable.",
+    "whyFeature1Title": "100% Conforme",
+    "whyFeature1Desc": "TVA, FODEC, droit de timbre, TEJ, retenue à la source et El-Fatoora — tout est intégré et conforme à la législation fiscale tunisienne.",
+    "whyFeature2Title": "Simple & Rapide",
+    "whyFeature2Desc": "Créez une facture en moins de 30 secondes. Interface intuitive, aucune formation nécessaire pour démarrer.",
+    "whyFeature3Title": "Support Local",
+    "whyFeature3Desc": "Équipe basée en Tunisie, support en français et en arabe. Nous comprenons la réalité de votre entreprise.",
+
+    "contactPageTitle": "Contact — :name | Contactez-nous",
+    "contactPageMetaDesc": "Contactez l'équipe :name pour toute question sur le logiciel de facturation, une commande ou le support technique en Tunisie.",
+    "contactPageHeading": "Contactez-nous",
+    "contactPageIntro": "Notre équipe est disponible pour répondre à toutes vos questions sur le logiciel, les commandes ou le support technique.",
+    "contactPhoneLabel": "Téléphone",
+    "contactPhoneHours": "Disponible du lun. au sam., 9h – 18h",
+    "contactWhatsappNote": "Réponse rapide via WhatsApp",
+    "contactFaqTitle": "Questions fréquentes",
+    "contactFaq1Q": "Comment recevoir ma licence après commande ?",
+    "contactFaq1A": "Votre code d'activation vous sera remis lors de la livraison.",
+    "contactFaq2Q": "Sur combien d'appareils puis-je utiliser le logiciel ?",
+    "contactFaq2A": "La licence couvre jusqu'à 4 appareils pour une même entreprise.",
+    "contactFaq3Q": "Les mises à jour sont-elles incluses ?",
+    "contactFaq3A": "Oui, toutes les mises à jour sont gratuites et incluses dans votre licence à vie.",
+    "contactFaq4Q": "Le logiciel fonctionne-t-il sans internet ?",
+    "contactFaq4A": "L'application bureau fonctionne hors ligne. La version web nécessite une connexion."
 }
