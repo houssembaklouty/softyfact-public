@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ContactLead;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class LeadController extends Controller
 {
@@ -16,11 +17,27 @@ class LeadController extends Controller
             'message' => 'nullable|string|max:2000',
         ]);
 
-        ContactLead::create([
-            ...$validated,
-            'source_page' => 'homepage',
-            'ip_address' => $request->ip(),
-        ]);
+        try {
+            $response = Http::withHeaders([
+                'X-Api-Key' => config('app.public_site_api_key'),
+                'Accept' => 'application/json',
+            ])->timeout(10)->post(config('app.core_app_url') . '/api/leads', [
+                ...$validated,
+                'source_page' => 'homepage',
+                'ip_address' => $request->ip(),
+            ]);
+
+            if ($response->successful()) {
+                return response()->json(['success' => true, 'message' => 'Votre demande a été envoyée avec succès.']);
+            }
+
+            Log::error('Lead API forwarding failed', [
+                'status' => $response->status(),
+                'body' => $response->body(),
+            ]);
+        } catch (\Throwable $e) {
+            Log::error('Lead API forwarding exception', ['error' => $e->getMessage()]);
+        }
 
         return response()->json(['success' => true, 'message' => 'Votre demande a été envoyée avec succès.']);
     }
