@@ -73,7 +73,7 @@ Route::post('/orders', [OrderController::class, 'store'])
     ->name('orders.store');
 
 Route::get('/order-confirmation/{token}', [OrderController::class, 'confirmation'])
-    ->where('token', '[A-Za-z0-9]+')
+    ->where('token', '[0-9]{8}')
     ->name('orders.confirmation');
 
 // Lead capture (public, throttled)

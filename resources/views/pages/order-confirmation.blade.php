@@ -29,7 +29,7 @@
             <div class="bg-gray-50 rounded-xl p-5 mb-6 space-y-3">
                 <div class="flex justify-between text-sm">
                     <span class="text-gray-500">Référence</span>
-                    <span class="font-medium text-gray-900 text-xs break-all">{{ $token }}</span>
+                    <span class="font-bold text-gray-900 text-lg tracking-wider">SF-{{ $token }}</span>
                 </div>
                 <div class="border-t border-gray-200 pt-3 flex justify-between">
                     <span class="text-sm font-semibold text-gray-700">Montant</span>
