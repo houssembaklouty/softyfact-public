@@ -8,7 +8,7 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:
-      - "${APP_PORT:-8081}:80"
+      - "${APP_PORT:-8083}:80"
     environment:
       APP_NAME: ${APP_NAME:-SoftyFact}
       APP_ENV: ${APP_ENV:-local}
