@@ -156,7 +156,10 @@ $faqs = [
             {{-- Left: Product showcase --}}
             <div class="order-1 lg:order-1">
                 <div class="relative">
-                    <img src="/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" alt="{{ $productName }} product screenshot" />
+                    <picture>
+                        <source srcset="/softy-fact%20(solution%20de%20facturation%20en%20tunisie).webp" type="image/webp">
+                        <img src="/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" alt="{{ $productName }} product screenshot" width="480" height="520" />
+                    </picture>
                 </div>
                 {{-- Pricing badge --}}
                 <div class="flex items-center justify-center gap-4 mt-4 sm:mt-6">
@@ -272,7 +275,10 @@ $faqs = [
             </div>
         </div>
 
-        <img src="/softyfact-features-details-en-ligne.png" alt="{{ $productName }}" class="hidden lg:block w-full h-auto rounded-2xl shadow-lg mt-12" loading="lazy" />
+        <picture>
+            <source srcset="/softyfact-features-details-en-ligne.webp" type="image/webp">
+            <img src="/softyfact-features-details-en-ligne.png" alt="{{ $productName }}" class="hidden lg:block w-full h-auto rounded-2xl shadow-lg mt-12" width="619" height="789" loading="lazy" />
+        </picture>
         <video autoplay muted playsinline class="w-full h-auto rounded-2xl shadow-lg lg:hidden mt-3" loading="lazy">
             <source src="/softyfact--features-details.mp4" type="video/mp4" />
         </video>
@@ -290,7 +296,10 @@ $faqs = [
                         <span class="ml-2 text-[10px] text-cm-outline">{{ $s['title'] }}</span>
                     </div>
                     <div class="bg-gradient-to-br from-blue-500/10 to-cm-surface-container-low">
-                        <img src="{{ $s['image'] }}" alt="{{ $s['title'] }}" class="w-full h-auto object-cover border border-cm-outline-variant/30" loading="lazy" />
+                        <picture>
+                            <source srcset="{{ str_replace('.png', '.webp', $s['image']) }}" type="image/webp">
+                            <img src="{{ $s['image'] }}" alt="{{ $s['title'] }}" class="w-full h-auto object-cover border border-cm-outline-variant/30" loading="lazy" />
+                        </picture>
                     </div>
                     <div class="p-4"><p class="text-sm text-cm-secondary">{{ $s['description'] }}</p></div>
                 </div>
@@ -298,7 +307,10 @@ $faqs = [
             </div>
         </div>
 
-        <img src="/nous-gratuites.png" alt="{{ $productName }}" class="hidden lg:block w-full h-auto rounded-2xl shadow-lg mt-12" loading="lazy" />
+        <picture>
+            <source srcset="/nous-gratuites.webp" type="image/webp">
+            <img src="/nous-gratuites.png" alt="{{ $productName }}" class="hidden lg:block w-full h-auto rounded-2xl shadow-lg mt-12" width="830" height="300" loading="lazy" />
+        </picture>
 
         {{-- BOTTOM CTA --}}
         <div class="mt-12 sm:mt-20 bg-gradient-to-br from-blue-600 to-blue-500 rounded-3xl p-6 sm:p-12 text-center relative overflow-hidden">

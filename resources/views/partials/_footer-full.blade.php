@@ -2,7 +2,10 @@
 <footer class="bg-slate-50 mt-20" role="contentinfo">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 px-6 md:px-8 py-12 md:py-16 max-w-7xl mx-auto">
         <div class="col-span-1">
-            <img src="/logo.png" alt="{{ $productName }}" class="h-8 md:h-10 w-auto mb-4 md:mb-6" />
+            <picture>
+                <source srcset="/logo.webp" type="image/webp">
+                <img src="/logo.png" alt="{{ $productName }}" class="h-8 md:h-10 w-auto mb-4 md:mb-6" width="40" height="43" loading="lazy" />
+            </picture>
             <p class="text-sm text-slate-500 leading-relaxed">{{ __('footerDesc') }}</p>
         </div>
         <div>

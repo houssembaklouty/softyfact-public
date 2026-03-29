@@ -115,7 +115,7 @@
         @php $meta = $post->getCoverMeta(); @endphp
         <div class="rounded-2xl overflow-hidden shadow-lg mb-8 md:mb-10">
             @if($post->cover_image)
-            <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full aspect-[21/9] object-cover">
+            <img src="{{ $post->cover_image }}" alt="{{ $post->getTitle() }}" class="w-full aspect-[21/9] object-cover" fetchpriority="high">
             @else
             <div class="w-full aspect-[21/9] flex items-center justify-center text-white relative"
                  style="background: linear-gradient(135deg, {{ $meta['from'] }}, {{ $meta['to'] }});">

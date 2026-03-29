@@ -10,7 +10,10 @@
     <div class="w-full max-w-lg">
         {{-- Logo --}}
         <div class="text-center mb-8">
-            <img src="/logo.png" alt="SoftyFact" class="w-16 h-16 mx-auto mb-3 rounded-xl shadow-lg" />
+            <picture>
+                <source srcset="/logo.webp" type="image/webp">
+                <img src="/logo.png" alt="SoftyFact" class="w-16 h-16 mx-auto mb-3 rounded-xl shadow-lg" width="64" height="64" />
+            </picture>
         </div>
 
         <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">

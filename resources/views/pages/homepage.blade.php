@@ -56,7 +56,10 @@
             <div class="flex-1 w-full order-2 md:order-1 relative z-10">
                 <div class="relative group">
                     <div class="absolute -inset-4 bg-cm-primary/10 rounded-full blur-3xl opacity-50" aria-hidden="true"></div>
-                    <img alt="{{ $productName }} — capture produit" class="relative w-full h-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] rounded-2xl" src="/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" width="600" height="600" fetchpriority="high" />
+                    <picture>
+                        <source srcset="/softy-fact%20(solution%20de%20facturation%20en%20tunisie).webp" type="image/webp">
+                        <img alt="{{ $productName }} — capture produit" class="relative w-full h-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] rounded-2xl" src="/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png" width="480" height="520" fetchpriority="high" />
+                    </picture>
                 </div>
             </div>
 
@@ -367,7 +370,10 @@
     {{-- ═══════════════ FOOTER ═══════════════ --}}
     <footer class="bg-slate-50 border-t border-slate-200 mt-20" role="contentinfo">
         <div class="px-6 md:px-8 py-12 md:py-16 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <img src="/logo.png" alt="{{ $productName }}" class="h-8 md:h-10 w-auto" />
+            <picture>
+                <source srcset="/logo.webp" type="image/webp">
+                <img src="/logo.png" alt="{{ $productName }}" class="h-8 md:h-10 w-auto" width="40" height="43" loading="lazy" />
+            </picture>
             <p class="text-sm text-slate-500 text-center font-medium">© {{ date('Y') }} {{ $productName }}. {{ __('footerDesc') }}</p>
             <div class="flex gap-6 md:gap-8">
                 <a href="/confidentialite" class="text-xs font-bold text-slate-400 hover:text-cm-primary transition-colors uppercase tracking-widest">{{ __('privacy') }}</a>

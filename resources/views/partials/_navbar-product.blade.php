@@ -2,7 +2,10 @@
 <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm" aria-label="{{ __('navLabel') }}">
     <div class="flex justify-between items-center px-6 md:px-8 py-4 max-w-7xl mx-auto">
         <a href="/" aria-label="{{ $productName }} — {{ __('home') }}">
-            <img src="/logo.png" alt="{{ $productName }}" class="h-8 md:h-10 w-auto" />
+            <picture>
+                <source srcset="/logo.webp" type="image/webp">
+                <img src="/logo.png" alt="{{ $productName }}" class="h-8 md:h-10 w-auto" width="40" height="43" />
+            </picture>
         </a>
         <div class="hidden md:flex items-center gap-6">
             <a href="/" class="flex items-center gap-1.5 text-cm-secondary font-medium text-sm tracking-tight hover:text-cm-primary transition-colors">{{ __('home') }}</a>
