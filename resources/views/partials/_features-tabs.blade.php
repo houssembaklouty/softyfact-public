@@ -171,13 +171,16 @@ $featureTabs = [
                 >
                     <div class="relative w-full group">
                         @foreach($tab['images'] as $imgIdx => $img)
-                        <img
-                            src="{{ $img }}"
-                            alt="{{ $tab['title'] }}"
-                            class="w-full h-auto object-contain max-h-[400px] mx-auto transition-opacity duration-700 ease-in-out"
-                            :class="current === {{ $imgIdx }} ? 'opacity-100 relative' : 'opacity-0 absolute inset-0'"
-                            loading="{{ $imgIdx === 0 ? 'eager' : 'lazy' }}"
-                        />
+                        <picture>
+                            <source srcset="{{ str_replace('.png', '.webp', $img) }}" type="image/webp">
+                            <img
+                                src="{{ $img }}"
+                                alt="{{ $tab['title'] }}"
+                                class="w-full h-auto object-contain max-h-[400px] mx-auto transition-opacity duration-700 ease-in-out"
+                                :class="current === {{ $imgIdx }} ? 'opacity-100 relative' : 'opacity-0 absolute inset-0'"
+                                loading="{{ $imgIdx === 0 ? 'eager' : 'lazy' }}"
+                            />
+                        </picture>
                         @endforeach
 
                         {{-- Prev / Next arrows --}}
@@ -208,7 +211,10 @@ $featureTabs = [
                 </div>
                 @else
                 <div class="rounded-2xl overflow-hidden border border-cm-outline-variant/20 shadow-sm w-full">
-                    <img src="{{ $tab['image'] }}" alt="{{ $tab['title'] }}" class="w-full h-auto object-contain max-h-[400px] mx-auto" loading="{{ $i === 0 ? 'eager' : 'lazy' }}" />
+                    <picture>
+                        <source srcset="{{ str_replace('.png', '.webp', $tab['image']) }}" type="image/webp">
+                        <img src="{{ $tab['image'] }}" alt="{{ $tab['title'] }}" class="w-full h-auto object-contain max-h-[400px] mx-auto" loading="lazy" />
+                    </picture>
                 </div>
                 @endif
             </div>
