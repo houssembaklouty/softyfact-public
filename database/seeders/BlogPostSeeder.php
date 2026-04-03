@@ -2564,7 +2564,7 @@ class BlogPostSeeder extends Seeder
 </figure>
 
 <figure style="margin:24px 0;text-align:center">
-<img src="/screen/Tableau de bord.png" alt="Tableau de bord SoftyFact avec graphiques" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<img src="/screen/tableau-de-bord.png" alt="Tableau de bord SoftyFact avec graphiques" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
 <figcaption style="font-size:14px;color:#64748b;margin-top:8px">Tableau de bord avec vision complète : chiffre d\'affaires, factures impayées, top clients (impossible à reproduire sur Excel)</figcaption>
 </figure>
 
@@ -2834,7 +2834,7 @@ class BlogPostSeeder extends Seeder
 </figure>
 
 <figure style="margin:24px 0;text-align:center">
-<img src="/screen/Tableau de bord.png" alt="لوحة القيادة SoftyFact" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
+<img src="/screen/tableau-de-bord.png" alt="لوحة القيادة SoftyFact" style="max-width:100%;border-radius:8px;border:1px solid #e2e8f0;box-shadow:0 4px 6px -1px rgba(0,0,0,0.1)">
 <figcaption style="font-size:14px;color:#64748b;margin-top:8px;direction:rtl">لوحة القيادة مع رؤية شاملة: رقم المعاملات، الفواتير غير المسدّدة، أهمّ الحرفاء (مستحيل إنتاجها على Excel)</figcaption>
 </figure>
 

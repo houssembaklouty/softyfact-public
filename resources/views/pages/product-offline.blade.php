@@ -65,18 +65,6 @@
 $priceFormatted = number_format($pagePrice, 3, '.', '');
 $totalFormatted = number_format($pagePrice + 6, 3, '.', '');
 $tunisCities = ['Ariana','Béja','Ben Arous','Bizerte','Gabès','Gafsa','Jendouba','Kairouan','Kasserine','Kébili','Kef','Mahdia','Manouba','Médenine','Monastir','Nabeul','Sfax','Sidi Bouzid','Siliana','Sousse','Tataouine','Tozeur','Tunis','Zaghouan'];
-$screenshots = [
-    ['title' => __('screen_dashboard'), 'image' => '/screen/Tableau de bord.png', 'description' => __('screen_dashboard_desc')],
-    ['title' => __('screen_invoices'), 'image' => '/screen/Gestion des factures.png', 'description' => __('screen_invoices_desc')],
-    ['title' => __('screen_product'), 'image' => '/screen/ajout-produit.png', 'description' => __('screen_product_desc')],
-    ['title' => __('screen_documents'), 'image' => '/screen/gestion-des-documents(exemple Devis).png', 'description' => __('screen_documents_desc')],
-    ['title' => __('screen_clients'), 'image' => '/screen/gestion des clients.png', 'description' => __('screen_clients_desc')],
-    ['title' => __('screen_fournisseurs'), 'image' => '/screen/gestion des Fournisseurs.png', 'description' => __('screen_fournisseurs_desc')],
-    ['title' => __('screen_stock'), 'image' => '/screen/Gestion de stock.png', 'description' => __('screen_stock_desc')],
-    ['title' => __('screen_payments'), 'image' => '/screen/gestion Paiements (encaissements et décaissements).png', 'description' => __('screen_payments_desc')],
-    ['title' => __('screen_warehouses'), 'image' => '/screen/gestion des Entrepôts .png', 'description' => __('screen_warehouses_desc')],
-    ['title' => __('screen_tej'), 'image' => '/screen/Certificats TEJ.png', 'description' => __('screen_tej_desc')],
-];
 $faqs = [
     ['q' => __('faq_offline_q1'), 'a' => __('faq_offline_a1')],
     ['q' => __('faq_offline_q2'), 'a' => __('faq_offline_a2')],
@@ -300,29 +288,7 @@ $faqs = [
             <source src="/softyfact--features-details.mp4" type="video/mp4" />
         </video>
 
-        {{-- SCREENSHOTS --}}
-        <div class="mt-12 sm:mt-20">
-            <h3 class="font-headline font-bold text-lg text-cm-on-background mb-6 text-center">{{ __('appPreview') }}</h3>
-            <div class="grid grid-cols-1 gap-6">
-                @foreach($screenshots as $s)
-                <div class="bg-white rounded-3xl shadow-sm border border-cm-outline-variant/10 overflow-hidden">
-                    <div class="bg-cm-surface-container-low px-3 py-2 flex items-center gap-1.5">
-                        <div class="w-2 h-2 rounded-full bg-cm-error/60"></div>
-                        <div class="w-2 h-2 rounded-full bg-cm-primary-container/60"></div>
-                        <div class="w-2 h-2 rounded-full bg-cm-primary/60"></div>
-                        <span class="ml-2 text-[10px] text-cm-outline">{{ $s['title'] }}</span>
-                    </div>
-                    <div class="bg-gradient-to-br from-cm-primary-container/10 to-cm-surface-container-low">
-                        <picture>
-                            <source srcset="{{ str_replace('.png', '.webp', $s['image']) }}" type="image/webp">
-                            <img src="{{ $s['image'] }}" alt="{{ $s['title'] }}" class="w-full h-auto object-cover border border-cm-outline-variant/30" loading="lazy" />
-                        </picture>
-                    </div>
-                    <div class="p-4"><p class="text-sm text-cm-secondary">{{ $s['description'] }}</p></div>
-                </div>
-                @endforeach
-            </div>
-        </div>
+        @include('partials._features-tabs')
 
         <picture>
             <source srcset="/nous-gratuites.webp" type="image/webp">
