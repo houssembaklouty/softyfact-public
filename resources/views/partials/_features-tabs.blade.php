@@ -96,19 +96,19 @@ $featureTabs = [
     </div>
 
     {{-- Tab bar --}}
-    <div class="flex gap-2 sm:gap-3 overflow-x-auto pb-2 mb-6 sm:mb-8 scrollbar-hide snap-x snap-mandatory px-1" role="tablist">
+    <div class="flex gap-1.5 sm:gap-3 overflow-x-auto pb-2 mb-6 sm:mb-8 scrollbar-hide snap-x snap-mandatory px-1" role="tablist">
         @foreach($featureTabs as $i => $tab)
         <button
             @click="activeTab = {{ $i }}"
             :class="activeTab === {{ $i }}
                 ? 'bg-cm-primary text-white shadow-lg shadow-cm-primary/20'
                 : 'bg-white text-cm-on-surface-variant border border-cm-outline-variant/30 hover:bg-cm-surface-container-low'"
-            class="flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-full font-semibold text-sm whitespace-nowrap transition-all snap-start shrink-0"
+            class="flex items-center gap-1.5 sm:gap-2 px-3 py-2 sm:px-5 sm:py-3 rounded-full font-semibold text-xs sm:text-sm whitespace-nowrap transition-all snap-start shrink-0"
             role="tab"
             :aria-selected="activeTab === {{ $i }}"
             aria-controls="feat-panel-{{ $i }}"
         >
-            <span class="material-symbols-outlined text-lg" :class="activeTab === {{ $i }} ? 'text-white' : 'text-cm-primary'">{{ $tab['icon'] }}</span>
+            <span class="material-symbols-outlined text-base sm:text-lg hidden sm:inline" :class="activeTab === {{ $i }} ? 'text-white' : 'text-cm-primary'">{{ $tab['icon'] }}</span>
             <span>{{ $tab['title'] }}</span>
         </button>
         @endforeach
