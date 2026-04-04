@@ -125,7 +125,7 @@ $featureTabs = [
         role="tabpanel"
         class="bg-white rounded-3xl border border-cm-outline-variant/10 shadow-sm overflow-hidden"
     >
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col-reverse lg:flex-row">
             {{-- Left: text content --}}
             <div class="p-6 sm:p-8 lg:p-10 lg:w-1/2 flex flex-col justify-center">
                 {{-- Number badge --}}
