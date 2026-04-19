@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html class="light" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="csrf-token" content="{{ csrf_token() }}">
+<title>{{ $productName }} | Logiciel de Facturation Tunisien - {{ $pagePrice }} DT</title>
+<meta name="description" content="Commandez {{ $productName }} : logiciel de facturation pour les entreprises tunisiennes. {{ $pagePrice }} DT — Licence à vie." />
+<link rel="canonical" href="https://softyfact.tn/product/offline-2" />
+<meta property="og:type" content="product" />
+<meta property="og:title" content="{{ $productName }} — Logiciel de facturation | {{ $pagePrice }} DT" />
+<meta property="product:price:amount" content="{{ $pagePrice }}" />
+<meta property="product:price:currency" content="TND" />
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script id="tailwind-config">
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            "colors": {
+                "inverse-surface": "#283040",
+                "on-surface-variant": "#3e4945",
+                "surface": "#f9f9ff",
+                "secondary-fixed-dim": "#bfc6db",
+                "secondary": "#565e70",
+                "tertiary-fixed-dim": "#ffb3ad",
+                "surface-container-low": "#f1f3ff",
+                "on-primary-container": "#95e8d1",
+                "surface-dim": "#d2daef",
+                "primary": "#005143",
+                "surface-variant": "#dbe2f7",
+                "on-tertiary-fixed": "#410004",
+                "on-tertiary-container": "#ffccc8",
+                "surface-container-highest": "#dbe2f7",
+                "on-secondary": "#ffffff",
+                "on-secondary-fixed": "#141c2b",
+                "primary-fixed": "#9ef3db",
+                "on-tertiary-fixed-variant": "#930013",
+                "on-primary-fixed-variant": "#005143",
+                "tertiary": "#920013",
+                "error": "#ba1a1a",
+                "secondary-container": "#d8e0f4",
+                "outline": "#6e7975",
+                "on-background": "#141c2b",
+                "tertiary-fixed": "#ffdad7",
+                "surface-tint": "#006b59",
+                "outline-variant": "#bec9c4",
+                "on-secondary-fixed-variant": "#3f4758",
+                "on-surface": "#141c2b",
+                "on-primary-fixed": "#002019",
+                "on-error": "#ffffff",
+                "secondary-fixed": "#dbe2f7",
+                "primary-container": "#006b59",
+                "tertiary-container": "#b91a24",
+                "error-container": "#ffdad6",
+                "surface-container": "#e8eeff",
+                "surface-container-high": "#e0e8fd",
+                "inverse-on-surface": "#ecf0ff",
+                "on-secondary-container": "#5b6374",
+                "on-tertiary": "#ffffff",
+                "on-error-container": "#93000a",
+                "background": "#f9f9ff",
+                "inverse-primary": "#83d6c0",
+                "surface-bright": "#f9f9ff",
+                "surface-container-lowest": "#ffffff",
+                "primary-fixed-dim": "#83d6c0",
+                "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Inter"],
+                "label": ["Plus Jakarta Sans"]
+            }
+        }
+    }
+}
+</script>
+
+<style>
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+}
+.zellige-pattern {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_T9PihfvK0RTOXl3kIf7Zmmg9ITBXPGVJm1jGQLN11PR7qGLUcDmD9cEaOGHYqoWKuUrZDVcZ28BRTOz26x-A6Mzqn75CtnipMjy8AlEpB3tZxeiuwat-KIkS1vZvIqseTcLeNukxJX0CUNCZAON6ToD1VtGDxaASkziXcRjfiUeFdokX8cmEjdXtAOnRg_QxLbkOBcuP-mgUbsIQRomDCQ0Id_9O-OAmNhdZhq7e6nIIbYnyDEEeOdf1Wrfevwg7OoI3l9RNg0);
+    opacity: 0.03
+}
+body { min-height: max(884px, 100dvh); }
+[x-cloak] { display: none !important; }
+.hero-gradient { background: linear-gradient(135deg, #005143 0%, #006b59 100%); }
+</style>
+</head>
+
+@php
+$tunisCities = ['Ariana','Béja','Ben Arous','Bizerte','Gabès','Gafsa','Jendouba','Kairouan','Kasserine','Kébili','Kef','Mahdia','Manouba','Médenine','Monastir','Nabeul','Sfax','Sidi Bouzid','Siliana','Sousse','Tataouine','Tozeur','Tunis','Zaghouan'];
+@endphp
+
+<body class="bg-surface font-body text-on-surface overflow-x-hidden"
+    x-data="{
+        form: { nom: '', telephone: '', ville: '' },
+        submitted: false,
+        submitting: false,
+        errorMessage: '',
+        phoneError: '',
+        cityDropdownOpen: false,
+        citySearch: '',
+        cities: @js($tunisCities),
+        get filteredCities() {
+            const q = this.citySearch.trim().toLowerCase();
+            return q ? this.cities.filter(c => c.toLowerCase().includes(q)) : this.cities;
+        },
+        get isFormValid() {
+            const digits = this.form.telephone.replace(/\s/g, '');
+            return /^[0-9]{8}$/.test(digits) && this.form.ville;
+        },
+        validatePhone() {
+            const digits = this.form.telephone.replace(/\s/g, '');
+            if (!digits) this.phoneError = 'Le téléphone est requis';
+            else if (!/^[0-9]{8}$/.test(digits)) this.phoneError = 'Le téléphone doit contenir 8 chiffres';
+            else this.phoneError = '';
+        },
+        selectCity(city) {
+            this.form.ville = city;
+            this.cityDropdownOpen = false;
+            this.citySearch = '';
+        },
+        scrollToForm() {
+            document.getElementById('reserve')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        },
+        async submitOrder() {
+            this.validatePhone();
+            if (this.phoneError || !this.form.ville) return;
+            this.submitting = true;
+            this.errorMessage = '';
+            try {
+                const resp = await axios.post('/orders', {
+                    name: this.form.nom,
+                    phone: this.form.telephone,
+                    city: this.form.ville,
+                    type: 'offline',
+                }, {
+                    headers: { 'X-CSRF-TOKEN': document.querySelector('meta[name=csrf-token]').content }
+                });
+                this.submitting = false;
+                if (typeof gtag === 'function') gtag('event', 'purchase', { currency: 'TND', value: {{ $pagePrice }} });
+                if (resp.data.redirect) window.location.href = resp.data.redirect;
+                else this.submitted = true;
+            } catch (err) {
+                this.submitting = false;
+                const errors = err.response?.data?.errors;
+                if (errors) { const first = Object.values(errors)[0]; this.errorMessage = Array.isArray(first) ? first[0] : first; }
+                else this.errorMessage = err.response?.data?.message || 'Une erreur est survenue';
+            }
+        },
+        // Lightbox
+        lightboxOpen: false,
+        lightboxImage: '',
+        lightboxAlt: '',
+        openLightbox(src, alt) {
+            this.lightboxImage = src;
+            this.lightboxAlt = alt;
+            this.lightboxOpen = true;
+            document.body.style.overflow = 'hidden';
+        },
+        closeLightbox() {
+            this.lightboxOpen = false;
+            document.body.style.overflow = '';
+        }
+    }">
+
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-[0px_24px_48px_-12px_rgba(20,28,43,0.08)]">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[#006B59] text-2xl">terminal</span>
+            <span class="text-xl font-bold text-[#141c2b] tracking-tighter font-headline">{{ $productName }}</span>
+        </div>
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-secondary font-medium hover:text-primary transition-colors" href="#features">Fonctionnalités</a>
+            <a class="text-secondary font-medium hover:text-primary transition-colors" href="#how-it-works">Comment ça marche</a>
+            <a class="text-secondary font-medium hover:text-primary transition-colors" href="#pricing">Tarifs</a>
+        </nav>
+        <div class="flex items-center gap-3">
+            <a href="{{ $coreAppUrl }}" class="hidden md:block text-secondary font-medium hover:text-primary transition-colors">Connexion</a>
+            <button @click="scrollToForm" class="hero-gradient text-white px-5 py-2 rounded-lg font-medium shadow-lg shadow-[#006b59]/20 hover:opacity-90 transition-opacity active:scale-95 duration-200">
+                Commander
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative pt-28 md:pt-32 pb-16 md:pb-24 px-6 overflow-hidden">
+    <div class="absolute inset-0 z-0 zellige-pattern"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Hero Content -->
+            <div class="text-center lg:text-left order-1">
+                <span class="inline-block py-1 px-3 bg-primary/10 text-primary font-headline font-semibold text-xs tracking-wider rounded-full mb-6">CONFORME AUX NORMES TUNISIENNES</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-headline font-extrabold text-on-background leading-tight mb-6 tracking-tight">
+                    Simplifiez votre <span class="text-primary">facturation</span>
+                </h1>
+                <p class="text-on-surface-variant text-lg md:text-xl mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Le logiciel de gestion tout-en-un conçu pour les PME tunisiennes. Gérez votre TVA, FODEC et Retenue à la source en un clic.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                    <button @click="scrollToForm" class="w-full sm:w-auto hero-gradient text-white py-4 px-8 rounded-xl font-headline font-bold text-lg shadow-lg shadow-primary/20 flex items-center justify-center gap-2 active:scale-95 duration-200 hover:opacity-90">
+                        Commander maintenant <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <div class="flex flex-col items-center lg:items-start">
+                        <span class="text-3xl font-headline font-extrabold text-on-surface">{{ $pagePrice }} TND <span class="text-sm font-medium text-secondary">HT</span></span>
+                        <span class="text-xs text-primary font-semibold flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                            Licence à vie - Sans abonnement
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Image -->
+            <div class="relative flex items-center justify-center order-2 lg:order-2">
+                <div class="absolute -z-10 w-64 h-64 md:w-96 md:h-96 bg-primary/10 rounded-full blur-3xl"></div>
+                <img alt="{{ $productName }} Product Box" class="w-full max-w-md drop-shadow-2xl rounded-2xl transform hover:rotate-2 transition-transform duration-500" src="/softy-fact%20(solution%20de%20facturation%20en%20tunisie).png"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Comparison Section -->
+<section class="py-16 md:py-24 px-6" id="features">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-headline font-extrabold text-on-background text-center mb-12">Le choix de la performance</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <!-- Old Way -->
+            <div class="bg-surface-container-high rounded-2xl p-6 md:p-8 relative overflow-hidden border-l-4 border-error/30">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-error text-2xl">cancel</span>
+                    <h3 class="font-headline font-bold text-xl text-on-surface">Ancienne Méthode</h3>
+                </div>
+                <ul class="space-y-3 text-on-surface-variant text-sm md:text-base">
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-xs mt-1">remove</span>
+                        Erreurs de calcul Excel manuelles
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-xs mt-1">remove</span>
+                        Perte de temps sur la déclaration TVA
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-xs mt-1">remove</span>
+                        Retenues à la source non suivies
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-xs mt-1">remove</span>
+                        Documents non conformes
+                    </li>
+                </ul>
+            </div>
+            <!-- SoftyFact Way -->
+            <div class="bg-surface-container-lowest shadow-xl rounded-2xl p-6 md:p-8 relative overflow-hidden border-l-4 border-primary shadow-[0px_24px_48px_-12px_rgba(20,28,43,0.08)]">
+                <div class="absolute top-4 right-4 bg-primary text-white text-[10px] px-2 py-1 rounded-full font-bold uppercase">Optimisé</div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <h3 class="font-headline font-bold text-xl text-on-surface">Solution {{ $productName }}</h3>
+                </div>
+                <ul class="space-y-3 text-on-surface-variant text-sm md:text-base">
+                    <li class="flex items-start gap-2 font-semibold text-on-surface">
+                        <span class="material-symbols-outlined text-primary text-xs mt-1">bolt</span>
+                        Automatisation totale des calculs
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-xs mt-1">bolt</span>
+                        Génération automatique des PDF certifiés
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-xs mt-1">bolt</span>
+                        Alertes paiements et impayés en temps réel
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <span class="material-symbols-outlined text-primary text-xs mt-1">bolt</span>
+                        100% conforme loi de finances
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Local Expertise (Bento Grid Style) -->
+<section class="py-16 md:py-24 px-6 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-headline font-extrabold text-on-background text-center mb-4">Expertise Locale</h2>
+        <p class="text-on-surface-variant text-center mb-12 text-lg">Tout ce dont vous avez besoin pour gérer votre entreprise.</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">folder_open</span>
+                <span class="font-headline font-bold text-xs md:text-sm">Gestion des documents</span>
+                <span class="text-xs text-on-surface-variant mt-1">Factures, Devis, BL...</span>
+            </div>
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">group</span>
+                <span class="font-headline font-bold text-xs md:text-sm">Clients & Fournisseurs</span>
+                <span class="text-xs text-on-surface-variant mt-1">Gestion complète</span>
+            </div>
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">dashboard</span>
+                <span class="font-headline font-bold text-xs md:text-sm">Tableau de bord</span>
+                <span class="text-xs text-on-surface-variant mt-1">Statistiques en temps réel</span>
+            </div>
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">verified</span>
+                <span class="font-headline font-bold text-xs md:text-sm">Documents conformes</span>
+                <span class="text-xs text-on-surface-variant mt-1">Loi de finances</span>
+            </div>
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">inventory_2</span>
+                <span class="font-headline font-bold text-xs md:text-sm">Suivi de stock</span>
+                <span class="text-xs text-on-surface-variant mt-1">Mouvement & inventaire</span>
+            </div>
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">payments</span>
+                <span class="font-headline font-bold text-xs md:text-sm">Suivi paiements</span>
+                <span class="text-xs text-on-surface-variant mt-1">Encaissements & relances</span>
+            </div>
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">receipt_long</span>
+                <span class="font-headline font-bold text-xs md:text-sm">TVA & FODEC</span>
+                <span class="text-xs text-on-surface-variant mt-1">Calcul automatique</span>
+            </div>
+            <div class="bg-surface-container-lowest p-6 md:p-8 rounded-2xl flex flex-col items-center text-center hover:shadow-lg transition-shadow">
+                <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mb-4">description</span>
+                <span class="font-headline font-bold text-xs md:text-sm">Déclaration TEJ</span>
+                <span class="text-xs text-on-surface-variant mt-1">Export automatisé</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How it Works -->
+<section class="py-16 md:py-24 px-6" id="how-it-works">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-primary font-bold text-sm tracking-widest uppercase mb-4 block">Processus Simple</span>
+            <h2 class="text-3xl md:text-4xl font-headline font-extrabold text-on-background mb-4">Comment ça marche ?</h2>
+            <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Démarrez en quelques minutes avec notre parcours guidé intuitif.</p>
+        </div>
+        
+        <!-- Desktop: Horizontal Timeline -->
+        <div class="hidden lg:grid grid-cols-5 gap-6 mb-16">
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold text-xl mb-4 shadow-lg">1</div>
+                <h3 class="font-headline font-bold text-on-surface mb-2">Configurez votre entreprise</h3>
+                <p class="text-on-surface-variant text-sm">Initialisation rapide de vos paramètres fiscaux.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold text-xl mb-4 shadow-lg">2</div>
+                <h3 class="font-headline font-bold text-on-surface mb-2">Créez vos produits</h3>
+                <p class="text-on-surface-variant text-sm">Gérez votre catalogue avec prix et taxes.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold text-xl mb-4 shadow-lg">3</div>
+                <h3 class="font-headline font-bold text-on-surface mb-2">Créez vos listes clients</h3>
+                <p class="text-on-surface-variant text-sm">Importez et organisez vos contacts.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold text-xl mb-4 shadow-lg">4</div>
+                <h3 class="font-headline font-bold text-on-surface mb-2">Préparez vos devis & BL</h3>
+                <p class="text-on-surface-variant text-sm">Documents professionnels en secondes.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold text-xl mb-4 shadow-lg">5</div>
+                <h3 class="font-headline font-bold text-on-surface mb-2">Validez vos factures</h3>
+                <p class="text-on-surface-variant text-sm">Factures certifiées et suivi paiements.</p>
+            </div>
+        </div>
+
+        <!-- Mobile: Vertical Steps -->
+        <div class="lg:hidden space-y-8 max-w-md mx-auto">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold shrink-0">1</div>
+                <div>
+                    <h3 class="text-lg font-headline font-bold">Configurez votre entreprise</h3>
+                    <p class="text-on-surface-variant text-sm mt-1">Initialisation rapide de vos paramètres fiscaux.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold shrink-0">2</div>
+                <div>
+                    <h3 class="text-lg font-headline font-bold">Créez vos produits</h3>
+                    <p class="text-on-surface-variant text-sm mt-1">Gérez votre catalogue avec prix et taxes.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold shrink-0">3</div>
+                <div>
+                    <h3 class="text-lg font-headline font-bold">Créez vos listes clients</h3>
+                    <p class="text-on-surface-variant text-sm mt-1">Importez et organisez vos contacts.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold shrink-0">4</div>
+                <div>
+                    <h3 class="text-lg font-headline font-bold">Préparez vos devis & BL</h3>
+                    <p class="text-on-surface-variant text-sm mt-1">Documents professionnels en secondes.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-headline font-bold shrink-0">5</div>
+                <div>
+                    <h3 class="text-lg font-headline font-bold">Validez vos factures</h3>
+                    <p class="text-on-surface-variant text-sm mt-1">Factures certifiées et suivi paiements.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Screenshots Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mt-12">
+            <div class="bg-white p-3 rounded-2xl shadow-xl border border-surface-variant cursor-pointer hover:shadow-2xl transition-shadow" @click="openLightbox('/screen/setup.png', 'Configurez votre entreprise')">
+                <p class="text-xs font-bold text-primary px-3 py-2 uppercase tracking-wide">Étape 1 : Configuration</p>
+                <img alt="Configurez votre entreprise" class="w-full h-auto rounded-xl" src="/screen/setup.png"/>
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-xl border border-surface-variant cursor-pointer hover:shadow-2xl transition-shadow" @click="openLightbox('/screen/ajout-produit.webp', 'Créez vos produits')">
+                <p class="text-xs font-bold text-primary px-3 py-2 uppercase tracking-wide">Étape 2 : Produits</p>
+                <img alt="Créez vos produits" class="w-full h-auto rounded-xl" src="/screen/ajout-produit.webp"/>
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-xl border border-surface-variant cursor-pointer hover:shadow-2xl transition-shadow" @click="openLightbox('/screen/gestion%20des%20clients.webp', 'Créez vos listes clients')">
+                <p class="text-xs font-bold text-primary px-3 py-2 uppercase tracking-wide">Étape 3 : Clients</p>
+                <img alt="Créez vos listes clients" class="w-full h-auto rounded-xl" src="/screen/gestion%20des%20clients.webp"/>
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-xl border border-surface-variant cursor-pointer hover:shadow-2xl transition-shadow" @click="openLightbox('/screen/devis.webp', 'Préparez vos devis et BL')">
+                <p class="text-xs font-bold text-primary px-3 py-2 uppercase tracking-wide">Étape 4 : Devis & BL</p>
+                <img alt="Préparez vos devis et BL" class="w-full h-auto rounded-xl" src="/screen/devis.webp"/>
+            </div>
+            <div class="bg-white p-3 rounded-2xl shadow-xl border border-surface-variant cursor-pointer hover:shadow-2xl transition-shadow" @click="openLightbox('/screen/facture.webp', 'Validez vos factures')">
+                <p class="text-xs font-bold text-primary px-3 py-2 uppercase tracking-wide">Étape 5 : Factures</p>
+                <img alt="Validez vos factures" class="w-full h-auto rounded-xl" src="/screen/facture.webp"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Proof -->
+<section class="py-16 md:py-24 px-6 bg-primary text-white overflow-hidden relative">
+    <div class="absolute inset-0 zellige-pattern opacity-10"></div>
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="material-symbols-outlined text-4xl md:text-6xl text-on-primary-container mb-6">format_quote</span>
+                <p class="text-xl md:text-2xl font-headline font-medium italic mb-8 leading-relaxed">
+                    "Depuis que nous utilisons {{ $productName }}, nous avons réduit le temps passé sur la comptabilité de 60%. C'est l'outil indispensable pour tout chef d'entreprise en Tunisie."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-surface-container-low overflow-hidden">
+                        <img alt="Mr. Mahdi Kharrat" class="w-full h-full object-cover" src="https://www.annuairepro-afrique.com/_next/image?url=https%3A%2F%2Fadmin.annuairepro-afrique.com%2Fmedia%2Fpublished_logo%2F62058.jpg&w=1920&q=75"/>
+                    </div>
+                    <div>
+                        <h4 class="font-headline font-bold text-lg">Mr. Mahdi Kharrat</h4>
+                        <p class="text-sm text-on-primary-container font-medium opacity-80">Gérant, SKCD</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:flex justify-center">
+                <div class="w-64 h-64 bg-white/10 rounded-full flex items-center justify-center">
+                    <span class="material-symbols-outlined text-8xl text-white/30" style="font-variation-settings: 'FILL' 1;">thumb_up</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing + Order Form -->
+<section class="py-16 md:py-24 px-6 bg-surface" id="pricing">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-headline font-extrabold text-on-background text-center mb-12">Tarif Simple & Transparent</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-start" id="reserve">
+            <!-- Pricing Card -->
+            <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_24px_48px_-12px_rgba(20,28,43,0.08)] border-2 border-primary relative">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Le Plus Populaire</div>
+                <h3 class="font-headline font-bold text-xl mb-2 text-center">Pack Business</h3>
+                <div class="flex items-end justify-center gap-1 mb-6">
+                    <span class="text-4xl md:text-5xl font-headline font-extrabold text-primary">{{ $pagePrice }}</span>
+                    <span class="text-lg font-headline font-bold text-on-surface-variant mb-1">TND HT</span>
+                </div>
+                <div class="py-2 px-4 bg-surface-container-low rounded-lg text-primary font-headline font-bold text-sm mb-8 text-center">
+                    Licence à Vie
+                </div>
+                <ul class="space-y-4 text-left mb-6">
+                    <li class="flex items-center gap-3 text-sm">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Factures Illimitées
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Gestion des Clients & Stocks
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Support Technique prioritaire
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Conformité Loi de Finance
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Formation incluse
+                    </li>
+                    <li class="flex items-center gap-3 text-sm">
+                        <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Mises à jour gratuites
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Order Form -->
+            <div class="bg-surface-container-high rounded-[2rem] p-6 md:p-8">
+                <!-- Success state -->
+                <div x-show="submitted" x-cloak class="text-center py-8">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-xl text-on-background mb-2">Commande envoyée !</h3>
+                    <p class="text-on-surface-variant">Un conseiller vous contactera dans les plus brefs délais.</p>
+                    <a href="/" class="mt-6 inline-block text-primary hover:underline font-medium">Retour à l'accueil</a>
+                </div>
+
+                <!-- Order form -->
+                <div x-show="!submitted">
+                    <h3 class="text-2xl font-headline font-extrabold text-on-background text-center mb-2">Passer votre commande</h3>
+                    <p class="text-on-surface-variant text-center mb-6">Un conseiller vous rappellera dans l'heure.</p>
+                    <form @submit.prevent="submitOrder" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-headline font-semibold text-on-surface-variant mb-2 px-1">Nom Complet</label>
+                            <input x-model="form.nom" class="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/20 transition-all text-on-surface" placeholder="Ex: Ahmed Mansour" type="text"/>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-headline font-semibold text-on-surface-variant mb-2 px-1">Téléphone <span class="text-error">*</span></label>
+                            <input x-model="form.telephone" @blur="validatePhone" @input="phoneError = ''" class="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-primary/20 transition-all text-on-surface" :class="phoneError ? 'ring-2 ring-error' : ''" placeholder="+216 -- --- ---" type="tel" required/>
+                            <p x-show="phoneError" x-text="phoneError" class="mt-1 text-xs text-error"></p>
+                        </div>
+                        <div class="relative" @click.away="cityDropdownOpen = false">
+                            <label class="block text-sm font-headline font-semibold text-on-surface-variant mb-2 px-1">Ville <span class="text-error">*</span></label>
+                            <button type="button" @click="cityDropdownOpen = !cityDropdownOpen; citySearch = ''"
+                                class="w-full bg-surface-container-lowest border-none rounded-xl py-4 px-6 text-left transition-all flex items-center justify-between"
+                                :class="!form.ville ? 'text-outline' : 'text-on-surface'">
+                                <span x-text="form.ville || 'Sélectionnez une ville'"></span>
+                                <span class="material-symbols-outlined text-outline text-lg transition-transform" :class="cityDropdownOpen ? 'rotate-180' : ''">expand_more</span>
+                            </button>
+                            <div x-show="cityDropdownOpen" x-cloak x-transition class="absolute z-50 mt-1 w-full bg-white border border-outline-variant/20 rounded-xl shadow-xl overflow-hidden">
+                                <div class="p-2 border-b border-outline-variant/10">
+                                    <input x-model="citySearch" type="text" placeholder="Rechercher..." class="w-full px-3 py-2 text-sm rounded-lg bg-surface border-none ring-1 ring-on-background/30 focus:ring-2 focus:ring-primary outline-none" @click.stop />
+                                </div>
+                                <ul class="max-h-48 overflow-y-auto py-1">
+                                    <template x-for="city in filteredCities" :key="city">
+                                        <li @click="selectCity(city)" class="px-4 py-2.5 text-sm cursor-pointer transition hover:bg-surface-container-low flex items-center justify-between" :class="form.ville === city ? 'bg-primary/10 text-primary font-medium' : 'text-on-surface'">
+                                            <span x-text="city"></span>
+                                            <span x-show="form.ville === city" class="material-symbols-outlined text-primary text-lg">check</span>
+                                        </li>
+                                    </template>
+                                    <li x-show="filteredCities.length === 0" class="px-4 py-3 text-sm text-outline text-center">Aucune ville trouvée</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div x-show="errorMessage" x-cloak class="bg-error-container text-error text-sm rounded-xl p-3 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-lg">error</span>
+                            <span x-text="errorMessage"></span>
+                        </div>
+                        <button type="submit" :disabled="submitting || !isFormValid" class="w-full hero-gradient text-white py-4 rounded-xl font-headline font-bold text-lg shadow-lg shadow-primary/20 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+                            <span x-show="submitting" class="material-symbols-outlined animate-spin">progress_activity</span>
+                            <span x-show="!submitting">Commander maintenant</span>
+                            <span x-show="!submitting" class="material-symbols-outlined">arrow_forward</span>
+                            <span x-show="submitting">Envoi en cours...</span>
+                        </button>
+                        <p class="text-center text-xs text-on-surface-variant">Paiement à la livraison. Activation immédiate.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sticky Bottom CTA (Mobile Only) -->
+<div x-show="!submitted" class="fixed bottom-6 left-6 right-6 z-50 lg:hidden">
+    <a @click.prevent="scrollToForm" class="bg-primary text-white w-full py-4 rounded-full font-headline font-bold text-lg flex items-center justify-center gap-2 shadow-[0px_24px_48px_-12px_rgba(0,81,67,0.4)] backdrop-blur-md cursor-pointer" href="#reserve">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        Commander à {{ $pagePrice }} TND
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="w-full px-6 md:px-8 py-12 md:py-16 bg-[#f1f3ff] rounded-t-[2rem] mt-12 pb-24 lg:pb-12">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
+            <!-- Brand -->
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="material-symbols-outlined text-[#006B59] text-2xl">terminal</span>
+                    <span class="font-headline font-bold text-[#141c2b] text-xl">{{ $productName }}</span>
+                </div>
+                <p class="text-[#141c2b]/60 max-w-sm mb-6">
+                    Le logiciel de facturation pensé pour les entrepreneurs tunisiens. Simple, puissant et conforme.
+                </p>
+            </div>
+            <!-- Links -->
+            <div>
+                <h4 class="font-headline font-bold mb-4 text-[#141c2b]">Logiciel</h4>
+                <ul class="space-y-3 text-[#141c2b]/60 text-sm">
+                    <li>Facturation</li>
+                    <li>Gestion de stock</li>
+                    <li>Devis & BL</li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div>
+                <h4 class="font-headline font-bold mb-4 text-[#141c2b]">Contact</h4>
+                <ul class="space-y-3 text-[#141c2b]/60 text-sm">
+                    <li>{{ $supportPhone }}</li>
+                    <li>contact@softyfact.tn</li>
+                    <li><a class="hover:text-[#006B59] transition-colors" href="/contact">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Bottom Bar -->
+        <div class="mt-12 pt-8 border-t border-[#141c2b]/5 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="font-body text-sm text-[#141c2b]/60">
+                © {{ date('Y') }} {{ $productName }}. Conforme aux normes UTICA & Ministère des Finances.
+            </p>
+            <div class="flex gap-6 text-sm text-[#141c2b]/60">
+                <a href="/conditions" class="hover:text-[#006B59] transition-colors">Conditions</a>
+                <a href="/confidentialite" class="hover:text-[#006B59] transition-colors">Confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Lightbox Modal -->
+<div x-show="lightboxOpen" x-cloak
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0"
+    x-transition:enter-end="opacity-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100"
+    x-transition:leave-end="opacity-0"
+    @keydown.escape.window="closeLightbox()"
+    class="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90"
+    @click.self="closeLightbox()">
+    <!-- Close Button -->
+    <button @click="closeLightbox()" class="absolute top-4 right-4 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
+        <span class="material-symbols-outlined text-white text-3xl">close</span>
+    </button>
+    <!-- Image -->
+    <img :src="lightboxImage" :alt="lightboxAlt" class="max-w-full max-h-[90vh] rounded-xl shadow-2xl object-contain"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"/>
+    <!-- Caption -->
+    <p class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white font-headline font-medium text-lg bg-black/50 px-4 py-2 rounded-lg" x-text="lightboxAlt"></p>
+</div>
+
+</body>
+</html>

@@ -45,6 +45,12 @@ Route::get('/product/online', function () use ($shared) {
     ]));
 })->name('product.online');
 
+Route::get('/product/offline-2', function () use ($shared) {
+    return view('pages.product-offline-2', array_merge($shared, [
+        'pagePrice' => config('app.order_amount', 149),
+    ]));
+})->name('product.offline-2');
+
 // Static pages
 Route::get('/conditions', function () use ($shared) {
     return view('pages.conditions', $shared);
@@ -92,6 +98,7 @@ Route::get('/sitemap.xml', function () {
     $urls = [
         ['loc' => $base . '/', 'lastmod' => '2026-03-01', 'priority' => '1.0', 'changefreq' => 'weekly'],
         ['loc' => $base . '/product/offline', 'lastmod' => '2026-03-01', 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['loc' => $base . '/product/offline-2', 'lastmod' => '2026-04-19', 'priority' => '0.9', 'changefreq' => 'monthly'],
         ['loc' => $base . '/product/online', 'lastmod' => '2026-03-01', 'priority' => '0.9', 'changefreq' => 'monthly'],
         ['loc' => $base . '/contact', 'lastmod' => '2026-03-01', 'priority' => '0.7', 'changefreq' => 'monthly'],
         ['loc' => $base . '/conditions', 'lastmod' => '2026-02-28', 'priority' => '0.3', 'changefreq' => 'yearly'],
