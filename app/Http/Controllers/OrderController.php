@@ -48,6 +48,7 @@ class OrderController extends Controller
                     'address' => $validated['address'] ?? null,
                     'city'    => $validated['city'] ?? null,
                     'type'    => 'online',
+                    'amount'  => config('app.order_amount_online', 119),
                     'ab_variant' => $request->cookie('ab_variant'),
                 ]);
 
@@ -65,6 +66,7 @@ class OrderController extends Controller
                             'address' => $validated['address'] ?? null,
                             'city' => $validated['city'] ?? null,
                             'type' => 'online',
+                            'amount' => config('app.order_amount_online', 119),
                             'ab_variant' => $request->cookie('ab_variant'),
                         ]));
                     } catch (\Throwable $e) {

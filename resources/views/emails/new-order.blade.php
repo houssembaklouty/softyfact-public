@@ -52,7 +52,7 @@
                                 <tr>
                                     <td style="padding:8px 0;color:#6b7280;font-size:13px;">Type</td>
                                     <td style="padding:8px 0;color:#111827;font-size:15px;">
-                                        ☁️ Cloud ({{ config('app.order_amount_online', 119) }} DT — Paiement unique)
+                                        ☁️ Cloud — {{ $orderData['amount'] ?? config('app.order_amount_online', 119) }} DT (Paiement unique)
                                     </td>
                                 </tr>
                                 @if(!empty($orderData['ab_variant']))
