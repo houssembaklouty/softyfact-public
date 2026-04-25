@@ -80,4 +80,10 @@
         </div>
     </div>
 </div>
+
+@if(config('app.fb_pixel_id'))
+<script>
+    fbq('track', 'Purchase', { currency: 'TND', value: {{ $orderAmount }} });
+</script>
+@endif
 @endsection

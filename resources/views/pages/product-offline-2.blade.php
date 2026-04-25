@@ -178,6 +178,7 @@ $tunisCities = ['Ariana','Béja','Ben Arous','Bizerte','Gabès','Gafsa','Jendoub
                 });
                 this.submitting = false;
                 if (typeof gtag === 'function') gtag('event', 'purchase', { currency: 'TND', value: {{ $pagePrice }} });
+                if (typeof fbq === 'function') fbq('track', 'Purchase', { currency: 'TND', value: {{ $pagePrice }}, content_name: 'SoftyFact Cloud' });
                 if (resp.data.redirect) window.location.href = resp.data.redirect;
                 else this.submitted = true;
             } catch (err) {
