@@ -119,15 +119,9 @@
                         @endforeach
                     </ul>
 
-                    @if(($abVariant ?? 'A') === 'B')
                     <a href="/product/buyonepay" class="btn-cta-shine block w-full text-center bg-cm-primary text-cm-on-primary py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-[#006B59]/30 uppercase tracking-tight cursor-pointer">
-                        {{ __('orderNowB') }}
+                        {{ ($abVariant ?? 'A') === 'B' ? __('orderNowB') : __('orderNow') }}
                     </a>
-                    @else
-                    <button @click="showOrderModal = true" class="btn-cta-shine block w-full text-center bg-cm-primary text-cm-on-primary py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-[#006B59]/30 uppercase tracking-tight cursor-pointer">
-                        {{ __('orderNow') }}
-                    </button>
-                    @endif
 
                     <p class="text-center text-xs font-bold text-cm-outline uppercase tracking-tighter italic">
                         {{ $pagePrice }} DT — {{ __('oneTimePayment') }}
@@ -362,11 +356,7 @@
                     <p class="text-lg md:text-2xl opacity-90 max-w-2xl mx-auto">{{ __('readySubtitle') }}</p>
                     <div class="flex flex-col items-center gap-6 pt-6 md:pt-8">
                         <div class="text-center"><span class="text-4xl md:text-5xl font-black">{{ $pagePrice }}</span><span class="text-lg font-bold ml-1">DT</span></div>
-                        @if(($abVariant ?? 'A') === 'B')
-                        <a href="/product/buyonepay" class="btn-cta-shine bg-white text-cm-primary px-8 md:px-12 py-4 md:py-6 rounded-2xl font-black text-xl md:text-2xl hover:scale-105 transition-all shadow-xl shadow-black/20 uppercase tracking-tight cursor-pointer">{{ __('orderNowB') }}</a>
-                        @else
-                        <button @click="showOrderModal = true" class="btn-cta-shine bg-white text-cm-primary px-8 md:px-12 py-4 md:py-6 rounded-2xl font-black text-xl md:text-2xl hover:scale-105 transition-all shadow-xl shadow-black/20 uppercase tracking-tight cursor-pointer">{{ __('orderNow') }}</button>
-                        @endif
+                        <a href="/product/buyonepay" class="btn-cta-shine bg-white text-cm-primary px-8 md:px-12 py-4 md:py-6 rounded-2xl font-black text-xl md:text-2xl hover:scale-105 transition-all shadow-xl shadow-black/20 uppercase tracking-tight cursor-pointer">{{ ($abVariant ?? 'A') === 'B' ? __('orderNowB') : __('orderNow') }}</a>
                     </div>
                     <p class="text-sm opacity-80 font-medium">{{ __('freeInstall') }}</p>
                 </div>
