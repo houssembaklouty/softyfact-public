@@ -115,7 +115,7 @@ class OrderController extends Controller
             'token' => $token,
             'orderAmount' => config('app.order_amount_online', 119),
             'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
-            'supportPhone' => config('app.support_phone', '55 123 456'),
+            'supportPhone' => config('app.support_phone', '20 439 475'),
         ]);
     }
 }

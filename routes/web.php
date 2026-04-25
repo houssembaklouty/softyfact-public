@@ -16,7 +16,7 @@ $onlinePrice = config('app.order_amount_online', 119);
 $shared = [
     'productName' => config('app.name'),
     'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
-    'supportPhone' => config('app.support_phone', '55 123 456'),
+    'supportPhone' => config('app.support_phone', '20 439 475'),
     'pagePrice' => $onlinePrice,
     'monthlyPrice' => number_format($onlinePrice / 12, 2),
 ];
