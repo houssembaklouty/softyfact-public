@@ -43,7 +43,7 @@ return [
     // Custom config
     'support_phone' => env('APP_SUPPORT_PHONE', '71 000 000'),
     'order_amount' => (int) env('APP_ORDER_AMOUNT', 149),
-    'order_amount_online' => (int) env('APP_ORDER_AMOUNT_ONLINE', 99),
+    'order_amount_online' => (int) env('APP_ORDER_AMOUNT_ONLINE', 119),
     'core_app_url' => env('CORE_APP_URL', 'https://app.softyfact.tn'),
     'public_site_api_key' => env('PUBLIC_SITE_API_KEY'),
 

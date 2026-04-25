@@ -13,7 +13,7 @@
                     {{-- Header --}}
                     <tr>
                         <td style="background:#006B59;padding:24px 32px;">
-                            <h1 style="margin:0;color:#ffffff;font-size:20px;">🛒 Nouvelle commande {{ $orderData['type'] === 'online' ? 'Cloud' : 'Bureau' }}</h1>
+                            <h1 style="margin:0;color:#ffffff;font-size:20px;">🛒 Nouvelle commande Cloud</h1>
                         </td>
                     </tr>
 
@@ -52,11 +52,7 @@
                                 <tr>
                                     <td style="padding:8px 0;color:#6b7280;font-size:13px;">Type</td>
                                     <td style="padding:8px 0;color:#111827;font-size:15px;">
-                                        @if($orderData['type'] === 'online')
-                                            ☁️ Cloud ({{ config('app.order_amount_online') }} DT/an)
-                                        @else
-                                            💻 Bureau ({{ config('app.order_amount') }} DT)
-                                        @endif
+                                        ☁️ Cloud ({{ config('app.order_amount_online', 119) }} DT — Paiement unique)
                                     </td>
                                 </tr>
                                 @if(!empty($orderData['ab_variant']))

@@ -167,7 +167,7 @@
                     <h3 class="font-headline font-bold text-lg text-cm-on-background mb-2">{{ __('blogCta') }}</h3>
                     <p class="text-sm text-cm-secondary">{{ __('blogCtaSub') }}</p>
                 </div>
-                <a href="/product/offline" class="shrink-0 px-6 py-3 bg-cm-primary text-cm-on-primary font-bold rounded-xl hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-[#006B59]/20">
+                <a href="/product/online" class="shrink-0 px-6 py-3 bg-cm-primary text-cm-on-primary font-bold rounded-xl hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-[#006B59]/20">
                     {{ __('orderNow') }}
                 </a>
             </div>

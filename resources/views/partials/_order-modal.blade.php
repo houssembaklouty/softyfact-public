@@ -1,4 +1,4 @@
-{{-- Order Type Modal (Alpine.js) --}}
+{{-- Order Modal (Alpine.js) — Cloud version direct order --}}
 <div x-show="showOrderModal" x-cloak
      x-transition:enter="transition ease-out duration-200"
      x-transition:enter-start="opacity-0"
@@ -12,78 +12,137 @@
     <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" @click="showOrderModal = false"></div>
 
     {{-- Modal content --}}
-    <div class="relative bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 md:p-10"
+    <div class="relative bg-white rounded-3xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 md:p-10"
          x-transition:enter="transition ease-out duration-200"
          x-transition:enter-start="opacity-0 scale-95"
-         x-transition:enter-end="opacity-100 scale-100">
+         x-transition:enter-end="opacity-100 scale-100"
+         x-data="{
+            form: { name: '', phone: '', email: '', address: '' },
+            submitting: false,
+            submitted: false,
+            errorMessage: '',
+            phoneError: '',
+            emailError: '',
+            get isFormValid() {
+                const digits = this.form.phone.replace(/\s/g, '');
+                const email = this.form.email.trim();
+                return /^[0-9]{8}$/.test(digits) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && this.form.address.trim();
+            },
+            validatePhone() {
+                const digits = this.form.phone.replace(/\s/g, '');
+                if (!digits) this.phoneError = '{{ addslashes(__('phoneRequired_err')) }}';
+                else if (!/^[0-9]{8}$/.test(digits)) this.phoneError = '{{ addslashes(__('phoneDigits_err')) }}';
+                else this.phoneError = '';
+            },
+            validateEmail() {
+                const email = this.form.email.trim();
+                if (!email) this.emailError = '{{ addslashes(__('emailRequired_err')) }}';
+                else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) this.emailError = '{{ addslashes(__('emailInvalid_err')) }}';
+                else this.emailError = '';
+            },
+            async submitOrder() {
+                this.validatePhone();
+                this.validateEmail();
+                if (this.phoneError || this.emailError || !this.form.address.trim()) return;
+                this.submitting = true;
+                this.errorMessage = '';
+                try {
+                    const resp = await axios.post('/orders', {
+                        name: this.form.name,
+                        phone: this.form.phone,
+                        email: this.form.email,
+                        address: this.form.address,
+                        type: 'online',
+                    });
+                    this.submitting = false;
+                    if (typeof gtag === 'function') gtag('event', 'purchase', { currency: 'TND', value: {{ $pagePrice ?? config('app.order_amount_online', 119) }}, items: [{ item_name: 'SoftyFact Cloud', quantity: 1 }] });
+                    if (typeof fbq === 'function') fbq('track', 'Purchase', { currency: 'TND', value: {{ $pagePrice ?? config('app.order_amount_online', 119) }}, content_name: 'SoftyFact Cloud' });
+                    if (resp.data.redirect) window.location.href = resp.data.redirect;
+                    else this.submitted = true;
+                } catch (err) {
+                    this.submitting = false;
+                    const errors = err.response?.data?.errors;
+                    if (errors) { const first = Object.values(errors)[0]; this.errorMessage = Array.isArray(first) ? first[0] : first; }
+                    else this.errorMessage = err.response?.data?.message || '{{ addslashes(__('genericError')) }}';
+                }
+            }
+         }">
 
         {{-- Close button --}}
         <button @click="showOrderModal = false" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
 
-        <div class="text-center mb-8">
-            <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-cm-on-background">{{ __('chooseVersion') }}</h2>
-            <p class="text-cm-secondary mt-2">{{ __('chooseVersionSub') }}</p>
+        {{-- Success state --}}
+        <div x-show="submitted" x-cloak class="text-center py-8">
+            <div class="w-16 h-16 bg-cm-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="material-symbols-outlined text-cm-primary text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+            </div>
+            <h3 class="font-headline font-bold text-xl text-cm-on-background mb-2">{{ __('orderSent') }}</h3>
+            <p class="text-cm-secondary">{{ __('onlineOrderConfirm') }}</p>
+            <button @click="showOrderModal = false; submitted = false" class="mt-4 text-cm-primary font-semibold hover:underline">{{ __('backToHome') }}</button>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-6">
-            {{-- Desktop version --}}
-            <a href="/product/offline" class="group block bg-white border-2 border-cm-outline-variant/30 hover:border-cm-primary rounded-2xl p-6 transition-all hover:shadow-lg">
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 bg-cm-primary/10 rounded-xl flex items-center justify-center">
-                        <svg class="w-6 h-6 text-cm-primary" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12"/></svg>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-cm-on-background">{{ __('desktopVersionTitle') }}</h3>
-                        <p class="text-xs text-cm-secondary">{{ __('desktopVersionSub') }}</p>
-                    </div>
+        {{-- Order form --}}
+        <div x-show="!submitted">
+            <div class="text-center mb-6">
+                <div class="inline-flex items-center gap-2 bg-blue-500/10 px-4 py-1.5 rounded-full mb-3">
+                    <span class="material-symbols-outlined text-blue-500 text-base" style="font-variation-settings: 'FILL' 1;">cloud</span>
+                    <span class="text-xs font-bold text-blue-500 tracking-widest uppercase">{{ __('cloudVersionTitle') }}</span>
                 </div>
-                <div class="mb-4">
-                    <span class="text-3xl font-black text-cm-primary">{{ $offlinePrice }}</span>
-                    <span class="text-sm font-bold text-cm-secondary ml-1">DT</span>
-                    <p class="text-xs text-cm-outline mt-1">{{ __('lifetimeLicense') }}</p>
-                </div>
-                <ul class="space-y-2 mb-6">
-                    @foreach([__('worksOffline'), __('localInstall'), __('freeDelivery'), __('localData')] as $item)
-                    <li class="flex items-center gap-2 text-sm text-cm-on-surface-variant">
-                        <svg class="w-4 h-4 text-cm-primary shrink-0" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd"/></svg>
-                        {{ $item }}
-                    </li>
-                    @endforeach
-                </ul>
-                <span class="block w-full text-center bg-cm-primary text-cm-on-primary py-3 rounded-xl font-bold group-hover:scale-[1.02] transition-transform">{{ __('chooseDesktop') }}</span>
-            </a>
+                <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-cm-on-background">{{ __('commandInstant') }}</h2>
+                <p class="text-cm-secondary mt-2">{{ __('fillInfoEmail') }}</p>
+            </div>
 
-            {{-- Cloud version --}}
-            <a href="/product/online" class="group block bg-white border-2 border-blue-200 hover:border-blue-500 rounded-2xl p-6 transition-all hover:shadow-lg relative overflow-hidden">
-                <div class="absolute top-3 right-3 bg-blue-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">{{ __('popular') }}</div>
-                <div class="flex items-center gap-3 mb-4">
-                    <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center">
-                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/></svg>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-lg text-cm-on-background">{{ __('cloudVersionTitle') }}</h3>
-                        <p class="text-xs text-cm-secondary">{{ __('cloudVersionSub') }}</p>
-                    </div>
+            {{-- Price highlight --}}
+            <div class="bg-blue-500/5 rounded-xl p-4 mb-6 text-center border border-blue-500/10">
+                <span class="text-3xl font-black text-blue-500">{{ $pagePrice ?? config('app.order_amount_online', 119) }}</span>
+                <span class="text-sm font-bold text-cm-secondary ml-1">DT</span>
+                <p class="text-xs text-cm-secondary mt-1">{{ __('oneTimePayment') }}</p>
+            </div>
+
+            <form @submit.prevent="submitOrder" class="space-y-4">
+                <div>
+                    <label class="text-xs font-bold text-cm-on-background uppercase">{{ __('name') }}</label>
+                    <input x-model="form.name" type="text" placeholder="{{ __('namePlaceholder') }}" class="mt-1 w-full bg-cm-surface px-4 py-3 rounded-xl border-none ring-1 ring-cm-on-background/30 focus:ring-2 focus:ring-blue-500 transition-all" />
                 </div>
-                <div class="mb-4">
-                    <span class="text-3xl font-black text-blue-500">{{ $monthlyPrice }}</span>
-                    <span class="text-sm font-bold text-cm-secondary ml-1">{{ __('dtMonth') }}</span>
-                    <p class="text-xs text-cm-outline mt-1">{{ $onlinePrice }} DT/{{ __('year') }}</p>
+
+                <div>
+                    <label class="text-xs font-bold text-cm-on-background uppercase">{{ __('phoneRequired') }} <span class="text-cm-error">*</span></label>
+                    <input x-model="form.phone" type="tel" inputmode="numeric" required placeholder="XX XXX XXX" maxlength="11"
+                        @blur="validatePhone" @input="phoneError = ''"
+                        :class="['mt-1 w-full px-4 py-3 rounded-xl bg-cm-surface border-none ring-1 focus:ring-2 transition-all', phoneError ? 'ring-cm-error focus:ring-cm-error' : 'ring-cm-on-background/30 focus:ring-blue-500']" />
+                    <p x-show="phoneError" x-text="phoneError" class="mt-1 text-xs text-cm-error"></p>
                 </div>
-                <ul class="space-y-2 mb-6">
-                    @foreach([__('instantAccess'), __('accessAnywhere'), __('noInstall'), __('secureBackup')] as $item)
-                    <li class="flex items-center gap-2 text-sm text-cm-on-surface-variant">
-                        <svg class="w-4 h-4 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd"/></svg>
-                        {{ $item }}
-                    </li>
-                    @endforeach
-                </ul>
-                <span class="block w-full text-center bg-blue-500 text-white py-3 rounded-xl font-bold group-hover:scale-[1.02] transition-transform">{{ __('chooseCloud') }}</span>
-            </a>
+
+                <div>
+                    <label class="text-xs font-bold text-cm-on-background uppercase">{{ __('email') }} <span class="text-cm-error">*</span></label>
+                    <input x-model="form.email" type="email" required placeholder="{{ __('emailPlaceholder') }}"
+                        @blur="validateEmail" @input="emailError = ''"
+                        :class="['mt-1 w-full px-4 py-3 rounded-xl bg-cm-surface border-none ring-1 focus:ring-2 transition-all', emailError ? 'ring-cm-error focus:ring-cm-error' : 'ring-cm-on-background/30 focus:ring-blue-500']" />
+                    <p x-show="emailError" x-text="emailError" class="mt-1 text-xs text-cm-error"></p>
+                </div>
+
+                <div>
+                    <label class="text-xs font-bold text-cm-on-background uppercase">{{ __('address') }} <span class="text-cm-error">*</span></label>
+                    <textarea x-model="form.address" rows="4" placeholder="{{ __('addressPlaceholder') }}" required class="mt-1 w-full bg-cm-surface px-4 py-3 rounded-xl border-none ring-1 ring-cm-on-background/30 focus:ring-2 focus:ring-blue-500 transition-all resize-none"></textarea>
+                </div>
+
+                <div x-show="errorMessage" x-cloak class="bg-cm-error-container text-cm-error text-sm rounded-xl p-3 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">error</span>
+                    <span x-text="errorMessage"></span>
+                </div>
+
+                <button type="submit" :disabled="submitting || !isFormValid"
+                    class="btn-buy w-full py-4 bg-blue-500 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold text-lg rounded-xl shadow-lg shadow-blue-500/20 transition-all flex items-center justify-center gap-2">
+                    <span x-show="submitting" class="material-symbols-outlined animate-spin text-xl">progress_activity</span>
+                    <span x-show="!submitting">{{ __('commandInstant') }}</span>
+                    <span x-show="!submitting" class="material-symbols-outlined">arrow_forward</span>
+                    <span x-show="submitting">{{ __('sending') }}</span>
+                </button>
+            </form>
+
+            <p class="text-center text-sm text-cm-secondary mt-6">{{ __('needHelp') }} <a href="/contact" class="text-cm-primary font-semibold hover:underline">{{ __('contactUs') }}</a></p>
         </div>
-
-        <p class="text-center text-sm text-cm-secondary mt-6">{{ __('needHelp') }} <a href="/contact" class="text-cm-primary font-semibold hover:underline">{{ __('contactUs') }}</a></p>
     </div>
 </div>

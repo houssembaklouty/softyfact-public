@@ -8,7 +8,7 @@
             </picture>
             <span class="text-xl font-bold text-gray-900">SoftyFact</span>
         </a>
-        <a href="/product/offline" class="text-sm font-medium text-white bg-cm-primary hover:bg-cm-primary/90 px-4 py-2 rounded-lg transition">
+        <a href="/product/online" class="text-sm font-medium text-white bg-cm-primary hover:bg-cm-primary/90 px-4 py-2 rounded-lg transition">
             Commander
         </a>
     </div>

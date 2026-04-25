@@ -4,13 +4,13 @@
 <title>{{ $productName }} Version Bureau — Logiciel de facturation hors ligne | {{ $pagePrice }} DT</title>
 <meta name="description" content="Commandez {{ $productName }} Version Bureau : logiciel de facturation hors ligne pour les entreprises tunisiennes. Installation locale, fonctionne sans internet. {{ $pagePrice }} DT — Licence à vie." />
 <meta name="keywords" content="logiciel facturation hors ligne tunisie, {{ $productName }} bureau, logiciel gestion commerciale offline, facturation sans internet tunisie" />
-<link rel="canonical" href="https://softyfact.tn/product/offline" />
+<link rel="canonical" href="https://softyfact.tn/product/online" />
 <meta name="robots" content="index, follow" />
 <meta name="author" content="{{ $productName }}" />
 <meta property="og:type" content="product" />
 <meta property="og:title" content="{{ $productName }} Version Bureau — Logiciel de facturation | {{ $pagePrice }} DT" />
 <meta property="og:description" content="Version bureau du logiciel de facturation pour les entreprises tunisiennes. Installation locale, licence à vie." />
-<meta property="og:url" content="https://softyfact.tn/product/offline" />
+<meta property="og:url" content="https://softyfact.tn/product/online" />
 <meta property="og:site_name" content="{{ $productName }}" />
 <meta property="og:locale" content="fr_TN" />
 <meta property="product:price:amount" content="{{ $pagePrice }}" />
@@ -32,7 +32,7 @@
     'brand' => ['@type' => 'Brand', 'name' => $productName],
     'offers' => [
         '@type' => 'Offer',
-        'url' => 'https://softyfact.tn/product/offline',
+        'url' => 'https://softyfact.tn/product/online',
         'price' => (string) $pagePrice,
         'priceCurrency' => 'TND',
         'availability' => 'https://schema.org/InStock',
@@ -120,7 +120,7 @@ $faqs = [
                     phone: this.form.telephone,
                     address: this.form.adresse,
                     city: this.form.ville,
-                    type: 'offline',
+                    type: 'online',
                 });
                 this.submitting = false;
                 // Track conversion

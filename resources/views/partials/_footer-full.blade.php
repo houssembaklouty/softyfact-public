@@ -11,8 +11,7 @@
         <div>
             <h5 class="font-bold text-slate-900 mb-4 md:mb-6">{{ __('product') }}</h5>
             <ul class="space-y-3 md:space-y-4">
-                <li><a href="/product/offline" class="text-sm text-slate-500 hover:text-cm-primary transition-all underline decoration-[#006B59]/30 underline-offset-4">{{ __('desktopVersion') }}</a></li>
-                <li><a href="/product/online" class="text-sm text-slate-500 hover:text-blue-500 transition-all underline decoration-blue-500/30 underline-offset-4">{{ __('cloudVersion') }}</a></li>
+                <li><a href="/product/online" class="text-sm text-slate-500 hover:text-cm-primary transition-all underline decoration-[#006B59]/30 underline-offset-4">{{ __('cloudVersion') }}</a></li>
                 <li><a href="/#features" class="text-sm text-slate-500 hover:text-cm-primary transition-all underline decoration-[#006B59]/30 underline-offset-4">{{ __('features') }}</a></li>
             </ul>
         </div>

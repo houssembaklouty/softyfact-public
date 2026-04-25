@@ -16,9 +16,8 @@ class BlogController extends Controller
             'productName' => config('app.name'),
             'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
             'supportPhone' => config('app.support_phone', '55 123 456'),
-            'offlinePrice' => config('app.order_amount', 149),
-            'onlinePrice' => config('app.order_amount_online', 99),
-            'monthlyPrice' => number_format(config('app.order_amount_online', 99) / 12, 2),
+            'pagePrice' => config('app.order_amount_online', 119),
+            'monthlyPrice' => number_format(config('app.order_amount_online', 119) / 12, 2),
         ];
 
         return view('pages.blog-index', array_merge($shared, [
@@ -42,9 +41,8 @@ class BlogController extends Controller
             'productName' => config('app.name'),
             'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
             'supportPhone' => config('app.support_phone', '55 123 456'),
-            'offlinePrice' => config('app.order_amount', 149),
-            'onlinePrice' => config('app.order_amount_online', 99),
-            'monthlyPrice' => number_format(config('app.order_amount_online', 99) / 12, 2),
+            'pagePrice' => config('app.order_amount_online', 119),
+            'monthlyPrice' => number_format(config('app.order_amount_online', 119) / 12, 2),
         ];
 
         return view('pages.blog-show', array_merge($shared, [

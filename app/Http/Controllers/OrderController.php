@@ -15,32 +15,22 @@ class OrderController extends Controller
         $cleanPhone = preg_replace('/\s+/', '', $request->input('phone', ''));
         $request->merge(['phone' => $cleanPhone]);
 
-        $orderType = $request->input('type', 'offline');
-        $isOnline = $orderType === 'online';
-
         $rules = [
             'name'    => 'nullable|string|max:255',
             'phone'   => ['required', 'string', 'regex:/^[0-9]{8}$/', 'max:8'],
-            'type'    => 'nullable|string|in:offline,online',
+            'type'    => 'nullable|string|in:online',
+            'email'   => 'required|email|max:255',
+            'address' => 'required|string|max:1000',
+            'city'    => 'nullable|string|max:100',
         ];
 
         $messages = [
-            'phone.regex'    => 'Le numéro de téléphone doit contenir exactement 8 chiffres.',
-            'phone.required' => 'Le numéro de téléphone est obligatoire.',
+            'phone.regex'     => 'Le numéro de téléphone doit contenir exactement 8 chiffres.',
+            'phone.required'  => 'Le numéro de téléphone est obligatoire.',
+            'email.required'  => 'L\'adresse email est obligatoire.',
+            'email.email'     => 'Veuillez saisir un email valide.',
+            'address.required' => 'L\'adresse complète est obligatoire.',
         ];
-
-        if ($isOnline) {
-            $rules['email'] = 'required|email|max:255';
-            $rules['address'] = 'nullable|string|max:1000';
-            $rules['city'] = 'nullable|string|max:100';
-            $messages['email.required'] = 'L\'adresse email est obligatoire.';
-            $messages['email.email'] = 'Veuillez saisir un email valide.';
-        } else {
-            $rules['address'] = 'nullable|string|max:1000';
-            $rules['city'] = 'required|string|max:100';
-            $rules['email'] = 'nullable|email|max:255';
-            $messages['city.required'] = 'Veuillez sélectionner votre ville.';
-        }
 
         $validated = $request->validate($rules, $messages);
 
@@ -57,7 +47,7 @@ class OrderController extends Controller
                     'email'   => $validated['email'] ?? null,
                     'address' => $validated['address'] ?? null,
                     'city'    => $validated['city'] ?? null,
-                    'type'    => $isOnline ? 'online' : 'offline',
+                    'type'    => 'online',
                     'ab_variant' => $request->cookie('ab_variant'),
                 ]);
 
@@ -74,7 +64,7 @@ class OrderController extends Controller
                             'email' => $validated['email'] ?? null,
                             'address' => $validated['address'] ?? null,
                             'city' => $validated['city'] ?? null,
-                            'type' => $isOnline ? 'online' : 'offline',
+                            'type' => 'online',
                             'ab_variant' => $request->cookie('ab_variant'),
                         ]));
                     } catch (\Throwable $e) {
@@ -123,7 +113,7 @@ class OrderController extends Controller
         // Fetch order details from fetora-pro for display
         return view('pages.order-confirmation', [
             'token' => $token,
-            'orderAmount' => config('app.order_amount', 149),
+            'orderAmount' => config('app.order_amount_online', 119),
             'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
             'supportPhone' => config('app.support_phone', '55 123 456'),
         ]);

@@ -12,13 +12,13 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
+$onlinePrice = config('app.order_amount_online', 119);
 $shared = [
     'productName' => config('app.name'),
     'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
     'supportPhone' => config('app.support_phone', '55 123 456'),
-    'offlinePrice' => config('app.order_amount', 149),
-    'onlinePrice' => config('app.order_amount_online', 99),
-    'monthlyPrice' => number_format(config('app.order_amount_online', 99) / 12, 2),
+    'pagePrice' => $onlinePrice,
+    'monthlyPrice' => number_format($onlinePrice / 12, 2),
 ];
 
 // Homepage (A/B tested)
@@ -26,30 +26,21 @@ Route::get('/', function () use ($shared) {
     return view('pages.homepage', $shared);
 })->name('home');
 
-// Product pages
-Route::get('/product', function () {
-    return redirect('/product/offline');
-})->name('product');
+// Product pages — cloud only
+Route::get('/product', fn() => redirect('/product/online', 301))->name('product');
 
-Route::get('/product/offline', function () use ($shared) {
-    return view('pages.product-offline', array_merge($shared, [
-        'pagePrice' => config('app.order_amount', 149),
-    ]));
-})->name('product.offline');
+Route::redirect('/product/offline', '/product/online', 301)->name('product.offline');
 
 Route::get('/product/online', function () use ($shared) {
-    $onlinePrice = config('app.order_amount_online', 99);
     return view('pages.product-online', array_merge($shared, [
-        'pagePrice' => $onlinePrice,
-        'monthlyPrice' => number_format($onlinePrice / 12, 2),
+        'pagePrice' => $shared['pagePrice'],
+        'monthlyPrice' => $shared['monthlyPrice'],
     ]));
 })->name('product.online');
 
-Route::get('/product/offline-2', function () use ($shared) {
-    return view('pages.product-offline-2', array_merge($shared, [
-        'pagePrice' => config('app.order_amount', 149),
-    ]));
-})->name('product.offline-2');
+Route::get('/product/buyonepay', function () use ($shared) {
+    return view('pages.product-offline-2', $shared);
+})->name('product.buyonepay');
 
 // Static pages
 Route::get('/conditions', function () use ($shared) {
@@ -97,9 +88,8 @@ Route::get('/sitemap.xml', function () {
 
     $urls = [
         ['loc' => $base . '/', 'lastmod' => '2026-03-01', 'priority' => '1.0', 'changefreq' => 'weekly'],
-        ['loc' => $base . '/product/offline', 'lastmod' => '2026-03-01', 'priority' => '0.9', 'changefreq' => 'monthly'],
-        ['loc' => $base . '/product/offline-2', 'lastmod' => '2026-04-19', 'priority' => '0.9', 'changefreq' => 'monthly'],
         ['loc' => $base . '/product/online', 'lastmod' => '2026-03-01', 'priority' => '0.9', 'changefreq' => 'monthly'],
+        ['loc' => $base . '/product/buyonepay', 'lastmod' => '2026-04-25', 'priority' => '0.9', 'changefreq' => 'monthly'],
         ['loc' => $base . '/contact', 'lastmod' => '2026-03-01', 'priority' => '0.7', 'changefreq' => 'monthly'],
         ['loc' => $base . '/conditions', 'lastmod' => '2026-02-28', 'priority' => '0.3', 'changefreq' => 'yearly'],
         ['loc' => $base . '/confidentialite', 'lastmod' => '2026-02-28', 'priority' => '0.3', 'changefreq' => 'yearly'],

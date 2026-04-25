@@ -55,11 +55,11 @@
                     </li>
                     <li class="flex items-start gap-2">
                         <span class="flex-shrink-0 w-5 h-5 bg-cm-primary text-white rounded-full flex items-center justify-center text-xs font-bold">2</span>
-                        <span>Vous recevrez votre code d'activation par colis</span>
+                        <span>Vous recevrez vos identifiants de connexion par email</span>
                     </li>
                     <li class="flex items-start gap-2">
                         <span class="flex-shrink-0 w-5 h-5 bg-cm-primary text-white rounded-full flex items-center justify-center text-xs font-bold">3</span>
-                        <span><a href="{{ $coreAppUrl }}/activate" class="underline font-semibold">Activez votre licence</a> et commencez à utiliser SoftyFact</span>
+                        <span>Connectez-vous sur <a href="{{ $coreAppUrl }}" class="underline font-semibold">{{ $coreAppUrl }}</a> et commencez à utiliser SoftyFact</span>
                     </li>
                 </ol>
             </div>

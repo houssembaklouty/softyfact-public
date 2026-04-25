@@ -146,7 +146,7 @@
             <div class="relative z-10">
                 <h2 class="font-headline font-extrabold text-2xl md:text-3xl text-white mb-3">{{ __('readyTitle') }}</h2>
                 <p class="text-cm-inverse-on-surface/70 mb-6 max-w-xl mx-auto">{{ __('readySubtitle') }}</p>
-                <a href="/product/offline" class="inline-block px-8 py-3 bg-white text-cm-primary font-bold rounded-xl hover:scale-[1.02] active:scale-95 transition-all shadow-lg">
+                <a href="/product/online" class="inline-block px-8 py-3 bg-white text-cm-primary font-bold rounded-xl hover:scale-[1.02] active:scale-95 transition-all shadow-lg">
                     {{ __('orderNow') }}
                 </a>
             </div>

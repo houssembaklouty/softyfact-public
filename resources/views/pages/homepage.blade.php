@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('meta')
-    <title>{{ $productName }} — {{ __('heroHighlight') }} | {{ __('heroSubtitle') }}</title>
-    <meta name="description" content="Logiciel de facturation et gestion commerciale conçu pour le marché tunisien. Gérez vos ventes, stocks et fiscalité tunisienne sans abonnement. Le choix de 100+ PME en Tunisie." />
-    <meta name="keywords" content="logiciel facturation tunisie, gestion commerciale tunisie, facture tunisie, devis, gestion stock tunisie, trésorerie, FODEC, TVA, TEJ, retenue à la source, ERP tunisien, facturation sans abonnement" />
+                <title>{{ $productName }} — {{ __('heroHighlight') }} | {{ __('heroSubtitle') }}</title>
+    <meta name="description" content="Logiciel de facturation et gestion commerciale en ligne conçu pour le marché tunisien. Gérez vos ventes, stocks et fiscalité tunisienne. Accessible partout, sans installation." />
+    <meta name="keywords" content="logiciel facturation tunisie, gestion commerciale tunisie, facture tunisie, devis, gestion stock tunisie, trésorerie, FODEC, TVA, TEJ, retenue à la source, ERP tunisien, facturation cloud" />
     <link rel="canonical" href="https://softyfact.tn" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="{{ $productName }}" />
@@ -31,7 +31,7 @@
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Windows, macOS, Linux, Web",
     "description": "Logiciel de facturation et de gestion commerciale conçu pour le marché tunisien.",
-    "offers": { "@type": "Offer", "price": "{{ $offlinePrice }}", "priceCurrency": "TND", "availability": "https://schema.org/InStock" },
+    "offers": { "@type": "Offer", "price": "{{ $pagePrice }}", "priceCurrency": "TND", "availability": "https://schema.org/InStock" },
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "500" }
 },{
     "@context": "https://schema.org",
@@ -103,13 +103,11 @@
                 {{-- Pricing card --}}
                 <div class="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-cm-outline-variant/10 space-y-6">
                     <div>
-                        <p class="text-xs font-bold text-cm-outline uppercase tracking-widest mb-2">{{ __('startingFrom') }}</p>
                         <div class="flex items-baseline gap-3">
-                            @php $split = explode('.', $monthlyPrice); @endphp
-                            <span class="text-5xl md:text-6xl font-black text-cm-primary">{{ $split[0] }}<span class="text-3xl md:text-4xl">.{{ $split[1] ?? '00' }}</span></span>
-                            <span class="text-xl md:text-2xl font-bold text-cm-secondary">{{ __('dtMonth') }}</span>
+                            <span class="text-5xl md:text-6xl font-black text-cm-primary">{{ $pagePrice }}</span>
+                            <span class="text-xl md:text-2xl font-bold text-cm-secondary">DT</span>
                         </div>
-                        <p class="text-xs text-cm-secondary mt-1">{{ __('dtYear', ['price' => $onlinePrice]) }}</p>
+                        <p class="text-xs text-cm-secondary mt-1">{{ __('oneTimePayment') }}</p>
                     </div>
 
                     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -121,12 +119,18 @@
                         @endforeach
                     </ul>
 
+                    @if(($abVariant ?? 'A') === 'B')
+                    <a href="/product/buyonepay" class="btn-cta-shine block w-full text-center bg-cm-primary text-cm-on-primary py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-[#006B59]/30 uppercase tracking-tight cursor-pointer">
+                        {{ __('orderNowB') }}
+                    </a>
+                    @else
                     <button @click="showOrderModal = true" class="btn-cta-shine block w-full text-center bg-cm-primary text-cm-on-primary py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl hover:scale-[1.02] active:scale-95 transition-all shadow-xl shadow-[#006B59]/30 uppercase tracking-tight cursor-pointer">
-                        {{ ($abVariant ?? 'A') === 'B' ? __('orderNowB') : __('orderNow') }}
+                        {{ __('orderNow') }}
                     </button>
+                    @endif
 
                     <p class="text-center text-xs font-bold text-cm-outline uppercase tracking-tighter italic">
-                        {{ __('desktopPrice', ['price' => $offlinePrice]) }} &bull; {{ __('cloudPrice', ['price' => $monthlyPrice]) }}
+                        {{ $pagePrice }} DT — {{ __('oneTimePayment') }}
                     </p>
                 </div>
             </div>
@@ -357,12 +361,12 @@
                     <h2 class="font-headline font-extrabold text-3xl md:text-5xl lg:text-7xl">{{ __('readyTitle') }}</h2>
                     <p class="text-lg md:text-2xl opacity-90 max-w-2xl mx-auto">{{ __('readySubtitle') }}</p>
                     <div class="flex flex-col items-center gap-6 pt-6 md:pt-8">
-                        <div class="flex items-center gap-6">
-                            <div class="text-center"><p class="text-xs opacity-70 font-bold uppercase tracking-widest mb-1">{{ __('desktop') }}</p><span class="text-4xl md:text-5xl font-black">{{ $offlinePrice }}</span><span class="text-lg font-bold ml-1">DT</span></div>
-                            <div class="text-3xl opacity-50 font-light">|</div>
-                            <div class="text-center"><p class="text-xs opacity-70 font-bold uppercase tracking-widest mb-1">{{ __('cloud') }}</p><span class="text-4xl md:text-5xl font-black">{{ $monthlyPrice }}</span><span class="text-lg font-bold ml-1">{{ __('dtMonth') }}</span><p class="text-[10px] opacity-60 font-bold">{{ $onlinePrice }} DT/an</p></div>
-                        </div>
+                        <div class="text-center"><span class="text-4xl md:text-5xl font-black">{{ $pagePrice }}</span><span class="text-lg font-bold ml-1">DT</span></div>
+                        @if(($abVariant ?? 'A') === 'B')
+                        <a href="/product/buyonepay" class="btn-cta-shine bg-white text-cm-primary px-8 md:px-12 py-4 md:py-6 rounded-2xl font-black text-xl md:text-2xl hover:scale-105 transition-all shadow-xl shadow-black/20 uppercase tracking-tight cursor-pointer">{{ __('orderNowB') }}</a>
+                        @else
                         <button @click="showOrderModal = true" class="btn-cta-shine bg-white text-cm-primary px-8 md:px-12 py-4 md:py-6 rounded-2xl font-black text-xl md:text-2xl hover:scale-105 transition-all shadow-xl shadow-black/20 uppercase tracking-tight cursor-pointer">{{ __('orderNow') }}</button>
+                        @endif
                     </div>
                     <p class="text-sm opacity-80 font-medium">{{ __('freeInstall') }}</p>
                 </div>

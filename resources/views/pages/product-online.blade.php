@@ -1,8 +1,8 @@
 @extends('app')
 
 @section('meta')
-<title>{{ $productName }} Version Cloud — Logiciel de facturation en ligne | {{ $monthlyPrice }} DT/mois</title>
-<meta name="description" content="Commandez {{ $productName }} Version Cloud : logiciel de facturation en ligne pour les entreprises tunisiennes. Accessible partout, accès immédiat. {{ $monthlyPrice }} DT/mois ({{ $pagePrice }} DT/an)." />
+<title>{{ $productName }} — Logiciel de facturation en ligne | {{ $pagePrice }} DT</title>
+<meta name="description" content="Commandez {{ $productName }} : logiciel de facturation en ligne pour les entreprises tunisiennes. Accessible partout, accès immédiat. {{ $pagePrice }} DT — Paiement unique." />
 <meta name="keywords" content="logiciel facturation en ligne tunisie, {{ $productName }} cloud, logiciel gestion commerciale en ligne, facturation cloud tunisie, saas facturation" />
 <link rel="canonical" href="https://softyfact.tn/product/online" />
 <meta name="robots" content="index, follow" />
@@ -87,7 +87,7 @@ $faqs = [
         get isFormValid() {
             const digits = this.form.telephone.replace(/\s/g, '');
             const email = this.form.email.trim();
-            return /^[0-9]{8}$/.test(digits) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            return /^[0-9]{8}$/.test(digits) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && this.form.adresse.trim();
         },
         validatePhone() {
             const digits = this.form.telephone.replace(/\s/g, '');
@@ -107,7 +107,7 @@ $faqs = [
         async submitOrder() {
             this.validatePhone();
             this.validateEmail();
-            if (this.phoneError || this.emailError) return;
+            if (this.phoneError || this.emailError || !this.form.adresse.trim()) return;
             this.submitting = true;
             this.errorMessage = '';
             try {
@@ -142,7 +142,7 @@ $faqs = [
         <div class="text-center mb-6 sm:mb-12">
             <div class="inline-flex items-center gap-2 bg-blue-500/10 px-4 py-1.5 rounded-full mb-4">
                 <span class="material-symbols-outlined text-blue-500 text-base" style="font-variation-settings: 'FILL' 1;">cloud</span>
-                <span class="text-xs font-bold text-blue-500 tracking-widest uppercase">{{ __('onlineBadge') }} — {{ $monthlyPrice }} DT/{{ __('month') }}</span>
+                <span class="text-xs font-bold text-blue-500 tracking-widest uppercase">{{ __('onlineBadge') }}</span>
             </div>
             <h1 class="font-headline font-extrabold text-2xl sm:text-4xl lg:text-5xl text-cm-on-background">{{ $productName }}</h1>
             <p class="sm:block text-lg text-cm-secondary mt-2">{{ __('onlineSubtitle') }}</p>
@@ -162,11 +162,11 @@ $faqs = [
                 {{-- Pricing badge --}}
                 <div class="flex items-center justify-center gap-4 mt-4 sm:mt-6">
                     <div class="text-center">
-                        <p class="text-xs sm:text-sm text-cm-outline line-through">299 DT/{{ __('year') }}</p>
-                        <p class="text-3xl sm:text-4xl font-black text-blue-500">{{ $monthlyPrice }} <span class="text-sm sm:text-base font-bold text-cm-secondary">DT/{{ __('month') }}</span></p>
-                        <p class="text-xs text-cm-secondary mt-1">{{ __('ie') }} {{ $pagePrice }} DT HT/{{ __('year') }}</p>
+                        <p class="text-xs sm:text-sm text-cm-outline line-through">299 DT</p>
+                        <p class="text-3xl sm:text-4xl font-black text-blue-500">{{ $pagePrice }} <span class="text-sm sm:text-base font-bold text-cm-secondary">DT</span></p>
+                        <p class="text-xs text-cm-secondary mt-1">{{ __('oneTimePayment') }}</p>
                     </div>
-                    <div class="bg-blue-500 text-white text-sm font-bold px-4 py-2 rounded-full animate-pulse">-67%</div>
+                    <div class="bg-blue-500 text-white text-sm font-bold px-4 py-2 rounded-full animate-pulse">-60%</div>
                 </div>
             </div>
 
@@ -189,12 +189,12 @@ $faqs = [
                         {{-- Mobile price strip --}}
                         <div class="flex items-center justify-between lg:hidden mb-4 bg-blue-500/10 rounded-xl px-4 py-3">
                             <div>
-                                <p class="text-xs text-cm-outline line-through">299 DT/{{ __('year') }}</p>
-                                <p class="text-2xl font-black text-blue-500">{{ $monthlyPrice }} <span class="text-sm font-bold text-cm-secondary">DT/{{ __('month') }}</span></p>
-                                <p class="text-[10px] text-cm-secondary">{{ $pagePrice }} DT/{{ __('year') }}</p>
+                                <p class="text-xs text-cm-outline line-through">299 DT</p>
+                                <p class="text-2xl font-black text-blue-500">{{ $pagePrice }} <span class="text-sm font-bold text-cm-secondary">DT</span></p>
+                                <p class="text-[10px] text-cm-secondary">{{ __('oneTimePayment') }}</p>
                             </div>
                             <div class="text-right">
-                                <div class="inline-flex bg-blue-500 text-white text-sm font-bold px-3 py-1 rounded-full mb-1">-67%</div>
+                                <div class="inline-flex bg-blue-500 text-white text-sm font-bold px-3 py-1 rounded-full mb-1">-60%</div>
                                 <p class="text-xs text-cm-secondary">{{ __('instantAccessBadge') }}</p>
                             </div>
                         </div>
@@ -231,8 +231,8 @@ $faqs = [
                             </div>
 
                             <div>
-                                <label class="text-xs font-bold text-cm-on-background uppercase">{{ __('address') }}</label>
-                                <textarea x-model="form.adresse" rows="3" placeholder="{{ __('addressPlaceholder') }}" class="mt-1 w-full bg-cm-surface px-4 py-3 rounded-xl border-none ring-1 ring-cm-on-background/30 focus:ring-2 focus:ring-blue-500 transition-all resize-none"></textarea>
+                                <label class="text-xs font-bold text-cm-on-background uppercase">{{ __('address') }} <span class="text-cm-error">*</span></label>
+                                <textarea x-model="form.adresse" rows="4" required placeholder="{{ __('addressPlaceholder') }}" class="mt-1 w-full bg-cm-surface px-4 py-3 rounded-xl border-none ring-1 ring-cm-on-background/30 focus:ring-2 focus:ring-blue-500 transition-all resize-none"></textarea>
                             </div>
 
                             <div x-show="errorMessage" x-cloak class="bg-cm-error-container text-cm-error text-sm rounded-xl p-3 flex items-center gap-2">
@@ -253,11 +253,7 @@ $faqs = [
                         <div class="mt-6 bg-cm-surface-container-low rounded-xl p-4 space-y-3">
                             <div class="flex justify-between text-sm text-cm-secondary">
                                 <span>{{ __('cloudAnnual') }}</span>
-                                <span class="font-medium text-cm-on-surface">{{ $priceFormatted }} DT/{{ __('year') }}</span>
-                            </div>
-                            <div class="flex justify-between text-sm text-cm-secondary">
-                                <span>{{ __('perMonth') }}</span>
-                                <span class="font-medium text-cm-on-surface">{{ $monthlyPrice }} DT/{{ __('month') }}</span>
+                                <span class="font-medium text-cm-on-surface">{{ $priceFormatted }} DT</span>
                             </div>
                             <div class="flex justify-between text-sm text-cm-secondary">
                                 <span>{{ __('deliveryInstall') }}</span>
@@ -296,7 +292,7 @@ $faqs = [
                 <p class="text-white/70 mb-8 max-w-xl mx-auto">{{ __('readyOnlineSub') }}</p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a href="#" @click.prevent="scrollToForm" class="w-full sm:w-auto px-6 sm:px-8 py-3 bg-white text-blue-500 font-bold rounded-xl hover:scale-[1.02] active:scale-95 transition-all shadow-lg">
-                        {{ __('commandPrice') }} — {{ $monthlyPrice }} DT/{{ __('month') }}
+                        {{ __('commandPrice') }} — {{ $pagePrice }} DT
                     </a>
                     <a href="tel:{{ preg_replace('/\s/', '', $supportPhone) }}" class="w-full sm:w-auto px-6 sm:px-8 py-3 border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/10 transition flex items-center justify-center gap-2">
                         <span class="material-symbols-outlined text-lg">phone_in_talk</span>
@@ -312,7 +308,7 @@ $faqs = [
         <button @click="scrollToForm" class="btn-buy w-full py-3 sm:py-4 bg-blue-500 text-white font-bold text-sm sm:text-base rounded-xl shadow-lg shadow-blue-500/30 transition-all flex items-center justify-center gap-2 active:scale-95">
             <span>{{ __('commandCloud') }}</span>
             <span class="material-symbols-outlined text-lg">arrow_forward</span>
-            <span class="text-white/70 text-sm font-normal">{{ $monthlyPrice }} DT/{{ __('month') }}</span>
+            <span class="text-white/70 text-sm font-normal">{{ $pagePrice }} DT</span>
         </button>
     </div>
 

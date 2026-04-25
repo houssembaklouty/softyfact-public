@@ -18,10 +18,8 @@ class NewOrderMail extends Mailable
 
     public function envelope(): Envelope
     {
-        $type = $this->orderData['type'] === 'online' ? 'Cloud' : 'Bureau';
-
         return new Envelope(
-            subject: "🛒 Nouvelle commande {$type} — " . ($this->orderData['phone'] ?? ''),
+            subject: "🛒 Nouvelle commande Cloud — " . ($this->orderData['phone'] ?? ''),
         );
     }
 
