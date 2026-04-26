@@ -83,7 +83,11 @@
 
 @if(config('app.fb_pixel_id'))
 <script>
-    fbq('track', 'Purchase', { currency: 'TND', value: {{ $orderAmount }} });
+    window.addEventListener('load', function() {
+        if (typeof fbq === 'function') {
+            fbq('track', 'Purchase', { currency: 'TND', value: {{ $orderAmount }} });
+        }
+    });
 </script>
 @endif
 @endsection
