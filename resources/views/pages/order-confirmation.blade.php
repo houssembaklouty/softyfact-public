@@ -88,6 +88,7 @@
     window.addEventListener('load', function() {
         if (typeof fbq === 'function') {
             fbq('track', 'Purchase', { currency: 'TND', value: {{ $orderAmount }} });
+            fbq('track', 'Lead');
         }
     });
 </script>
