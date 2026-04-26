@@ -29,6 +29,7 @@
             </div>
 
             {{-- Order details --}}
+            @if($token !== '00000000')
             <div class="bg-gray-50 rounded-xl p-5 mb-6 space-y-3">
                 <div class="flex justify-between text-sm">
                     <span class="text-gray-500">Référence</span>
@@ -39,6 +40,7 @@
                     <span class="text-lg font-bold text-cm-primary">{{ number_format($orderAmount, 3, '.', '') }} DT</span>
                 </div>
             </div>
+            @endif
 
             {{-- Next steps --}}
             <div class="bg-cm-primary/5 rounded-xl p-5 mb-6">

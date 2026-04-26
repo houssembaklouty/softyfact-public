@@ -69,7 +69,7 @@ Route::post('/orders', [OrderController::class, 'store'])
     ->middleware('throttle:10,1')
     ->name('orders.store');
 
-Route::get('/order-confirmation/{token}', [OrderController::class, 'confirmation'])
+Route::get('/order-confirmation/{token?}', [OrderController::class, 'confirmation'])
     ->where('token', '[0-9]{8}')
     ->name('orders.confirmation');
 

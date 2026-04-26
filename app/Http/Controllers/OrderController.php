@@ -110,11 +110,10 @@ class OrderController extends Controller
         }
     }
 
-    public function confirmation(string $token)
+    public function confirmation(?string $token = null)
     {
-        // Fetch order details from fetora-pro for display
         return view('pages.order-confirmation', [
-            'token' => $token,
+            'token' => $token ?? '00000000',
             'orderAmount' => config('app.order_amount_online', 119),
             'coreAppUrl' => config('app.core_app_url', 'https://app.softyfact.tn'),
             'supportPhone' => config('app.support_phone', '20 439 475'),
